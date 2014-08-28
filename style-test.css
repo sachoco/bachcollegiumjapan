@@ -1,0 +1,436 @@
+body {
+  background: #F6F6F6;
+}
+#inner-header {
+  border: none;
+}
+#logo {
+  background: none;
+  text-align: left;
+  height: 120px;
+  float: left;
+}
+#logo a img {
+  margin-top: 0px;
+  width: 150px;
+}
+nav.main-nav {
+  float: right;
+  margin-top: 50px;
+}
+nav.main-nav ul li a:hover {
+  text-decoration: none;
+}
+nav.main-nav ul.effect1 li a:hover::before {
+  color: rgba(0,0,0,0.5);
+  text-shadow: 10px 0 rgba(0,0,0,0.5), -10px 0 rgba(0,0,0,0.5);
+}
+nav.main-nav ul.effect1 li a::before {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  color: transparent;
+  content: '•';
+  text-shadow: 0 0 transparent;
+  font-size: 1.2em;
+  -webkit-transition: text-shadow 0.3s, color 0.3s;
+  -moz-transition: text-shadow 0.3s, color 0.3s;
+  transition: text-shadow 0.3s, color 0.3s;
+/*  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);*/
+  pointer-events: none;
+}
+nav.main-nav ul.effect2 li a:hover::before {
+  color: rgba(0,0,0,0.5);
+  width: 60%;
+}
+nav.main-nav ul.effect2 li a::before {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  color: transparent;
+  width: 0%;
+  content: '';
+  font-size: 1.2em;
+  -webkit-transition: width 0.3s;
+  -moz-transition: width 0.3s;
+  transition: width 0.3s;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  transform: translateX(-50%);
+  pointer-events: none;
+  border-bottom: 1px solid rgba(0,0,0,0.5);
+}
+nav.main-nav ul li:before {
+  position: absolute;
+  margin-top: 8px;
+  font-size: 11px;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+}
+nav.main-nav ul li.menu-item-135:before {
+  content: "BCJについて";
+}
+nav.main-nav ul li.menu-item-136:before {
+  content: "コンサート";
+}
+nav.main-nav ul li.menu-item-137:before {
+  content: "ディスコグラフィ";
+}
+nav.main-nav ul li.menu-item-138:before {
+  content: "ギャラリー";
+}
+nav.main-nav ul li.menu-item-139:before {
+  content: "フレンズ＆ソサエティ";
+}
+
+
+#wrapper {
+  border: none;
+  padding: 0;
+}
+.hentry {
+  border: none;
+}
+
+.h-font {
+  font-family: 'Cinzel', serif;
+}
+
+.row-header {
+  margin-top: 1.5em;
+  font-size: 1.5em;
+/*  float: left;
+*/  position: relative;
+text-align: center;
+/*border-bottom: 1px solid rgba(0,0,0,0.5);*/
+}
+.date_time {
+  float: left;
+  line-height: 150%;
+  padding-top: 30px;
+  width: 10%;
+
+}
+.bigger {
+  font-size: 3em;
+}
+.bigger2 {
+  font-size: 1.3em;
+}
+section.overview {
+  height: 120px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.5);
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+section.overview .thumb {
+  width: 25%;
+}
+section.overview .title {
+  width: 35%;
+}
+section.overview .meta {
+  width: 15%;
+}
+/*.row-header:before {
+  position: absolute;
+  margin-top: -20px;
+  font-size: 11px;
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+}
+.row-header.upcoming:before {
+  content: "公演情報";
+}*/
+
+.row.upcoming article section.overview {
+  border: none;
+  margin-top: 20px;
+  position: relative;
+}
+.row.upcoming article section {
+  display: table-cell;
+  vertical-align: top;
+  //border-left: 1px solid rgba(0,0,0,0.5);
+  height: auto;
+  text-align: left;
+}
+.row.upcoming .date_time {
+  width: 100%;
+  padding-top: 15px;
+}
+.row.upcoming article section .thumb, .row.upcoming article section .title, .row.upcoming article section .meta {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+.row.upcoming article section .h2, .row.upcoming article section .location{
+  text-align: left;
+  padding: 0;
+  margin-top: 10px;
+  border: none;
+height: auto;
+}
+.row.upcoming article section .h2 {
+  height: 40px;
+  overflow: hidden;
+
+}
+.row.upcoming article section .location{
+  height: 40px;
+  overflow: hidden;
+}
+.row.upcoming article footer {
+  float: left;
+  width: 100%;
+  border: none;
+}
+.row.upcoming article section .country {
+  /*float: right;*/
+  /*background-color:  #603912;*/
+}
+#inner-footer div {
+  border: none;
+}
+.footer {
+  border: none;
+  background-color: #26292C;
+  color: white;
+}
+.footer-nav a, .footer-nav a:visited {
+  color: white;
+}
+.footer-nav a:hover, .footer-nav a:focus, .footer-nav a:visited:hover, .footer-nav a:visited:focus {
+  color: white;
+}
+.news {
+  padding: 0 0px 0 45px;
+}
+.news article {
+  margin: 20px 0px 40px;
+}
+.news header {
+  font-weight: bold;
+}
+.news header .date {
+  font-weight: normal;
+  font-size: 0.8em;
+  display: block;
+  text-align: right;
+}
+.news header i {
+  color: #4B4F53;
+}
+.row.upcoming .news section {
+  display: block;
+  margin: 0px 0;
+  height: auto;
+  line-height: 150%;
+}
+.row.upcoming .news section img {
+  width: 100%;
+}
+.social_widget {
+  background-color: #000000;
+  padding: 20px 0;
+}
+.eventsCalendar-monthWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+}
+.eventsCalendar-list-wrap {
+  display: none;
+}
+.eventsCalendar-daysList {
+  margin: 0;
+}
+.eventsCalendar-daysList li a {
+  font-size: 9px;
+}
+
+.eventsCalendar-daysList li.today a {
+  color: white;
+  position: relative;
+  background: none;
+}
+.eventsCalendar-daysList li.today a:before {
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    width: 14px;
+    height: 14px;
+    background:#666;
+    border: 1px solid #666;
+    color: #fff;
+    text-align: center;
+    content: "";
+    z-index: -1;
+}
+.eventsCalendar-daysList li.dayWithEvents a {
+  position: relative;
+  background: none;
+}
+.eventsCalendar-daysList li.dayWithEvents a:before {
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 1px solid #666;
+    color: #666;
+    text-align: center;
+    content: "";
+    z-index: -1;
+}
+.eventCalendar-wrap {
+  margin: 20px 0;
+}
+.eventsCalendar-currentTitle {
+  line-height: 25px;
+  border: none;
+}
+.eventsCalendar-daysList li.dayWithEvents {
+background: none;
+}
+.post-categories {
+  margin: 0;
+  float: left;
+}
+.hr {
+  position: absolute;
+  z-index: 2;
+  -moz-transition: width 0.5s;
+-webkit-transition: width 0.5s;
+-o-transition: width 0.5s;
+-ms-transition: width 0.5s;
+
+}
+.hr.bcj {
+  background: #F29D00;
+  border: none;
+  height: 1px;
+  width: 25%;
+  float: left;
+}
+.hr.masaaki {
+  background: #A4E407;
+  border: none;
+  height: 1px;
+  width: 25%;
+  float: left;
+}
+.thumb {
+  position: relative;
+  background: white;
+}
+.thumb:hover img {
+  //opacity: 0.2;
+}
+.thumb:hover .excerpt {
+  //opacity: 1
+}
+.thumb .excerpt {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  line-height: 120%;
+  font-size: 0.9em;
+  padding: 10px;
+  //color: white;
+      -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+}
+.bcj .thumb .excerpt {
+  background-color: rgba(242,157,0, 0.9 );
+}
+.masaaki .thumb .excerpt {
+  background-color: rgba(164,228,7, 0.9 );
+}
+.additional {
+  text-align: left;
+  margin-top: 50px;
+  float: left;
+}
+.additional h2{
+  /*text-align: left;
+  font-size: 1em;*/
+}
+.additional .hentry header {
+  border: none;
+  padding: 0.4em;
+}
+.additional article section {
+  padding-top: 10px;
+}
+.additional article {
+  padding-right: 15px;
+}
+.row.upcoming article section .title {
+  height: 140px;
+}
+.row.upcoming article section:hover .hr {
+  width: 100%;
+/*  height: 320px;
+*/}
+.row.upcoming article section .hr span{
+  opacity: 0;
+  position: absolute;
+  right: 0;
+    -moz-transition: opacity 0.5s linear 0.5s;
+    -webkit-transition: opacity 0.5s linear 0.5s;
+    -o-transition: opacity 0.5s linear 0.5s;
+    -ms-transition: opacity 0.5s linear 0.5s;
+}
+.row.upcoming article section:hover .hr span{
+  opacity: 1;
+}
+.row.upcoming article section .hr div{
+  height: 0px;
+  position: absolute;
+    background-color: rgba(164,228,7, 0.2 );
+
+    -moz-transition: all 0.5s linear 0.5s;
+    -webkit-transition: all 0.5s linear 0.5s;
+    -o-transition: all 0.5s linear 0.5s;
+    -ms-transition: all 0.5s linear 0.5s;
+}
+.row.upcoming article section:hover .hr div{
+  height: 320px;
+}
+.detail {
+line-height: 130%;
+font-size: 0.9em;
+height: 35px;
+overflow: hidden;
+}
+.readmore {
+  font-size: 0.9em;
+  //float: right;
+  margin-top: 15px;
+}
+.hentry footer {
+padding: 1em;
+border-top: none;
+background: none;
+}
+.news section {
+  border-top: none;
+}
