@@ -15,7 +15,7 @@ require_once( 'library/bones.php' );
 require_once( 'library/custom-post-type.php' );
 
 //require_once( 'library/custom-widget.php' );
-require_once( 'library/class.bcj.inc.php' );
+//require_once( 'library/class.bcj.inc.php' );
 
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
 // require_once( 'library/admin.php' );

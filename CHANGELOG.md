@@ -1,7 +1,9 @@
 # BACHCOLLEGIUMJAPAN WORDPRESS THEME CHANGE LOG & HISTORY
 
 This theme is developed for Bach Collegium Japan, the Japanese baroque orchestra established by Masaaki Suzuki. (http://bachcollegiumjapan.org)
+
 Graphic design by NOSIGNER (http://nosigner.com)
+
 Developed by Satoshi Shiraishi
 
 *******************************************************************
