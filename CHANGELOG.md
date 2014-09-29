@@ -13,3 +13,7 @@ Developed by Satoshi Shiraishi
 - initial development based on Bones template (http://themble.com/bones/)
 - first prototype for landing page based on a design sketch by NOSIGNER (http://nosigner.com).
 - a design suggestion by me, which pay more attention to the usability. (/test)
+
+**v1.10**
+- second prototype for landing page with a new design.
+

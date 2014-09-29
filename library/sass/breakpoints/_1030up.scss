@@ -11,4 +11,22 @@ be seen on the Desktop.
 
 .wrap {
   width: 1040px;
+  .wrap-padding {
+    padding: 0;
+  }
+}
+
+/*********************
+UPCOMING CONCERTS
+*********************/
+.upcoming  {
+  padding: 0 10% 0 5%;
+
+}
+
+.news-item {
+  width: 100%;
+  &:nth-child(odd) {
+    margin-right: 0;
+  }
 }

@@ -6,11 +6,23 @@
 	.eventCalendar-wrap .arrow {
 		text-decoration:none;
 		padding:0 5px;
-		line-height:28px;
-		padding:15px 10px;
+		line-height:1em;
+		padding:10px 10px;
+		font-family: "revicons";
+		font-size: 1.7em;
+		width: 35%;
+		text-align: left;
 	}
 		.eventCalendar-wrap .arrow.prev {
-
+			text-align: right;
+			&:after {
+				content: '\e824';
+			}
+		}
+		.eventCalendar-wrap .arrow.next {
+			&:after {
+				content: '\e825';
+			}
 		}
 		.eventCalendar-wrap .arrow:hover { opacity:0.7;}
 		.eventCalendar-wrap .arrow span {
@@ -23,6 +35,7 @@
 			border-left: 6px solid;
 			float:left;
 			text-indent:-5000px;
+			display: none;
 		}
 			.eventCalendar-wrap .arrow.prev span {
 				border-left-width:0;
@@ -35,17 +48,21 @@
 	}
 		.eventsCalendar-currentTitle {
 			line-height:50px;
-			border-bottom:1px solid $border-color-light;
+			//text-transform: uppercase;
 		}
 			.eventsCalendar-currentTitle .monthTitle {
-				font-size:2em;
+				font-size:1.6em;
 				text-decoration:none;
+				letter-spacing: 0.1em;
+				font-family: $cinzel;
+
 			}
 
 		.eventsCalendar-daysList {
 			zoom: 1;
 			padding:0;
 			width:100%;
+			margin:0;
 
 		}
 			.eventsCalendar-daysList.showAsWeek {
@@ -86,7 +103,7 @@
 
 			}
 				.eventsCalendar-day a:hover {
-					background-color:#E4E4E4;
+					//background-color:#E4E4E4;
 				/*	box-shadow:inset 5px 5px 10px #C1C1C1;
 					text-shadow: 2px 2px 2px #C1C1C1;*/
 				}
@@ -102,10 +119,14 @@
 			    position: absolute;
 			    left: 50%;
 			    top: 50%;
-			    margin-left: -12px;
-			    margin-top: -13px;
-			    width: 22px;
-			    height: 22px;
+			    // margin-left: -12px;
+			    // margin-top: -13px;
+			    // width: 22px;
+			    // height: 22px;
+				margin-left: -10px;
+				margin-top: -12px;
+				width: 18px;
+				height: 18px;
 			    background:$border-color-light;
 			    border: 1px solid $border-color-light;
 			    color: #fff;
@@ -114,10 +135,7 @@
 			    z-index: -1;
 			}
 
-				li.eventsCalendar-day.today a:hover {
-					background-color:#ccc;
-					/*box-shadow:inset 5px 5px 10px #999;*/
-				}
+
 
 			.eventsCalendar-daysList li.dayWithEvents a {
 				 position: relative;
@@ -131,10 +149,14 @@
 			    position: absolute;
 			    left: 50%;
 			    top: 50%;
-			    margin-left: -12px;
-			    margin-top: -13px;
-			    width: 22px;
-			    height: 22px;
+			    // margin-left: -12px;
+			    // margin-top: -13px;
+			    // width: 22px;
+			    // height: 22px;
+				margin-left: -10px;
+				margin-top: -12px;
+				width: 18px;
+				height: 18px;
 			    // background: #fff;
 			    border: 1px solid $border-color-light;
 			    color: $border-color-light;
@@ -143,7 +165,7 @@
 			    z-index: -1;
 			}
 				li.eventsCalendar-day.dayWithEvents a:hover {
-					background-color:#C2D374;
+					//background-color:#C2D374;
 					/*box-shadow:inset 5px 5px 10px #89B814;
 					text-shadow: 2px 2px 2px #89B814;*/
 				}

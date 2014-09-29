@@ -47,6 +47,11 @@
 	@media screen and (min-width: 0px) {
 
         .col {
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
             margin-left:2%;
             padding:0 1.5%;
         }
@@ -60,6 +65,7 @@
         .row {
             float: left;
             width: 100%;
+            position: relative;
         }
 
         .row .col:first-child {
@@ -85,6 +91,7 @@
         .span_3 {
             @include span_first;
             width:100%;
+            padding: 0 15%;
         }
     }
 

@@ -146,10 +146,9 @@ function bones_scripts_and_styles() {
     }
 
             // eventCalendar
-            wp_register_script( 'bones-calendar', get_stylesheet_directory_uri() . '/library/js/libs/jquery.eventCalendar.js', array('jquery'), '0.54', true );
-            wp_register_script( 'bones-slider', get_stylesheet_directory_uri() . '/library/js/libs/responsiveslides.min.js', array('jquery'), '1.54', true );
+            // wp_register_script( 'bones-calendar', get_stylesheet_directory_uri() . '/library/js/libs/jquery.eventCalendar.js', array('jquery'), '0.54', true );
 		//adding scripts file in the footer
-		wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.js', array( 'jquery','bones-calendar' , 'bones-slider'), '', true );
+		wp_register_script( 'bones-js', get_stylesheet_directory_uri() . '/library/js/scripts.min.js', array( 'jquery'), '', true );
 
 		// enqueue styles and scripts
 		wp_enqueue_script( 'bones-modernizr' );
@@ -166,7 +165,7 @@ function bones_scripts_and_styles() {
 		*/
 		wp_enqueue_script( 'jquery' );
 
-            wp_enqueue_script( 'bones-calendar' );
+            // wp_enqueue_script( 'bones-calendar' );
 
 		wp_enqueue_script( 'bones-js' );
 

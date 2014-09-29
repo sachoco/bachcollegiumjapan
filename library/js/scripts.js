@@ -105,6 +105,11 @@ function loadGravatars() {
 /*
  * Put all your regular jQuery in here.
 */
+
+setInterval(function() {
+  jQuery("a.scrolldown").toggleClass('active');
+}, 1000);
+
 jQuery(document).ready(function($) {
 
   /*
@@ -113,27 +118,32 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
 
-  $("#eventCalendarDefault").eventCalendar({
-    eventsjson: '/bachcollegiumjapan.org/wp-content/themes/bachcollegiumjapan/library/json/events.json.php', // link to events json
-    monthNames: [ "1", "2", "3", "4", "5", "6",
-      "7", "8", "9", "10", "11", "12" ]
-  });
-  $(".rslides").responsiveSlides({
-    auto: true,             // Boolean: Animate automatically, true or false
-    speed: 500,            // Integer: Speed of the transition, in milliseconds
-    timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
-    pager: false,           // Boolean: Show pager, true or false
-    nav: false,             // Boolean: Show navigation, true or false
-    random: false,          // Boolean: Randomize the order of the slides, true or false
-    pause: false,           // Boolean: Pause on hover, true or false
-    pauseControls: true,    // Boolean: Pause when hovering controls, true or false
-    prevText: "Previous",   // String: Text for the "previous" button
-    nextText: "Next",       // String: Text for the "next" button
-    maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
-    navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
-    manualControls: "",     // Selector: Declare custom pager navigation
-    namespace: "rslides",   // String: Change the default namespace used
-    before: function(){},   // Function: Before callback
-    after: function(){}     // Function: After callback
-  });
+  	var navOffsetTop = $("#container").offset().top;
+ 	$(window).scroll(function(){
+ 		var topvalue = $(window).scrollTop();
+                if(navOffsetTop<=topvalue)
+                {
+                    $("nav.main-nav").css({"position":"fixed","top":"0px","bottom":"auto"}).addClass("fixed");
+
+                }
+                else{
+                    $("nav.main-nav").css({"position":"absolute","top":"auto","bottom":"0px"}).removeClass("fixed");
+                }
+ 	});
+
+    //ページ内スクロール
+    $("#scrolldownHome").on('click', function () {
+        var p = $("#container").offset().top;
+        $('html,body').animate({ scrollTop: p }, 800, 'easeInOutCubic');
+        return false;
+    });
+
+
+
+    //ページ上部へ戻る
+    $(".btn_top").click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 'fast');
+        return false;
+    });
+
 }); /* end of as page load scripts */
