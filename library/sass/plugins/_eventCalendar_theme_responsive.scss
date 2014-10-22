@@ -8,38 +8,38 @@
 		padding:0 5px;
 		line-height:1em;
 		padding:10px 10px;
-		font-family: "revicons";
+		//font-family: "revicons";
 		font-size: 1.7em;
-		width: 35%;
+		width: 39%;
 		text-align: left;
 	}
 		.eventCalendar-wrap .arrow.prev {
 			text-align: right;
 			&:after {
-				content: '\e824';
+				//content: '\e824';
 			}
 		}
 		.eventCalendar-wrap .arrow.next {
 			&:after {
-				content: '\e825';
+				//content: '\e825';
 			}
 		}
 		.eventCalendar-wrap .arrow:hover { opacity:0.7;}
 		.eventCalendar-wrap .arrow span {
-			height: 0;
-			width: 0;
-			font-size: 0;
-			line-height: 0;
-			border-top: 6px solid transparent;
-			border-bottom: 6px solid transparent;
-			border-left: 6px solid;
-			float:left;
-			text-indent:-5000px;
-			display: none;
+			// height: 0;
+			// width: 0;
+			// font-size: 0;
+			// line-height: 0;
+			// border-top: 6px solid transparent;
+			// border-bottom: 6px solid transparent;
+			// border-left: 6px solid;
+			// float:left;
+			// text-indent:-5000px;
+			// display: none;
 		}
 			.eventCalendar-wrap .arrow.prev span {
-				border-left-width:0;
-				border-right: 6px solid;
+				// border-left-width:0;
+				// border-right: 6px solid;
 			}
 	.eventsCalendar-slider { height:80px;}
 
@@ -48,13 +48,12 @@
 	}
 		.eventsCalendar-currentTitle {
 			line-height:50px;
-			//text-transform: uppercase;
+			text-transform: uppercase;
 		}
 			.eventsCalendar-currentTitle .monthTitle {
-				font-size:1.6em;
+				font-size: 24px;
 				text-decoration:none;
-				letter-spacing: 0.1em;
-				font-family: $cinzel;
+				letter-spacing: 2px;
 
 			}
 
@@ -123,10 +122,10 @@
 			    // margin-top: -13px;
 			    // width: 22px;
 			    // height: 22px;
-				margin-left: -10px;
-				margin-top: -12px;
-				width: 18px;
-				height: 18px;
+				margin-left: -13px;
+				margin-top: -15px;
+				width: 24px;
+				height: 24px;
 			    background:$border-color-light;
 			    border: 1px solid $border-color-light;
 			    color: #fff;
@@ -153,16 +152,17 @@
 			    // margin-top: -13px;
 			    // width: 22px;
 			    // height: 22px;
-				margin-left: -10px;
-				margin-top: -12px;
-				width: 18px;
-				height: 18px;
+				margin-left: -13px;
+				margin-top: -15px;
+				width: 24px;
+				height: 24px;
 			    // background: #fff;
 			    border: 1px solid $border-color-light;
 			    color: $border-color-light;
 			    text-align: center;
 			    content: "";
 			    z-index: -1;
+			    background-color: $white;
 			}
 				li.eventsCalendar-day.dayWithEvents a:hover {
 					//background-color:#C2D374;

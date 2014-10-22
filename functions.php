@@ -16,6 +16,7 @@ require_once( 'library/custom-post-type.php' );
 
 //require_once( 'library/custom-widget.php' );
 //require_once( 'library/class.bcj.inc.php' );
+//require_once( 'library/bcj_functions.php' );
 
 // CUSTOMIZE THE WORDPRESS ADMIN (off by default)
 // require_once( 'library/admin.php' );
@@ -75,6 +76,7 @@ if ( ! isset( $content_width ) ) {
 // Thumbnail sizes
 add_image_size( 'bones-thumb-600', 600, 300, true );
 add_image_size( 'bones-thumb-300', 300, 150, true );
+add_image_size( 'bcj-thumb-300', 300, 170, true );
 
 /*
 to add more sizes, simply copy a line from above
@@ -102,6 +104,7 @@ function bones_custom_image_sizes( $sizes ) {
     return array_merge( $sizes, array(
         'bones-thumb-600' => __('600px by 300px'),
         'bones-thumb-300' => __('300px by 150px'),
+        'bcj-thumb-300' => __('300px by 170px'),
     ) );
 }
 

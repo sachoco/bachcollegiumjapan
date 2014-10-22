@@ -69,7 +69,16 @@ Stylesheet for javascript plugins
 
 @import "plugins/eventCalendar_theme_responsive";
 
-@import "plugins/responsiveslides";
+//@import "plugins/responsiveslides";
+
+// @import "plugins/owl.carousel";
+// @import "plugins/owl.theme";
+// @import "plugins/owl.transitions";
+
+// @import "plugins/owl.carousel.min";
+// @import "plugins/owl.theme.default.min";
+
+@import "plugins/slick";
 
 /*********************
 BASE (MOBILE) SIZE
@@ -104,6 +113,16 @@ you can add resource intensive styles.
 
 	// styles in 768up.scss
 	@import "breakpoints/768up";
+
+} // end of media query
+
+/*********************
+
+*********************/
+@media only screen and (min-width: 880px) {
+
+	// styles in 880up.scss
+	@import "breakpoints/880up";
 
 } // end of media query
 
@@ -158,3 +177,6 @@ be set to display none.
 	@import "partials/print";
 
 }
+
+
+@import "plugins/headhesive";

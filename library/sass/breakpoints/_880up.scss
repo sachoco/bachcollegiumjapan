@@ -1,0 +1,120 @@
+.top-nav {
+  font-size: 17px;
+}
+#lang_sel_list {
+  padding: 0 1em 0 3em;
+
+}
+header#intro {
+  h1{
+
+    img {
+      width: 200px;
+
+    }
+  }
+    .short-profile {
+        margin: 20px auto;
+        font-size: 16px;
+        line-height: inherit;
+
+    }
+    #scrolldownHome {
+        @include scale(1);
+    }
+  nav.main-nav {
+
+    > ul li:before {
+
+    }
+    .top-nav {
+    }
+    .nav li a {
+
+      &:hover {
+
+      }
+    }
+
+  }
+}
+nav {
+  ul {
+
+  }
+  li {
+
+
+    a {
+        padding: 0.2em 1em 0.75em;
+
+      /*
+      you can use hover styles here even though this size
+      has the possibility of being a mobile device.
+      */
+      &:hover, &:focus {
+      }
+    }
+
+    &:first-child {}
+    &:last-child {}
+
+    /*
+    plan your menus and drop-downs wisely.
+    */
+    ul.sub-menu,
+    ul.children {
+
+
+      li {
+
+        a {
+
+
+          &:hover,
+          &:focus {}
+
+          &:link {}
+        }
+
+        &:first-child {}
+
+        &:last-child {
+
+          a {
+          }
+        }
+
+        /*
+        if you need to go deeper, go nuts
+        just remember deeper menus suck
+        for usability. k, bai.
+        */
+        ul {
+
+        }
+      }
+
+      /* highlight sub-menu current page */
+      li.current-menu-item,
+      li.current_page_item,
+      li.current_page_ancestor {
+        a {}
+      }
+    }
+
+    /* showing sub-menus */
+    &:hover > ul {
+
+    }
+
+  } /* end .menu ul li */
+
+  /* highlight current page */
+  li.current-menu-item,
+  li.current_page_item,
+  li.current_page_ancestor {
+    a {}
+  }  /* end current highlighters */
+
+} /* end .nav */

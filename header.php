@@ -41,44 +41,72 @@
 	</head>
 
 	<body <?php body_class(); ?>>
-		<header id="intro" style="background-image: url('<?php echo get_template_directory_uri(); ?>/library/images/home.jpg')">
-
-			<h1 class="fade-in one">
+                        <div class="intro-bg"><div class="overlay"></div></div>
+		<header id="intro">
+                            <div class="content">
+			<h1 >
 				<img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" />
 			</h1>
-			<div class="fade-in one">
+			<div >
 				<div class="roles">バッハの音楽を未来へ</div>
-				<p style="width: 600px;margin:auto;font-size: 1.3em;font-weight: bold;position:relative;z-index:9999;">バッハ・コレギウム・ジャパンは世界の第一線で活躍するオリジナル楽器のスペシャリストを擁して結成したオーケストラと合唱団です。バッハ・コレギウム・ジャパンは世界の第一線で活躍するオリジナル楽器のスペシャリストを擁して結成したオーケストラと合唱団です。バッハ・コレギウム・ジャパンは世界の第一線で活躍するオリジナル楽器のスペシャリストを擁して結成したオーケストラと合唱団です。</p>
+				<p class="short-profile">バッハ・コレギウム・ジャパンは世界の第一線で活躍するオリジナル楽器のスペシャリストを擁して結成したオーケストラと合唱団です。バッハ・コレギウム・ジャパンは世界の第一線で活躍するオリジナル楽器のスペシャリストを擁して結成したオーケストラと合唱団です。バッハ・コレギウム・ジャパンは世界の第一線で活躍するオリジナル楽器のスペシャリストを擁して結成したオーケストラと合唱団です。</p>
 			</div>
-			<a href="#home" id="scrolldownHome" class="scrolldown fade-in one">
-				<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANAgMAAADUPqbNAAAADFBMVEX////////////////1pQ5zAAAAA3RSTlMAf4C/aSLHAAAAR0lEQVQIHQXBsRVAMBQAwOM9T5EhtLqswAY2YjJZQafNEAqNfHcGbKZF99gv46c8piZ/9leKNao+7jgo0ZDjRYqKPg44wcwPESEZJFQtW9IAAAAASUVORK5CYII=" alt="" id="IMG_2" />
-			</a>
-			<div class="overlay"></div>
-                  <nav class="main-nav" role="navigation" style="margin:0;">
-                  <?php wp_nav_menu(array(
-                    'container' => false,                           // remove nav container
-                    'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-                    'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-                    'menu_class' => 'nav top-nav cf effect2',               // adding custom nav class
-                    'theme_location' => 'main-nav',                 // where it's located in the theme
-                    'before' => '',                                 // before the menu
-                    'after' => '',                                  // after the menu
-                    'link_before' => '',                            // before each link
-                    'link_after' => '',                             // after each link
-                    'depth' => 0,                                   // limit the depth of the nav
-                    'fallback_cb' => ''                             // fallback function (if there is one)
-                  )); ?>
-                  <?php do_action('icl_language_selector'); ?>
-                </nav>
+                                    <a href="#home" id="scrolldownHome" class="svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
+                                        <g>
+                                            <circle opacity="0.7" fill="#FFFFFF" cx="20" cy="19.647" r="20"/>
+                                            <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="29,15.647 20,27.647 11,15.647     "/>
+                                        </g>
+                                    </svg>
+                                    </a>
+
+                            </div>
+                            <nav class="main-nav" role="navigation">
+                            <?php wp_nav_menu(array(
+                            'container' => false,                           // remove nav container
+                            'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+                            'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+                            'menu_class' => 'nav top-nav cf effect2',               // adding custom nav class
+                            'theme_location' => 'main-nav',                 // where it's located in the theme
+                            'before' => '',                                 // before the menu
+                            'after' => '',                                  // after the menu
+                            'link_before' => '',                            // before each link
+                            'link_after' => '',                             // after each link
+                            'depth' => 0,                                   // limit the depth of the nav
+                            'fallback_cb' => ''                             // fallback function (if there is one)
+                            )); ?>
+                            </nav>
+
+
 		</header>
 
 		<div id="container">
+                            <div id="main"  role="main">
 
 			<div class="wrap">
 	 			<header class="header" role="banner">
-					<a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/bachcollegiumjapan-logo.png" /></a>
+                                                    <a href="<?php echo home_url(); ?>" rel="nofollow" class="svg">
+                                                        <object data="<?php echo get_template_directory_uri(); ?>/library/images/bachcollegiumjapan-title.svg" type="image/svg+xml" class="mailicon">
+                                                        </object>
+                                                    </a>
+					<!-- <a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/bachcollegiumjapan-title.png" /></a> -->
 				</header>
 			</div>
 
-
+                                    <nav class="main-nav" role="navigation" style="margin:0;">
+                                    <?php wp_nav_menu(array(
+                                    'container' => false,                           // remove nav container
+                                    'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+                                    'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+                                    'menu_class' => 'nav top-nav cf effect2',               // adding custom nav class
+                                    'theme_location' => 'main-nav',                 // where it's located in the theme
+                                    'before' => '',                                 // before the menu
+                                    'after' => '',                                  // after the menu
+                                    'link_before' => '',                            // before each link
+                                    'link_after' => '',                             // after each link
+                                    'depth' => 0,                                   // limit the depth of the nav
+                                    'fallback_cb' => ''                             // fallback function (if there is one)
+                                    )); ?>
+                                    <?php do_action('icl_language_selector'); ?>
+                                    </nav>
 

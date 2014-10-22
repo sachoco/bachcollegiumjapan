@@ -17,3 +17,5 @@ Developed by Satoshi Shiraishi
 **v1.10**
 - second prototype for landing page with a new design.
 
+**v2.00**
+- Landing page definitive design implementation.
