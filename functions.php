@@ -77,6 +77,7 @@ if ( ! isset( $content_width ) ) {
 add_image_size( 'bones-thumb-600', 600, 300, true );
 add_image_size( 'bones-thumb-300', 300, 150, true );
 add_image_size( 'bcj-thumb-300', 300, 170, true );
+add_image_size( 'bcj-disc', 150, 150, true );
 
 /*
 to add more sizes, simply copy a line from above

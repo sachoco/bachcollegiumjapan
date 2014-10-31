@@ -114,16 +114,7 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
 
-// Create a new instance of Headhesive
-var options = {
-    offset: '.upcoming',
-    classes: {
-        clone:   'main-nav--clone',
-        stick:   'main-nav--stick',
-        unstick: 'main-nav--unstick'
-    }
-}
-var headhesive = new Headhesive('nav.main-nav', options);
+
 
 
 $('.slick-slides').slick({
@@ -139,9 +130,21 @@ $('.slick-slides').slick({
 	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="24,29 12,20 24,11"/></g></svg></button>',
 	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062"/></g></svg></button>',
 	// onAfterChange: function(slide){ console.log(slide.currentSlide); },
-	// onInit: function(slide){ console.log(slide.currentSlide); }
+	onInit: function(slide){
+                // Create a new instance of Headhesive
+                var options = {
+                    offset: '#main #schedule',
+                    classes: {
+                        clone:   'main-nav--clone',
+                        stick:   'main-nav--stick',
+                        unstick: 'main-nav--unstick'
+                    }
+                }
+                var headhesive = new Headhesive('nav.main-nav', options);
+            }
 });
 
+var overviewCarouselReady = false;
 $('.overview-holder-carousel').slick({
 	slidesToShow: 4,
 	slidesToScroll: 4,
@@ -167,11 +170,15 @@ $('.overview-holder-carousel').slick({
             {
               breakpoint: 481,
               settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                centerMode: true,
+                centerPadding: '50px',
+                arrows: false
               }
             }
-          ]
+          ],
+          onInit: function(){ overviewCarouselReady = true; }
 });
 
 $('.cd-holder-carousel').slick({
@@ -203,20 +210,22 @@ $('.cd-holder-carousel').slick({
 });
 
 
+
+
 var $window = $(window);
 var winHeight = $window.height();
 var pauseAnimComplete = false;
 var isAboutFocused = false;
             //$("#section-about .wrap").css("height","100vh");
 
-            var $aboutWrap = $("#section-about .wrap")
-                , $aboutBG = $("#section-about .about-bg")
-                , $aboutSection1 = $("#section-about #about_bcj_1")
-                , $aboutSection2 = $("#section-about #about_bcj_2")
-                , $aboutSection3 = $("#section-about #about_bcj_3")
-                , $aboutSection4 = $("#section-about #about_bcj_4")
-                , $aboutSection5 = $("#section-about #about_bcj_5")
-                , $supportSection1 = $("#section-support #support_bcj_1");
+            var $aboutWrap = $("section#about .wrap")
+                , $aboutBG = $("section#about.about-bg")
+                , $aboutSection1 = $("section#about #about_bcj_1")
+                , $aboutSection2 = $("section#about #about_bcj_2")
+                , $aboutSection3 = $("section#about #about_bcj_3")
+                , $aboutSection4 = $("section#about #about_bcj_4")
+                , $aboutSection5 = $("section#about #about_bcj_5")
+                , $supportSection1 = $("section#support #support_bcj_1");
 function resizeHandler(){
         winHeight = $window.height();
         $window.scroll();
@@ -229,20 +238,26 @@ var aboutOffsetTop, supportOffsetTop, topvalue, diffAbout , diffSupport, aboutHe
         // $("#section-about").css("height",aboutHeight+"px");
 
 
+
+var $sectionMain = $("section#main"), $sectionAbout = $("section#about"), $sectionSupport = $("section#support");
+
 function scrollHandler (){
-       aboutOffsetTop = $("#section-about").offset().top;
-        supportOffsetTop = $("#section-support").offset().top;
+        var $aboutBG = $("section#about .background");
+        mainOffsetTop = $sectionMain.offset().top;
+        aboutOffsetTop = $sectionAbout.offset().top;
+        supportOffsetTop = $sectionSupport.offset().top;
         topvalue = $window.scrollTop();
+        diffMain = mainOffsetTop - topvalue;
         diffAbout = aboutOffsetTop - topvalue;
         diffSupport = supportOffsetTop - topvalue;
 
         if(!pauseAnimComplete){
-            aboutHeight = $("#section-about .wrap").height() + 2000;
+            aboutHeight = $("section#about .wrap").height() + 2000;
         }else{
-            aboutHeight = $("#section-about .wrap").height();
+            aboutHeight = $("section#about .wrap").height();
         }
 
-        $("#section-about").css("height",aboutHeight+"px");
+        $sectionAbout.css("height",aboutHeight+"px");
 
         if(aboutOffsetTop<=topvalue)
         {
@@ -269,17 +284,45 @@ function scrollHandler (){
             }
 
         }
-
+        var aboutTopPos = topvalue+winHeight - aboutOffsetTop;
         var bottomAbout = -diffAbout+winHeight-aboutHeight;
-
+        // if(aboutTopPos>=0)
+        // {
+            // $("#about-background").css("top", (winHeight-aboutTopPos)*0.5+"px");
+        // console.log(aboutTopPos);
         if(diffAbout>=0){
-            $aboutBG.css({'-webkit-transform':'translate3d(0,'+ Math.min(diffAbout*-0.8, 0) +'px ,0)','transform':'translate3d(0,'+ Math.min(diffAbout*-0.8, 0) +'px ,0)' });
-            // $aboutBG.css({'background-position':'center '+ Math.min(diffAbout*-0.8, 0) +'px'});
-        }else if(bottomAbout>=0){
-            $aboutBG.css({'-webkit-transform':'translate3d(0,'+ Math.min(bottomAbout*-0.8, 0) +'px ,0)','transform':'translate3d(0,'+ Math.min(bottomAbout*-0.8, 0) +'px ,0)'  });
-             // $aboutBG.css({'background-position':'center '+ Math.min(bottomAbout*-0.8, 0) +'px'});
+             $("#about-background").css({'-webkit-transform':'translate3d(0,'+ Math.round(diffAbout*0.5) +'px ,0)','transform':'translate3d(0,'+ Math.round(diffAbout*0.5) +'px ,0)' });
+        }else{
+
+            if(bottomAbout>=0){
+                 $("#about-background").css({'-webkit-transform':'translate3d(0,'+ Math.round(-bottomAbout*0.5) +'px ,0)','transform':'translate3d(0,'+ Math.round(-bottomAbout*0.5) +'px ,0)' });
+
+            }else{
+                 $("#about-background").css({'-webkit-transform':'translate3d(0, 0, 0)','transform':'translate3d(0, 0 ,0)' });
+
+            }
+        }
+
+
+
+
+
+        // }else{
+        //     // $("#backgound #about-background").css("top","100%");
+
+        // }
+
+        // console.log(diffMain);
+        if(diffMain>=0){
+            $("#intro-background").removeClass("disable");
+            $("#about-background").addClass("disable");
+
+        }else{
+            $("#intro-background").addClass("disable");
+            $("#about-background").removeClass("disable");
 
         }
+
 
 
 
@@ -287,8 +330,8 @@ function scrollHandler (){
 
 
         if(timelinePos>-0.05&&!$("#section-about .overlay").hasClass("focus")){
-            $("#section-about .row-header").addClass("focus");
-            $("#section-about .overlay").addClass("focus");
+            $("section#about .row-header").addClass("focus");
+            $("section#about .overlay").addClass("focus");
         }
 
         // Fade in subtitle
@@ -329,21 +372,19 @@ function scrollHandler (){
         }
 
 
-
+        console.log(diffSupport);
 
         if(diffSupport <= winHeight){
             var supportPos =   diffSupport / winHeight;
-            $("#section-support .support-bg").css({'-webkit-transform':'translate3d(0,'+ ((diffSupport*-0.5) - 280) +'px ,0)', 'transform':'translate3d(0,'+ ((diffSupport*-0.5) - 280) +'px ,0)' });
+            $("section#support .background").css({'-webkit-transform':'translate3d(0,'+ ((diffSupport*-0.5) ) +'px ,0)', 'transform':'translate3d(0,'+ ((diffSupport*-0.5) ) +'px ,0)' });
             if(supportPos<0.4&&!$supportSection1.hasClass("focus")){
                 $supportSection1.addClass("focus");
-                $("#section-support .overlay").addClass("focus");
+                $("section#support .background .overlay").addClass("focus");
             }
 
         }
 
 }
-
-
 
 
     $(window).resize(function(){
@@ -354,14 +395,14 @@ function scrollHandler (){
 
     $(window).on("scroll", function(e){
 
+        // window.requestAnimationFrame(scrollHandler);
         window.requestAnimationFrame(scrollHandler);
-
 
     });
 
     //ページ内スクロール
     $("#scrolldownHome").on('click', function () {
-        var p = $("#container").offset().top;
+        var p = $("section#main").offset().top;
         $('html,body').animate({ scrollTop: p }, 800, 'easeInOutCubic');
         return false;
     });
@@ -376,8 +417,19 @@ function scrollHandler (){
 
 
 
+    $(".main-nav .mobile-button").on("click", function(){
+        // console.log($(this));
+        $( this ).siblings(".nav").slideToggle();
+    });
 
-
-
+$.stellar({
+    horizontalScrolling:false,
+    positionProperty: 'transform',
+    responsive:true,
+    hideDistantElements: false,
+    // horizontalOffset: 0,
+    // verticalOffset: 0,
+    // rest of function
+});
 
 }); /* end of as page load scripts */

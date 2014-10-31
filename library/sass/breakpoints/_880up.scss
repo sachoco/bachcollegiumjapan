@@ -5,7 +5,7 @@
   padding: 0 1em 0 3em;
 
 }
-header#intro {
+section#intro {
   h1{
 
     img {
@@ -22,7 +22,42 @@ header#intro {
     #scrolldownHome {
         @include scale(1);
     }
-  nav.main-nav {
+  nav {
+
+    > ul li:before {
+
+    }
+    .nav {
+    }
+    .nav li a {
+
+      &:hover {
+
+      }
+    }
+
+  }
+}
+
+
+section#intro {
+  .logo{
+
+    img {
+      width: 200px;
+
+    }
+  }
+    .short-profile {
+        margin: 20px auto;
+        font-size: 16px;
+        line-height: inherit;
+
+    }
+    #scrolldownHome {
+        @include scale(1);
+    }
+  nav {
 
     > ul li:before {
 
@@ -38,6 +73,8 @@ header#intro {
 
   }
 }
+
+
 nav {
   ul {
 

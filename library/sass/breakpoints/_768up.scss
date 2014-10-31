@@ -50,15 +50,38 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-.top-nav {
+.nav {
   font-size: 15px;
 }
-
+#lang_sel_list {
+	padding: 0 1em 0 1em;
+	top: 5px;
+	position: static;
+	right: auto;
+}
+nav.main-nav {
+    #menu-icon:before {
+        content: "\f0c9";
+        font: normal 21px/1em FontAwesome;
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+        display: inline-block;
+        margin: -4px 5px 0 0;
+    }
+    .mobile-button {
+            display: none;
+    }
+    >ul {
+        display: inline-block;
+    }
+}
 .nav {
 	ul {
 
 	}
 	li {
+                    display: inline-block;
 
 
 		a {

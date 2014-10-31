@@ -20,9 +20,13 @@ nav.main-nav--clone {
     top: 0;
     left: 0;
     z-index: 999;
+    color: $white;
 
     /* Additional styles */
-
+    background-color: rgba($black,.8);
+    a {
+        color: $white;
+    }
     /* Translate -100% to move off screen */
     -webkit-transform: translateY(-100%);
         -ms-transform: translateY(-100%);
@@ -32,15 +36,26 @@ nav.main-nav--clone {
     -webkit-transition: all 300ms ease-in-out;
        -moz-transition: all 300ms ease-in-out;
             transition: all 300ms ease-in-out;
+    #lang_sel_list {
+        ul {
+            li {
+                a, a:visited {
+                    color: $white;
+                }
+            }
+        }
+    }
 
     &.small {
         li:before {
             opacity: 0;
         }
+
         .nav li a {
             padding-bottom: 0;
         }
     }
+
 }
 
 

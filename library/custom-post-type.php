@@ -107,7 +107,7 @@ function custom_post_discography() {
 	); /* end of register post type */
 
 	/* this adds your post categories to your custom post type */
-	register_taxonomy_for_object_type( 'category', 'discography' );
+	register_taxonomy_for_object_type( 'discography_category', 'discography' );
 	/* this adds your post tags to your custom post type */
 	register_taxonomy_for_object_type( 'post_tag', 'discography' );
 
@@ -160,6 +160,33 @@ function custom_post_discography() {
 				'update_item' => __( 'Update Custom Tag', 'bonestheme' ), /* update title for taxonomy */
 				'add_new_item' => __( 'Add New Custom Tag', 'bonestheme' ), /* add new title for taxonomy */
 				'new_item_name' => __( 'New Custom Tag Name', 'bonestheme' ) /* name title for taxonomy */
+			),
+			'show_admin_column' => true,
+			'show_ui' => true,
+			'query_var' => true,
+		)
+	);
+
+	// now let's add custom tags (these act like categories)
+	register_taxonomy( 'discography_category',
+		array('discography'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
+		array('hierarchical' => true,    /* if this is false, it acts like tags */
+			'labels' => array(
+			       'name' => __( 'ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'singular_name' => __( 'ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'search_items' => __( 'Search ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'popular_items' => __( 'Popular ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'all_items' => __( 'All ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'parent_item' => __( 'Parent ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'parent_item_colon' => __( 'Parent ディスコグラフィーカテゴリ:', 'discography-category' ),
+			        'edit_item' => __( 'Edit ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'update_item' => __( 'Update ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'add_new_item' => __( 'Add New ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'new_item_name' => __( 'New ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'separate_items_with_commas' => __( 'Separate ディスコグラフィーカテゴリ with commas', 'discography-category' ),
+			        'add_or_remove_items' => __( 'Add or remove ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'choose_from_most_used' => __( 'Choose from the most used ディスコグラフィーカテゴリ', 'discography-category' ),
+			        'menu_name' => __( 'ディスコグラフィーカテゴリ', 'discography-category' ),
 			),
 			'show_admin_column' => true,
 			'show_ui' => true,

@@ -21,7 +21,341 @@ You can't use @extend within media queries
 anymore, so just be aware that if you drop
 them in here, they won't work.
 */
+body {
+	font-size: 14px;
 
+}
+.row-header {
+	margin-top: 1.5em;
+	font-size: 28px;
+}
+section#intro {
+
+
+	.content {
+
+	}
+	.wrapper {
+
+	}
+	.roles {
+		font-size: 32px;
+		line-height: 70px;
+		height: 70px;
+		padding: 10px;
+	}
+	.short-profile {
+		display: block;
+		font-size: 14px;
+
+
+	}
+	.logo {
+
+		img {
+			width: 150px;
+		}
+	}
+	#scrolldownHome {
+		@include scale(0.8);
+	}
+
+	nav {
+		display: block;
+
+		> ul li:before {
+
+		}
+		.nav {
+		}
+		.nav {
+			li {
+				a {
+
+					&:hover {
+					}
+				}
+			}
+		}
+
+	}
+
+}
+
+
+/*********************
+SLICK SLIDER
+*********************/
+.slick-slider {
+	margin-bottom: 30px;
+}
+.slick-next, .slick-prev {
+	@include transform(translate3d(0,-50%,0) scale(1));
+}
+.slick-dots {
+	visibility: visible;
+}
+
+/*********************
+EVENT CALENDAR
+*********************/
+.eventCalendar-wrap .arrow {
+	width: 39%;
+}
+.eventsCalendar-currentTitle .monthTitle {
+	font-size: 24px;
+}
+.eventsCalendar-daysList {
+	display: table;
+}
+/*********************
+UPCOMING CONCERTS
+*********************/
+.upcoming  {
+	padding: 0 10%;
+
+	.overview-holder-carousel {
+
+		.slick-next { }
+		.slick-prev {}
+		.slick-list {
+		}
+	}
+
+	.overview-holder {
+
+	}
+	div.overview {
+  		height: 331px;
+
+
+  		&.slick-active {
+  		}
+
+		article {
+		}
+		header {
+
+			.date_time {
+
+	 		}
+	 		.location {
+
+				 .country {
+
+				}
+	 		}
+		}
+
+		section {
+	 		.thumb {
+
+				img {
+
+				}
+	 		}
+	 		.title {
+
+			}
+		}
+
+
+
+		.description {
+
+			.detail {
+
+			}
+
+		}
+
+		&:hover {
+			.description {
+			}
+			.thumb, .title {
+			}
+		}
+
+	}
+	footer {
+
+		.category {
+			span {
+			}
+		}
+		.specials {
+
+			img {
+				width: 180px;
+
+			}
+		}
+
+	}
+
+
+}
+
+
+.news-holder {
+	.banner {
+		img {
+			width: 180px;
+		}
+	}
+}
+
+.news-item {
+	height: 270px;
+	margin: 0;
+	border-right: none;
+	header {
+	 	.title {
+	 	}
+	 	.date {
+
+	 	}
+		.category {
+
+		}
+	}
+	&:nth-child(odd) {
+		//margin-right: 4%;
+	}
+	&:last-child {
+		border-right: 1px solid $border-color;
+	}
+	section {
+		.excerpt-read-more {
+
+		}
+	}
+}
+
+
+section#about {
+
+
+	.row-header {
+		font-size: 32px;
+
+		&.pause {
+		}
+	}
+	.wrap {
+
+		.wrap-inner {
+			padding: 100px;
+		}
+		&.pause {
+
+		}
+	}
+
+	#about_bcj_1 {
+		font-size: 20px;
+
+		&.focus {
+		}
+
+	}
+	#about_bcj_2 {
+
+
+		&.focus {
+
+		}
+
+
+	}
+	#about_bcj_3 {
+
+
+		p {
+
+
+			&.first {
+
+			}
+			&.second {
+			}
+			&.third {
+			}
+		}
+
+		&.focus p {
+		}
+	}
+	#about_bcj_4 {
+
+		&.focus {
+		}
+	}
+	#about_bcj_5 {
+
+		&.focus {
+		}
+	}
+	.overlay {
+
+		&.focus {
+		}
+	}
+	.cd-holder-carousel {
+
+		.slick-slide {
+
+		}
+		.slick-prev, .slick-next {
+		}
+		.slick-next {  }
+		.slick-prev {  }
+	}
+	.cd-holder {
+
+		.arrow-left {
+
+		}
+		.arrow-right {
+
+		}
+		.cd-holder-inner {
+
+		}
+		ul {
+
+			li {
+
+				img {
+
+
+				}
+			}
+		}
+	}
+
+}
+
+
+section#support {
+
+	.wrap {
+
+		.wrap-inner {
+			padding: 100px;
+		}
+	}
+	#support_bcj_1 {
+
+		&.focus {
+		}
+	}
+	.overlay {
+
+		&.focus {
+		}
+	}
+}
 
 /*********************
 NAVIGATION STYLES
@@ -73,6 +407,95 @@ NAVIGATION STYLES
 		} /* end .menu ul */
 	} /* end .menu */
 
+#lang_sel_list {
+
+	ul {
+		li {
+			a, a:visited {
+				font-size: 16px;
+				margin: 0.75em 0.2em;
+				&.lang_sel_sel {
+				}
+			}
+		}
+	}
+}
+/*********************
+HEADER STYLES
+*********************/
+
+.header {
+	padding-top: 35px;
+	padding-bottom: 20px;
+	a {
+	}
+	img, svg, object {
+
+		}
+}
+
+/*********************
+FEATURE SLIDER
+*********************/
+#feature-slider {
+
+
+	.slide-item {
+		height: 280px;
+
+		.slide-bg {
+
+		}
+		.slide-content {
+			padding: 10px 50px;
+			width: 400px;
+			font-size: 1em;
+			&.overlay {
+			}
+			h1 {
+				font-size: 2em;
+				// margin: 0.3em 0;
+			}
+			img.divider {
+				@include transform(scale(1));
+			}
+		}
+		.slide-overlay {
+
+		}
+
+	}
+
+
+	.feature-nav {
+
+		&.prev {
+		}
+		&.next {
+		}
+	}
+	&:hover {
+		.feature-nav {
+		}
+		.slick-prev, .slick-next {
+		}
+	}
+	.slick-list {
+	}
+	.slick-prev, .slick-next {
+
+	}
+	.slide-item.slick-active  {
+		.slide-content {
+		}
+		.slide-overlay {
+		}
+	}
+
+
+
+
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/

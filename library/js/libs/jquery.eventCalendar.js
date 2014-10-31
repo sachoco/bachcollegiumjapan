@@ -19,6 +19,8 @@ var $ = jQuery;
 		eventsJson: {}
 	}
 
+	var displayMonth;
+
 	// each eventCalendar will execute this function
 	this.each(function(){
 
@@ -203,6 +205,9 @@ var $ = jQuery;
 		$eventsCalendarDaysList.append(daysList.join(''));
 
 		$eventsCalendarSlider.css('height',$eventsCalendarMonthWrap.height()+'px');
+
+
+
 	}
 
 	function num_abbrev_str(num) {
@@ -263,6 +268,8 @@ var $ = jQuery;
 			flags.wrap.find('.current').removeClass('current');
 			flags.wrap.find('#dayList_'+day).addClass('current');
 		}
+
+		displayMonth = month+1;
 	}
 
 	function getEventsData(data, limit, year, month, day, direction){
@@ -414,6 +421,27 @@ var $ = jQuery;
 			}, eventsOpts.moveSpeed, function() {
 				flags.wrap.find('.eventsCalendar-monthWrap.oldMonth').remove();
 			});
+
+// Temporary work around for slick slider
+
+		        if ($('.overview-holder-carousel').length) {
+		        	// console.log(displayMonth);
+		        	var $targetSlide = ($('.overview-holder-carousel').find(".overview[data-month='" + displayMonth + "']")).first();
+		        	var targetSlideID =  $('.overview-holder-carousel .overview').index( $targetSlide );
+		        			        	console.log($('.overview-holder-carousel').getSlick().options.slidesToShow);
+		        	var slideCount = $('.overview-holder-carousel').getSlick().slideCount;
+		        	var slidesToShow = $('.overview-holder-carousel').getSlick().options.slidesToShow;
+
+		        	if( targetSlideID >= 0 ){
+		        		if( targetSlideID < (slideCount - slidesToShow) ){
+			            	$('.overview-holder-carousel').slickGoTo( targetSlideID );
+		        		}else{
+		        			$('.overview-holder-carousel').slickGoTo( slideCount - slidesToShow );
+		        		}
+
+		        	}
+		        }
+
 		});
 	}
 
@@ -459,7 +487,7 @@ $.fn.eventCalendar.defaults = {
 	moveSpeed: 500,	// speed of month move when you clic on a new date
 	moveOpacity: 0.15, // month and events fadeOut to this opacity
 	jsonData: "", 	// to load and inline json (not ajax calls)
-	cacheJson: true	// if true plugin get a json only first time and after plugin filter events
-					// if false plugin get a new json on each date change
+	cacheJson: true,	// if true plugin get a json only first time and after plugin filter events
+	onMonthChange: null
 };
 

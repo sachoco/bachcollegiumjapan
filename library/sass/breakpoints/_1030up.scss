@@ -32,8 +32,35 @@ UPCOMING CONCERTS
 }
 
 
-header#intro {
+section#intro {
   h1{
+
+    img {
+
+    }
+  }
+  nav {
+    width: 1000px;
+
+    > ul li:before {
+      font-size: 12px;
+      margin-top: 4em;
+    }
+    .nav {
+      font-size: 32px;
+    }
+    .nav li a {
+
+      &:hover {
+
+      }
+    }
+
+  }
+}
+
+section#intro {
+  .logo{
 
     img {
       width: 200px;
@@ -81,7 +108,12 @@ FEATURE SLIDER
       width: 600px;
       h1 {
           font-size: 2em;
-          margin: 0.67em 0;
+          // margin: 0.67em 0;
+          margin-top: 10px;
+          .subtitle {
+                margin-bottom: 10px;
+
+          }
       }
     }
 

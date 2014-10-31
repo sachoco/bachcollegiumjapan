@@ -14,16 +14,20 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
-
+html {
+	height: 100%;
+}
 body {
+	height: 100%;
 	font-family: $serif;
-	font-size: 14px;
+	font-size: 10px;
 	line-height: 2;
 	color: $text-color;
 	background-color: $background-color;
 	background: url(../images/bcj_bg_darker.jpg) top center ;
 	 -webkit-font-smoothing: antialiased;
 	 -moz-osx-font-smoothing: grayscale;
+	 position: relative;
 }
 
 .hr {
@@ -202,33 +206,70 @@ FEATURE SLIDER
 	border-top: 2px solid $border-color;
 
 	.slide-item {
-		height: 280px;
+		height: 130px;
 		position: relative;
 		.slide-bg {
 			position: absolute;
 			z-index: 900;
 		}
 		.slide-content {
+			display: table;
+			vertical-align: middle;
 			position: absolute;
 			z-index: 999;
-			padding: 10px 50px;
+			padding: 5px 10px;
+			width: 200px;
 			height: 100%;
-			width: 400px;
 			color: $white;
 			text-align: center;
 			opacity: 0;
+			font-size: 0.8em;
 			@include transition-property(opacity);
 			@include transition-duration(1s);
 			@include transition-delay(1s);
 			// needs latest Compass, add '@import "compass"' to your scss
 			//@include filter-gradient(#a6000000, #00000000, horizontal); // IE6-9
 			//@include background-image(linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%));
+
 			&.overlay {
-				@include background-image(linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%));
+				@include background-image(linear-gradient(left,  rgba(0,0,0,0.8) 0%,rgba(0,0,0,0) 100%));
+			}
+			&.right {
+				right: 0;
+				&.overlay {
+					@include background-image(linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%));
+				}
+			}
+			.inner-content{
+				display: table-cell;
+				vertical-align: middle;
+			}
+			div {
+				display: inline-block;
+
 			}
 			h1 {
-				font-size: 2em;
-				margin: 0.3em 0
+				display: inline-block;
+				font-size: 1.5em;
+				margin: 0;
+				.subtitle {
+					font-size: 0.5em;
+					line-height: 100%;
+				}
+				.small {
+					font-size: 0.6em;
+					line-height: 100%;
+				}
+
+			}
+			h2 {
+				display: inline-block;
+				font-size: 1.2em;
+				margin: 0;
+			}
+			img.divider {
+				display: inline-block;
+				@include transform(scale(0.5));
 			}
 		}
 		.slide-overlay {
@@ -292,13 +333,9 @@ FEATURE SLIDER
 
 }
 /*********************
-INTRO
+BACKGROUND
 *********************/
-.intro-bg {
-	background-image: url(../images/home.jpg);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+#background {
 	position: fixed;
 	top: 0px;
 	bottom: 0px;
@@ -307,30 +344,65 @@ INTRO
 	z-index: -1;
 	-webkit-transform: translateZ(0);
 	pointer-events: none;
-	.overlay {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0,0,0,0.3);
-		top: 0;
+	#intro-background {
+		background: url(../images/home.jpg) center center no-repeat;
+		background-size: cover;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
 		z-index: 0;
+		-webkit-transform: translateZ(0);
+		pointer-events: none;
+		position: fixed;
+		// position: absolute;
+		&.disable {
+			opacity: 0;
+		}
+		.overlay {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+			top: 0;
+			z-index: 0;
+		}
+	}
+	#about-background {
+		background: url(../images/profile-bcj2.jpg) center center no-repeat;
+		background-size: cover;
+		position: fixed;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 1;
+		-webkit-transform: translateZ(0);
+		pointer-events: none;
+		&.disable {
+			opacity: 0;
+		}
+		.overlay {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+			top: 0;
+			z-index: 0;
+		}
 	}
 }
-
-header#intro {
-	width: 100%;
-	height: 100vh;
+/*********************
+INTRO
+*********************/
+section#intro {
+	// background: url(../images/home.jpg) center center no-repeat;
+	// padding: 0 6% 2% 6%;
+	height: 100%;
+	background-size: cover;
 	text-align: center;
-	color: #FFF;
+	color: $white;
 	position: relative;
-	// background: transparent no-repeat center center fixed;
-	// -webkit-background-size: cover;
-	// -moz-background-size: cover;
-	// -o-background-size: cover;
-	// background-size: cover;
-	// background-attachment: fixed;
-	min-width: 100%;
-	min-height: 100vh;
 	.content {
 		position: absolute;
 		z-index: 999;
@@ -345,30 +417,29 @@ header#intro {
 		height: 100%;
 	}
 	.roles {
-		font-size: 32px;
+		font-size: 18px;
 		display: inline-block;
-		line-height: 70px;
-		height: 70px;
 		vertical-align: middle;
 		overflow: hidden;
 		color: #FFF;
 		text-shadow: 0 1px 0 rgba(0,0,0,0.01);
 		z-index: 999;
 		position: relative;
-		padding: 10px;
+
 	}
 	.short-profile {
+		// display: none;
 		max-width: 770px;
 		width: 90%;
 		margin: 0px auto;
 		line-height: 1.4em;
-		font-size: 14px;
+		// font-size: 14px;
 		font-weight: bold;
 		position:relative;
 		z-index:9999;
 
 	}
-	h1{
+	.logo {
 		font-size: 80px;
 		text-transform: uppercase;
 		letter-spacing: 5px;
@@ -379,7 +450,7 @@ header#intro {
 		margin: 3vh 0;
 		z-index: 999;
 		img {
-			width: 150px;
+			width: 100px;
 			height: auto;
 			opacity: .9;
 		}
@@ -387,9 +458,19 @@ header#intro {
 
 	#scrolldownHome {
 		margin-top: 2vh;
-		@include scale(0.8);
+		@include scale(0.5);
+		circle {
+			@include opacity(0.5);
+			@include transition(opacity, .2s);
+		}
+		&:hover {
+			circle {
+				@include opacity(1);
+			}
+		}
 	}
-	nav.main-nav {
+	nav {
+		display: none;
 		position: absolute;
 		left: 50%;
 		bottom: 2vh;
@@ -400,34 +481,132 @@ header#intro {
 		width: 600px;
 		margin: auto;
 		z-index: 999;
+		>ul {
+
+			li a {
+				color: $white;
+				letter-spacing: 0.1em;
+
+
+			}
+
+			li a:hover {
+			  	text-decoration: none;
+			}
+			li:before {
+				position: absolute;
+				margin-top: 2.7em;
+				font-size: 0.6em;
+				width: 100%;
+				text-align: center;
+				z-index: 0;
+				display: block;
+				@include transition(all .5s ease-in-out);
+
+			}
+			li.menu-item-135:before {
+				content: "BCJについて";
+			}
+			li.menu-item-136:before {
+			  	content: "コンサート";
+			}
+			li.menu-item-137:before {
+			  	content: "ディスコグラフィ";
+			}
+			li.menu-item-138:before {
+			  	content: "ギャラリー";
+			}
+			li.menu-item-139:before {
+			  	content: "フレンズ＆ソサエティ";
+			}
+		}
 		> ul li:before {
 			// font-size: 12px;
 			// margin-top: 4em;
-			color: $gray;
 		}
-		.top-nav {
+		a {
+			@include transition(all .5s ease-in-out);
+		}
+		.nav {
 			font-size: 20px;
 		}
-		.nav li a {
-			padding: 0.2em 1.5em 0.2em;
-			color: $gray;
-			&:hover {
-				color: $white;
+		.nav {
+			li {
+				display: inline-block;
+				color: $gray;
+
+				a {
+					padding: 0.2em 1.5em 0.2em;
+					color: $gray;
+					&:hover {
+						// color: $white;
+					}
+				}
+				&:hover {
+					color: $white;
+					// &:before {
+					// 	color: $white;
+					// }
+					a {
+						color: $white;
+					}
+				}
 			}
 		}
 
 	}
-
-
+	.overlay {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.5);
+		top: 0;
+		left: 0;
+		z-index: 0;
+		// opacity: 0;
+		@include transition(opacity 1s ease-in-out);
+	}
 }
 
 
+/*********************
+SLICK SLIDER
+*********************/
+.slick-slider {
+	margin-bottom: 0px;
+}
+.slick-next, .slick-prev {
+	@include transform(translate3d(0,-50%,0) scale(0.5));
+	@include transition(opacity .2s);
+	@include opacity(.5);
+	&:not(.slick-disabled) {
+		&:hover {
+			@include opacity(1);
+		}
+	}
 
+}
+.slick-dots {
+	visibility: hidden;
+}
+
+/*********************
+EVENT CALENDAR
+*********************/
+.eventCalendar-wrap .arrow {
+	width: auto;
+}
+.eventsCalendar-currentTitle .monthTitle {
+	font-size: 16px;
+}
+.eventsCalendar-daysList {
+	display: none;
+}
 /*********************
 UPCOMING CONCERTS
 *********************/
 .upcoming  {
-	padding: 0 10%;
+	// padding: 0 10%;
 
 	.overview-holder-carousel {
 		margin-top: 20px;
@@ -457,7 +636,7 @@ UPCOMING CONCERTS
   		border-left: 1px solid $border-color;
   		//border-right: 1px solid $border-color;
   		//border-collapse:collapse;
-  		height: 331px;
+  		height: 370px;
 
   		&.slick-active {
   			//border-left: 1px solid $border-color;
@@ -487,6 +666,7 @@ UPCOMING CONCERTS
 		section {
 			position: relative;
 	 		.thumb {
+	 			display: none;
 				@include transition-property(opacity);
 				@include transition-duration(0.1s);
 				@include transition-timing-function(ease-in);
@@ -497,9 +677,9 @@ UPCOMING CONCERTS
 				}
 	 		}
 	 		.title {
-			 	padding: 5px 15px;
-			 	text-align: left;
-			 	height: 100px;
+			 	padding: 5px 0px;
+			 	text-align: center;
+			 	// height: 100px;
 				@include transition-property(opacity);
 				@include transition-duration(0.1s);
 				@include transition-timing-function(ease-in);
@@ -511,33 +691,75 @@ UPCOMING CONCERTS
 		.description {
 			//@include box-shadow(rgba(black, 0.4) 0px 1px 2px);
 
-		 	position: absolute;
+		 	// position: absolute;
 		 	z-index: 999;
 			//margin-top: 320px;
 			top: 0;
 			left: 0;
 			height: 100%;
 			width: 100%;
-			opacity: 0;
+			line-height: 1.2em;
+			text-align: center;
+			// opacity: 0;
 			@include transition-property(opacity);
 			@include transition-duration(0.1s);
 			@include transition-timing-function(ease-in);
+			font-size: 0.9em;
+
 			.detail {
-				height: 140px;
-				margin-bottom: 20px;
+				// height: 170px;
+				// margin-bottom: 10px;
 				overflow: hidden;
-			}
 
+			}
+			.readmore {
+				// text-align: right;
+				margin-bottom: 10px;
+				font-size: 0.8em;
+				text-decoration: underline;
+			}
+			.buy-ticket-container {
+				position: absolute;
+				bottom: 10px;
+				width: 100%;
+				.playguide {
+					position: absolute;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					width: 100%;
+					color: $color-bcj;
+					span{
+						border: 1px solid $color-bcj;
+						margin-left: 4%;
+						float: left;
+						padding: 0.3em 0 0;
+						width: 48%;
+						cursor: pointer;
+
+						&:hover {
+							background-color: rgba($white, 0.5);
+						}
+						&:first-child {
+							margin-left: 0;
+						}
+					}
+				}
+
+
+
+
+				&:hover{
+					.buy-ticket {
+						opacity: 0;
+					}
+					.playguide {
+						opacity: 1;
+					}
+				}
+			}
 		}
 
-		&:hover {
-			.description {
-				opacity: 1;
-			}
-			.thumb, .title {
-				opacity: 0;
-			}
-		}
 
 	}
 	footer {
@@ -553,7 +775,7 @@ UPCOMING CONCERTS
 
 			img {
 				margin: 0 10px;
-				width: 180px;
+				width: 120px;
 			}
 		}
 
@@ -563,8 +785,32 @@ UPCOMING CONCERTS
 }
 
 
+.no-touch .upcoming  {
+	div.overview {
+		section {
+	 		.thumb {
+	 			display: block;
+	 		}
+	 		.title {
+				height: 100px;
+			}
+		}
+		.description {
+			opacity: 0;
+		 	position: absolute;
+		}
 
+		&:hover {
+			.description {
+				opacity: 1;
+			}
+			.thumb, .title {
+				opacity: 0;
+			}
+		}
 
+	}
+}
 
 
 
@@ -632,7 +878,7 @@ UPCOMING CONCERTS
 	.banner {
 		margin: 50px 0;
 		img {
-			width: 180px;
+			width: 120px;
 		}
 	}
 }
@@ -643,17 +889,46 @@ UPCOMING CONCERTS
 	padding: 10px;
 	word-wrap: break-word;
 	line-height: 1.4em;
+	height: 180px;
+	position: relative;
+	margin: 10px 0;
+	border-right: 1px solid $border-color;
+	&:hover {
+		background-color: rgba($white, 0.5);
+	}
+
 	header {
 	 	font-weight: bold;
+	 	.title {
+	 		height: 2em;
+	 	}
 	 	.date {
 			font-weight: normal;
 			font-size: 0.8em;
 			display: block;
 			text-align: right;
 	 	}
+		.category {
+			font-weight: normal;
+			font-size: 0.8em;
+			display: block;
+			height: 2em;
+		}
 	}
 	&:nth-child(odd) {
 		//margin-right: 4%;
+	}
+	&:last-child {
+		border-right: 1px solid $border-color;
+	}
+	section {
+		.excerpt-read-more {
+			display: block;
+			margin-bottom: 10px;
+			position: absolute;
+			bottom: 0px;
+			font-size: 0.7em;
+		}
 	}
 }
 
@@ -672,42 +947,18 @@ UPCOMING CONCERTS
 }
 
 
-.about-bg {
-	background-image: url(../images/profile-bcj2.jpg) ;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 100vh;
-	position: absolute;
-	z-index:0;
-	top: 0;
-	&.pause {
-		position: fixed;
-	}
-}
 
-#section-about {
-	width: 100%;
+
+
+section#about {
 	overflow: hidden;
-	//height: 400%;
-	//padding-bottom: 100px;
 	text-align: center;
-	color: #FFF;
-	//padding-top: 200px;
-	//position: absolute;
-	background: transparent no-repeat center center;// fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	//background-attachment: fixed;
-	min-width: 100%;
+	color: $white;
 	min-height: 1000px;
-	//background-image: url(../images/profile-bcj2.jpg);
 	position: relative;
+
 	.row-header {
-		font-size: 32px;
+		font-size: 16px;
 		letter-spacing: 2px;
 		color: $white;
 		@include transition(all 1s ease-in-out);
@@ -717,21 +968,19 @@ UPCOMING CONCERTS
 	}
 	.wrap {
 		z-index: 1;
-		//padding: 100px;
 		width: 100%;
-		top:0;
-		position: absolute;
 		.wrap-inner {
-			padding: 100px;
+			padding: 10%;
 		}
 		&.pause {
+			top: 0;
 			position: fixed;
 
 		}
 	}
 
 	#about_bcj_1 {
-		font-size: 20px;
+		// font-size: 1.2em;
 		line-height: 1.5em;
 		font-weight: bold;
 		opacity: 0;
@@ -796,6 +1045,16 @@ UPCOMING CONCERTS
 		&.focus {
 			opacity: 1;
 		}
+		.award_activitity {
+			display:inline-block;
+			padding: 2%;
+			width:46%;
+			vertical-align: top;
+			li {
+				line-height: 1.3em;
+				margin: 0.5em 0;
+			}
+		}
 	}
 	#about_bcj_5 {
 		text-align: center;
@@ -813,6 +1072,7 @@ UPCOMING CONCERTS
 		height: 100%;
 		background-color: rgba(0,0,0,0.5);
 		top: 0;
+		left: 0;
 		z-index: 0;
 		opacity: 0;
 		@include transition(opacity 1s ease-in-out);
@@ -885,33 +1145,58 @@ UPCOMING CONCERTS
 
 }
 
-.support-bg {
-	background-image: url(../images/himawari_masaaki.jpg);
-	background-position: center top;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 150%;
-	position: absolute;
-	z-index:0;
-	top: 0;
-}
-#section-support {
+
+
+
+
+section#support {
 	overflow: hidden;
-	width: 100%;
-	//height: 800px;
 	text-align: center;
-	//color: #FFF;
-	//position: absolute;
+	color: $white;
+	background-color: $white;
+	// background: url(../images/himawari_masaaki.jpg) center center no-repeat;
+	// padding: 0 6% 2% 6%;
+	background-size: cover;
+	min-height: 1000px;
+	position: relative;
+
+	text-align: center;
 
 	min-width: 100%;
 	min-height: 800px;
 	//background-image: url(../images/himawari_masaaki.jpg);
+	color: $black;
+	.background {
+		background: url(../images/himawari_masaaki.jpg) center -200px no-repeat;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		// &.pause {
+		// 	position: fixed;
+		// }
+		.overlay {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($white, 0.5);
+			top: 0;
+			left: 0;
+			z-index: 0;
+			opacity: 0;
+			@include transition(opacity 1s ease-in-out);
+			&.focus {
+				opacity: 1;
+			}
+		}
+	}
 	.wrap {
 		//padding: 100px 0;
 		z-index: 1;
 		.wrap-inner {
-			padding: 100px;
+			padding: 10%;
 		}
 	}
 	#support_bcj_1 {
@@ -928,6 +1213,7 @@ UPCOMING CONCERTS
 		height: 100%;
 		background-color: rgba($white, 0.5);
 		top: 0;
+		left: 0;
 		z-index: 0;
 		opacity: 0;
 		@include transition(opacity 1s ease-in-out);
@@ -936,7 +1222,6 @@ UPCOMING CONCERTS
 		}
 	}
 }
-
 /*********************
 LINK STYLES
 *********************/
@@ -1011,7 +1296,7 @@ h5, .h5 {
 }
 .row-header {
 	margin-top: 1.5em;
-	font-size: 28px;
+	font-size: 16px;
 	position: relative;
 	text-align: center;
 	text-transform: uppercase;
@@ -1022,8 +1307,8 @@ HEADER STYLES
 *********************/
 
 .header {
-	padding-top: 35px;
-	padding-bottom: 20px;
+	padding-top: 15px;
+	padding-bottom: 5px;
 	text-align: center;
 	a {
 		display: block;
@@ -1047,33 +1332,13 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-.top-nav {
+.nav {
 	font-size: 15px;
 	//font-family: $cinzel;
 	//float: left;
 	text-transform: uppercase;
 }
-#lang_sel_list {
-	padding: 0 1em 0 1em;
-	display: inline-block;
-	top: 5px;
-	ul {
-		li {
-			float: none;
-			a, a:visited {
-				color: $white;
-				background: none;
-				font-size: 16px;
-				margin: 0.75em 0.2em;
-				font-family: $serif;
-				text-transform: uppercase;
-				&.lang_sel_sel {
-					display: none;
-				}
-			}
-		}
-	}
-}
+
 
 
 
@@ -1082,14 +1347,14 @@ and more scalable.
 	border-bottom: 0;
 	margin: 0;
 	li {
-		display: inline-block;
 		position: relative;
 
 		a {
 			display: block;
 			text-decoration: none;
 			padding: 0.2em 0.75em 0.75em;
-
+			position: relative;
+			z-index: 1;
 			/*
 			remember this is for mobile ONLY, so there's no need
 			to even declare hover styles here, you can do it in
@@ -1151,57 +1416,44 @@ nav.main-nav {
 	width: 100%;
 	//margin: 15px 0 30px;
 	text-align: center;
-	background-color: rgba($black,.8);
-	color: $white;
+	color: $black;
 	position: relative;
 
 	@include transition(all .5s ease-in-out);
 
-	&.fixed {
-		background-color: rgba($black,.8);
-		color: $white;
-		a {
-			color: $white;
-		}
-		ul {
-			&.effect2 li a::before {
-				border-color: rgba($white,0.5);
-			}
-		}
-	}
-	a {
+	a, a:hover {
+		color: $black;
 		@include transition(all .5s ease-in-out);
 	}
-	>ul {
+	#menu-icon:before {
+		content: "\f0c9";
+		font: normal 21px/1em FontAwesome;
+		width: 1em;
+		height: 1em;
+		vertical-align: middle;
 		display: inline-block;
-		// &.effect2 li a::before {
-		//   position: absolute;
-		//   top: 65%;
-		//   left: 50%;
-		//   color: rgba($white,0.5);
-		//   width: 0%;
-		//   content: '';
-		//   font-size: 1.2em;
-		//   -webkit-transition: width 0.3s;
-		//   -moz-transition: width 0.3s;
-		//   transition: width 0.3s;
-		//   -webkit-transform: translateX(-50%);
-		//   -moz-transform: translateX(-50%);
-		//   transform: translateX(-50%);
-		//   pointer-events: none;
-		//   border-bottom: 1px solid rgba(0,0,0,0.5);
-		// }
-		// &.effect2 li a:hover::before {
-		//   color: rgba($white,0.5);
-		//   width: 60%;
-		// }
+		margin: -4px 5px 0 0;
+	}
+	.mobile-button {
+		text-transform: uppercase;
+		font-size: 1.5em;
+	}
+	>ul {
+		display: none;
+
 		li a {
-			color: $white;
+			// color: $white;
 			letter-spacing: 0.1em;
 
 		}
 		li a:hover {
 		  	text-decoration: none;
+		}
+		li:hover {
+			 color: lighten($link-color, 50%);
+			a {
+				 color: lighten($link-color, 50%);
+			}
 		}
 		li:before {
 			position: absolute;
@@ -1211,7 +1463,7 @@ nav.main-nav {
 			text-align: center;
 			z-index: 0;
 			display: block;
-			@include transition(all 0.5s);
+			@include transition(all .5s ease-in-out);
 
 		}
 		li.menu-item-135:before {
@@ -1231,7 +1483,30 @@ nav.main-nav {
 		}
 	}
 }
-
+	#lang_sel_list {
+		// padding: 0 1em 0 1em;
+		display: inline-block;
+		// top: 5px;
+		position: absolute;
+		padding: 0;
+		top: 0px;
+		right: 5px;
+		ul {
+			li {
+				float: none;
+				a, a:visited {
+					background: none;
+					font-size: 1.5em;
+					margin: 0.5em 0.2em;
+					font-family: $serif;
+					text-transform: uppercase;
+					&.lang_sel_sel {
+						display: none;
+					}
+				}
+			}
+		}
+	}
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -1503,26 +1778,39 @@ POSTS & CONTENT STYLES
 	.tags {
 		margin: 0;
 	}
-.news section {
-	//border-top: 1px solid $border-color-light;
-	   :first-child {
-            border: none;
-        }
-	.date {
-		//line-height: 100%;
-		font-size: 11px;
-		text-align: right;
-		// margin-top: 10px;
-		// padding-right: 1em;
 
-		// float: right;
-	}
-	.title {
-		padding-left: 6em;
-		padding-top: 0;
-		border: none;
-	}
-}
+
+
+
+// .news {
+// 	header {
+// 		.category {
+// 			display: block;
+// 		}
+// 	}
+
+// 	section {
+// 		//border-top: 1px solid $border-color-light;
+// 		   :first-child {
+// 	            border: none;
+// 	        }
+
+// 		.date {
+// 			//line-height: 100%;
+// 			font-size: 11px;
+// 			text-align: right;
+// 			// margin-top: 10px;
+// 			// padding-right: 1em;
+
+// 			// float: right;
+// 		}
+// 		.title {
+// 			padding-left: 6em;
+// 			padding-top: 0;
+// 			border: none;
+// 		}
+// 	}
+// }
 
 
 
