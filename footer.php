@@ -2,7 +2,7 @@
 
           <div id="inner-footer" class="">
 
-            <nav role="navigation" class="footer-links cf">
+<!--             <nav role="navigation" class="footer-links cf">
                       <?php wp_nav_menu(array(
                         'container' => '',                              // remove nav container
                         'container_class' => 'footer-links cf',         // class of container (should you choose to use it)
@@ -16,7 +16,7 @@
                         'depth' => 0,                                   // limit the depth of the nav
                         'fallback_cb' => 'bones_footer_links_fallback'  // fallback function
                       )); ?>
-                    </nav>
+                    </nav> -->
             <div id="footer-logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" /></a></div>
 
             <div class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</div>

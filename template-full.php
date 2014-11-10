@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Full Width Layout
+*/
+?>
 <?php get_header(); ?>
             <div class="wrap">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

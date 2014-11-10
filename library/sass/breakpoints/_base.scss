@@ -24,6 +24,7 @@ body {
 	line-height: 2;
 	color: $text-color;
 	background-color: $background-color;
+	// background-color: #26292C;
 	background: url(../images/bcj_bg_darker.jpg) top center ;
 	 -webkit-font-smoothing: antialiased;
 	 -moz-osx-font-smoothing: grayscale;
@@ -165,6 +166,7 @@ LAYOUT & GRID STYLES
 #main {
 	background-color: $background-color;
 	background: url(../images/bcj_bg_darker.jpg) top center ;
+	padding-bottom: 4em;
 }
 .wrap {
 	width: 100%;
@@ -201,9 +203,13 @@ COLUMNS
 FEATURE SLIDER
 *********************/
 #feature-slider {
+	position: relative;
 	margin: 3px auto 0;
 	overflow: hidden;
 	border-top: 2px solid $border-color;
+	border-bottom: 2px solid $border-color;
+	height: 130px;
+
 
 	.slide-item {
 		height: 130px;
@@ -391,6 +397,29 @@ BACKGROUND
 			z-index: 0;
 		}
 	}
+	#page-background {
+		background: center center no-repeat;
+		background-size: cover;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		z-index: 0;
+		-webkit-transform: translateZ(0);
+		pointer-events: none;
+		position: fixed;
+		&.disable {
+			opacity: 0;
+		}
+		.overlay {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+			top: 0;
+			z-index: 0;
+		}
+	}
 }
 /*********************
 INTRO
@@ -460,12 +489,12 @@ section#intro {
 		margin-top: 2vh;
 		@include scale(0.5);
 		circle {
-			@include opacity(0.5);
+			@include opacity(0.9);
 			@include transition(opacity, .2s);
 		}
 		&:hover {
 			circle {
-				@include opacity(1);
+				@include opacity(0.5);
 			}
 		}
 	}
@@ -504,21 +533,41 @@ section#intro {
 				@include transition(all .5s ease-in-out);
 
 			}
-			li.menu-item-135:before {
+			li.menu-about:before {
 				content: "BCJについて";
 			}
-			li.menu-item-136:before {
+			li.menu-concerts:before {
 			  	content: "コンサート";
 			}
-			li.menu-item-137:before {
+			li.menu-discography:before {
 			  	content: "ディスコグラフィ";
 			}
-			li.menu-item-138:before {
+			li.menu-gallery:before {
 			  	content: "ギャラリー";
 			}
-			li.menu-item-139:before {
+			li.menu-friends_society:before {
 			  	content: "フレンズ＆ソサエティ";
 			}
+			li:after {
+				position: absolute;
+				margin-top: -2.5em;
+				font-size: 0.6em;
+				width: 100%;
+				text-align: center;
+				z-index: 0;
+				display: block;
+				color: $gray;
+				@include transition(all .5s ease-in-out);	
+				z-index: 9;		
+			}
+
+			li.menu-discography:after, li.menu-gallery:after {
+			  	content: "Coming Soon";
+			}
+
+
+
+
 		}
 		> ul li:before {
 			// font-size: 12px;
@@ -550,7 +599,16 @@ section#intro {
 					a {
 						color: $white;
 					}
+
 				}
+			}
+			li.menu-discography, li.menu-gallery {
+				 color: darken($white, 70%);
+				 cursor: default;
+				 a {
+					 color: darken($white, 70%);
+					 cursor: default;			 	
+				 }
 			}
 		}
 
@@ -610,7 +668,9 @@ UPCOMING CONCERTS
 
 	.overview-holder-carousel {
 		margin-top: 20px;
-
+		&.inactive {
+			visibility: hidden;
+		}
 		.slick-next { right: -60px; }
 		.slick-prev { left: -60px; }
 		.slick-list {
@@ -636,7 +696,7 @@ UPCOMING CONCERTS
   		border-left: 1px solid $border-color;
   		//border-right: 1px solid $border-color;
   		//border-collapse:collapse;
-  		height: 370px;
+  		// height: 370px;
 
   		&.slick-active {
   			//border-left: 1px solid $border-color;
@@ -742,6 +802,10 @@ UPCOMING CONCERTS
 						}
 						&:first-child {
 							margin-left: 0;
+						}
+						a {
+							color: $color-bcj;
+							text-decoration: none;
 						}
 					}
 				}
@@ -1039,11 +1103,17 @@ section#about {
 		}
 	}
 	#about_bcj_4 {
+		max-width: 700px;
+		margin: auto;
 		text-align: center;
 		opacity: 0;
 		@include transition(all 1s ease-in-out);
 		&.focus {
 			opacity: 1;
+		}
+		a {
+			color: $white;
+			text-decoration: none;
 		}
 		.award_activitity {
 			display:inline-block;
@@ -1173,7 +1243,7 @@ section#support {
 		top: 0;
 		left: 0;
 		width: 100%;
-		height: 100%;
+		height: 130%;
 		// &.pause {
 		// 	position: fixed;
 		// }
@@ -1466,20 +1536,46 @@ nav.main-nav {
 			@include transition(all .5s ease-in-out);
 
 		}
-		li.menu-item-135:before {
+		li:after {
+			position: absolute;
+			top: 20px;
+			font-size: 0.6em;
+			width: 100%;
+			text-align: center;
+			z-index: 0;
+			display: block;
+			color: $black;
+			// opacity: 0;
+			@include transition(all .5s ease-in-out);			
+		}
+		li.menu-about:before {
 			content: "BCJについて";
 		}
-		li.menu-item-136:before {
+		li.menu-concerts:before {
 		  	content: "コンサート";
 		}
-		li.menu-item-137:before {
+		li.menu-discography:before {
 		  	content: "ディスコグラフィ";
 		}
-		li.menu-item-138:before {
+
+		li.menu-gallery:before {
 		  	content: "ギャラリー";
 		}
-		li.menu-item-139:before {
+
+		li.menu-friends_society:before {
 		  	content: "フレンズ＆ソサエティ";
+		}
+
+		li.menu-discography:after, li.menu-gallery:after {
+		  	content: "Coming Soon";
+		}
+		li.menu-discography, li.menu-gallery {
+			 color: lighten($link-color, 40%);
+			 cursor: default;
+			 a {
+				 color: lighten($link-color, 40%);
+				 cursor: default;			 	
+			 }
 		}
 	}
 }
@@ -1507,6 +1603,33 @@ nav.main-nav {
 			}
 		}
 	}
+
+nav.main-nav.inverse{
+	color: $white;
+    background-color: rgba($black,.8);
+	a, a:hover {
+		color: $white;
+	}
+	>ul {
+		li:hover {
+			 color: lighten($link-color, 50%);
+			a {
+				 color: lighten($link-color, 50%);
+			}
+		}
+	}
+	li:after {
+        color: $white !important;
+    }
+    li.discography, li.gallery {
+         color: lighten($link-color, 40%) !important;
+         cursor: default;
+         a {
+             color: lighten($link-color, 40%) !important;
+             cursor: default;               
+         }
+    }
+}
 /*********************
 POSTS & CONTENT STYLES
 *********************/
@@ -1523,7 +1646,7 @@ POSTS & CONTENT STYLES
 
 
 			header {
-				border-bottom: 1px solid $border-color-light;
+				// border-bottom: 1px solid $border-color-light;
 				padding: 0.4em;
 				.leading img{
 					width: 100%;
@@ -1716,13 +1839,21 @@ POSTS & CONTENT STYLES
 
 		} /* end .entry-content */
 		.entry-content-page {
-			width: 50%;
+			max-width: 600px;
 			margin: auto;
 			margin-bottom: 0;
 			padding: 0.75em;
-			border-right: 1px solid $border-color-light;
-			border-left: 1px solid $border-color-light;
+			// border-right: 1px solid $border-color-light;
+			// border-left: 1px solid $border-color-light;
 			text-align: left;
+		}
+		.page-template-template-full-php .entry-content-page {
+			max-width: none;
+			padding: 0;
+			img {
+				width: 100%;
+				height: auto;
+			}
 		}
 		.loadmore {
 			border: 1px solid $border-color;
@@ -1781,37 +1912,45 @@ POSTS & CONTENT STYLES
 
 
 
+	a.go-top {
 
-// .news {
-// 	header {
-// 		.category {
-// 			display: block;
-// 		}
-// 	}
+		color: $white;
+		display: inline-block;
+		margin-top: 120px;
+		margin-bottom: 0px;
+		svg {
+			@include scale(0.5);
+			display: block;
+			margin: auto;
+			circle {
+				@include opacity(0.9);
+				@include transition(opacity, .2s);
+			}
+		}
+		span {
+			display: inline-block;
+		}
 
-// 	section {
-// 		//border-top: 1px solid $border-color-light;
-// 		   :first-child {
-// 	            border: none;
-// 	        }
+		&:hover {
+			circle {
+				@include opacity(0.5);
+			}
+			color: $white;
+		}
 
-// 		.date {
-// 			//line-height: 100%;
-// 			font-size: 11px;
-// 			text-align: right;
-// 			// margin-top: 10px;
-// 			// padding-right: 1em;
-
-// 			// float: right;
-// 		}
-// 		.title {
-// 			padding-left: 6em;
-// 			padding-top: 0;
-// 			border: none;
-// 		}
-// 	}
-// }
-
+		&.invert {
+			color: $black;
+			circle {
+				@include opacity(0.5);
+			}
+			&:hover {
+				color: $black;
+				circle {
+					@include opacity(0.2);
+				}
+			}
+		}
+	}
 
 
 

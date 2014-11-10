@@ -38,7 +38,14 @@ section#intro {
 
   }
 }
+a.go-top {
 
+  svg {
+    @include scale(1);
+
+  }
+
+}
 
 section#intro {
   .logo{

@@ -5,6 +5,7 @@
                     <div class="slick-slides">
                     <!-- Slide item 1 -->
                         <div class="slide-item">
+                            <a href="<?php echo get_permalink(get_page_by_path('2015subscription')->ID); ?>">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/teiki.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
                                 <div class="inner-content">
@@ -20,6 +21,7 @@
                             </div>
                             </div>
                             <div class="slide-overlay"></div>
+                            </a>
                         </div>
 
                      <!-- Slide item 2 -->
@@ -99,7 +101,7 @@
                 </div>
 
 
-                <div class="overview-holder-carousel" >
+                <div class="overview-holder-carousel inactive" >
                 <?php
                     $args = array(
                       'post_type' => 'schedule',
@@ -109,13 +111,13 @@
                       'order'   => 'ASC',
                       'posts_per_page' => -1,
                       'meta_query' => array(
-                                                    array(
-                                                        'key' => 'date',
-                                                        'value' => date("Ymd"),
-                                                        'type' => 'NUMERIC',
-                                                        'compare' => '>'
-                                                    )
-                                                )
+                                        array(
+                                            'key' => 'date',
+                                            'value' => date("Ymd"),
+                                            'type' => 'NUMERIC',
+                                            'compare' => '>'
+                                        )
+                                    )
                     );
                     function filter_where( $where = '' ) {
                         $where .= " AND post_date >= date('Y-m-d')";
@@ -156,7 +158,7 @@
                                 <?php
                                     $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "bcj-thumb-300" );
                                     // add more attributes if you need
-                                    printf( '<img src="http://placehold.it/300x170" data-lazy="%s"/>', esc_url( $thumbnail_src[0] ) );
+                                    printf( '<img src="http://placehold.it/300x170&text=+" data-lazy="%s"/>', esc_url( $thumbnail_src[0] ) );
                                 ?>
                                 <?php //the_post_thumbnail( "bcj-thumb-300"); ?>
                             </div>
@@ -165,10 +167,27 @@
                             </div>
                             <div class="description">
                                 <div class="detail"><?php the_excerpt(); ?></div>
-                                <div class="readmore">詳細はこちら</div>
+                                <div class="readmore"><a href="<?php the_permalink(); ?>">詳細はこちら</a></div>
                                 <div class="buy-ticket-container">
                                     <span class="buy-ticket "><span class="buy-text">チケット購入</span></span>
-                                    <span class="playguide"><span>チケットぴあ</span><span>イープラス</span></span>
+                                    <span class="playguide">
+                                    <?php
+                                        $pia = get_field('ticket_pia');
+                                        $eplus = get_field('e+');
+                                        if($pia||$eplus) :
+                                    ?>
+                                    <?php
+                                        if($pia) echo '<span><a target="_blank" href="'. $pia .'"">チケットぴあ</a></span>';
+                                        if($eplus) echo '<span><a target="_blank" href="'. $eplus .'"">イープラス</a></span>';
+                                    ?>
+                                    <?php
+                                        else:
+
+                                        echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
+
+                                        endif;
+                                    ?>
+                                    </span>
                                 </div>
 
                             </div>
@@ -261,10 +280,11 @@
                     ?>
 
                     </div>
+                    <br><br><br>
 
-                    <div class="banner m-all t-all d-all" style="text-align: center">
+                    <!-- <div class="banner m-all t-all d-all" style="text-align: center">
                         <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-friends.jpg" />
-                    </div>
+                    </div> -->
                 </div>
                 <div class="clear"></div>
 
@@ -319,52 +339,46 @@
                         </ul>
                     </div>
                     <div class="clear"></div>
-                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px">BCJプロフィール詳細はこちら<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_bcj_profile.jpg" /></div>
-                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px">鈴木雅明プロフィール詳細はこちら<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_masaaki_profile.jpg" /></div>
+                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('bcj')->ID); ?>">BCJプロフィール詳細はこちら<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_bcj_profile.jpg" /></a></div>
+                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('masaaki_suzuki')->ID); ?>">鈴木雅明プロフィール詳細はこちら<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_masaaki_profile.jpg" /></a></div>
                     <div class="clear"></div>
                 </div>
 
                 <div id="about_bcj_5" class="wrap-padding">
-                    <h2 class="h-font row-header" style="margin-bottom: 50px">BCJ Recordings</h2>
+                    <h2 class="h-font row-header" >BCJ Recordings</h2>
+                    <h2 style="margin-bottom: 50px">バッハ・コレギウム・ジャパン ディスコグラフィ</h2>
 
                     <div class="cd-holder-carousel">
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-2.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-3.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-4.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-2.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-3.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-4.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-2.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-3.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-2.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-2.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-3.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-4.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-2.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-3.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-3.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-4.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-2.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-3.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-4.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-2.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-3.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-2.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-3.jpg" /></div>
-                        <div><img src="<?php echo bloginfo('template_directory' ); ?>/library/images/cd-4.jpg" /></div>
+                    <?php 
+                        $args = array(
+                          'post_type' => 'discography',
+                          'post_status' => 'publish',
+                          'orderby'   => 'menu_order',
+                          'order'     => 'ASC',
+                          'posts_per_page' => -1
+                        ); 
+                        $the_query = new WP_Query( $args );
+                        if ( $the_query->have_posts() ) :
+                            while ( $the_query->have_posts() ) : $the_query->the_post();
+                                $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "thumbnail" );
+                                printf( '<div><img data-lazy="%s"/></div>', esc_url( $thumbnail_src[0] ) );
+                            endwhile;
+                        endif;
+                        wp_reset_postdata();
+
+                    ?>
+                        
                     </div>
 
 
-                    <span class="bcj-btn ">BCJディスコグラフィ詳細はこちら</span>
+                    <!-- <span class="bcj-btn ">BCJディスコグラフィ詳細はこちら</span> -->
+                    <a href="#" class="go-top">
+                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
+                            <circle fill="#FFFFFF" cx="20" cy="20" r="20"/>
+                            <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
+                        </svg>
+                        <span>TO THE TOP</span>
+                    </a>
                 </div>
             </div>
             </div>
@@ -372,7 +386,7 @@
         </section>
         <!-- About END -->
         <!-- Support START -->
-        <div class="row"><div class="hr"></div></div>
+        <!-- <div class="row"><div class="hr"></div></div> -->
         <!-- <section id="support"  data-stellar-background-ratio="0.5"> -->
         <section id="support"  >
             <!-- <div class="background" data-stellar-ratio="0.5"><div class="overlay"></div></div> -->
@@ -389,11 +403,44 @@
                             <img class="ratio" src="http://placehold.it/16x9"/>
                         <iframe width="853" height="480" src="//www.youtube.com/embed/J5bGxCWf0yM?rel=0" frameborder="0" allowfullscreen></iframe>
                         </div>
-                    <span class="bcj-btn invert">BCJフレンズ＆ソサエティ詳細はこちら</span>
+                    <a href="<?php echo get_permalink(get_page_by_path('friends_society')->ID); ?>"><span class="bcj-btn invert">BCJフレンズ＆ソサエティ詳細はこちら</span></a>
                 </div>
+                    <a href="#" class="go-top invert">
+                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
+                            <circle fill="#000000" cx="20" cy="20" r="20"/>
+                            <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
+                        </svg>
+                        <span>TO THE TOP</span>
+                    </a>
             </div>
             </div>
             <!-- <div class="overlay"></div> -->
         </section>
+        <!-- Support END -->
+        <section id="contact"  >
+            <div class="wrap cf" >
+            <div class="wrap-inner">
+                <h2 class="h-font row-header ">Contact Us</h2>
+                <h4 style="text-align: center;">コンタクト</h4>
+                <div style=" text-align: left;max-width:400px;margin:auto;padding:1em">
+                    <?php echo do_shortcode('[contact-form-7 id="2888" title="BCJ Contact"]'); ?>
+                </div>
+                <div style="text-align:center;margin-bottom: 100px">
+                    <a href="#" class="go-top invert">
+                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
+                            <circle fill="#000000" cx="20" cy="20" r="20"/>
+                            <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
+                        </svg>
+                        <span>TO THE TOP</span>
+                    </a>
+                </div>
+
+            </div>
+            </div>
+            <!-- <div class="overlay"></div> -->
+        </section>
+        <!-- Support END -->
+        
+
 
 <?php get_footer(); ?>

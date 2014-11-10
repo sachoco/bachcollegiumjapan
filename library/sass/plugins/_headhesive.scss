@@ -27,6 +27,17 @@ nav.main-nav--clone {
     a {
         color: $white;
     }
+    li:after {
+        color: $white !important;
+    }
+    li.discography, li.gallery {
+         color: lighten($link-color, 40%) !important;
+         cursor: default;
+         a {
+             color: lighten($link-color, 40%) !important;
+             cursor: default;               
+         }
+    }
     /* Translate -100% to move off screen */
     -webkit-transform: translateY(-100%);
         -ms-transform: translateY(-100%);

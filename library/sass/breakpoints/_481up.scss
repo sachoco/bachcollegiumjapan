@@ -81,13 +81,19 @@ section#intro {
 	}
 
 }
+a.go-top {
 
+	svg {
+		@include scale(0.8);
+
+	}
+
+}
 
 /*********************
 SLICK SLIDER
 *********************/
 .slick-slider {
-	margin-bottom: 30px;
 }
 .slick-next, .slick-prev {
 	@include transform(translate3d(0,-50%,0) scale(1));
@@ -126,7 +132,7 @@ UPCOMING CONCERTS
 
 	}
 	div.overview {
-  		height: 331px;
+  		// height: 331px;
 
 
   		&.slick-active {
@@ -237,7 +243,7 @@ section#about {
 
 
 	.row-header {
-		font-size: 32px;
+		font-size: 28px;
 
 		&.pause {
 		}
@@ -253,7 +259,9 @@ section#about {
 	}
 
 	#about_bcj_1 {
-		font-size: 20px;
+		h2 {
+			// font-size: 20px;
+		}
 
 		&.focus {
 		}
@@ -438,7 +446,7 @@ HEADER STYLES
 FEATURE SLIDER
 *********************/
 #feature-slider {
-
+	height: 280px;
 
 	.slide-item {
 		height: 280px;

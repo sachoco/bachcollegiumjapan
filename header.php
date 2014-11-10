@@ -41,6 +41,7 @@
     </head>
 
     <body <?php body_class(); ?>>
+<?php if( is_home() || is_front_page() ): ?>
         <!-- Background START -->
         <div id="background">
             <div id="intro-background"><div class="overlay"></div></div>
@@ -85,8 +86,19 @@
             <!-- <div class="overlay"></div> -->
         </section>
         <!-- Intro END -->
+<?php elseif(is_single()): ?>
+    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+
+        <!-- Background START -->
+<!--         <div id="background">
+            <div id="page-background" style="background-image:url(<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); echo $image[0]; ?>);" ><div class="overlay"></div></div>
+        </div> -->
+        <!-- Background END -->
+    <?php endwhile; endif; ?>
+<?php endif; ?>
         <!-- Main START -->
         <section id="main"  role="main">
+<?php //if( is_home() || is_front_page() ): ?>
             <div class="wrap">
                 <header class="header" role="banner">
                     <a href="<?php echo home_url(); ?>" rel="nofollow" class="svg">
@@ -95,8 +107,8 @@
                     </a>
                 </header>
             </div>
-
-            <nav class="main-nav" role="navigation" style="margin:0;">
+<?php //endif; ?>
+            <nav class="main-nav <?php if( !is_home() && !is_front_page() ) echo 'inverse'  ?>" role="navigation" style="margin:0;">
             <div id="menu-icon" class="mobile-button"><span>Menu</span></div>
             <?php wp_nav_menu(array(
             'container' => false,                           // remove nav container
@@ -111,5 +123,5 @@
             'depth' => 0,                                   // limit the depth of the nav
             'fallback_cb' => ''                             // fallback function (if there is one)
             )); ?>
-            <?php do_action('icl_language_selector'); ?>
+            <?php //do_action('icl_language_selector'); ?>
             </nav>
