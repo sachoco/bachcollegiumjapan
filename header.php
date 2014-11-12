@@ -49,7 +49,7 @@
         </div>
         <!-- Background END -->
         <!-- Intro START -->
-        <section id="intro">
+        <section id="intro" class="snap">
             <!-- <div class="background"><div class="overlay"></div></div> -->
             <div class="content">
                 <div class="logo" >
@@ -97,11 +97,11 @@
     <?php endwhile; endif; ?>
 <?php endif; ?>
         <!-- Main START -->
-        <section id="main"  role="main">
+        <section id="main" class="snap" role="main">
 <?php //if( is_home() || is_front_page() ): ?>
             <div class="wrap">
                 <header class="header" role="banner">
-                    <a href="<?php echo home_url(); ?>" rel="nofollow" class="svg">
+                    <a href="<?php echo home_url(); ?>#main" rel="nofollow" class="svg">
                         <object data="<?php echo get_template_directory_uri(); ?>/library/images/bachcollegiumjapan-title.svg" type="image/svg+xml" class="mailicon">
                         </object>
                     </a>

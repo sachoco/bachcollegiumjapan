@@ -114,7 +114,23 @@ jQuery(document).ready(function($) {
   */
   loadGravatars();
 
+function adjustFooterPos(){
+  if($("body.single").length&&$("section#main").height()+$("#page-footer").height()<$(window).height()){
+    $("#page-footer").addClass("fixed");
+  }else if($("#page-footer").hasClass("fixed")){
+    $("#page-footer").removeClass("fixed");
+  }
+}
+adjustFooterPos();
 
+    $(window).resize(function(){
+        adjustFooterPos();
+    });
+
+
+    $(".news-item").on("click",function(){
+      window.location.href = $(this).data("link");
+    })
 
 
     //ページ内スクロール
@@ -127,8 +143,9 @@ jQuery(document).ready(function($) {
 
 
     //ページ上部へ戻る
-    $(".btn_top").click(function () {
-        $('html,body').animate({ scrollTop: 0 }, 'fast');
+    $(".go-top").click(function () {
+        var p = $("section#main").offset().top;
+        $('html,body').animate({ scrollTop: p }, 800, 'easeInOutCubic');
         return false;
     });
 

@@ -28,6 +28,8 @@ body {
 	background: url(../images/bcj_bg_darker.jpg) top center ;
 	 -webkit-font-smoothing: antialiased;
 	 -moz-osx-font-smoothing: grayscale;
+	 font-smooth: always;
+	 
 	 position: relative;
 }
 
@@ -222,7 +224,7 @@ FEATURE SLIDER
 			display: table;
 			vertical-align: middle;
 			position: absolute;
-			z-index: 999;
+			z-index: 901;
 			padding: 5px 10px;
 			width: 200px;
 			height: 100%;
@@ -230,6 +232,7 @@ FEATURE SLIDER
 			text-align: center;
 			opacity: 0;
 			font-size: 0.8em;
+
 			@include transition-property(opacity);
 			@include transition-duration(1s);
 			@include transition-delay(1s);
@@ -250,9 +253,10 @@ FEATURE SLIDER
 				display: table-cell;
 				vertical-align: middle;
 			}
-			div {
-				display: inline-block;
-
+			h1,h2{
+				div {
+					display: inline-block;
+				}
 			}
 			h1 {
 				display: inline-block;
@@ -276,6 +280,9 @@ FEATURE SLIDER
 			img.divider {
 				display: inline-block;
 				@include transform(scale(0.5));
+			}
+			a {
+				color: $white;
 			}
 		}
 		.slide-overlay {
@@ -395,6 +402,10 @@ BACKGROUND
 			background-color: rgba(0,0,0,0.5);
 			top: 0;
 			z-index: 0;
+			opacity: 0;
+			// &.focus {
+			// 	opacity: 1;
+			// }
 		}
 	}
 	#page-background {
@@ -486,6 +497,7 @@ section#intro {
 	}
 
 	#scrolldownHome {
+		@include animation(fade-in-out 5s ease-in-out infinite);
 		margin-top: 2vh;
 		@include scale(0.5);
 		circle {
@@ -775,7 +787,7 @@ UPCOMING CONCERTS
 			.readmore {
 				// text-align: right;
 				margin-bottom: 10px;
-				font-size: 0.8em;
+				// font-size: 0.8em;
 				text-decoration: underline;
 			}
 			.buy-ticket-container {
@@ -793,11 +805,10 @@ UPCOMING CONCERTS
 						border: 1px solid $color-bcj;
 						margin-left: 4%;
 						float: left;
-						padding: 0.3em 0 0;
+						padding: 0.8em 0 0.4em;
 						width: 48%;
-						cursor: pointer;
 
-						&:hover {
+						&:not(.disabled):hover {
 							background-color: rgba($white, 0.5);
 						}
 						&:first-child {
@@ -806,6 +817,11 @@ UPCOMING CONCERTS
 						a {
 							color: $color-bcj;
 							text-decoration: none;
+						}
+						&.disabled {
+							opacity: 0.2;
+
+
 						}
 					}
 				}
@@ -1020,13 +1036,15 @@ section#about {
 	color: $white;
 	min-height: 1000px;
 	position: relative;
+	// visibility: hidden;
+	// display: none;
 
 	.row-header {
 		font-size: 16px;
 		letter-spacing: 2px;
 		color: $white;
 		@include transition(all 1s ease-in-out);
-		&.pause {
+		&.focus {
 			color: #989898;
 		}
 	}
@@ -1047,7 +1065,7 @@ section#about {
 		// font-size: 1.2em;
 		line-height: 1.5em;
 		font-weight: bold;
-		opacity: 0;
+		// opacity: 0;
 		@include transition(all .5s ease-in-out);
 		margin-bottom: 30px;
 		&.focus {
@@ -1058,9 +1076,9 @@ section#about {
 	#about_bcj_2 {
 
 		margin-bottom: 0;
-		visibility: hidden;
-		max-height: 0px;
-		opacity: 0;
+		// visibility: hidden;
+		// max-height: 0px;
+		// opacity: 0;
 		margin-bottom: 30px;
 		@include transition(max-height 1s ease-in-out, margin-bottom 1s ease-in-out, opacity 1s ease-in-out .5s);
 
@@ -1084,7 +1102,7 @@ section#about {
 			max-width: 520px;
 			margin-right: auto;
 			margin-left: auto;
-			opacity: 0;
+			// opacity: 0;
 			@include transition(opacity 1s ease-in-out);
 
 			&.first {
@@ -1106,7 +1124,7 @@ section#about {
 		max-width: 700px;
 		margin: auto;
 		text-align: center;
-		opacity: 0;
+		// opacity: 0;
 		@include transition(all 1s ease-in-out);
 		&.focus {
 			opacity: 1;
@@ -1130,7 +1148,7 @@ section#about {
 		text-align: center;
 		max-width: 700px;
 		margin: auto;
-		opacity: 0;
+		// opacity: 0;
 		@include transition(all 1s ease-in-out);
 		&.focus {
 			opacity: 1;
@@ -1220,19 +1238,18 @@ section#about {
 
 
 section#support {
+	// visibility: hidden;
+	// display: none;
 	overflow: hidden;
 	text-align: center;
 	color: $white;
 	background-color: $white;
 	// background: url(../images/himawari_masaaki.jpg) center center no-repeat;
 	// padding: 0 6% 2% 6%;
-	background-size: cover;
-	min-height: 1000px;
+	// background-size: cover;
 	position: relative;
-
 	text-align: center;
 
-	min-width: 100%;
 	min-height: 800px;
 	//background-image: url(../images/himawari_masaaki.jpg);
 	color: $black;
@@ -1256,9 +1273,9 @@ section#support {
 			left: 0;
 			z-index: 0;
 			opacity: 0;
-			@include transition(opacity 1s ease-in-out);
+			// @include transition(opacity 1s ease-in-out);
 			&.focus {
-				opacity: 1;
+				// opacity: 1;
 			}
 		}
 	}
@@ -1271,26 +1288,22 @@ section#support {
 	}
 	#support_bcj_1 {
 		// text-align: center;
-		opacity: 0;
+		// opacity: 0;
 		@include transition(all 1s ease-in-out);
 		&.focus {
 			opacity: 1;
 		}
 	}
-	.overlay {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-color: rgba($white, 0.5);
-		top: 0;
-		left: 0;
-		z-index: 0;
-		opacity: 0;
-		@include transition(opacity 1s ease-in-out);
-		&.focus {
-			opacity: 1;
-		}
-	}
+
+}
+
+section#contact {
+	// visibility: hidden;
+	// display: none;
+}
+section#intro {
+	// visibility: hidden;
+	// display: none;
 }
 /*********************
 LINK STYLES
@@ -1491,7 +1504,7 @@ nav.main-nav {
 
 	@include transition(all .5s ease-in-out);
 
-	a, a:hover {
+	a, a:hover, a:visited {
 		color: $black;
 		@include transition(all .5s ease-in-out);
 	}
@@ -1607,7 +1620,7 @@ nav.main-nav {
 nav.main-nav.inverse{
 	color: $white;
     background-color: rgba($black,.8);
-	a, a:hover {
+	a, a:hover, a:visited {
 		color: $white;
 	}
 	>ul {
@@ -2334,7 +2347,8 @@ FOOTER STYLES
 	border-top: 1px solid $border-color;
 	text-align: center;
 	padding-bottom: 20px;
-	background-color: #26292C;
+	// background-color: #26292C;
+	background-color: rgba(1,1,1,0.8);
 	color: white;
 	nav {
 		a {
@@ -2342,6 +2356,12 @@ FOOTER STYLES
 		}
 
 	}
+
+}
+#page-footer.fixed {
+	position: fixed;
+	bottom:0;
+	width: 100%;
 }
 	#inner-footer div {
 		padding-top: 10px;

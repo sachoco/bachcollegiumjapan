@@ -7,8 +7,11 @@ if (location.hash) {
     var hash = window.location.hash;
 
     window.onload = function() {
-      scrollTo(0,0);
+      // scrollTo(0,0);
         switch (hash){
+            case "#_main":
+            // goMain();
+            break;
           case "#about_bcj":
             goAbout();
             break;
@@ -21,20 +24,31 @@ if (location.hash) {
         }  
     }
 }
-window.onload = function() {
+
+// window.onload = function() {
     $(window).resize(function(){
         resizeHandler();
     });
 
 
+ 
+// }
+
+    $(document).scrollsnap({
+        snaps: 'section.snap',
+        proximity: 0.99
+    });
 
     $(window).on("scroll", function(e){
-        if($("body.home").length){
+        // if($("body.home").length){
             window.requestAnimationFrame(scrollHandler);
-        }
-        // window.requestAnimationFrame(scrollHandler);
+        // }
+    });   
 
-    });    
+function goMain(){
+    var p = $("section#main").offset().top;
+    $('html,body').animate({ scrollTop: p+500 }, 800, 'easeInOutCubic');
+    return false;    
 }
 function goAbout(){
     var p = $("section#about").offset().top;
@@ -170,32 +184,35 @@ $('.cd-holder-carousel').slick({
 
 var $window = $(window);
 var winHeight = $window.height();
-var pauseAnimComplete = false;
+var pauseAnimComplete = true;
 var isAboutFocused = false;
             //$("#section-about .wrap").css("height","100vh");
 
-            var $aboutWrap = $("section#about .wrap")
-                , $aboutBG = $("section#about.about-bg")
-                , $aboutSection1 = $("section#about #about_bcj_1")
-                , $aboutSection2 = $("section#about #about_bcj_2")
-                , $aboutSection3 = $("section#about #about_bcj_3")
-                , $aboutSection4 = $("section#about #about_bcj_4")
-                , $aboutSection5 = $("section#about #about_bcj_5")
-                , $supportSection1 = $("section#support #support_bcj_1");
+var $aboutWrap = $("section#about .wrap")
+    , $aboutBG = $("section#about.about-bg")
+    , $aboutSection1 = $("section#about #about_bcj_1")
+    , $aboutSection2 = $("section#about #about_bcj_2")
+    , $aboutSection3 = $("section#about #about_bcj_3")
+    , $aboutSection4 = $("section#about #about_bcj_4")
+    , $aboutSection5 = $("section#about #about_bcj_5")
+    , $supportSection1 = $("section#support #support_bcj_1");
+
+var $sectionMain = $("section#main"), $sectionAbout = $("section#about"), $sectionSupport = $("section#support");
+
+
 function resizeHandler(){
-        winHeight = $window.height();
-        $window.scroll();
+    winHeight = $window.height();
+    $window.scroll();
 }
 
 
-var aboutOffsetTop, supportOffsetTop, topvalue, diffAbout , diffSupport, aboutHeight;
+var aboutOffsetTop, supportOffsetTop, topvalue, diffAbout , diffSupport, aboutHeight, mainDy, mainTopPos, mainTopPosPrev, isAnimateActive=false;
 
         //     aboutHeight = $aboutWrap.height() + 2000;
         // $("#section-about").css("height",aboutHeight+"px");
 
 
 
-var $sectionMain = $("section#main"), $sectionAbout = $("section#about"), $sectionSupport = $("section#support");
 
 function scrollHandler (){
         var $aboutBG = $("section#about .background");
@@ -206,6 +223,26 @@ function scrollHandler (){
         diffMain = mainOffsetTop - topvalue;
         diffAbout = aboutOffsetTop - topvalue;
         diffSupport = supportOffsetTop - topvalue;
+        
+        // mainTopPosPrev = mainTopPos;
+        // mainTopPos = winHeight-diffMain;
+        
+        // if(mainTopPosPrev){
+        //     mainDy = mainTopPos - mainTopPosPrev;
+        //     console.log(diffMain +" : "+mainDy);
+
+        //     if(mainDy>0&&diffMain>0&&diffMain<winHeight){
+        //         if(!isAnimateActive){
+        //             var p = $("section#main").offset().top;
+        //             $('html,body').animate({ scrollTop: p }, 800, 'easeInOutCubic',function(){
+        //                 // Callback function
+        //                 isAnimateActive=false;
+        //             });
+        //             isAnimateActive=true; 
+        //         }
+        //     }
+        // }
+
 
         if(!pauseAnimComplete){
             aboutHeight = $("section#about .wrap").height() + 2000;
@@ -287,25 +324,35 @@ function scrollHandler (){
 
         if(timelinePos>-0.05&&!$("#section-about .overlay").hasClass("focus")){
             $("section#about .row-header").addClass("focus");
-            $("section#about .overlay").addClass("focus");
+            $("#about-background .overlay").addClass("focus");
         }
 
         // Fade in subtitle
         if(timelinePos>0&&!$aboutSection1.hasClass("focus")){
-            $aboutSection1.addClass("focus");
+            // $aboutSection1.addClass("focus");
         }
 
         // Fade in text
         if(timelinePos>0.05&&!$aboutSection3.hasClass("focus")){
-            $aboutSection3.addClass("focus");
+            // $aboutSection3.addClass("focus");
         }
 
         // Move text and fade in the video
         if(timelinePos>0.25&&!$aboutSection2.hasClass("focus")){
-            $aboutSection2.addClass("focus");
+            // $aboutSection2.addClass("focus");
         }
 
 
+        var ratioAboutTop = (1 - diffAbout/winHeight - 0.5) * 2;
+        if(ratioAboutTop<0){ ratioAboutTop = 0; }
+        if(ratioAboutTop>1){ ratioAboutTop = 1; }
+        $("#about-background .overlay").css("opacity", ratioAboutTop);
+
+        var ratioSupportTop = (1 - diffSupport/winHeight - 0.5) * 2;
+        if(ratioSupportTop<0){ ratioSupportTop = 0; }
+        if(ratioSupportTop>1){ ratioSupportTop = 1; }
+        $("section#support .overlay").css("opacity", ratioSupportTop);
+        // console.log(ratioSupportTop);
 
         // Unset the pause effect
 

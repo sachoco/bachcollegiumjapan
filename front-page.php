@@ -20,8 +20,8 @@
                                     <div>詳細はこちら</div>
                             </div>
                             </div>
-                            <div class="slide-overlay"></div>
                             </a>
+                            <div class="slide-overlay"></div>
                         </div>
 
                      <!-- Slide item 2 -->
@@ -31,13 +31,16 @@
                                 <div class="inner-content">
                                     <div>次回BCJ定期公演</div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 >H.シュッツの世界<div class="subtitle">主に感謝せよ、その慈しみはとこしえに 〜ダビデ詩編（抄）〜</div></h1>
+                                    <h1 >H.シュッツの世界</h1>
+                                    <div class="subtitle">主に感謝せよ、その慈しみはとこしえに 〜ダビデ詩編（抄）〜</div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <h1 >11.22（神戸）<div class="small">（土）15時</div></h1>
-                                    <div>神戸松蔭女子学院大学</div>
+                                    <!-- <div>神戸松蔭女子学院大学</div> -->
+                                    <div><a href="<?php echo get_home_url().'/schedule/h-シュッツの世界' ?>">神戸公演詳細はこちら</a></div>
                                      <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <h1>11.24（東京）<div class="small">（月・休）15時</div></h1>
-                                    <div>東京オペラシティ コンサートホール　タケミツメモリアル</div>
+                                    <!-- <div>東京オペラシティ コンサートホール　タケミツメモリアル</div> -->
+                                    <div><a href="<?php echo get_home_url().'/schedule/h-シュッツの世界-2' ?>">東京公演詳細はこちら</a></div>
                                 </div>
                             </div>
                             <div class="slide-overlay"></div>
@@ -45,6 +48,7 @@
 
                     <!-- Slide item 3 -->
                         <div class="slide-item">
+                            <a href="<?php echo get_home_url().'/suntry' ?>">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/suntory.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content">
                                 <div class="inner-content">
@@ -54,11 +58,13 @@
                                     <h1>第45回サントリー音楽賞受賞</h1>
                                 </div>
                             </div>
+                            </a>
                             <div class="slide-overlay"></div>
                         </div>
 
                     <!-- Slide item 4 -->
                         <div class="slide-item">
+                            <a href="<?php echo get_home_url().'/bcj_echo' ?>">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/echo.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
                                 <div class="inner-content"><div>エコー・クラシック賞</div>
@@ -73,6 +79,7 @@
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <div>神戸松蔭チャペル</div> --></div>
                             </div>
+                            </a>
                             <div class="slide-overlay"></div>
                         </div>
 
@@ -177,8 +184,16 @@
                                         if($pia||$eplus) :
                                     ?>
                                     <?php
-                                        if($pia) echo '<span><a target="_blank" href="'. $pia .'"">チケットぴあ</a></span>';
-                                        if($eplus) echo '<span><a target="_blank" href="'. $eplus .'"">イープラス</a></span>';
+                                        if($pia){
+                                           echo '<span><a target="_blank" href="'. $pia .'"">チケットぴあ</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">チケットぴあ</span>'; 
+                                       }
+                                        if($eplus){
+                                           echo '<span><a target="_blank" href="'. $eplus .'"">イープラス</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">イープラス</span>'; 
+                                       }                                       
                                     ?>
                                     <?php
                                         else:
@@ -253,7 +268,7 @@
                         while ( $the_query->have_posts() ) : $the_query->the_post();
                         $dateformatstring = "D d F, Y";
                 ?>
-                        <article class="news-item m-all t-1of2 d-1of4">
+                        <article class="news-item m-all t-1of2 d-1of4" data-link="<?php the_permalink(); ?>">
                             <header>
                             <span class="category">
                                 <?php
@@ -391,28 +406,28 @@
         <section id="support"  >
             <!-- <div class="background" data-stellar-ratio="0.5"><div class="overlay"></div></div> -->
             <div class="background" ><div class="overlay"></div></div>
-            <div class="wrap cf" >
-            <div class="wrap-inner">
+            <div class="wrap cf" style="padding-bottom:100px">
+            <div class="wrap-inner" style="padding-bottom:50px">
                 <h2 class="h-font row-header ">Support BCJ</h2>
                 <div id="support_bcj_1">
                     <h4 style="text-align: center;">フレンズ＆ソサエティのご案内</h4>
                     <div style=" text-align: left;">
                         バッハ・コレギウム・ジャパン（BCJ）は、日本から世界へと発信する有数のバロック・オーケストラおよび合唱団として、広く知られています。1990年に活動を開始して以来、15カ国、71都市で約1,000ものコンサートを行い、また80タイトル以上のCD録音（BISレーベル)を通して、世界の100万人以上の聴衆と共に、J.S.バッハの音楽のすばらしさを共有してきました。今後も、ますます多くの人々に、次世代を担う若い人々に、この宝を、伝えていきたいと願っています。J.S.バッハの音楽は、世界共通の言葉です。ヨーロッパ、アメリカ、さらにアジアの国々、至るところで、バッハを中心とする音楽の演奏・録音・教育活動を続けていくため、どうぞ、皆様のご支援をお願いいたします。<br><br><br>
                     </div>
-                        <div class="h_iframe">
-                            <img class="ratio" src="http://placehold.it/16x9"/>
-                        <iframe width="853" height="480" src="//www.youtube.com/embed/J5bGxCWf0yM?rel=0" frameborder="0" allowfullscreen></iframe>
-                        </div>
                     <a href="<?php echo get_permalink(get_page_by_path('friends_society')->ID); ?>"><span class="bcj-btn invert">BCJフレンズ＆ソサエティ詳細はこちら</span></a>
                 </div>
-                    <a href="#" class="go-top invert">
-                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
-                            <circle fill="#000000" cx="20" cy="20" r="20"/>
-                            <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
-                        </svg>
-                        <span>TO THE TOP</span>
-                    </a>
             </div>
+            <div class="h_iframe">
+                <img class="ratio" src="http://placehold.it/16x9"/>
+            <iframe width="853" height="480" src="//www.youtube.com/embed/J5bGxCWf0yM?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="#" class="go-top invert">
+                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
+                    <circle fill="#000000" cx="20" cy="20" r="20"/>
+                    <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
+                </svg>
+                <span>TO THE TOP</span>
+            </a>
             </div>
             <!-- <div class="overlay"></div> -->
         </section>

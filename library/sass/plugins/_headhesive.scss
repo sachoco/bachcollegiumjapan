@@ -24,7 +24,7 @@ nav.main-nav--clone {
 
     /* Additional styles */
     background-color: rgba($black,.8);
-    a {
+    a,a:hover,a:visited {
         color: $white;
     }
     li:after {

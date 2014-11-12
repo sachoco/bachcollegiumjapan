@@ -529,71 +529,90 @@ UPCOMING CONCERTS
 *********************/
 /* line 42, ../sass/breakpoints/_1030up.scss */
 section#intro nav {
-  width: 1000px; }
-  /* line 45, ../sass/breakpoints/_1030up.scss */
+  max-width: 950px;
+  width: 95%; }
+  /* line 46, ../sass/breakpoints/_1030up.scss */
   section#intro nav > ul li:before {
     font-size: 12px;
     margin-top: 4em; }
-  /* line 49, ../sass/breakpoints/_1030up.scss */
+  /* line 50, ../sass/breakpoints/_1030up.scss */
   section#intro nav .nav {
     font-size: 32px; }
 
 /* line 65, ../sass/breakpoints/_1030up.scss */
+a.go-top svg {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1); }
+
+/* line 75, ../sass/breakpoints/_1030up.scss */
 section#intro .logo img {
   width: 200px; }
-/* line 70, ../sass/breakpoints/_1030up.scss */
+/* line 80, ../sass/breakpoints/_1030up.scss */
+section#intro .short-profile {
+  margin: 20px auto;
+  font-size: 16px;
+  line-height: inherit; }
+/* line 86, ../sass/breakpoints/_1030up.scss */
+section#intro #scrolldownHome {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1); }
+/* line 89, ../sass/breakpoints/_1030up.scss */
 section#intro nav.main-nav {
   width: 1000px; }
-  /* line 73, ../sass/breakpoints/_1030up.scss */
+  /* line 92, ../sass/breakpoints/_1030up.scss */
   section#intro nav.main-nav > ul li:before {
     font-size: 12px;
     margin-top: 4em; }
-  /* line 77, ../sass/breakpoints/_1030up.scss */
+  /* line 96, ../sass/breakpoints/_1030up.scss */
   section#intro nav.main-nav .top-nav {
     font-size: 32px; }
 
-/* line 90, ../sass/breakpoints/_1030up.scss */
+/* line 109, ../sass/breakpoints/_1030up.scss */
 .top-nav {
   font-size: 20px; }
 
 /*********************
 FEATURE SLIDER
 *********************/
-/* line 97, ../sass/breakpoints/_1030up.scss */
+/* line 116, ../sass/breakpoints/_1030up.scss */
 #feature-slider {
   height: 360px; }
-  /* line 100, ../sass/breakpoints/_1030up.scss */
+  /* line 119, ../sass/breakpoints/_1030up.scss */
   #feature-slider .slide-item {
     height: 360px;
     position: relative; }
-    /* line 106, ../sass/breakpoints/_1030up.scss */
+    /* line 125, ../sass/breakpoints/_1030up.scss */
     #feature-slider .slide-item .slide-content {
       padding: 20px 100px;
       width: 600px; }
-      /* line 109, ../sass/breakpoints/_1030up.scss */
+      /* line 128, ../sass/breakpoints/_1030up.scss */
       #feature-slider .slide-item .slide-content h1 {
         font-size: 2em;
         margin-top: 10px; }
-        /* line 113, ../sass/breakpoints/_1030up.scss */
+        /* line 132, ../sass/breakpoints/_1030up.scss */
         #feature-slider .slide-item .slide-content h1 .subtitle {
           margin-bottom: 10px; }
 
 /*********************
 UPCOMING CONCERTS
 *********************/
-/* line 142, ../sass/breakpoints/_1030up.scss */
+/* line 161, ../sass/breakpoints/_1030up.scss */
 .upcoming div.overview {
   width: 24%;
   display: inline-block; }
-/* line 187, ../sass/breakpoints/_1030up.scss */
+/* line 206, ../sass/breakpoints/_1030up.scss */
 .upcoming footer .specials {
   margin-top: 50px; }
-  /* line 189, ../sass/breakpoints/_1030up.scss */
+  /* line 208, ../sass/breakpoints/_1030up.scss */
   .upcoming footer .specials img {
     margin: 10px;
     width: 276px; }
 
-/* line 205, ../sass/breakpoints/_1030up.scss */
+/* line 224, ../sass/breakpoints/_1030up.scss */
 .news-holder .banner img {
   width: 276px; }
 

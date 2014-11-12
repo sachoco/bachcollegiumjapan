@@ -5,81 +5,10 @@
   padding: 0 1em 0 3em;
 
 }
-section#intro {
-  h1{
 
-    img {
-      width: 200px;
 
-    }
-  }
-    .short-profile {
-        margin: 20px auto;
-        font-size: 16px;
-        line-height: inherit;
 
-    }
-    #scrolldownHome {
-        @include scale(1);
-    }
-  nav {
 
-    > ul li:before {
-
-    }
-    .nav {
-    }
-    .nav li a {
-
-      &:hover {
-
-      }
-    }
-
-  }
-}
-a.go-top {
-
-  svg {
-    @include scale(1);
-
-  }
-
-}
-
-section#intro {
-  .logo{
-
-    img {
-      width: 200px;
-
-    }
-  }
-    .short-profile {
-        margin: 20px auto;
-        font-size: 16px;
-        line-height: inherit;
-
-    }
-    #scrolldownHome {
-        @include scale(1);
-    }
-  nav {
-
-    > ul li:before {
-
-    }
-    .top-nav {
-    }
-    .nav li a {
-
-      &:hover {
-
-      }
-    }
-
-  }
-}
 
 
 nav {

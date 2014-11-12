@@ -40,7 +40,8 @@ section#intro {
     }
   }
   nav {
-    width: 1000px;
+    max-width: 950px;
+    width:95%;
 
     > ul li:before {
       font-size: 12px;
@@ -59,6 +60,15 @@ section#intro {
   }
 }
 
+a.go-top {
+
+  svg {
+    @include scale(1);
+
+  }
+
+}
+
 section#intro {
   .logo{
 
@@ -66,6 +76,15 @@ section#intro {
       width: 200px;
 
     }
+  }
+  .short-profile {
+      margin: 20px auto;
+      font-size: 16px;
+      line-height: inherit;
+
+  }
+  #scrolldownHome {
+      @include scale(1);
   }
   nav.main-nav {
     width: 1000px;

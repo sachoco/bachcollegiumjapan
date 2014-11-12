@@ -1,4 +1,4 @@
-        <footer class="footer" role="contentinfo">
+        <footer id="page-footer" class="footer" role="contentinfo">
 
           <div id="inner-footer" class="">
 
