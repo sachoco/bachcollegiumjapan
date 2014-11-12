@@ -292,6 +292,7 @@ FEATURE SLIDER
 			z-index: 998;
 			background: rgba($black, 0.5);
 			opacity: 1;
+			visibility: visible;
 			@include transition-property(opacity);
 			@include transition-duration(1s);
 			//@include transition-delay(1s);
@@ -338,6 +339,7 @@ FEATURE SLIDER
 		}
 		.slide-overlay {
 			opacity: 0;
+			visibility: hidden;
 		}
 	}
 

@@ -2390,6 +2390,7 @@ FEATURE SLIDER
       z-index: 998;
       background: rgba(1, 1, 1, 0.5);
       opacity: 1;
+      visibility: visible;
       -moz-transition-property: opacity;
       -o-transition-property: opacity;
       -webkit-transition-property: opacity;
@@ -2398,7 +2399,7 @@ FEATURE SLIDER
       -o-transition-duration: 1s;
       -webkit-transition-duration: 1s;
       transition-duration: 1s; }
-  /* line 303, ../sass/breakpoints/_base.scss */
+  /* line 304, ../sass/breakpoints/_base.scss */
   #feature-slider .feature-nav {
     position: absolute;
     z-index: 9999;
@@ -2414,22 +2415,22 @@ FEATURE SLIDER
     -o-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s; }
-    /* line 312, ../sass/breakpoints/_base.scss */
+    /* line 313, ../sass/breakpoints/_base.scss */
     #feature-slider .feature-nav.prev {
       left: 2%; }
-    /* line 315, ../sass/breakpoints/_base.scss */
+    /* line 316, ../sass/breakpoints/_base.scss */
     #feature-slider .feature-nav.next {
       right: 2%; }
-  /* line 320, ../sass/breakpoints/_base.scss */
+  /* line 321, ../sass/breakpoints/_base.scss */
   #feature-slider:hover .feature-nav {
     opacity: 1; }
-  /* line 323, ../sass/breakpoints/_base.scss */
+  /* line 324, ../sass/breakpoints/_base.scss */
   #feature-slider:hover .slick-prev, #feature-slider:hover .slick-next {
     opacity: 1; }
-  /* line 327, ../sass/breakpoints/_base.scss */
+  /* line 328, ../sass/breakpoints/_base.scss */
   #feature-slider .slick-list {
     overflow: visible; }
-  /* line 330, ../sass/breakpoints/_base.scss */
+  /* line 331, ../sass/breakpoints/_base.scss */
   #feature-slider .slick-prev, #feature-slider .slick-next {
     -moz-transition-property: opacity;
     -o-transition-property: opacity;
@@ -2440,17 +2441,18 @@ FEATURE SLIDER
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
     opacity: 0; }
-  /* line 336, ../sass/breakpoints/_base.scss */
+  /* line 337, ../sass/breakpoints/_base.scss */
   #feature-slider .slide-item.slick-active .slide-content {
     opacity: 1; }
-  /* line 339, ../sass/breakpoints/_base.scss */
+  /* line 340, ../sass/breakpoints/_base.scss */
   #feature-slider .slide-item.slick-active .slide-overlay {
-    opacity: 0; }
+    opacity: 0;
+    visibility: hidden; }
 
 /*********************
 BACKGROUND
 *********************/
-/* line 351, ../sass/breakpoints/_base.scss */
+/* line 353, ../sass/breakpoints/_base.scss */
 #background {
   position: fixed;
   top: 0px;
@@ -2460,7 +2462,7 @@ BACKGROUND
   z-index: -1;
   -webkit-transform: translateZ(0);
   pointer-events: none; }
-  /* line 360, ../sass/breakpoints/_base.scss */
+  /* line 362, ../sass/breakpoints/_base.scss */
   #background #intro-background {
     background: url(../images/home.jpg) center center no-repeat;
     background-size: cover;
@@ -2472,10 +2474,10 @@ BACKGROUND
     -webkit-transform: translateZ(0);
     pointer-events: none;
     position: fixed; }
-    /* line 372, ../sass/breakpoints/_base.scss */
+    /* line 374, ../sass/breakpoints/_base.scss */
     #background #intro-background.disable {
       opacity: 0; }
-    /* line 375, ../sass/breakpoints/_base.scss */
+    /* line 377, ../sass/breakpoints/_base.scss */
     #background #intro-background .overlay {
       position: absolute;
       width: 100%;
@@ -2483,7 +2485,7 @@ BACKGROUND
       background-color: rgba(0, 0, 0, 0.5);
       top: 0;
       z-index: 0; }
-  /* line 384, ../sass/breakpoints/_base.scss */
+  /* line 386, ../sass/breakpoints/_base.scss */
   #background #about-background {
     background: url(../images/profile-bcj2.jpg) center center no-repeat;
     background-size: cover;
@@ -2495,10 +2497,10 @@ BACKGROUND
     z-index: 1;
     -webkit-transform: translateZ(0);
     pointer-events: none; }
-    /* line 395, ../sass/breakpoints/_base.scss */
+    /* line 397, ../sass/breakpoints/_base.scss */
     #background #about-background.disable {
       opacity: 0; }
-    /* line 398, ../sass/breakpoints/_base.scss */
+    /* line 400, ../sass/breakpoints/_base.scss */
     #background #about-background .overlay {
       position: absolute;
       width: 100%;
@@ -2507,7 +2509,7 @@ BACKGROUND
       top: 0;
       z-index: 0;
       opacity: 0; }
-  /* line 411, ../sass/breakpoints/_base.scss */
+  /* line 413, ../sass/breakpoints/_base.scss */
   #background #page-background {
     background: center center no-repeat;
     background-size: cover;
@@ -2519,10 +2521,10 @@ BACKGROUND
     -webkit-transform: translateZ(0);
     pointer-events: none;
     position: fixed; }
-    /* line 422, ../sass/breakpoints/_base.scss */
+    /* line 424, ../sass/breakpoints/_base.scss */
     #background #page-background.disable {
       opacity: 0; }
-    /* line 425, ../sass/breakpoints/_base.scss */
+    /* line 427, ../sass/breakpoints/_base.scss */
     #background #page-background .overlay {
       position: absolute;
       width: 100%;
@@ -2534,14 +2536,14 @@ BACKGROUND
 /*********************
 INTRO
 *********************/
-/* line 438, ../sass/breakpoints/_base.scss */
+/* line 440, ../sass/breakpoints/_base.scss */
 section#intro {
   height: 100%;
   background-size: cover;
   text-align: center;
   color: #fff;
   position: relative; }
-  /* line 446, ../sass/breakpoints/_base.scss */
+  /* line 448, ../sass/breakpoints/_base.scss */
   section#intro .content {
     position: absolute;
     z-index: 999;
@@ -2552,12 +2554,12 @@ section#intro {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 100%; }
-  /* line 454, ../sass/breakpoints/_base.scss */
+  /* line 456, ../sass/breakpoints/_base.scss */
   section#intro .wrapper {
     position: fixed;
     width: 100%;
     height: 100%; }
-  /* line 459, ../sass/breakpoints/_base.scss */
+  /* line 461, ../sass/breakpoints/_base.scss */
   section#intro .roles {
     font-size: 18px;
     display: inline-block;
@@ -2567,7 +2569,7 @@ section#intro {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
     z-index: 999;
     position: relative; }
-  /* line 470, ../sass/breakpoints/_base.scss */
+  /* line 472, ../sass/breakpoints/_base.scss */
   section#intro .short-profile {
     max-width: 770px;
     width: 90%;
@@ -2576,7 +2578,7 @@ section#intro {
     font-weight: bold;
     position: relative;
     z-index: 9999; }
-  /* line 482, ../sass/breakpoints/_base.scss */
+  /* line 484, ../sass/breakpoints/_base.scss */
   section#intro .logo {
     font-size: 80px;
     text-transform: uppercase;
@@ -2586,12 +2588,12 @@ section#intro {
     line-height: 0;
     margin: 3vh 0;
     z-index: 999; }
-    /* line 492, ../sass/breakpoints/_base.scss */
+    /* line 494, ../sass/breakpoints/_base.scss */
     section#intro .logo img {
       width: 100px;
       height: auto;
       opacity: .9; }
-  /* line 499, ../sass/breakpoints/_base.scss */
+  /* line 501, ../sass/breakpoints/_base.scss */
   section#intro #scrolldownHome {
     -moz-animation: fade-in-out 5s ease-in-out infinite;
     -webkit-animation: fade-in-out 5s ease-in-out infinite;
@@ -2601,17 +2603,17 @@ section#intro {
     -ms-transform: scale(0.5, 0.5);
     -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5); }
-    /* line 503, ../sass/breakpoints/_base.scss */
+    /* line 505, ../sass/breakpoints/_base.scss */
     section#intro #scrolldownHome circle {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
       opacity: 0.9;
       -webkit-transition: opacity, 0.2s;
       transition: opacity, 0.2s; }
-    /* line 508, ../sass/breakpoints/_base.scss */
+    /* line 510, ../sass/breakpoints/_base.scss */
     section#intro #scrolldownHome:hover circle {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
       opacity: 0.5; }
-  /* line 513, ../sass/breakpoints/_base.scss */
+  /* line 515, ../sass/breakpoints/_base.scss */
   section#intro nav {
     display: none;
     position: absolute;
@@ -2626,14 +2628,14 @@ section#intro {
     width: 600px;
     margin: auto;
     z-index: 999; }
-    /* line 527, ../sass/breakpoints/_base.scss */
+    /* line 529, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li a {
       color: #fff;
       letter-spacing: 0.1em; }
-    /* line 534, ../sass/breakpoints/_base.scss */
+    /* line 536, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li a:hover {
       text-decoration: none; }
-    /* line 537, ../sass/breakpoints/_base.scss */
+    /* line 539, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li:before {
       position: absolute;
       margin-top: 2.7em;
@@ -2644,22 +2646,22 @@ section#intro {
       display: block;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-    /* line 548, ../sass/breakpoints/_base.scss */
+    /* line 550, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-about:before {
       content: "BCJについて"; }
-    /* line 551, ../sass/breakpoints/_base.scss */
+    /* line 553, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-concerts:before {
       content: "コンサート"; }
-    /* line 554, ../sass/breakpoints/_base.scss */
+    /* line 556, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-discography:before {
       content: "ディスコグラフィ"; }
-    /* line 557, ../sass/breakpoints/_base.scss */
+    /* line 559, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-gallery:before {
       content: "ギャラリー"; }
-    /* line 560, ../sass/breakpoints/_base.scss */
+    /* line 562, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-friends_society:before {
       content: "フレンズ＆ソサエティ"; }
-    /* line 563, ../sass/breakpoints/_base.scss */
+    /* line 565, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li:after {
       position: absolute;
       margin-top: -2.5em;
@@ -2672,39 +2674,39 @@ section#intro {
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
       z-index: 9; }
-    /* line 576, ../sass/breakpoints/_base.scss */
+    /* line 578, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-discography:after, section#intro nav > ul li.menu-gallery:after {
       content: "Coming Soon"; }
-    /* line 588, ../sass/breakpoints/_base.scss */
+    /* line 590, ../sass/breakpoints/_base.scss */
     section#intro nav a {
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-    /* line 591, ../sass/breakpoints/_base.scss */
+    /* line 593, ../sass/breakpoints/_base.scss */
     section#intro nav .nav {
       font-size: 20px; }
-    /* line 595, ../sass/breakpoints/_base.scss */
+    /* line 597, ../sass/breakpoints/_base.scss */
     section#intro nav .nav li {
       display: inline-block;
       color: #989898; }
-      /* line 599, ../sass/breakpoints/_base.scss */
+      /* line 601, ../sass/breakpoints/_base.scss */
       section#intro nav .nav li a {
         padding: 0.2em 1.5em 0.2em;
         color: #989898; }
-      /* line 606, ../sass/breakpoints/_base.scss */
+      /* line 608, ../sass/breakpoints/_base.scss */
       section#intro nav .nav li:hover {
         color: #fff; }
-        /* line 611, ../sass/breakpoints/_base.scss */
+        /* line 613, ../sass/breakpoints/_base.scss */
         section#intro nav .nav li:hover a {
           color: #fff; }
-    /* line 617, ../sass/breakpoints/_base.scss */
+    /* line 619, ../sass/breakpoints/_base.scss */
     section#intro nav .nav li.menu-discography, section#intro nav .nav li.menu-gallery {
       color: #4d4d4d;
       cursor: default; }
-      /* line 620, ../sass/breakpoints/_base.scss */
+      /* line 622, ../sass/breakpoints/_base.scss */
       section#intro nav .nav li.menu-discography a, section#intro nav .nav li.menu-gallery a {
         color: #4d4d4d;
         cursor: default; }
-  /* line 628, ../sass/breakpoints/_base.scss */
+  /* line 630, ../sass/breakpoints/_base.scss */
   section#intro .overlay {
     position: absolute;
     width: 100%;
@@ -2719,11 +2721,11 @@ section#intro {
 /*********************
 SLICK SLIDER
 *********************/
-/* line 645, ../sass/breakpoints/_base.scss */
+/* line 647, ../sass/breakpoints/_base.scss */
 .slick-slider {
   margin-bottom: 0px; }
 
-/* line 648, ../sass/breakpoints/_base.scss */
+/* line 650, ../sass/breakpoints/_base.scss */
 .slick-next, .slick-prev {
   -moz-transform: translate3d(0, -50%, 0) scale(0.5);
   -ms-transform: translate3d(0, -50%, 0) scale(0.5);
@@ -2733,53 +2735,53 @@ SLICK SLIDER
   transition: opacity 0.2s;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5; }
-  /* line 653, ../sass/breakpoints/_base.scss */
+  /* line 655, ../sass/breakpoints/_base.scss */
   .slick-next:not(.slick-disabled):hover, .slick-prev:not(.slick-disabled):hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1; }
 
-/* line 659, ../sass/breakpoints/_base.scss */
+/* line 661, ../sass/breakpoints/_base.scss */
 .slick-dots {
   visibility: hidden; }
 
 /*********************
 EVENT CALENDAR
 *********************/
-/* line 666, ../sass/breakpoints/_base.scss */
+/* line 668, ../sass/breakpoints/_base.scss */
 .eventCalendar-wrap .arrow {
   width: auto; }
 
-/* line 669, ../sass/breakpoints/_base.scss */
+/* line 671, ../sass/breakpoints/_base.scss */
 .eventsCalendar-currentTitle .monthTitle {
   font-size: 16px; }
 
-/* line 672, ../sass/breakpoints/_base.scss */
+/* line 674, ../sass/breakpoints/_base.scss */
 .eventsCalendar-daysList {
   display: none; }
 
 /*********************
 UPCOMING CONCERTS
 *********************/
-/* line 681, ../sass/breakpoints/_base.scss */
+/* line 683, ../sass/breakpoints/_base.scss */
 .upcoming .overview-holder-carousel {
   margin-top: 20px; }
-  /* line 683, ../sass/breakpoints/_base.scss */
+  /* line 685, ../sass/breakpoints/_base.scss */
   .upcoming .overview-holder-carousel.inactive {
     visibility: hidden; }
-  /* line 686, ../sass/breakpoints/_base.scss */
+  /* line 688, ../sass/breakpoints/_base.scss */
   .upcoming .overview-holder-carousel .slick-next {
     right: -60px; }
-  /* line 687, ../sass/breakpoints/_base.scss */
+  /* line 689, ../sass/breakpoints/_base.scss */
   .upcoming .overview-holder-carousel .slick-prev {
     left: -60px; }
-  /* line 688, ../sass/breakpoints/_base.scss */
+  /* line 690, ../sass/breakpoints/_base.scss */
   .upcoming .overview-holder-carousel .slick-list {
     padding-right: 1px; }
-/* line 694, ../sass/breakpoints/_base.scss */
+/* line 696, ../sass/breakpoints/_base.scss */
 .upcoming .overview-holder {
   display: table;
   position: relative; }
-/* line 698, ../sass/breakpoints/_base.scss */
+/* line 700, ../sass/breakpoints/_base.scss */
 .upcoming div.overview {
   vertical-align: top;
   text-align: left;
@@ -2789,27 +2791,27 @@ UPCOMING CONCERTS
   padding: 0 1em;
   overflow: hidden;
   border-left: 1px solid #010101; }
-  /* line 720, ../sass/breakpoints/_base.scss */
+  /* line 722, ../sass/breakpoints/_base.scss */
   .upcoming div.overview header {
     padding-bottom: 5px;
     border-bottom: 3px solid #840F15; }
-    /* line 723, ../sass/breakpoints/_base.scss */
+    /* line 725, ../sass/breakpoints/_base.scss */
     .upcoming div.overview header .date_time {
       padding-top: 25px;
       text-align: center; }
-    /* line 727, ../sass/breakpoints/_base.scss */
+    /* line 729, ../sass/breakpoints/_base.scss */
     .upcoming div.overview header .location {
       text-align: center;
       height: 40px;
       overflow: hidden;
       line-height: 1.5em; }
-      /* line 732, ../sass/breakpoints/_base.scss */
+      /* line 734, ../sass/breakpoints/_base.scss */
       .upcoming div.overview header .location .country {
         display: inline-block; }
-  /* line 738, ../sass/breakpoints/_base.scss */
+  /* line 740, ../sass/breakpoints/_base.scss */
   .upcoming div.overview section {
     position: relative; }
-    /* line 740, ../sass/breakpoints/_base.scss */
+    /* line 742, ../sass/breakpoints/_base.scss */
     .upcoming div.overview section .thumb {
       display: none;
       -moz-transition-property: opacity;
@@ -2824,12 +2826,12 @@ UPCOMING CONCERTS
       -o-transition-timing-function: ease-in;
       -webkit-transition-timing-function: ease-in;
       transition-timing-function: ease-in; }
-      /* line 745, ../sass/breakpoints/_base.scss */
+      /* line 747, ../sass/breakpoints/_base.scss */
       .upcoming div.overview section .thumb img {
         width: 100%;
         height: auto;
         display: block; }
-    /* line 751, ../sass/breakpoints/_base.scss */
+    /* line 753, ../sass/breakpoints/_base.scss */
     .upcoming div.overview section .title {
       padding: 5px 0px;
       text-align: center;
@@ -2845,7 +2847,7 @@ UPCOMING CONCERTS
       -o-transition-timing-function: ease-in;
       -webkit-transition-timing-function: ease-in;
       transition-timing-function: ease-in; }
-  /* line 763, ../sass/breakpoints/_base.scss */
+  /* line 765, ../sass/breakpoints/_base.scss */
   .upcoming div.overview .description {
     z-index: 999;
     top: 0;
@@ -2867,19 +2869,19 @@ UPCOMING CONCERTS
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
     font-size: 0.9em; }
-    /* line 781, ../sass/breakpoints/_base.scss */
+    /* line 783, ../sass/breakpoints/_base.scss */
     .upcoming div.overview .description .detail {
       overflow: hidden; }
-    /* line 787, ../sass/breakpoints/_base.scss */
+    /* line 789, ../sass/breakpoints/_base.scss */
     .upcoming div.overview .description .readmore {
       margin-bottom: 10px;
       text-decoration: underline; }
-    /* line 793, ../sass/breakpoints/_base.scss */
+    /* line 795, ../sass/breakpoints/_base.scss */
     .upcoming div.overview .description .buy-ticket-container {
       position: absolute;
       bottom: 10px;
       width: 100%; }
-      /* line 797, ../sass/breakpoints/_base.scss */
+      /* line 799, ../sass/breakpoints/_base.scss */
       .upcoming div.overview .description .buy-ticket-container .playguide {
         position: absolute;
         top: 0;
@@ -2887,78 +2889,78 @@ UPCOMING CONCERTS
         opacity: 0;
         width: 100%;
         color: #840F15; }
-        /* line 804, ../sass/breakpoints/_base.scss */
+        /* line 806, ../sass/breakpoints/_base.scss */
         .upcoming div.overview .description .buy-ticket-container .playguide span {
           border: 1px solid #840F15;
           margin-left: 4%;
           float: left;
           padding: 0.8em 0 0.4em;
           width: 48%; }
-          /* line 811, ../sass/breakpoints/_base.scss */
+          /* line 813, ../sass/breakpoints/_base.scss */
           .upcoming div.overview .description .buy-ticket-container .playguide span:not(.disabled):hover {
             background-color: rgba(255, 255, 255, 0.5); }
-          /* line 814, ../sass/breakpoints/_base.scss */
+          /* line 816, ../sass/breakpoints/_base.scss */
           .upcoming div.overview .description .buy-ticket-container .playguide span:first-child {
             margin-left: 0; }
-          /* line 817, ../sass/breakpoints/_base.scss */
+          /* line 819, ../sass/breakpoints/_base.scss */
           .upcoming div.overview .description .buy-ticket-container .playguide span a {
             color: #840F15;
             text-decoration: none; }
-          /* line 821, ../sass/breakpoints/_base.scss */
+          /* line 823, ../sass/breakpoints/_base.scss */
           .upcoming div.overview .description .buy-ticket-container .playguide span.disabled {
             opacity: 0.2; }
-      /* line 833, ../sass/breakpoints/_base.scss */
+      /* line 835, ../sass/breakpoints/_base.scss */
       .upcoming div.overview .description .buy-ticket-container:hover .buy-ticket {
         opacity: 0; }
-      /* line 836, ../sass/breakpoints/_base.scss */
+      /* line 838, ../sass/breakpoints/_base.scss */
       .upcoming div.overview .description .buy-ticket-container:hover .playguide {
         opacity: 1; }
-/* line 845, ../sass/breakpoints/_base.scss */
+/* line 847, ../sass/breakpoints/_base.scss */
 .upcoming footer {
   margin-top: 20px;
   text-align: center; }
-  /* line 849, ../sass/breakpoints/_base.scss */
+  /* line 851, ../sass/breakpoints/_base.scss */
   .upcoming footer .category span {
     font-size: 6px; }
-  /* line 853, ../sass/breakpoints/_base.scss */
+  /* line 855, ../sass/breakpoints/_base.scss */
   .upcoming footer .specials {
     margin-top: 25px; }
-    /* line 856, ../sass/breakpoints/_base.scss */
+    /* line 858, ../sass/breakpoints/_base.scss */
     .upcoming footer .specials img {
       margin: 0 10px;
       width: 120px; }
 
-/* line 871, ../sass/breakpoints/_base.scss */
+/* line 873, ../sass/breakpoints/_base.scss */
 .no-touch .upcoming div.overview section .thumb {
   display: block; }
-/* line 874, ../sass/breakpoints/_base.scss */
+/* line 876, ../sass/breakpoints/_base.scss */
 .no-touch .upcoming div.overview section .title {
   height: 100px; }
-/* line 878, ../sass/breakpoints/_base.scss */
+/* line 880, ../sass/breakpoints/_base.scss */
 .no-touch .upcoming div.overview .description {
   opacity: 0;
   position: absolute; }
-/* line 884, ../sass/breakpoints/_base.scss */
+/* line 886, ../sass/breakpoints/_base.scss */
 .no-touch .upcoming div.overview:hover .description {
   opacity: 1; }
-/* line 887, ../sass/breakpoints/_base.scss */
+/* line 889, ../sass/breakpoints/_base.scss */
 .no-touch .upcoming div.overview:hover .thumb, .no-touch .upcoming div.overview:hover .title {
   opacity: 0; }
 
-/* line 910, ../sass/breakpoints/_base.scss */
+/* line 912, ../sass/breakpoints/_base.scss */
 .schedule-nav {
   position: absolute;
   top: 50%;
   margin-top: -0.5em;
   cursor: pointer; }
-  /* line 916, ../sass/breakpoints/_base.scss */
+  /* line 918, ../sass/breakpoints/_base.scss */
   .schedule-nav.left {
     left: -6%; }
-  /* line 919, ../sass/breakpoints/_base.scss */
+  /* line 921, ../sass/breakpoints/_base.scss */
   .schedule-nav.right {
     right: -6%; }
 
-/* line 925, ../sass/breakpoints/_base.scss */
+/* line 927, ../sass/breakpoints/_base.scss */
 .activities header {
   position: absolute;
   top: 0;
@@ -2969,28 +2971,28 @@ UPCOMING CONCERTS
   color: white;
   font-size: 1.5em; }
 
-/* line 935, ../sass/breakpoints/_base.scss */
+/* line 937, ../sass/breakpoints/_base.scss */
 .activities article {
   position: relative;
   border: 1px solid #010101; }
-  /* line 938, ../sass/breakpoints/_base.scss */
+  /* line 940, ../sass/breakpoints/_base.scss */
   .activities article img {
     display: block; }
 
-/* line 952, ../sass/breakpoints/_base.scss */
+/* line 954, ../sass/breakpoints/_base.scss */
 .news-holder {
   padding: 0 10%; }
-  /* line 954, ../sass/breakpoints/_base.scss */
+  /* line 956, ../sass/breakpoints/_base.scss */
   .news-holder h3 {
     color: #989898; }
-  /* line 958, ../sass/breakpoints/_base.scss */
+  /* line 960, ../sass/breakpoints/_base.scss */
   .news-holder .banner {
     margin: 50px 0; }
-    /* line 960, ../sass/breakpoints/_base.scss */
+    /* line 962, ../sass/breakpoints/_base.scss */
     .news-holder .banner img {
       width: 120px; }
 
-/* line 967, ../sass/breakpoints/_base.scss */
+/* line 969, ../sass/breakpoints/_base.scss */
 .news-item {
   border-left: 1px solid #010101;
   padding: 10px;
@@ -3000,31 +3002,31 @@ UPCOMING CONCERTS
   position: relative;
   margin: 10px 0;
   border-right: 1px solid #010101; }
-  /* line 976, ../sass/breakpoints/_base.scss */
+  /* line 978, ../sass/breakpoints/_base.scss */
   .news-item:hover {
     background-color: rgba(255, 255, 255, 0.5); }
-  /* line 980, ../sass/breakpoints/_base.scss */
+  /* line 982, ../sass/breakpoints/_base.scss */
   .news-item header {
     font-weight: bold; }
-    /* line 982, ../sass/breakpoints/_base.scss */
+    /* line 984, ../sass/breakpoints/_base.scss */
     .news-item header .title {
       height: 2em; }
-    /* line 985, ../sass/breakpoints/_base.scss */
+    /* line 987, ../sass/breakpoints/_base.scss */
     .news-item header .date {
       font-weight: normal;
       font-size: 0.8em;
       display: block;
       text-align: right; }
-    /* line 991, ../sass/breakpoints/_base.scss */
+    /* line 993, ../sass/breakpoints/_base.scss */
     .news-item header .category {
       font-weight: normal;
       font-size: 0.8em;
       display: block;
       height: 2em; }
-  /* line 1001, ../sass/breakpoints/_base.scss */
+  /* line 1003, ../sass/breakpoints/_base.scss */
   .news-item:last-child {
     border-right: 1px solid #010101; }
-  /* line 1005, ../sass/breakpoints/_base.scss */
+  /* line 1007, ../sass/breakpoints/_base.scss */
   .news-item section .excerpt-read-more {
     display: block;
     margin-bottom: 10px;
@@ -3032,128 +3034,128 @@ UPCOMING CONCERTS
     bottom: 0px;
     font-size: 0.7em; }
 
-/* line 1019, ../sass/breakpoints/_base.scss */
+/* line 1021, ../sass/breakpoints/_base.scss */
 .social_widget {
   background-color: #000000;
   padding: 20px 0; }
 
-/* line 1025, ../sass/breakpoints/_base.scss */
+/* line 1027, ../sass/breakpoints/_base.scss */
 .bg-white {
   background-color: rgba(255, 255, 255, 0.8); }
 
-/* line 1033, ../sass/breakpoints/_base.scss */
+/* line 1035, ../sass/breakpoints/_base.scss */
 section#about {
   overflow: hidden;
   text-align: center;
   color: #fff;
   min-height: 1000px;
   position: relative; }
-  /* line 1042, ../sass/breakpoints/_base.scss */
+  /* line 1044, ../sass/breakpoints/_base.scss */
   section#about .row-header {
     font-size: 16px;
     letter-spacing: 2px;
     color: #fff;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
-    /* line 1047, ../sass/breakpoints/_base.scss */
+    /* line 1049, ../sass/breakpoints/_base.scss */
     section#about .row-header.focus {
       color: #989898; }
-  /* line 1051, ../sass/breakpoints/_base.scss */
+  /* line 1053, ../sass/breakpoints/_base.scss */
   section#about .wrap {
     z-index: 1;
     width: 100%; }
-    /* line 1054, ../sass/breakpoints/_base.scss */
+    /* line 1056, ../sass/breakpoints/_base.scss */
     section#about .wrap .wrap-inner {
       padding: 10%; }
-    /* line 1057, ../sass/breakpoints/_base.scss */
+    /* line 1059, ../sass/breakpoints/_base.scss */
     section#about .wrap.pause {
       top: 0;
       position: fixed; }
-  /* line 1064, ../sass/breakpoints/_base.scss */
+  /* line 1066, ../sass/breakpoints/_base.scss */
   section#about #about_bcj_1 {
     line-height: 1.5em;
     font-weight: bold;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin-bottom: 30px; }
-    /* line 1071, ../sass/breakpoints/_base.scss */
+    /* line 1073, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_1.focus {
       opacity: 1; }
-  /* line 1076, ../sass/breakpoints/_base.scss */
+  /* line 1078, ../sass/breakpoints/_base.scss */
   section#about #about_bcj_2 {
     margin-bottom: 0;
     margin-bottom: 30px;
     -webkit-transition: max-height 1s ease-in-out, margin-bottom 1s ease-in-out, opacity 1s ease-in-out 0.5s;
     transition: max-height 1s ease-in-out, margin-bottom 1s ease-in-out, opacity 1s ease-in-out 0.5s; }
-    /* line 1086, ../sass/breakpoints/_base.scss */
+    /* line 1088, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_2.focus {
       visibility: visible;
       margin-bottom: 30px;
       max-height: 600px;
       opacity: 1; }
-  /* line 1095, ../sass/breakpoints/_base.scss */
+  /* line 1097, ../sass/breakpoints/_base.scss */
   section#about #about_bcj_3 {
     width: 100%;
     margin: auto;
     line-height: 1.5em;
     text-align: center; }
-    /* line 1101, ../sass/breakpoints/_base.scss */
+    /* line 1103, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_3 p {
       max-width: 520px;
       margin-right: auto;
       margin-left: auto;
       -webkit-transition: opacity 1s ease-in-out;
       transition: opacity 1s ease-in-out; }
-      /* line 1111, ../sass/breakpoints/_base.scss */
+      /* line 1113, ../sass/breakpoints/_base.scss */
       section#about #about_bcj_3 p.second {
         -moz-transition-delay: 0.75s;
         -o-transition-delay: 0.75s;
         -webkit-transition-delay: 0.75s;
         transition-delay: 0.75s; }
-      /* line 1114, ../sass/breakpoints/_base.scss */
+      /* line 1116, ../sass/breakpoints/_base.scss */
       section#about #about_bcj_3 p.third {
         -moz-transition-delay: 1.5s;
         -o-transition-delay: 1.5s;
         -webkit-transition-delay: 1.5s;
         transition-delay: 1.5s; }
-    /* line 1119, ../sass/breakpoints/_base.scss */
+    /* line 1121, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_3.focus p {
       opacity: 1; }
-  /* line 1123, ../sass/breakpoints/_base.scss */
+  /* line 1125, ../sass/breakpoints/_base.scss */
   section#about #about_bcj_4 {
     max-width: 700px;
     margin: auto;
     text-align: center;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
-    /* line 1129, ../sass/breakpoints/_base.scss */
+    /* line 1131, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_4.focus {
       opacity: 1; }
-    /* line 1132, ../sass/breakpoints/_base.scss */
+    /* line 1134, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_4 a {
       color: #fff;
       text-decoration: none; }
-    /* line 1136, ../sass/breakpoints/_base.scss */
+    /* line 1138, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_4 .award_activitity {
       display: inline-block;
       padding: 2%;
       width: 46%;
       vertical-align: top; }
-      /* line 1141, ../sass/breakpoints/_base.scss */
+      /* line 1143, ../sass/breakpoints/_base.scss */
       section#about #about_bcj_4 .award_activitity li {
         line-height: 1.3em;
         margin: 0.5em 0; }
-  /* line 1147, ../sass/breakpoints/_base.scss */
+  /* line 1149, ../sass/breakpoints/_base.scss */
   section#about #about_bcj_5 {
     text-align: center;
     max-width: 700px;
     margin: auto;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
-    /* line 1153, ../sass/breakpoints/_base.scss */
+    /* line 1155, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_5.focus {
       opacity: 1; }
-  /* line 1157, ../sass/breakpoints/_base.scss */
+  /* line 1159, ../sass/breakpoints/_base.scss */
   section#about .overlay {
     position: absolute;
     width: 100%;
@@ -3165,59 +3167,59 @@ section#about {
     opacity: 0;
     -webkit-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out; }
-    /* line 1167, ../sass/breakpoints/_base.scss */
+    /* line 1169, ../sass/breakpoints/_base.scss */
     section#about .overlay.focus {
       opacity: 1; }
-  /* line 1171, ../sass/breakpoints/_base.scss */
+  /* line 1173, ../sass/breakpoints/_base.scss */
   section#about .cd-holder-carousel {
     position: relative;
     width: 100%; }
-    /* line 1174, ../sass/breakpoints/_base.scss */
+    /* line 1176, ../sass/breakpoints/_base.scss */
     section#about .cd-holder-carousel .slick-slide {
       width: 150px;
       padding: 0 15px; }
-      /* line 1177, ../sass/breakpoints/_base.scss */
+      /* line 1179, ../sass/breakpoints/_base.scss */
       section#about .cd-holder-carousel .slick-slide img {
         width: 100%;
         height: auto;
         display: block; }
-    /* line 1183, ../sass/breakpoints/_base.scss */
+    /* line 1185, ../sass/breakpoints/_base.scss */
     section#about .cd-holder-carousel .slick-prev, section#about .cd-holder-carousel .slick-next {
       margin-top: 0; }
-    /* line 1186, ../sass/breakpoints/_base.scss */
+    /* line 1188, ../sass/breakpoints/_base.scss */
     section#about .cd-holder-carousel .slick-next {
       right: -50px; }
-    /* line 1187, ../sass/breakpoints/_base.scss */
+    /* line 1189, ../sass/breakpoints/_base.scss */
     section#about .cd-holder-carousel .slick-prev {
       left: -50px; }
-  /* line 1189, ../sass/breakpoints/_base.scss */
+  /* line 1191, ../sass/breakpoints/_base.scss */
   section#about .cd-holder {
     width: 100%;
     position: relative; }
-    /* line 1193, ../sass/breakpoints/_base.scss */
+    /* line 1195, ../sass/breakpoints/_base.scss */
     section#about .cd-holder .arrow-left {
       height: 100%;
       width: 60px;
       position: absolute;
       top: 35%;
       left: -55px; }
-    /* line 1200, ../sass/breakpoints/_base.scss */
+    /* line 1202, ../sass/breakpoints/_base.scss */
     section#about .cd-holder .arrow-right {
       height: 100%;
       width: 60px;
       position: absolute;
       top: 35%;
       right: -55px; }
-    /* line 1207, ../sass/breakpoints/_base.scss */
+    /* line 1209, ../sass/breakpoints/_base.scss */
     section#about .cd-holder .cd-holder-inner {
       overflow: scroll;
       width: 100%; }
-    /* line 1211, ../sass/breakpoints/_base.scss */
+    /* line 1213, ../sass/breakpoints/_base.scss */
     section#about .cd-holder ul {
       list-style: none;
       display: table;
       margin: 0; }
-      /* line 1215, ../sass/breakpoints/_base.scss */
+      /* line 1217, ../sass/breakpoints/_base.scss */
       section#about .cd-holder ul li {
         display: table-cell;
         width: 150px;
@@ -3225,7 +3227,7 @@ section#about {
         overflow: hidden;
         padding: 0 15px;
         vertical-align: top; }
-        /* line 1223, ../sass/breakpoints/_base.scss */
+        /* line 1225, ../sass/breakpoints/_base.scss */
         section#about .cd-holder ul li img {
           width: 150px;
           height: auto;
@@ -3234,7 +3236,7 @@ section#about {
           -webkit-box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 10px;
           box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 10px; }
 
-/* line 1240, ../sass/breakpoints/_base.scss */
+/* line 1242, ../sass/breakpoints/_base.scss */
 section#support {
   overflow: hidden;
   text-align: center;
@@ -3244,7 +3246,7 @@ section#support {
   text-align: center;
   min-height: 800px;
   color: #010101; }
-  /* line 1256, ../sass/breakpoints/_base.scss */
+  /* line 1258, ../sass/breakpoints/_base.scss */
   section#support .background {
     background: url(../images/himawari_masaaki.jpg) center -200px no-repeat;
     background-size: cover;
@@ -3253,7 +3255,7 @@ section#support {
     left: 0;
     width: 100%;
     height: 130%; }
-    /* line 1267, ../sass/breakpoints/_base.scss */
+    /* line 1269, ../sass/breakpoints/_base.scss */
     section#support .background .overlay {
       position: absolute;
       width: 100%;
@@ -3263,33 +3265,33 @@ section#support {
       left: 0;
       z-index: 0;
       opacity: 0; }
-  /* line 1282, ../sass/breakpoints/_base.scss */
+  /* line 1284, ../sass/breakpoints/_base.scss */
   section#support .wrap {
     z-index: 1; }
-    /* line 1285, ../sass/breakpoints/_base.scss */
+    /* line 1287, ../sass/breakpoints/_base.scss */
     section#support .wrap .wrap-inner {
       padding: 10%; }
-  /* line 1289, ../sass/breakpoints/_base.scss */
+  /* line 1291, ../sass/breakpoints/_base.scss */
   section#support #support_bcj_1 {
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
-    /* line 1293, ../sass/breakpoints/_base.scss */
+    /* line 1295, ../sass/breakpoints/_base.scss */
     section#support #support_bcj_1.focus {
       opacity: 1; }
 
 /*********************
 LINK STYLES
 *********************/
-/* line 1312, ../sass/breakpoints/_base.scss */
+/* line 1314, ../sass/breakpoints/_base.scss */
 a, a:visited {
   color: #010101;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
-  /* line 1316, ../sass/breakpoints/_base.scss */
+  /* line 1318, ../sass/breakpoints/_base.scss */
   a:hover, a:focus, a:visited:hover, a:visited:focus {
     color: #313131; }
-  /* line 1326, ../sass/breakpoints/_base.scss */
+  /* line 1328, ../sass/breakpoints/_base.scss */
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -3300,7 +3302,7 @@ a, a:visited {
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
-/* line 1340, ../sass/breakpoints/_base.scss */
+/* line 1342, ../sass/breakpoints/_base.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
   font-weight: 500;
@@ -3309,38 +3311,38 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   http://css-tricks.com/watch-your-font-weight/
   */
   /* removing text decoration from all headline links */ }
-  /* line 1349, ../sass/breakpoints/_base.scss */
+  /* line 1351, ../sass/breakpoints/_base.scss */
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
 
-/* line 1354, ../sass/breakpoints/_base.scss */
+/* line 1356, ../sass/breakpoints/_base.scss */
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.333em; }
 
-/* line 1359, ../sass/breakpoints/_base.scss */
+/* line 1361, ../sass/breakpoints/_base.scss */
 h2, .h2 {
   font-size: 1.25em;
   line-height: 1.4em;
   margin-bottom: 0.375em; }
 
-/* line 1365, ../sass/breakpoints/_base.scss */
+/* line 1367, ../sass/breakpoints/_base.scss */
 h3, .h3 {
   font-size: 1.125em; }
 
-/* line 1369, ../sass/breakpoints/_base.scss */
+/* line 1371, ../sass/breakpoints/_base.scss */
 h4, .h4 {
   font-size: 1.1em;
   font-weight: 700; }
 
-/* line 1374, ../sass/breakpoints/_base.scss */
+/* line 1376, ../sass/breakpoints/_base.scss */
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
   text-transform: uppercase;
   letter-spacing: 2px; }
 
-/* line 1380, ../sass/breakpoints/_base.scss */
+/* line 1382, ../sass/breakpoints/_base.scss */
 .row-header {
   margin-top: 1.5em;
   font-size: 16px;
@@ -3352,15 +3354,15 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-/* line 1392, ../sass/breakpoints/_base.scss */
+/* line 1394, ../sass/breakpoints/_base.scss */
 .header {
   padding-top: 15px;
   padding-bottom: 5px;
   text-align: center; }
-  /* line 1396, ../sass/breakpoints/_base.scss */
+  /* line 1398, ../sass/breakpoints/_base.scss */
   .header a {
     display: block; }
-  /* line 1399, ../sass/breakpoints/_base.scss */
+  /* line 1401, ../sass/breakpoints/_base.scss */
   .header img, .header svg, .header object {
     max-width: 1000px;
     width: 90%; }
@@ -3375,19 +3377,19 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-/* line 1418, ../sass/breakpoints/_base.scss */
+/* line 1420, ../sass/breakpoints/_base.scss */
 .nav {
   font-size: 15px;
   text-transform: uppercase; }
 
-/* line 1429, ../sass/breakpoints/_base.scss */
+/* line 1431, ../sass/breakpoints/_base.scss */
 .nav {
   border-bottom: 0;
   margin: 0;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-  /* line 1432, ../sass/breakpoints/_base.scss */
+  /* line 1434, ../sass/breakpoints/_base.scss */
   .nav li {
     position: relative;
     /*
@@ -3397,7 +3399,7 @@ and more scalable.
     depend on the project. Here's some great info on it:
     http://www.alistapart.com/articles/organizing-mobile/
     */ }
-    /* line 1435, ../sass/breakpoints/_base.scss */
+    /* line 1437, ../sass/breakpoints/_base.scss */
     .nav li a {
       display: block;
       text-decoration: none;
@@ -3410,13 +3412,13 @@ and more scalable.
       the style.scss file where it's relevant. We want to
       keep this file as small as possible!
       */ }
-    /* line 1467, ../sass/breakpoints/_base.scss */
+    /* line 1469, ../sass/breakpoints/_base.scss */
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
 
 /* end .nav */
-/* line 1498, ../sass/breakpoints/_base.scss */
+/* line 1500, ../sass/breakpoints/_base.scss */
 nav.main-nav {
   width: 100%;
   text-align: center;
@@ -3424,12 +3426,12 @@ nav.main-nav {
   position: relative;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
-  /* line 1507, ../sass/breakpoints/_base.scss */
+  /* line 1509, ../sass/breakpoints/_base.scss */
   nav.main-nav a, nav.main-nav a:hover, nav.main-nav a:visited {
     color: #010101;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
-  /* line 1511, ../sass/breakpoints/_base.scss */
+  /* line 1513, ../sass/breakpoints/_base.scss */
   nav.main-nav #menu-icon:before {
     content: "\f0c9";
     font: normal 21px/1em FontAwesome;
@@ -3438,26 +3440,26 @@ nav.main-nav {
     vertical-align: middle;
     display: inline-block;
     margin: -4px 5px 0 0; }
-  /* line 1520, ../sass/breakpoints/_base.scss */
+  /* line 1522, ../sass/breakpoints/_base.scss */
   nav.main-nav .mobile-button {
     text-transform: uppercase;
     font-size: 1.5em; }
-  /* line 1524, ../sass/breakpoints/_base.scss */
+  /* line 1526, ../sass/breakpoints/_base.scss */
   nav.main-nav > ul {
     display: none; }
-    /* line 1527, ../sass/breakpoints/_base.scss */
+    /* line 1529, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li a {
       letter-spacing: 0.1em; }
-    /* line 1532, ../sass/breakpoints/_base.scss */
+    /* line 1534, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li a:hover {
       text-decoration: none; }
-    /* line 1535, ../sass/breakpoints/_base.scss */
+    /* line 1537, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li:hover {
       color: #818181; }
-      /* line 1537, ../sass/breakpoints/_base.scss */
+      /* line 1539, ../sass/breakpoints/_base.scss */
       nav.main-nav > ul li:hover a {
         color: #818181; }
-    /* line 1541, ../sass/breakpoints/_base.scss */
+    /* line 1543, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li:before {
       position: absolute;
       margin-top: 2.7em;
@@ -3468,7 +3470,7 @@ nav.main-nav {
       display: block;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-    /* line 1552, ../sass/breakpoints/_base.scss */
+    /* line 1554, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li:after {
       position: absolute;
       top: 20px;
@@ -3480,75 +3482,75 @@ nav.main-nav {
       color: #010101;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-    /* line 1564, ../sass/breakpoints/_base.scss */
+    /* line 1566, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-about:before {
       content: "BCJについて"; }
-    /* line 1567, ../sass/breakpoints/_base.scss */
+    /* line 1569, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-concerts:before {
       content: "コンサート"; }
-    /* line 1570, ../sass/breakpoints/_base.scss */
+    /* line 1572, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-discography:before {
       content: "ディスコグラフィ"; }
-    /* line 1574, ../sass/breakpoints/_base.scss */
+    /* line 1576, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-gallery:before {
       content: "ギャラリー"; }
-    /* line 1578, ../sass/breakpoints/_base.scss */
+    /* line 1580, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-friends_society:before {
       content: "フレンズ＆ソサエティ"; }
-    /* line 1582, ../sass/breakpoints/_base.scss */
+    /* line 1584, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-discography:after, nav.main-nav > ul li.menu-gallery:after {
       content: "Coming Soon"; }
-    /* line 1585, ../sass/breakpoints/_base.scss */
+    /* line 1587, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-discography, nav.main-nav > ul li.menu-gallery {
       color: #676767;
       cursor: default; }
-      /* line 1588, ../sass/breakpoints/_base.scss */
+      /* line 1590, ../sass/breakpoints/_base.scss */
       nav.main-nav > ul li.menu-discography a, nav.main-nav > ul li.menu-gallery a {
         color: #676767;
         cursor: default; }
 
-/* line 1595, ../sass/breakpoints/_base.scss */
+/* line 1597, ../sass/breakpoints/_base.scss */
 #lang_sel_list {
   display: inline-block;
   position: absolute;
   padding: 0;
   top: 0px;
   right: 5px; }
-  /* line 1604, ../sass/breakpoints/_base.scss */
+  /* line 1606, ../sass/breakpoints/_base.scss */
   #lang_sel_list ul li {
     float: none; }
-    /* line 1606, ../sass/breakpoints/_base.scss */
+    /* line 1608, ../sass/breakpoints/_base.scss */
     #lang_sel_list ul li a, #lang_sel_list ul li a:visited {
       background: none;
       font-size: 1.5em;
       margin: 0.5em 0.2em;
       font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", serif;
       text-transform: uppercase; }
-      /* line 1612, ../sass/breakpoints/_base.scss */
+      /* line 1614, ../sass/breakpoints/_base.scss */
       #lang_sel_list ul li a.lang_sel_sel, #lang_sel_list ul li a:visited.lang_sel_sel {
         display: none; }
 
-/* line 1620, ../sass/breakpoints/_base.scss */
+/* line 1622, ../sass/breakpoints/_base.scss */
 nav.main-nav.inverse {
   color: #fff;
   background-color: rgba(1, 1, 1, 0.8); }
-  /* line 1623, ../sass/breakpoints/_base.scss */
+  /* line 1625, ../sass/breakpoints/_base.scss */
   nav.main-nav.inverse a, nav.main-nav.inverse a:hover, nav.main-nav.inverse a:visited {
     color: #fff; }
-  /* line 1627, ../sass/breakpoints/_base.scss */
+  /* line 1629, ../sass/breakpoints/_base.scss */
   nav.main-nav.inverse > ul li:hover {
     color: #818181; }
-    /* line 1629, ../sass/breakpoints/_base.scss */
+    /* line 1631, ../sass/breakpoints/_base.scss */
     nav.main-nav.inverse > ul li:hover a {
       color: #818181; }
-  /* line 1634, ../sass/breakpoints/_base.scss */
+  /* line 1636, ../sass/breakpoints/_base.scss */
   nav.main-nav.inverse li:after {
     color: #fff !important; }
-  /* line 1637, ../sass/breakpoints/_base.scss */
+  /* line 1639, ../sass/breakpoints/_base.scss */
   nav.main-nav.inverse li.discography, nav.main-nav.inverse li.gallery {
     color: #676767 !important;
     cursor: default; }
-    /* line 1640, ../sass/breakpoints/_base.scss */
+    /* line 1642, ../sass/breakpoints/_base.scss */
     nav.main-nav.inverse li.discography a, nav.main-nav.inverse li.gallery a {
       color: #676767 !important;
       cursor: default; }
@@ -3556,31 +3558,31 @@ nav.main-nav.inverse {
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 1654, ../sass/breakpoints/_base.scss */
+/* line 1656, ../sass/breakpoints/_base.scss */
 .hentry {
   margin-bottom: 1.5em;
   text-align: center; }
-  /* line 1661, ../sass/breakpoints/_base.scss */
+  /* line 1663, ../sass/breakpoints/_base.scss */
   .hentry header {
     padding: 0.4em; }
-    /* line 1664, ../sass/breakpoints/_base.scss */
+    /* line 1666, ../sass/breakpoints/_base.scss */
     .hentry header .leading img {
       width: 100%; }
-  /* line 1669, ../sass/breakpoints/_base.scss */
+  /* line 1671, ../sass/breakpoints/_base.scss */
   .hentry footer {
     padding: 1em;
     border-top: 1px solid rgba(1, 1, 1, 0.5); }
-    /* line 1673, ../sass/breakpoints/_base.scss */
+    /* line 1675, ../sass/breakpoints/_base.scss */
     .hentry footer p {
       margin: 0 0 1em; }
 
 /* end .hentry */
-/* line 1679, ../sass/breakpoints/_base.scss */
+/* line 1681, ../sass/breakpoints/_base.scss */
 .box-inner {
   margin: 2px;
   border: 1px solid rgba(1, 1, 1, 0.5); }
 
-/* line 1683, ../sass/breakpoints/_base.scss */
+/* line 1685, ../sass/breakpoints/_base.scss */
 .single-title,
 .page-title,
 .entry-title {
@@ -3596,14 +3598,14 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 1708, ../sass/breakpoints/_base.scss */
+/* line 1710, ../sass/breakpoints/_base.scss */
 .byline {
   color: #9fa6b4;
   font-style: italic;
   margin: 0; }
 
 /* entry content */
-/* line 1717, ../sass/breakpoints/_base.scss */
+/* line 1719, ../sass/breakpoints/_base.scss */
 .entry-content {
   padding: 0;
   /*
@@ -3612,71 +3614,71 @@ POSTS & CONTENT STYLES
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
   */ }
-  /* line 1720, ../sass/breakpoints/_base.scss */
+  /* line 1722, ../sass/breakpoints/_base.scss */
   .entry-content p {
     margin: 0 0 1.5em; }
-  /* line 1745, ../sass/breakpoints/_base.scss */
+  /* line 1747, ../sass/breakpoints/_base.scss */
   .entry-content table {
     width: 100%;
     border: 1px solid #989898;
     margin-bottom: 1.5em; }
-    /* line 1750, ../sass/breakpoints/_base.scss */
+    /* line 1752, ../sass/breakpoints/_base.scss */
     .entry-content table caption {
       margin: 0 0 7px;
       font-size: 0.75em;
       color: #9fa6b4;
       text-transform: uppercase;
       letter-spacing: 1px; }
-  /* line 1759, ../sass/breakpoints/_base.scss */
+  /* line 1761, ../sass/breakpoints/_base.scss */
   .entry-content tr {
     border-bottom: 1px solid #989898; }
-    /* line 1762, ../sass/breakpoints/_base.scss */
+    /* line 1764, ../sass/breakpoints/_base.scss */
     .entry-content tr:nth-child(even) {
       background-color: #ECECEC; }
-  /* line 1767, ../sass/breakpoints/_base.scss */
+  /* line 1769, ../sass/breakpoints/_base.scss */
   .entry-content td {
     padding: 7px;
     border-right: 1px solid #989898; }
-    /* line 1771, ../sass/breakpoints/_base.scss */
+    /* line 1773, ../sass/breakpoints/_base.scss */
     .entry-content td:last-child {
       border-right: 0; }
-  /* line 1776, ../sass/breakpoints/_base.scss */
+  /* line 1778, ../sass/breakpoints/_base.scss */
   .entry-content th {
     background-color: #ECECEC;
     border-bottom: 1px solid #989898;
     border-right: 1px solid #989898; }
-    /* line 1781, ../sass/breakpoints/_base.scss */
+    /* line 1783, ../sass/breakpoints/_base.scss */
     .entry-content th:last-child {
       border-right: 0; }
-  /* line 1786, ../sass/breakpoints/_base.scss */
+  /* line 1788, ../sass/breakpoints/_base.scss */
   .entry-content blockquote {
     margin: 0 0 1.5em 0.75em;
     padding: 0 0 0 0.75em;
     border-left: 3px solid #2980b9;
     font-style: italic;
     color: #9fa6b4; }
-  /* line 1801, ../sass/breakpoints/_base.scss */
+  /* line 1803, ../sass/breakpoints/_base.scss */
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
     color: #787878;
     margin-bottom: 1.5em; }
-  /* line 1808, ../sass/breakpoints/_base.scss */
+  /* line 1810, ../sass/breakpoints/_base.scss */
   .entry-content img {
     max-width: 100%;
     height: auto;
     display: block; }
-  /* line 1814, ../sass/breakpoints/_base.scss */
+  /* line 1816, ../sass/breakpoints/_base.scss */
   .entry-content .title, .entry-content .thumb, .entry-content .meta, .entry-content .excerpt {
     border-top: 1px solid rgba(1, 1, 1, 0.5); }
-  /* line 1817, ../sass/breakpoints/_base.scss */
+  /* line 1819, ../sass/breakpoints/_base.scss */
   .entry-content .title, .entry-content .meta, .entry-content .excerpt {
     padding: 1em 1em 1em 0;
     text-align: right; }
-  /* line 1821, ../sass/breakpoints/_base.scss */
+  /* line 1823, ../sass/breakpoints/_base.scss */
   .entry-content .meta .date_time {
     margin-bottom: 1em; }
-  /* line 1835, ../sass/breakpoints/_base.scss */
+  /* line 1837, ../sass/breakpoints/_base.scss */
   .entry-content .size-auto,
   .entry-content .size-full,
   .entry-content .size-large,
@@ -3684,7 +3686,7 @@ POSTS & CONTENT STYLES
   .entry-content .size-thumbnail {
     max-width: 100%;
     height: auto; }
-  /* line 1844, ../sass/breakpoints/_base.scss */
+  /* line 1846, ../sass/breakpoints/_base.scss */
   .entry-content pre {
     background: #010101;
     color: #ECECEC;
@@ -3694,7 +3696,7 @@ POSTS & CONTENT STYLES
     border-radius: 3px; }
 
 /* end .entry-content */
-/* line 1854, ../sass/breakpoints/_base.scss */
+/* line 1856, ../sass/breakpoints/_base.scss */
 .entry-content-page {
   max-width: 600px;
   margin: auto;
@@ -3702,33 +3704,33 @@ POSTS & CONTENT STYLES
   padding: 0.75em;
   text-align: left; }
 
-/* line 1863, ../sass/breakpoints/_base.scss */
+/* line 1865, ../sass/breakpoints/_base.scss */
 .page-template-template-full-php .entry-content-page {
   max-width: none;
   padding: 0; }
-  /* line 1866, ../sass/breakpoints/_base.scss */
+  /* line 1868, ../sass/breakpoints/_base.scss */
   .page-template-template-full-php .entry-content-page img {
     width: 100%;
     height: auto; }
 
-/* line 1871, ../sass/breakpoints/_base.scss */
+/* line 1873, ../sass/breakpoints/_base.scss */
 .loadmore {
   border: 1px solid #010101;
   text-align: center;
   margin-bottom: 1.5em; }
 
-/* line 1876, ../sass/breakpoints/_base.scss */
+/* line 1878, ../sass/breakpoints/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */ }
-  /* line 1882, ../sass/breakpoints/_base.scss */
+  /* line 1884, ../sass/breakpoints/_base.scss */
   .wp-caption img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%; }
-  /* line 1888, ../sass/breakpoints/_base.scss */
+  /* line 1890, ../sass/breakpoints/_base.scss */
   .wp-caption p.wp-caption-text {
     font-size: 0.85em;
     margin: 4px 0 7px;
@@ -3738,17 +3740,17 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-/* line 1922, ../sass/breakpoints/_base.scss */
+/* line 1924, ../sass/breakpoints/_base.scss */
 .tags {
   margin: 0; }
 
-/* line 1928, ../sass/breakpoints/_base.scss */
+/* line 1930, ../sass/breakpoints/_base.scss */
 a.go-top {
   color: #fff;
   display: inline-block;
   margin-top: 120px;
   margin-bottom: 0px; }
-  /* line 1934, ../sass/breakpoints/_base.scss */
+  /* line 1936, ../sass/breakpoints/_base.scss */
   a.go-top svg {
     -moz-transform: scale(0.5, 0.5);
     -ms-transform: scale(0.5, 0.5);
@@ -3756,33 +3758,33 @@ a.go-top {
     transform: scale(0.5, 0.5);
     display: block;
     margin: auto; }
-    /* line 1938, ../sass/breakpoints/_base.scss */
+    /* line 1940, ../sass/breakpoints/_base.scss */
     a.go-top svg circle {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
       opacity: 0.9;
       -webkit-transition: opacity, 0.2s;
       transition: opacity, 0.2s; }
-  /* line 1943, ../sass/breakpoints/_base.scss */
+  /* line 1945, ../sass/breakpoints/_base.scss */
   a.go-top span {
     display: inline-block; }
-  /* line 1947, ../sass/breakpoints/_base.scss */
+  /* line 1949, ../sass/breakpoints/_base.scss */
   a.go-top:hover {
     color: #fff; }
-    /* line 1948, ../sass/breakpoints/_base.scss */
+    /* line 1950, ../sass/breakpoints/_base.scss */
     a.go-top:hover circle {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
       opacity: 0.5; }
-  /* line 1954, ../sass/breakpoints/_base.scss */
+  /* line 1956, ../sass/breakpoints/_base.scss */
   a.go-top.invert {
     color: #010101; }
-    /* line 1956, ../sass/breakpoints/_base.scss */
+    /* line 1958, ../sass/breakpoints/_base.scss */
     a.go-top.invert circle {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
       opacity: 0.5; }
-    /* line 1959, ../sass/breakpoints/_base.scss */
+    /* line 1961, ../sass/breakpoints/_base.scss */
     a.go-top.invert:hover {
       color: #010101; }
-      /* line 1961, ../sass/breakpoints/_base.scss */
+      /* line 1963, ../sass/breakpoints/_base.scss */
       a.go-top.invert:hover circle {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
         opacity: 0.2; }
@@ -3790,15 +3792,15 @@ a.go-top {
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 1974, ../sass/breakpoints/_base.scss */
+/* line 1976, ../sass/breakpoints/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.5em 0; }
 
-/* line 1978, ../sass/breakpoints/_base.scss */
+/* line 1980, ../sass/breakpoints/_base.scss */
 .pagination {
   text-align: center; }
-  /* line 1981, ../sass/breakpoints/_base.scss */
+  /* line 1983, ../sass/breakpoints/_base.scss */
   .pagination ul {
     display: inline-block;
     background-color: #fff;
@@ -3806,7 +3808,7 @@ PAGE NAVI STYLES
     padding: 0;
     clear: both;
     border-radius: 3px; }
-  /* line 1990, ../sass/breakpoints/_base.scss */
+  /* line 1992, ../sass/breakpoints/_base.scss */
   .pagination li {
     padding: 0;
     margin: 0;
@@ -3814,7 +3816,7 @@ PAGE NAVI STYLES
     display: inline;
     overflow: hidden;
     border-right: 1px solid #989898; }
-  /* line 1999, ../sass/breakpoints/_base.scss */
+  /* line 2001, ../sass/breakpoints/_base.scss */
   .pagination a, .pagination span {
     margin: 0;
     text-decoration: none;
@@ -3826,25 +3828,25 @@ PAGE NAVI STYLES
     min-width: 1em;
     display: block;
     color: #2980b9; }
-    /* line 2011, ../sass/breakpoints/_base.scss */
+    /* line 2013, ../sass/breakpoints/_base.scss */
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
       background-color: #2980b9;
       color: #fff; }
-  /* line 2017, ../sass/breakpoints/_base.scss */
+  /* line 2019, ../sass/breakpoints/_base.scss */
   .pagination .current {
     cursor: default;
     color: #010101; }
-    /* line 2021, ../sass/breakpoints/_base.scss */
+    /* line 2023, ../sass/breakpoints/_base.scss */
     .pagination .current:hover, .pagination .current:focus {
       background-color: #fff;
       color: #010101; }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 2034, ../sass/breakpoints/_base.scss */
+/* line 2036, ../sass/breakpoints/_base.scss */
 .wp-prev-next .prev-link {
   float: left; }
-/* line 2038, ../sass/breakpoints/_base.scss */
+/* line 2040, ../sass/breakpoints/_base.scss */
 .wp-prev-next .next-link {
   float: right; }
 
@@ -3853,19 +3855,19 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 2049, ../sass/breakpoints/_base.scss */
+/* line 2051, ../sass/breakpoints/_base.scss */
 #comments-title {
   padding: 0.75em;
   margin: 0;
   border-top: 1px solid #ECECEC;
   /* number of comments span */ }
 
-/* line 2069, ../sass/breakpoints/_base.scss */
+/* line 2071, ../sass/breakpoints/_base.scss */
 .commentlist {
   margin: 0;
   list-style-type: none; }
 
-/* line 2074, ../sass/breakpoints/_base.scss */
+/* line 2076, ../sass/breakpoints/_base.scss */
 .comment {
   position: relative;
   clear: both;
@@ -3876,64 +3878,64 @@ COMMENT STYLES
   /* end .commentlist .vcard */
   /* end children */
   /* general comment classes */ }
-  /* line 2081, ../sass/breakpoints/_base.scss */
+  /* line 2083, ../sass/breakpoints/_base.scss */
   .comment .comment-author {
     padding: 7px;
     border: 0; }
-  /* line 2087, ../sass/breakpoints/_base.scss */
+  /* line 2089, ../sass/breakpoints/_base.scss */
   .comment .vcard {
     margin-left: 50px; }
-    /* line 2090, ../sass/breakpoints/_base.scss */
+    /* line 2092, ../sass/breakpoints/_base.scss */
     .comment .vcard cite.fn {
       font-weight: 700;
       font-style: normal; }
-    /* line 2098, ../sass/breakpoints/_base.scss */
+    /* line 2100, ../sass/breakpoints/_base.scss */
     .comment .vcard time {
       display: block;
       font-size: 0.9em;
       font-style: italic; }
-      /* line 2103, ../sass/breakpoints/_base.scss */
+      /* line 2105, ../sass/breakpoints/_base.scss */
       .comment .vcard time a {
         color: #9fa6b4;
         text-decoration: none; }
-        /* line 2107, ../sass/breakpoints/_base.scss */
+        /* line 2109, ../sass/breakpoints/_base.scss */
         .comment .vcard time a:hover {
           text-decoration: underline; }
-    /* line 2117, ../sass/breakpoints/_base.scss */
+    /* line 2119, ../sass/breakpoints/_base.scss */
     .comment .vcard .avatar {
       position: absolute;
       left: 16px;
       border-radius: 50%; }
-  /* line 2125, ../sass/breakpoints/_base.scss */
+  /* line 2127, ../sass/breakpoints/_base.scss */
   .comment:last-child {
     margin-bottom: 0; }
-  /* line 2129, ../sass/breakpoints/_base.scss */
+  /* line 2131, ../sass/breakpoints/_base.scss */
   .comment .children {
     margin: 0;
     /* variations */
     /* change number for different depth */ }
-  /* line 2147, ../sass/breakpoints/_base.scss */
+  /* line 2149, ../sass/breakpoints/_base.scss */
   .comment[class*=depth-] {
     margin-top: 1.1em; }
-  /* line 2151, ../sass/breakpoints/_base.scss */
+  /* line 2153, ../sass/breakpoints/_base.scss */
   .comment.depth-1 {
     margin-left: 0;
     margin-top: 0; }
-  /* line 2156, ../sass/breakpoints/_base.scss */
+  /* line 2158, ../sass/breakpoints/_base.scss */
   .comment:not(.depth-1) {
     margin-top: 0;
     margin-left: 7px;
     padding: 7px; }
-  /* line 2169, ../sass/breakpoints/_base.scss */
+  /* line 2171, ../sass/breakpoints/_base.scss */
   .comment.odd {
     background-color: #fff; }
-  /* line 2172, ../sass/breakpoints/_base.scss */
+  /* line 2174, ../sass/breakpoints/_base.scss */
   .comment.even {
     background: #ECECEC; }
 
 /* comment meta */
 /* comment content */
-/* line 2206, ../sass/breakpoints/_base.scss */
+/* line 2208, ../sass/breakpoints/_base.scss */
 .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
@@ -3941,14 +3943,14 @@ COMMENT STYLES
 
 /* end .commentlist .comment_content */
 /* comment reply link */
-/* line 2215, ../sass/breakpoints/_base.scss */
+/* line 2217, ../sass/breakpoints/_base.scss */
 .comment-reply-link {
   font-size: 0.9em;
   float: right; }
 
 /* end .commentlist .comment-reply-link */
 /* edit comment link */
-/* line 2227, ../sass/breakpoints/_base.scss */
+/* line 2229, ../sass/breakpoints/_base.scss */
 .comment-edit-link {
   font-style: italic;
   margin: 0 7px;
@@ -3958,69 +3960,69 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 2240, ../sass/breakpoints/_base.scss */
+/* line 2242, ../sass/breakpoints/_base.scss */
 .comment-respond {
   padding: 1.5em;
   border-top: 1px solid #ECECEC; }
 
-/* line 2246, ../sass/breakpoints/_base.scss */
+/* line 2248, ../sass/breakpoints/_base.scss */
 #reply-title {
   margin: 0; }
 
-/* line 2250, ../sass/breakpoints/_base.scss */
+/* line 2252, ../sass/breakpoints/_base.scss */
 .logged-in-as {
   color: #9fa6b4;
   font-style: italic;
   margin: 0; }
-  /* line 2255, ../sass/breakpoints/_base.scss */
+  /* line 2257, ../sass/breakpoints/_base.scss */
   .logged-in-as a {
     color: #010101; }
 
-/* line 2260, ../sass/breakpoints/_base.scss */
+/* line 2262, ../sass/breakpoints/_base.scss */
 .comment-form-comment {
   margin: 1.5em 0 0.75em; }
 
-/* line 2264, ../sass/breakpoints/_base.scss */
+/* line 2266, ../sass/breakpoints/_base.scss */
 .form-allowed-tags {
   padding: 1.5em;
   background-color: #ECECEC;
   font-size: 0.9em; }
 
 /* comment submit button */
-/* line 2271, ../sass/breakpoints/_base.scss */
+/* line 2273, ../sass/breakpoints/_base.scss */
 #submit {
   float: right;
   font-size: 1em; }
 
 /* comment form title */
-/* line 2278, ../sass/breakpoints/_base.scss */
+/* line 2280, ../sass/breakpoints/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em; }
 
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 2291, ../sass/breakpoints/_base.scss */
+/* line 2293, ../sass/breakpoints/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0; }
 
 /* no comments */
-/* line 2296, ../sass/breakpoints/_base.scss */
+/* line 2298, ../sass/breakpoints/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em; }
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 2308, ../sass/breakpoints/_base.scss */
+/* line 2310, ../sass/breakpoints/_base.scss */
 .widget {
   margin-bottom: 1.5em;
   border: 1px solid #010101; }
-  /* line 2313, ../sass/breakpoints/_base.scss */
+  /* line 2315, ../sass/breakpoints/_base.scss */
   .widget ul li {
     /* deep nesting */ }
 
-/* line 2332, ../sass/breakpoints/_base.scss */
+/* line 2334, ../sass/breakpoints/_base.scss */
 .no-widgets {
   background-color: #fff;
   padding: 1.5em;
@@ -4032,7 +4034,7 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 2345, ../sass/breakpoints/_base.scss */
+/* line 2347, ../sass/breakpoints/_base.scss */
 .footer {
   clear: both;
   border-top: 1px solid #010101;
@@ -4040,21 +4042,21 @@ FOOTER STYLES
   padding-bottom: 20px;
   background-color: rgba(1, 1, 1, 0.8);
   color: white; }
-  /* line 2354, ../sass/breakpoints/_base.scss */
+  /* line 2356, ../sass/breakpoints/_base.scss */
   .footer nav a {
     color: white; }
 
-/* line 2361, ../sass/breakpoints/_base.scss */
+/* line 2363, ../sass/breakpoints/_base.scss */
 #page-footer.fixed {
   position: fixed;
   bottom: 0;
   width: 100%; }
 
-/* line 2366, ../sass/breakpoints/_base.scss */
+/* line 2368, ../sass/breakpoints/_base.scss */
 #inner-footer div {
   padding-top: 10px; }
 
-/* line 2371, ../sass/breakpoints/_base.scss */
+/* line 2373, ../sass/breakpoints/_base.scss */
 #footer-logo img {
   width: 120px; }
 
@@ -4067,17 +4069,17 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
-/* line 2387, ../sass/breakpoints/_base.scss */
+/* line 2389, ../sass/breakpoints/_base.scss */
 .footer-links ul li {
   display: inline-block;
   float: none; }
 
 /* end .footer-links */
-/* line 2393, ../sass/breakpoints/_base.scss */
+/* line 2395, ../sass/breakpoints/_base.scss */
 .social-links ul {
   text-align: center;
   color: #989898; }
-  /* line 2396, ../sass/breakpoints/_base.scss */
+  /* line 2398, ../sass/breakpoints/_base.scss */
   .social-links ul li {
     display: inline-block;
     float: none;
