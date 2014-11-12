@@ -4084,6 +4084,12 @@ view.
     display: inline-block;
     float: none;
     margin-right: 10px; }
+  /* line 2399, ../sass/breakpoints/_base.scss */
+  .social-links ul a {
+    color: #989898; }
+  /* line 2402, ../sass/breakpoints/_base.scss */
+  .social-links ul a:hover {
+    color: #727272; }
 
 /*********************
 LARGER MOBILE DEVICES

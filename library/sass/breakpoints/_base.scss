@@ -2396,6 +2396,12 @@ FOOTER STYLES
 			text-align: center;
 			color: $gray;
 			li { display: inline-block; float: none; margin-right: 10px}
+			a {
+				color: $gray;
+			}
+			a:hover {
+				color: darken($gray,15%);
+			}
 		}
 	}
 
