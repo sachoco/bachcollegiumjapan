@@ -141,25 +141,27 @@
                     if ( $the_query->have_posts() ) :
                         while ( $the_query->have_posts() ) : $the_query->the_post();
 
-                        //$month = strtotime('month',$startDate);
+                            //$month = strtotime('month',$startDate);
 
-                        $unixtimestamp = strtotime(get_field('date'));
+                            $unixtimestamp = strtotime(get_field('date'));
 
-                        $month = date_i18n("n", $unixtimestamp);
-                        $day = date_i18n("d", $unixtimestamp);
-                        $dayofweek = date_i18n("D", $unixtimestamp);
-                         array_push($dates, $unixtimestamp*1000);
+                            $month = date_i18n("n", $unixtimestamp);
+                            $day = date_i18n("d", $unixtimestamp);
+                            $dayofweek = date_i18n("D", $unixtimestamp);
+                            array_push($dates, $unixtimestamp*1000);
 
-                         $categories = wp_get_object_terms($post->ID, 'category');
-                         if($categories){
+                            $categories = wp_get_object_terms($post->ID, 'category');
+
                             $cats = [];
-                            foreach($categories as $category){
-                                array_push($cats, $category->slug);
+
+                            if($categories){
+                                foreach($categories as $category){
+                                    array_push($cats, $category->slug);
+                                }
                             }
-                         }
-                         // $categories = implode(" ", $categories);
-                         $cats = implode(" ", $cats);
-                         // var_dump($cats);
+                            // $categories = implode(" ", $categories);
+                            if(!empty($cats)) $cats = implode(" ", $cats);
+                            // var_dump($cats);
 
                 ?>
 
