@@ -2479,7 +2479,7 @@ UPCOMING CONCERTS
   border-left: 1px solid #010101; }
   .upcoming div.overview header {
     padding-bottom: 5px;
-    border-bottom: 3px solid #840F15; }
+    border-bottom: 3px solid #010101; }
     .upcoming div.overview header .date_time {
       padding-top: 25px;
       text-align: center; }
@@ -2555,15 +2555,18 @@ UPCOMING CONCERTS
       position: absolute;
       bottom: 10px;
       width: 100%; }
+      .upcoming div.overview .description .buy-ticket-container .buy-ticket {
+        color: #010101;
+        border-color: #010101; }
       .upcoming div.overview .description .buy-ticket-container .playguide {
         position: absolute;
         top: 0;
         left: 0;
         opacity: 0;
         width: 100%;
-        color: #840F15; }
+        color: #010101; }
         .upcoming div.overview .description .buy-ticket-container .playguide span {
-          border: 1px solid #840F15;
+          border: 1px solid #010101;
           margin-left: 4%;
           float: left;
           padding: 0.8em 0 0.4em;
@@ -2573,7 +2576,7 @@ UPCOMING CONCERTS
           .upcoming div.overview .description .buy-ticket-container .playguide span:first-child {
             margin-left: 0; }
           .upcoming div.overview .description .buy-ticket-container .playguide span a {
-            color: #840F15;
+            color: #010101;
             text-decoration: none; }
           .upcoming div.overview .description .buy-ticket-container .playguide span.disabled {
             opacity: 0.2; }
@@ -2581,6 +2584,39 @@ UPCOMING CONCERTS
         opacity: 0; }
       .upcoming div.overview .description .buy-ticket-container:hover .playguide {
         opacity: 1; }
+  .upcoming div.overview.tokyo header {
+    border-color: #840F15; }
+  .upcoming div.overview.tokyo .description .buy-ticket {
+    color: #840F15;
+    border-color: #840F15; }
+  .upcoming div.overview.tokyo .description .playguide {
+    color: #840F15; }
+    .upcoming div.overview.tokyo .description .playguide span {
+      border-color: #840F15; }
+      .upcoming div.overview.tokyo .description .playguide span a {
+        color: #840F15; }
+  .upcoming div.overview.kobe header {
+    border-color: #5A4687; }
+  .upcoming div.overview.kobe .description .buy-ticket {
+    color: #5A4687;
+    border-color: #5A4687; }
+  .upcoming div.overview.kobe .description .playguide {
+    color: #5A4687; }
+    .upcoming div.overview.kobe .description .playguide span {
+      border-color: #5A4687; }
+      .upcoming div.overview.kobe .description .playguide span a {
+        color: #5A4687; }
+  .upcoming div.overview.christmas header {
+    border-color: #785A00; }
+  .upcoming div.overview.christmas .descrition .buy-ticket {
+    color: #785A00;
+    border-color: #785A00; }
+  .upcoming div.overview.christmas .descrition .playguide {
+    color: #785A00; }
+    .upcoming div.overview.christmas .descrition .playguide span {
+      border-color: #785A00; }
+      .upcoming div.overview.christmas .descrition .playguide span a {
+        color: #785A00; }
 .upcoming footer {
   margin-top: 20px;
   text-align: center; }
@@ -2589,6 +2625,7 @@ UPCOMING CONCERTS
   .upcoming footer .specials {
     margin-top: 25px; }
     .upcoming footer .specials .category-filter {
+      border-top: 3px solid #010101;
       margin: 0 10px;
       width: 120px;
       cursor: pointer;
@@ -2598,6 +2635,12 @@ UPCOMING CONCERTS
       transition: opacity, 0.5s; }
       .upcoming footer .specials .category-filter.off {
         opacity: 0.2; }
+      .upcoming footer .specials .category-filter.tokyo {
+        border-color: #840F15; }
+      .upcoming footer .specials .category-filter.kobe {
+        border-color: #5A4687; }
+      .upcoming footer .specials .category-filter.christmas {
+        border-color: #785A00; }
       .upcoming footer .specials .category-filter .title {
         position: absolute;
         width: 100%;

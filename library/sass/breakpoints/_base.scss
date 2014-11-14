@@ -739,7 +739,7 @@ UPCOMING CONCERTS
 		}
 		header {
 			padding-bottom: 5px;
-			border-bottom: 3px solid $color-bcj;
+			border-bottom: 3px solid $black;
 			.date_time {
 	  			padding-top: 25px;
 				text-align: center;
@@ -754,6 +754,7 @@ UPCOMING CONCERTS
 				}
 	 		}
 		}
+
 
 		section {
 			position: relative;
@@ -814,15 +815,19 @@ UPCOMING CONCERTS
 				position: absolute;
 				bottom: 10px;
 				width: 100%;
+				.buy-ticket {
+					color: $black;
+					border-color: $black;
+				}
 				.playguide {
 					position: absolute;
 					top: 0;
 					left: 0;
 					opacity: 0;
 					width: 100%;
-					color: $color-bcj;
+					color: $black;
 					span{
-						border: 1px solid $color-bcj;
+						border: 1px solid $black;
 						margin-left: 4%;
 						float: left;
 						padding: 0.8em 0 0.4em;
@@ -835,7 +840,7 @@ UPCOMING CONCERTS
 							margin-left: 0;
 						}
 						a {
-							color: $color-bcj;
+							color: $black;
 							text-decoration: none;
 						}
 						&.disabled {
@@ -859,7 +864,67 @@ UPCOMING CONCERTS
 				}
 			}
 		}
+		&.tokyo {
+			header {
+				border-color: $color-bcj;
+			}
+			.description {
+				.buy-ticket {
+					color: $color-bcj;
+					border-color: $color-bcj;				
+				}
+				.playguide {
+					color: $color-bcj;
+					span {
+						border-color: $color-bcj;
+						a {
+							color: $color-bcj;
+						}
+					}
+				}				
+			}
+		}
+		&.kobe {
+			header {
+				border-color: $color-purple;
+			}
+			.description {
+				.buy-ticket {
+					color: $color-purple;
+					border-color: $color-purple;				
+				}
+				.playguide {
+					color: $color-purple;
+					span {
+						border-color: $color-purple;
+						a {
+							color: $color-purple;
+						}
+					}
+				}
+			}
+		}
+		&.christmas {
+			header {
+				border-color: $color-yellow;
+			}
+			.descrition {
+				.buy-ticket {
+					color: $color-yellow;
+					border-color: $color-yellow;				
+				}
+				.playguide {
+					color: $color-yellow;
+					span {
+						border-color: $color-yellow;
+						a {
+							color: $color-yellow;
+						}
+					}
+				}
+			}
 
+		}
 
 	}
 	footer {
@@ -874,6 +939,7 @@ UPCOMING CONCERTS
 		    margin-top: 25px;
 
 			.category-filter {
+				border-top: 3px solid $black;
 				margin: 0 10px;
 				width: 120px;
 				cursor: pointer;
@@ -882,7 +948,16 @@ UPCOMING CONCERTS
 				@include transition(opacity, 0.5s);
 				&.off {
 					opacity: 0.2;
-				}				
+				}	
+				&.tokyo {
+					border-color: $color-bcj;
+				}	
+				&.kobe {
+					border-color: $color-purple;
+				}
+				&.christmas {
+					border-color: $color-yellow;
+				}											
 				img {
 
 				}

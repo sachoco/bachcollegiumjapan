@@ -222,6 +222,60 @@ function bones_fonts() {
 
 add_action('wp_print_styles', 'bones_fonts');
 
+/*-------------------------------------------------------------------------------
+  Custom Columns
+-------------------------------------------------------------------------------*/
 
+function schedule_columns($columns)
+{
+  $columns = array(
+    'cb'    => '<input type="checkbox" />',
+    'thumbnail' =>  __('Thumbnail'),
+    'title'   => __('Title'),
+    "icl_translations" => $columns['icl_translations'],
+    'schedule-date'   => __('Schedule Date'),
+    'categories'  => __('Categories'),
+    'author'  =>  __('Author'),
+    'date'  => __('Date')
+  );
+  return $columns;
+}
+
+function manage_schedule_columns($column)
+{
+  global $post;
+  if($column == 'thumbnail')
+  {
+    echo the_post_thumbnail( array(80, 80) );
+  }
+  elseif($column == 'schedule-date')
+  {
+    if(get_field('schedule-date'))
+    {
+      $unixtimestamp = strtotime(get_field('schedule-date'));
+            $date = date_i18n(get_option( 'date_format' ), $unixtimestamp);
+      echo $date;
+    }
+    else
+    {
+      echo '';
+    }
+  }
+}
+
+add_action("manage_schedule_posts_custom_column", "manage_schedule_columns", 10, 2);
+add_filter("manage_edit-schedule_columns", "schedule_columns");
+
+/*-------------------------------------------------------------------------------
+  Sortable Columns
+-------------------------------------------------------------------------------*/
+
+function schedule_register_sortable( $columns )
+{
+  $columns['schedule-date'] = 'schedule-date';
+  return $columns;
+}
+
+add_filter("manage_edit-schedule_sortable_columns", "schedule_register_sortable" );
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>

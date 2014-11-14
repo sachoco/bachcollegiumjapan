@@ -115,23 +115,25 @@
                     $args = array(
                       'post_type' => 'schedule',
                       'post_status' => 'publish',
-                      'meta_key' => 'date',
+                      'meta_key' => 'schedule-date',
                       'orderby' => 'meta_value_num',
                       'order'   => 'ASC',
                       'posts_per_page' => -1,
                       'meta_query' => array(
                                         array(
-                                            'key' => 'date',
+                                            'key' => 'schedule-date',
                                             'value' => date("Ymd"),
                                             'type' => 'NUMERIC',
                                             'compare' => '>'
                                         )
                                     )
                     );
-                    function filter_where( $where = '' ) {
+                    /*
+function filter_where( $where = '' ) {
                         $where .= " AND post_date >= date('Y-m-d')";
                         return $where;
                     }
+*/
 
                     // add_filter( 'posts_where', 'filter_where' );
                     $the_query = new WP_Query( $args );
@@ -141,27 +143,27 @@
                     if ( $the_query->have_posts() ) :
                         while ( $the_query->have_posts() ) : $the_query->the_post();
 
-                            //$month = strtotime('month',$startDate);
+                        //$month = strtotime('month',$startDate);
 
-                            $unixtimestamp = strtotime(get_field('date'));
+                        $unixtimestamp = strtotime(get_field('schedule-date'));
 
-                            $month = date_i18n("n", $unixtimestamp);
-                            $day = date_i18n("d", $unixtimestamp);
-                            $dayofweek = date_i18n("D", $unixtimestamp);
-                            array_push($dates, $unixtimestamp*1000);
+                        $month = date_i18n("n", $unixtimestamp);
+                        $day = date_i18n("d", $unixtimestamp);
+                        $dayofweek = date_i18n("D", $unixtimestamp);
+                         array_push($dates, $unixtimestamp*1000);
 
-                            $categories = wp_get_object_terms($post->ID, 'category');
+                         $categories = wp_get_object_terms($post->ID, 'category');
+                        $cats = [];
 
-                            $cats = [];
-
-                            if($categories){
-                                foreach($categories as $category){
-                                    array_push($cats, $category->slug);
-                                }
+                         if($categories){
+                            foreach($categories as $category){
+                                array_push($cats, $category->slug);
                             }
-                            // $categories = implode(" ", $categories);
-                            if(!empty($cats)) $cats = implode(" ", $cats);
-                            // var_dump($cats);
+                         }
+                         // $categories = implode(" ", $categories);
+                         if(!empty($cats)) $cats = implode(" ", $cats);
+
+                         // var_dump($cats);
 
                 ?>
 
@@ -259,15 +261,15 @@
 
                 <footer class="article-footer cf">
                     <div class="specials">
-                        <div data-category=".tokyo" class="category-filter" >
+                        <div data-category=".tokyo" class="category-filter tokyo" >
                             <div class="title"><h3>東京定期演奏会</h3></div>
                             <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-tokyo-bg.jpg" />
                         </div>
-                        <div data-category=".kobe" class="category-filter" >
+                        <div data-category=".kobe" class="category-filter kobe" >
                             <div class="title"><h3>神戸定期演奏会</h3></div>
                             <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-kobe-bg.jpg" />
                         </div>
-                        <div data-category=".christmas" class="category-filter" >
+                        <div data-category=".christmas" class="category-filter christmas" >
                             <div class="title"><h3>BCJクリスマス公演</h3></div>
                             <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-christmas-bg.jpg" />
                         </div>
@@ -290,9 +292,9 @@
                             'relation' => 'OR',
                             array(
                                 'key' => 'hide-on-top',
-                                'value' => false,
+                                'value' => true,
                                 'type' => 'BOOLEAN',
-                                'compare' => 'NOT'
+                                'compare' => '!='
                             ),
                             array(
                                 'key' => 'hide-on-top',
