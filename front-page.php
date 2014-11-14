@@ -85,6 +85,7 @@
 
                     <!-- Slide item 5 -->
                         <div class="slide-item">
+                            <a href="<?php echo get_permalink(get_page_by_path('friends_society')->ID); ?>">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/support.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
                                 <div class="inner-content">
@@ -93,6 +94,7 @@
                                     <h1 >SUPPORT BCJ<br>BCJソサエティ・フレンズ<br>会員募集中</h1>
                                 </div>
                             </div>
+                            </a>
                             <div class="slide-overlay"></div>
                         </div>
                     </div>
@@ -147,9 +149,21 @@
                         $day = date_i18n("d", $unixtimestamp);
                         $dayofweek = date_i18n("D", $unixtimestamp);
                          array_push($dates, $unixtimestamp*1000);
+
+                         $categories = wp_get_object_terms($post->ID, 'category');
+                         if($categories){
+                            $cats = [];
+                            foreach($categories as $category){
+                                array_push($cats, $category->slug);
+                            }
+                         }
+                         // $categories = implode(" ", $categories);
+                         $cats = implode(" ", $cats);
+                         // var_dump($cats);
+
                 ?>
 
-                    <div class="overview" data-month="<?php echo $month;?>">
+                    <div class="overview <?php echo($cats ? $cats: ""); ?>" data-month="<?php echo $month;?>">
                     <article>
                         <header>
 
@@ -219,13 +233,13 @@
                      <script>
                         jQuery(document).ready(function($) {
                             var eventsInline = [<?php
-                                                            $i = 0;
-                                                          foreach($dates as $date ){
-                                                            if($i!=0) echo ',';
-                                                            echo  '{ "date": "' . $date . '", "type": "", "title": "", "description": "","url":"" }';
-                                                            $i++;
-                                                          }
-                                                        ?>];
+                                $i = 0;
+                              foreach($dates as $date ){
+                                if($i!=0) echo ',';
+                                echo  '{ "date": "' . $date . '", "type": "", "title": "", "description": "","url":"" }';
+                                $i++;
+                              }
+                            ?>];
 
                             $("#eventCalendarCalendarLine").eventCalendar({
                                 // eventsjson: '<?php echo bloginfo("template_directory"); ?>/library/json/events.json.php',
@@ -243,9 +257,18 @@
 
                 <footer class="article-footer cf">
                     <div class="specials">
-                        <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-tokyo.jpg" />
-                        <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-nagoya.jpg" />
-                        <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-karuizawa.jpg" />
+                        <div data-category=".tokyo" class="category-filter" >
+                            <div class="title"><h3>東京定期演奏会</h3></div>
+                            <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-tokyo-bg.jpg" />
+                        </div>
+                        <div data-category=".kobe" class="category-filter" >
+                            <div class="title"><h3>神戸定期演奏会</h3></div>
+                            <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-kobe-bg.jpg" />
+                        </div>
+                        <div data-category=".christmas" class="category-filter" >
+                            <div class="title"><h3>BCJクリスマス公演</h3></div>
+                            <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-christmas-bg.jpg" />
+                        </div>
                     </div>
                 </footer>
 
@@ -260,7 +283,20 @@
                       'post_status' => 'publish',
                       'orderby' => 'date',
                       'order'   => 'DESC',
-                      'posts_per_page' => 4
+                      'posts_per_page' => 4,
+                      'meta_query' => array(
+                            'relation' => 'OR',
+                            array(
+                                'key' => 'hide-on-top',
+                                'value' => false,
+                                'type' => 'BOOLEAN',
+                                'compare' => 'NOT'
+                            ),
+                            array(
+                                'key' => 'hide-on-top',
+                                'compare' => 'NOT EXISTS'
+                            )
+                        )
                     );
                     $the_query = new WP_Query( $args );
                     $col_count = 1;
@@ -368,8 +404,9 @@
                         $args = array(
                           'post_type' => 'discography',
                           'post_status' => 'publish',
-                          'orderby'   => 'menu_order',
-                          'order'     => 'ASC',
+                          'orderby'   => 'rand',
+                          'force_no_custom_order' => TRUE,
+                          // 'order'     => 'ASC',
                           'posts_per_page' => -1
                         ); 
                         $the_query = new WP_Query( $args );

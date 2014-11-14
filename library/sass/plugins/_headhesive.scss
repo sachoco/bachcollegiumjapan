@@ -30,11 +30,11 @@ nav.main-nav--clone {
     li:after {
         color: $white !important;
     }
-    li.discography, li.gallery {
-         color: lighten($link-color, 40%) !important;
+    li.menu-discography, li.menu-gallery {
+         color: darken($white, 70%) !important;
          cursor: default;
          a {
-             color: lighten($link-color, 40%) !important;
+             color: darken($white, 70%) !important;
              cursor: default;               
          }
     }

@@ -50,40 +50,49 @@
         <!-- Background END -->
         <!-- Intro START -->
         <section id="intro" class="snap">
-            <!-- <div class="background"><div class="overlay"></div></div> -->
             <div class="content">
-                <div class="logo" >
-                    <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" />
-                </div>
-                <div >
-                    <div class="roles">バッハの音楽を未来へ</div>
-                    <p class="short-profile">J.S.バッハの音楽は人類共通の財産です<br>私たちバッハ・コレギウム・ジャパンは創設以来、日本から世界へバッハ音楽を発信し続けてきました。<br><br>この素晴らしい音楽を一人でも多くの人と共有したい<br>それが私たちの願いです。
-        </p>
-                </div>
-                <a href="#home" id="scrolldownHome" class="svg">
-                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
-                        <circle fill="#FFFFFF" cx="20" cy="19.647" r="20"/>
-                        <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="29,15.647 20,27.647 11,15.647     "/>
-                    </svg>
-                </a>
+                <div class="profile">
+                    <div style="display:table-cell;vertical-align:bottom">
+                        <div class="logo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" />
+                        </div>
+                        <div class="roles" style="padding:0;height:auto;">バッハの音楽を未来へ</div>
 
+                        <div class="short-profile">
+                            J.S.バッハの音楽は人類共通の財産です<br>私たちバッハ・コレギウム・ジャパンは創設以来、日本から世界へバッハ音楽を発信し続けてきました。<br>この素晴らしい音楽を一人でも多くの人と共有したい<br>それが私たちの願いです。
+                        </div>        
+                    </div>
+                </div>
+                <div class="start">
+                    <div>
+                        <a href="#home" id="scrolldownHome" class="svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
+                                <circle fill="#FFFFFF" cx="20" cy="19.647" r="20"/>
+                                <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="29,15.647 20,27.647 11,15.647     "/>
+                            </svg>
+                        </a>        
+                    </div>
+                </div>
+                <div class="navigation" style="display:table-row;height:25%">
+                    <div style="display:table-cell;vertical-align:middle">
+                        <nav style="position:relative;transform:none;left:auto;bottom:auto">
+                        <?php wp_nav_menu(array(
+                            'container' => false,                           // remove nav container
+                            'container_class' => 'menu cf',                 // class of container (should you choose to use it)
+                            'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+                            'menu_class' => 'nav',               // adding custom nav class
+                            'theme_location' => 'main-nav',                 // where it's located in the theme
+                            'before' => '',                                 // before the menu
+                            'after' => '',                                  // after the menu
+                            'link_before' => '',                            // before each link
+                            'link_after' => '',                             // after each link
+                            'depth' => 0,                                   // limit the depth of the nav
+                            'fallback_cb' => ''                             // fallback function (if there is one)
+                        )); ?>
+                        </nav>        
+                    </div>
+                </div>
             </div>
-            <nav>
-            <?php wp_nav_menu(array(
-                'container' => false,                           // remove nav container
-                'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-                'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-                'menu_class' => 'nav',               // adding custom nav class
-                'theme_location' => 'main-nav',                 // where it's located in the theme
-                'before' => '',                                 // before the menu
-                'after' => '',                                  // after the menu
-                'link_before' => '',                            // before each link
-                'link_after' => '',                             // after each link
-                'depth' => 0,                                   // limit the depth of the nav
-                'fallback_cb' => ''                             // fallback function (if there is one)
-            )); ?>
-            </nav>
-            <!-- <div class="overlay"></div> -->
         </section>
         <!-- Intro END -->
 <?php elseif(is_single()): ?>

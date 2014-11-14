@@ -28,7 +28,6 @@ the whole project.
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 12, ../sass/partials/_normalize.scss */
 article,
 aside,
 details,
@@ -46,7 +45,6 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 31, ../sass/partials/_normalize.scss */
 audio,
 canvas,
 video {
@@ -56,7 +54,6 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 42, ../sass/partials/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0; }
@@ -65,7 +62,6 @@ audio:not([controls]) {
  * Address `[hidden]` styling not present in IE 8/9.
  * Hide the `template` element in IE, Safari, and Firefox < 22.
  */
-/* line 52, ../sass/partials/_normalize.scss */
 [hidden],
 template {
   display: none; }
@@ -78,7 +74,6 @@ template {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 67, ../sass/partials/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -90,7 +85,6 @@ html {
 /**
  * Remove default margin.
  */
-/* line 77, ../sass/partials/_normalize.scss */
 body {
   margin: 0; }
 
@@ -100,21 +94,18 @@ body {
 /**
  * Remove the gray background color from active links in IE 10.
  */
-/* line 89, ../sass/partials/_normalize.scss */
 a {
   background: transparent; }
 
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 97, ../sass/partials/_normalize.scss */
 a:focus {
   outline: thin dotted; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 105, ../sass/partials/_normalize.scss */
 a:active,
 a:hover {
   outline: 0; }
@@ -126,7 +117,6 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 119, ../sass/partials/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0; }
@@ -134,14 +124,12 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 128, ../sass/partials/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted; }
 
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 136, ../sass/partials/_normalize.scss */
 b,
 strong,
 .strong {
@@ -150,7 +138,6 @@ strong,
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 146, ../sass/partials/_normalize.scss */
 dfn,
 em,
 .em {
@@ -159,7 +146,6 @@ em,
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 156, ../sass/partials/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -168,7 +154,6 @@ hr {
 /*
  * proper formatting (http://blog.fontdeck.com/post/9037028497/hyphens)
 */
-/* line 166, ../sass/partials/_normalize.scss */
 p {
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
@@ -178,14 +163,12 @@ p {
 /*
  * Addresses margins set differently in IE6/7.
  */
-/* line 177, ../sass/partials/_normalize.scss */
 pre {
   margin: 0; }
 
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 185, ../sass/partials/_normalize.scss */
 code,
 kbd,
 pre,
@@ -196,34 +179,29 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 197, ../sass/partials/_normalize.scss */
 pre {
   white-space: pre-wrap; }
 
 /**
  * Set consistent quote types.
  */
-/* line 205, ../sass/partials/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019"; }
 
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 212, ../sass/partials/_normalize.scss */
 q:before,
 q:after {
   content: '';
   content: none; }
 
-/* line 218, ../sass/partials/_normalize.scss */
 small, .small {
   font-size: 75%; }
 
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 226, ../sass/partials/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -231,11 +209,9 @@ sup {
   position: relative;
   vertical-align: baseline; }
 
-/* line 234, ../sass/partials/_normalize.scss */
 sup {
   top: -0.5em; }
 
-/* line 238, ../sass/partials/_normalize.scss */
 sub {
   bottom: -0.25em; }
 
@@ -245,25 +221,21 @@ sub {
 /*
  * Addresses margins set differently in IE6/7.
  */
-/* line 250, ../sass/partials/_normalize.scss */
 dl,
 menu,
 ol,
 ul {
   margin: 1em 0; }
 
-/* line 257, ../sass/partials/_normalize.scss */
 dd {
   margin: 0; }
 
 /*
  * Addresses paddings set differently in IE6/7.
  */
-/* line 265, ../sass/partials/_normalize.scss */
 menu {
   padding: 0 0 0 40px; }
 
-/* line 269, ../sass/partials/_normalize.scss */
 ol,
 ul {
   padding: 0;
@@ -272,7 +244,6 @@ ul {
 /*
  * Corrects list images handled incorrectly in IE7.
  */
-/* line 279, ../sass/partials/_normalize.scss */
 nav ul,
 nav ol {
   list-style: none;
@@ -284,14 +255,12 @@ nav ol {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 293, ../sass/partials/_normalize.scss */
 img {
   border: 0; }
 
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 301, ../sass/partials/_normalize.scss */
 svg:not(:root) {
   overflow: hidden; }
 
@@ -301,7 +270,6 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 313, ../sass/partials/_normalize.scss */
 figure {
   margin: 0; }
 
@@ -311,7 +279,6 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 325, ../sass/partials/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -321,7 +288,6 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 336, ../sass/partials/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -333,7 +299,6 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 347, ../sass/partials/_normalize.scss */
 button,
 input,
 select,
@@ -349,7 +314,6 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 361, ../sass/partials/_normalize.scss */
 button,
 input {
   line-height: normal; }
@@ -360,7 +324,6 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 373, ../sass/partials/_normalize.scss */
 button,
 select {
   text-transform: none; }
@@ -372,7 +335,6 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 386, ../sass/partials/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -385,7 +347,6 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 398, ../sass/partials/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default; }
@@ -394,7 +355,6 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9/10.
  * 2. Remove excess padding in IE 8/9/10.
  */
-/* line 408, ../sass/partials/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -407,7 +367,6 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 420, ../sass/partials/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -420,7 +379,6 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 432, ../sass/partials/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
@@ -428,7 +386,6 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 441, ../sass/partials/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -438,7 +395,6 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 452, ../sass/partials/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -451,32 +407,26 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 465, ../sass/partials/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 472, ../sass/partials/_normalize.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 479, ../sass/partials/_normalize.scss */
 .image-replacement,
 .ir {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden; }
 
-/* line 487, ../sass/partials/_normalize.scss */
 .clearfix, .cf, .comment-respond {
   zoom: 1; }
-  /* line 489, ../sass/partials/_normalize.scss */
   .clearfix:before, .clearfix:after, .cf:before, .comment-respond:before, .cf:after, .comment-respond:after {
     content: "";
     display: table; }
-  /* line 490, ../sass/partials/_normalize.scss */
   .clearfix:after, .cf:after, .comment-respond:after {
     clear: both; }
 
@@ -484,7 +434,6 @@ table {
 use the best ampersand
 http://simplebits.com/notebook/2008/08/14/ampersands-2/
 */
-/* line 497, ../sass/partials/_normalize.scss */
 span.amp {
   font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
   font-style: italic; }
@@ -561,7 +510,6 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-/* line 70, ../sass/partials/_typography.scss */
 p {
   -ms-word-break: break-all;
   -ms-word-wrap: break-all;
@@ -686,7 +634,6 @@ own grids. It's better in the long run and allows you full control
 over your project's layout.
 
 ******************************************************************/
-/* line 35, ../sass/partials/_grid.scss */
 .last-col {
   float: right;
   padding-right: 0 !important; }
@@ -698,234 +645,196 @@ There are four types, but you can add or customize
 them however you see fit.
 */
 @media (max-width: 767px) {
-  /* line 49, ../sass/partials/_grid.scss */
   .m-all {
     float: left;
     padding-right: 0.75em;
     width: 100%;
     padding-right: 0; }
 
-  /* line 55, ../sass/partials/_grid.scss */
   .m-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%; }
 
-  /* line 60, ../sass/partials/_grid.scss */
   .m-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%; }
 
-  /* line 65, ../sass/partials/_grid.scss */
   .m-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%; }
 
-  /* line 70, ../sass/partials/_grid.scss */
   .m-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%; }
 
-  /* line 75, ../sass/partials/_grid.scss */
   .m-3of4 {
     float: left;
     padding-right: 0.75em;
     width: 75%; } }
 /* Portrait tablet to landscape */
 @media (min-width: 768px) and (max-width: 1029px) {
-  /* line 86, ../sass/partials/_grid.scss */
   .t-all {
     float: left;
     padding-right: 0.75em;
     width: 100%;
     padding-right: 0; }
 
-  /* line 92, ../sass/partials/_grid.scss */
   .t-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%; }
 
-  /* line 97, ../sass/partials/_grid.scss */
   .t-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%; }
 
-  /* line 102, ../sass/partials/_grid.scss */
   .t-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%; }
 
-  /* line 107, ../sass/partials/_grid.scss */
   .t-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%; }
 
-  /* line 112, ../sass/partials/_grid.scss */
   .t-3of4 {
     float: left;
     padding-right: 0.75em;
     width: 75%; }
 
-  /* line 117, ../sass/partials/_grid.scss */
   .t-1of5 {
     float: left;
     padding-right: 0.75em;
     width: 20%; }
 
-  /* line 122, ../sass/partials/_grid.scss */
   .t-2of5 {
     float: left;
     padding-right: 0.75em;
     width: 40%; }
 
-  /* line 127, ../sass/partials/_grid.scss */
   .t-3of5 {
     float: left;
     padding-right: 0.75em;
     width: 60%; }
 
-  /* line 132, ../sass/partials/_grid.scss */
   .t-4of5 {
     float: left;
     padding-right: 0.75em;
     width: 80%; } }
 /* Landscape to small desktop */
 @media (min-width: 1030px) {
-  /* line 142, ../sass/partials/_grid.scss */
   .d-all {
     float: left;
     padding-right: 0.75em;
     width: 100%;
     padding-right: 0; }
 
-  /* line 148, ../sass/partials/_grid.scss */
   .d-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%; }
 
-  /* line 153, ../sass/partials/_grid.scss */
   .d-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%; }
 
-  /* line 158, ../sass/partials/_grid.scss */
   .d-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%; }
 
-  /* line 163, ../sass/partials/_grid.scss */
   .d-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%; }
 
-  /* line 168, ../sass/partials/_grid.scss */
   .d-3of4 {
     float: left;
     padding-right: 0.75em;
     width: 75%; }
 
-  /* line 173, ../sass/partials/_grid.scss */
   .d-1of5 {
     float: left;
     padding-right: 0.75em;
     width: 20%; }
 
-  /* line 178, ../sass/partials/_grid.scss */
   .d-2of5 {
     float: left;
     padding-right: 0.75em;
     width: 40%; }
 
-  /* line 183, ../sass/partials/_grid.scss */
   .d-3of5 {
     float: left;
     padding-right: 0.75em;
     width: 60%; }
 
-  /* line 188, ../sass/partials/_grid.scss */
   .d-4of5 {
     float: left;
     padding-right: 0.75em;
     width: 80%; }
 
-  /* line 193, ../sass/partials/_grid.scss */
   .d-1of6 {
     float: left;
     padding-right: 0.75em;
     width: 16.6666666667%; }
 
-  /* line 198, ../sass/partials/_grid.scss */
   .d-1of7 {
     float: left;
     padding-right: 0.75em;
     width: 14.2857142857%; }
 
-  /* line 203, ../sass/partials/_grid.scss */
   .d-2of7 {
     float: left;
     padding-right: 0.75em;
     width: 28.5714286%; }
 
-  /* line 208, ../sass/partials/_grid.scss */
   .d-3of7 {
     float: left;
     padding-right: 0.75em;
     width: 42.8571429%; }
 
-  /* line 213, ../sass/partials/_grid.scss */
   .d-4of7 {
     float: left;
     padding-right: 0.75em;
     width: 57.1428572%; }
 
-  /* line 218, ../sass/partials/_grid.scss */
   .d-5of7 {
     float: left;
     padding-right: 0.75em;
     width: 71.4285715%; }
 
-  /* line 223, ../sass/partials/_grid.scss */
   .d-6of7 {
     float: left;
     padding-right: 0.75em;
     width: 85.7142857%; }
 
-  /* line 228, ../sass/partials/_grid.scss */
   .d-1of8 {
     float: left;
     padding-right: 0.75em;
     width: 12.5%; }
 
-  /* line 233, ../sass/partials/_grid.scss */
   .d-1of9 {
     float: left;
     padding-right: 0.75em;
     width: 11.1111111111%; }
 
-  /* line 238, ../sass/partials/_grid.scss */
   .d-1of10 {
     float: left;
     padding-right: 0.75em;
     width: 10%; }
 
-  /* line 243, ../sass/partials/_grid.scss */
   .d-1of11 {
     float: left;
     padding-right: 0.75em;
     width: 9.09090909091%; }
 
-  /* line 248, ../sass/partials/_grid.scss */
   .d-1of12 {
     float: left;
     padding-right: 0.75em;
@@ -937,7 +846,6 @@ them however you see fit.
  * Created by @erskinedesign
  */
 /* Reusable column setup */
-/* line 21, ../sass/partials/_gridpak.scss */
 .col {
   border: 0px solid transparent;
   float: left;
@@ -957,24 +865,20 @@ them however you see fit.
 
     ----------------------------------------------------------------------------- */
 @media screen and (min-width: 0px) {
-  /* line 49, ../sass/partials/_gridpak.scss */
   .col {
     margin-left: 2%;
     padding: 0 1.5%; }
-    /* line 50, ../sass/partials/_gridpak.scss */
     .col img {
       width: 100%;
       height: auto;
       display: block; }
 
   /* --- Gridpak variables ---*/
-  /* line 65, ../sass/partials/_gridpak.scss */
   .row {
     float: left;
     width: 100%;
     position: relative; }
 
-  /* line 71, ../sass/partials/_gridpak.scss */
   .row .col:first-child {
     margin-left: 0; }
 
@@ -987,21 +891,18 @@ them however you see fit.
         }
 
         */
-  /* line 85, ../sass/partials/_gridpak.scss */
   .span_1 {
     width: 32%;
     border-left-width: 0;
     padding: 0;
     margin-left: 2%; }
 
-  /* line 88, ../sass/partials/_gridpak.scss */
   .span_2 {
     width: 66%;
     border-left-width: 0;
     padding: 0;
     margin-left: 2%; }
 
-  /* line 91, ../sass/partials/_gridpak.scss */
   .span_3 {
     margin-left: 0;
     width: 100%;
@@ -1023,28 +924,23 @@ If you want to use these alerts in your design, you can. If not,
 you can just remove this stylesheet.
 
 ******************************************************************/
-/* line 15, ../sass/modules/_alerts.scss */
 .alert-help, .alert-info, .alert-error, .alert-success {
   margin: 10px;
   padding: 5px 18px;
   border: 1px solid; }
 
-/* line 21, ../sass/modules/_alerts.scss */
 .alert-help {
   border-color: #e8dc59;
   background: #ebe16f; }
 
-/* line 27, ../sass/modules/_alerts.scss */
 .alert-info {
   border-color: #bfe4f4;
   background: #d5edf8; }
 
-/* line 33, ../sass/modules/_alerts.scss */
 .alert-error {
   border-color: #f8cdce;
   background: #fbe3e4; }
 
-/* line 39, ../sass/modules/_alerts.scss */
 .alert-success {
   border-color: #deeaae;
   background: #e6efc2; }
@@ -1073,7 +969,6 @@ Here's a quick video to show how it works:
 http://www.youtube.com/watch?v=hwdVpKiJzac
 
 *********************/
-/* line 27, ../sass/modules/_buttons.scss */
 .blue-btn, .comment-reply-link, #submit, .bcj-btn, .buy-ticket {
   display: inline-block;
   position: relative;
@@ -1085,10 +980,8 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
   cursor: pointer;
   -webkit-transition: background-color 0.14s ease-in-out;
   transition: background-color 0.14s ease-in-out; }
-  /* line 39, ../sass/modules/_buttons.scss */
   .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .bcj-btn:hover, .buy-ticket:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus, .bcj-btn:focus, .buy-ticket:focus {
     text-decoration: none; }
-  /* line 44, ../sass/modules/_buttons.scss */
   .blue-btn:active, .comment-reply-link:active, #submit:active, .bcj-btn:active, .buy-ticket:active {
     top: 1px; }
 
@@ -1097,34 +990,27 @@ An example button.
 You can use this example if you want. Just replace all the variables
 and it will create a button dependant on those variables.
 */
-/* line 55, ../sass/modules/_buttons.scss */
 .blue-btn, .comment-reply-link, #submit {
   background-color: #2980b9;
   border: none;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 12px;
   font-weight: bolder; }
-  /* line 62, ../sass/modules/_buttons.scss */
   .blue-btn:hover, .comment-reply-link:hover, #submit:hover, .blue-btn:focus, .comment-reply-link:focus, #submit:focus {
     background-color: #2574a8; }
-  /* line 67, ../sass/modules/_buttons.scss */
   .blue-btn:active, .comment-reply-link:active, #submit:active {
     background-color: #2472a4; }
 
-/* line 73, ../sass/modules/_buttons.scss */
 .bcj-btn {
   padding: 0.3em 2em 0;
   text-align: center;
   position: relative;
   margin: 10px; }
-  /* line 79, ../sass/modules/_buttons.scss */
   .bcj-btn:hover {
     background-color: rgba(255, 255, 255, 0.5); }
-  /* line 82, ../sass/modules/_buttons.scss */
   .bcj-btn.invert:hover {
     background-color: rgba(1, 1, 1, 0.5); }
 
-/* line 88, ../sass/modules/_buttons.scss */
 .buy-ticket {
   display: block;
   width: 100%;
@@ -1154,7 +1040,6 @@ http://websemantics.co.uk/online_tools/image_to_data_uri_convertor/
 /*********************
 INPUTS
 *********************/
-/* line 24, ../sass/modules/_forms.scss */
 input[type="text"],
 input[type="password"],
 input[type="datetime"],
@@ -1189,7 +1074,6 @@ textarea,
   background-color: #989898;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
-  /* line 59, ../sass/modules/_forms.scss */
   input[type="text"]:focus, input[type="text"]:active,
   input[type="password"]:focus,
   input[type="password"]:active,
@@ -1224,7 +1108,6 @@ textarea,
   .field:focus,
   .field:active {
     background-color: #a2a2a2; }
-  /* line 65, ../sass/modules/_forms.scss */
   input[type="text"].error, input[type="text"].is-invalid,
   input[type="password"].error,
   input[type="password"].is-invalid,
@@ -1265,7 +1148,6 @@ textarea,
     background-repeat: no-repeat;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDREQkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDREQ0YwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjQ3ODRGRkE2RjA0QTExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERBRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+U8iT5wAAAedJREFUeNqk1U9I02Ecx/HtV3aIFAc1hcRDUoGXRAq0oNLA2CrsEFmHbikZu0iQYIFGYAiegkCpLipBxPpDEBMUzB0EhSG2LhG7hMR2GviPgUTvB57Bw8P3+U23B16HPX8+e/b8nt93wezZSMCnhXETF3AcB5BDCnH8Dq98ExcGHcFn8Ah3cdDni+fxnPDv9oAnTB7CKu6VCFXtChZy56LxUjt+jfuB8toSOth9wd7xWAWhqrUjYR/FRTwWJm+iIPT/w7bQf5ljiZnBg45dtKFX6H+LU8gIY8OEV6vgTkStwXWE8BPTGDHGPqNPz2mCfSOOYkA99TvCt1bhGPL68zMcwmncMuape10jrI+q4BbHi/FLn31S9z2x5tRhTc+1W506ipM+T3oRD4X+8+qtc4SqFvL0z/Fr14S+Szjis8bz9Lvvaq8cwS/wwGfdlqfPSWqTiFlX77o13u9Ym1PBs8JAytpRoy44X9Ft9E/gvbA+rYKn8NcaaMVc8UHgBw4b9/iqUQZ6hOAJFbyDcUflmsEX4a6+wTtHGfhAIUqa1U29Zc2BytouThD8x6xuN5CtMPi2CrXLZkZf/HyZoRFCP7n+QVR4PV7uI/AjGghN7OU/r1ilnqILtfpNC+o6vIFljBKYlhb/F2AAgaBsWR5wRiIAAAAASUVORK5CYII=);
     outline-color: #fbe3e4; }
-  /* line 77, ../sass/modules/_forms.scss */
   input[type="text"].success, input[type="text"].is-valid,
   input[type="password"].success,
   input[type="password"].is-valid,
@@ -1306,7 +1188,6 @@ textarea,
     background-repeat: no-repeat;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo2NDM0NDRERkYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo2NDM0NDRFMEYwNEIxMUUyOTI4REZGQTEzMzA2MDcyNiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjY0MzQ0NERERjA0QjExRTI5MjhERkZBMTMzMDYwNzI2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjY0MzQ0NERFRjA0QjExRTI5MjhERkZBMTMzMDYwNzI2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+7olkTQAAAfhJREFUeNqklU9oE0EUhzdroWjw0tBeWlDxkEaIp55TsCU9VKIgCrHBelA8CQ1Kr1WPbZrQ3gqtQqvGqxpQc2jBk6BIIaAGD4qNCKURpDSKiPi98gLDsJt//uBjsztvfnk7895sIPAw6/joGMThFJyAXn2+A+9gA57/TaY/eU0OeBgfhGm4DiGnsb7DAszxBz/NAdcKjMJLuNWCqagHbsscN5+L+hmH4QkMOe1L5jzFfNA2PgT34ajTuY7AGuZB0/hmh5m+gS0r8xv1zRvg+gGCHZiOwnF4DP3iB3sQkYxPd2C6CWfhB9Xwlus5+K1j4jXuaq3a+gM1H9OPcAa+7q9lPidZJqHbiIm7Wg22rsEI7FrPSzAMX/T+ADyAKSsu7Fr1KplehLvwCs5DvfBf65p+MypqRbO1FXK9utH4/QKuaqYTsG3E3INJv00Q46px3+XxanJ/Ute2/vqP4FKDza2KcdljIKdnhS0xXYULTaqmLMZFn8FFSFtvt6x70ExFCS5oUXspq2ssa7oEl1swFa+CGFdgtkHgPDyDKy02zyxNU6lXRUZb1EuHYayNNs+Yh5B0WQo+/8fpJnNTZFuzz2OpjoQ2QruSOQlMy35fEGmEGMxY9e1brxobw7TkWA1h6xfckUPb+JhGoE/Hpfvew7qUld/H9J8AAwDpw3WYrxcZ3QAAAABJRU5ErkJggg==);
     outline-color: #e6efc2; }
-  /* line 89, ../sass/modules/_forms.scss */
   input[type="text"][disabled], input[type="text"].is-disabled,
   input[type="password"][disabled],
   input[type="password"].is-disabled,
@@ -1343,7 +1224,6 @@ textarea,
     cursor: not-allowed;
     border-color: #cfcfcf;
     opacity: 0.6; }
-    /* line 95, ../sass/modules/_forms.scss */
     input[type="text"][disabled]:focus, input[type="text"][disabled]:active, input[type="text"].is-disabled:focus, input[type="text"].is-disabled:active,
     input[type="password"][disabled]:focus,
     input[type="password"][disabled]:active,
@@ -1411,17 +1291,14 @@ textarea,
     .field.is-disabled:active {
       background-color: #d5edf8; }
 
-/* line 105, ../sass/modules/_forms.scss */
 input[type="password"] {
   letter-spacing: 0.3em; }
 
-/* line 110, ../sass/modules/_forms.scss */
 textarea {
   max-width: 100%;
   min-height: 120px;
   line-height: 1.5em; }
 
-/* line 117, ../sass/modules/_forms.scss */
 select {
   -webkit-appearance: none;
   /* 1 */
@@ -1455,66 +1332,53 @@ IMPORTING PLUGINS
 Stylesheet for javascript plugins
 *********************/
 /*= CORE CSS */
-/* line 2, ../sass/plugins/_eventCalendar.scss */
 .hidden {
   display: none; }
 
-/* line 4, ../sass/plugins/_eventCalendar.scss */
 .eventCalendar-wrap {
   position: relative;
   overflow: hidden; }
 
-/* line 8, ../sass/plugins/_eventCalendar.scss */
 .eventCalendar-wrap .arrow {
   position: absolute;
   z-index: 5;
   top: 3px; }
 
-/* line 13, ../sass/plugins/_eventCalendar.scss */
 .eventCalendar-wrap .prev {
   left: 3px; }
 
-/* line 16, ../sass/plugins/_eventCalendar.scss */
 .eventCalendar-wrap .next {
   right: 3px; }
 
-/* line 20, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-currentTitle .monthTitle {
   display: block;
   text-align: center; }
 
-/* line 24, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-monthWrap {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 2; }
 
-/* line 29, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-monthWrap.currentMonth {
   z-index: 1; }
 
-/* line 32, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-daysList {
   display: table;
   width: 100%; }
 
-/* line 36, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-daysList.showAsWeek {
   display: block; }
 
-/* line 40, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-daysList li {
   display: table-cell; }
 
-/* line 49, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-daysList.showAsWeek li {
   display: block;
   float: left;
   width: 14.28%;
   height: 20px; }
 
-/* line 55, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-daysList li a {
   padding: 0;
   display: block;
@@ -1522,23 +1386,19 @@ Stylesheet for javascript plugins
   font-size: 18px;
   min-width: 15px; }
 
-/* line 62, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-loading {
   display: block;
   min-width: 100px;
   height: 40px;
   line-height: 40px; }
 
-/* line 68, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-list {
   position: relative;
   z-index: 1; }
 
-/* line 73, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-list.oldEventList {
   z-index: 2; }
 
-/* line 76, ../sass/plugins/_eventCalendar.scss */
 .eventsCalendar-subtitle {
   padding-left: 5px;
   font-weight: bold;
@@ -1546,7 +1406,6 @@ Stylesheet for javascript plugins
 
 /* end of core CSS */
 /* Theme CSS */
-/* line 6, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventCalendar-wrap .arrow {
   text-decoration: none;
   padding: 0 5px;
@@ -1556,90 +1415,73 @@ Stylesheet for javascript plugins
   width: 39%;
   text-align: left; }
 
-/* line 16, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventCalendar-wrap .arrow.prev {
   text-align: right; }
 
-/* line 27, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventCalendar-wrap .arrow:hover {
   opacity: 0.7; }
 
-/* line 44, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-slider {
   height: 80px; }
 
-/* line 49, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-currentTitle {
   line-height: 50px;
   text-transform: uppercase; }
 
-/* line 53, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-currentTitle .monthTitle {
   font-size: 24px;
   text-decoration: none;
   letter-spacing: 2px; }
 
-/* line 60, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-daysList {
   zoom: 1;
   padding: 0;
   width: 100%;
   margin: 0; }
 
-/* line 67, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-daysList.showAsWeek {
   width: auto;
   margin: 10px 0; }
 
-/* line 74, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-daysList:before, .eventsCalendar-daysList:after {
   content: "";
   display: table; }
 
-/* line 75, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-daysList:after {
   clear: both; }
 
-/* line 76, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-day-header {
   text-transform: lowercase;
   text-align: center;
   font-size: 11px;
   line-height: 27px; }
 
-/* line 82, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-daysList.showAsWeek li {
   height: auto;
   margin: 0;
   text-transform: uppercase;
   min-height: 30px; }
 
-/* line 89, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-day a {
   text-decoration: none; }
 
-/* line 97, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .showAsWeek .eventsCalendar-day {
   border-left-width: 0; }
 
-/* line 98, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .showAsWeek .eventsCalendar-day a {
   line-height: 27px;
   font-size: 11px; }
 
-/* line 104, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-day a:hover {
   /*	box-shadow:inset 5px 5px 10px #C1C1C1;
   	text-shadow: 2px 2px 2px #C1C1C1;*/ }
 
-/* line 109, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-daysList li.today a {
   color: white;
   position: relative;
   /*	box-shadow:inset 5px 5px 10px #777;
   	text-shadow: 2px 2px 2px #777;*/ }
 
-/* line 116, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-daysList li.today a:before {
   border-radius: 50%;
   position: absolute;
@@ -1656,14 +1498,12 @@ Stylesheet for javascript plugins
   content: "";
   z-index: -1; }
 
-/* line 139, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-daysList li.dayWithEvents a {
   position: relative;
   background: none;
   /*box-shadow:inset 5px 5px 10px #698B10;
   text-shadow: 2px 2px 2px #698B10;*/ }
 
-/* line 146, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-daysList li.dayWithEvents a:before {
   border-radius: 50%;
   position: absolute;
@@ -1680,12 +1520,10 @@ Stylesheet for javascript plugins
   z-index: -1;
   background-color: #fff; }
 
-/* line 167, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 li.eventsCalendar-day.dayWithEvents a:hover {
   /*box-shadow:inset 5px 5px 10px #89B814;
   text-shadow: 2px 2px 2px #89B814;*/ }
 
-/* line 182, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-loading {
   border-radius: 4px;
   margin: 5px auto;
@@ -1700,49 +1538,40 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   top: 25px;
   left: 5px; }
 
-/* line 196, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-loading.error {
   background-color: red; }
 
-/* line 200, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-subtitle {
   padding-top: 10px; }
 
-/* line 201, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list-wrap {
   min-height: 100px;
   position: relative;
   display: none; }
 
-/* line 206, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list-content.scrollable {
   height: 100px;
   overflow-y: auto;
   margin: 0 5px 5px 0; }
 
-/* line 212, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list {
   margin: 0;
   padding: 0;
   list-style-type: none; }
 
-/* line 215, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list li {
   padding: 0 5px 15px;
   margin: 0;
   clear: both; }
 
-/* line 220, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list li time {
   font-size: 10px;
   line-height: 13px; }
 
-/* line 224, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list li time em {
   float: left;
   font-style: normal; }
 
-/* line 228, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list li time small {
   font-size: 10px;
   float: left;
@@ -1750,29 +1579,24 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   padding: 0 5px 0 4px;
   margin: 0 0 0 3px; }
 
-/* line 235, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list li .eventTitle {
   display: block;
   clear: both;
   font-weight: bold;
   text-decoration: none; }
 
-/* line 242, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list li a.eventTitle {
   color: #0E8EAB; }
 
-/* line 245, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list li a.eventTitle:hover {
   text-decoration: underline; }
 
-/* line 246, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list li .eventDesc {
   clear: both;
   margin: 0 0 5px 0;
   font-size: 80%;
   line-height: 1.2em; }
 
-/* line 253, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .eventsCalendar-list .eventsCalendar-noEvents {
   font-size: 120%;
   border-radius: 4px;
@@ -1784,7 +1608,6 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   box-shadow: 0 0 10px #ccc;
   text-shadow: 0 0 3px #aaa; }
 
-/* line 266, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .bt {
   font-size: 12px;
   display: block;
@@ -1816,14 +1639,12 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   -o-transition: 0.1s linear all;
   transition: 0.1s linear all; }
 
-/* line 304, ../sass/plugins/_eventCalendar_theme_responsive.scss */
 .bt:hover {
   background-position: 0 -15px;
   text-decoration: none; }
 
 /* end of theme css */
 /* Slider */
-/* line 2, ../sass/plugins/_slick.scss */
 .slick-slider {
   position: relative;
   display: block;
@@ -1839,7 +1660,6 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent; }
 
-/* line 4, ../sass/plugins/_slick.scss */
 .slick-list {
   position: relative;
   overflow: hidden;
@@ -1847,20 +1667,16 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   margin: 0;
   padding: 0; }
 
-/* line 5, ../sass/plugins/_slick.scss */
 .slick-list:focus {
   outline: none; }
 
-/* line 6, ../sass/plugins/_slick.scss */
 .slick-loading .slick-list {
   background: white url("./ajax-loader.gif") center center no-repeat; }
 
-/* line 7, ../sass/plugins/_slick.scss */
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand; }
 
-/* line 9, ../sass/plugins/_slick.scss */
 .slick-slider .slick-list, .slick-track, .slick-slide, .slick-slide img {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -1868,7 +1684,6 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
-/* line 11, ../sass/plugins/_slick.scss */
 .slick-track {
   position: relative;
   left: 0;
@@ -1876,48 +1691,38 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   display: block;
   zoom: 1; }
 
-/* line 12, ../sass/plugins/_slick.scss */
 .slick-track:before, .slick-track:after {
   content: "";
   display: table; }
 
-/* line 13, ../sass/plugins/_slick.scss */
 .slick-track:after {
   clear: both; }
 
-/* line 14, ../sass/plugins/_slick.scss */
 .slick-loading .slick-track {
   visibility: hidden; }
 
-/* line 16, ../sass/plugins/_slick.scss */
 .slick-slide {
   float: left;
   height: 100%;
   min-height: 1px;
   display: none; }
 
-/* line 17, ../sass/plugins/_slick.scss */
 .slick-slide img {
   display: block;
   pointer-events: none; }
 
-/* line 18, ../sass/plugins/_slick.scss */
 .slick-slide.slick-loading img {
   display: none; }
 
-/* line 19, ../sass/plugins/_slick.scss */
 .slick-slide.dragging img {
   pointer-events: none; }
 
-/* line 20, ../sass/plugins/_slick.scss */
 .slick-initialized .slick-slide {
   display: block; }
 
-/* line 21, ../sass/plugins/_slick.scss */
 .slick-loading .slick-slide {
   visibility: hidden; }
 
-/* line 22, ../sass/plugins/_slick.scss */
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
@@ -1931,7 +1736,6 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   font-weight: normal;
   font-style: normal; }
 /* Arrows */
-/* line 27, ../sass/plugins/_slick.scss */
 .slick-prev, .slick-next {
   position: absolute;
   display: block;
@@ -1945,29 +1749,23 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   border: none;
   outline: none; }
 
-/* line 28, ../sass/plugins/_slick.scss */
 .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
   outline: none;
   background: transparent;
   color: transparent; }
 
-/* line 29, ../sass/plugins/_slick.scss */
 .slick-prev:hover:before, .slick-prev:focus:before, .slick-next:hover:before, .slick-next:focus:before {
   opacity: 1; }
 
-/* line 30, ../sass/plugins/_slick.scss */
 .slick-prev.slick-disabled, .slick-next.slick-disabled {
   opacity: 0.25; }
 
-/* line 33, ../sass/plugins/_slick.scss */
 .slick-prev {
   left: 2%; }
 
-/* line 35, ../sass/plugins/_slick.scss */
 .slick-next {
   right: 2%; }
 
-/* line 39, ../sass/plugins/_slick.scss */
 .slick-dots {
   position: absolute;
   bottom: 0px;
@@ -1977,7 +1775,6 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   padding: 0;
   width: 100%; }
 
-/* line 40, ../sass/plugins/_slick.scss */
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -1987,7 +1784,6 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   padding: 0;
   cursor: pointer; }
 
-/* line 41, ../sass/plugins/_slick.scss */
 .slick-dots li button {
   border: 0;
   background: transparent;
@@ -2001,15 +1797,12 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   padding: 5px;
   cursor: pointer; }
 
-/* line 42, ../sass/plugins/_slick.scss */
 .slick-dots li button:hover, .slick-dots li button:focus {
   outline: none; }
 
-/* line 43, ../sass/plugins/_slick.scss */
 .slick-dots li button:hover:before, .slick-dots li button:focus:before {
   opacity: 1; }
 
-/* line 44, ../sass/plugins/_slick.scss */
 .slick-dots li button:before {
   position: absolute;
   top: 0;
@@ -2026,30 +1819,24 @@ li.eventsCalendar-day.dayWithEvents a:hover {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/* line 45, ../sass/plugins/_slick.scss */
 .slick-dots li.slick-active button:before {
   color: white;
   opacity: 1; }
 
-/* line 47, ../sass/plugins/_slick.scss */
 [dir="rtl"] .slick-next {
   right: auto;
   left: -25px; }
 
-/* line 48, ../sass/plugins/_slick.scss */
 [dir="rtl"] .slick-next:before {
   content: "\2190"; }
 
-/* line 49, ../sass/plugins/_slick.scss */
 [dir="rtl"] .slick-prev {
   right: -25px;
   left: auto; }
 
-/* line 50, ../sass/plugins/_slick.scss */
 [dir="rtl"] .slick-prev:before {
   content: "\2192"; }
 
-/* line 51, ../sass/plugins/_slick.scss */
 [dir="rtl"] .slick-slide {
   float: right; }
 
@@ -2074,11 +1861,9 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
-/* line 17, ../sass/breakpoints/_base.scss */
 html {
   height: 100%; }
 
-/* line 20, ../sass/breakpoints/_base.scss */
 body {
   height: 100%;
   font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", serif;
@@ -2092,14 +1877,12 @@ body {
   font-smooth: always;
   position: relative; }
 
-/* line 36, ../sass/breakpoints/_base.scss */
 .hr {
   background-color: #010101;
   height: 3px;
   position: relative;
   clear: both;
   opacity: 0.2; }
-  /* line 43, ../sass/breakpoints/_base.scss */
   .hr:before {
     content: "";
     height: 1px;
@@ -2107,7 +1890,6 @@ body {
     width: 100%;
     margin-top: -3px;
     position: absolute; }
-  /* line 51, ../sass/breakpoints/_base.scss */
   .hr:after {
     content: "";
     height: 1px;
@@ -2116,67 +1898,53 @@ body {
     margin-top: 4px;
     position: absolute; }
 
-/* line 61, ../sass/breakpoints/_base.scss */
 .color-bcj {
   color: #840F15; }
 
-/* line 64, ../sass/breakpoints/_base.scss */
 .color-masaaki {
   color: #737F12; }
 
-/* line 67, ../sass/breakpoints/_base.scss */
 .color-masato {
   color: #BB9768; }
 
-/* line 70, ../sass/breakpoints/_base.scss */
 .color-genesis {
   color: #615DA7; }
 
-/* line 73, ../sass/breakpoints/_base.scss */
 .bigger {
   font-size: 3em;
   line-height: 0.5em; }
 
-/* line 77, ../sass/breakpoints/_base.scss */
 .bigger2 {
   font-size: 1.3em;
   line-height: 1em; }
 
-/* line 81, ../sass/breakpoints/_base.scss */
 .bigger3 {
   font-size: 2em;
   line-height: 1em; }
 
-/* line 85, ../sass/breakpoints/_base.scss */
 .align-right {
   text-align: right; }
 
-/* line 88, ../sass/breakpoints/_base.scss */
 .smalltext {
   font-size: 0.7em; }
 
-/* line 92, ../sass/breakpoints/_base.scss */
 .number {
   font-family: "Playfair Display", "Alegreya", serif;
   font-weight: normal; }
 
-/* line 96, ../sass/breakpoints/_base.scss */
 .clear {
   clear: both; }
 
-/* line 99, ../sass/breakpoints/_base.scss */
 .h_iframe {
   position: relative;
   max-width: 800px;
   margin: auto; }
 
-/* line 100, ../sass/breakpoints/_base.scss */
 .h_iframe .ratio {
   display: block;
   width: 100%;
   height: auto; }
 
-/* line 101, ../sass/breakpoints/_base.scss */
 .h_iframe iframe {
   position: absolute;
   top: 0;
@@ -2184,7 +1952,6 @@ body {
   width: 100%;
   height: 100%; }
 
-/* line 104, ../sass/breakpoints/_base.scss */
 a.svg:after {
   content: "";
   position: absolute;
@@ -2193,7 +1960,6 @@ a.svg:after {
   bottom: 0;
   left: 0; }
 
-/* line 113, ../sass/breakpoints/_base.scss */
 a.svg {
   position: relative;
   display: inline-block; }
@@ -2240,29 +2006,24 @@ style a page via class
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-/* line 162, ../sass/breakpoints/_base.scss */
 #container {
   position: relative; }
 
-/* line 168, ../sass/breakpoints/_base.scss */
 #main {
   background-color: #ECECEC;
   background: url(../images/bcj_bg_darker.jpg) top center;
   padding-bottom: 4em; }
 
-/* line 173, ../sass/breakpoints/_base.scss */
 .wrap {
   width: 100%;
   margin: 0 auto;
   position: relative; }
-  /* line 177, ../sass/breakpoints/_base.scss */
   .wrap .wrap-padding {
     padding: 0 4%; }
 
 /*********************
 COLUMNS
 *********************/
-/* line 185, ../sass/breakpoints/_base.scss */
 #left-column, #right-column {
   position: absolute;
   height: 100%;
@@ -2272,13 +2033,11 @@ COLUMNS
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
   opacity: 0.6; }
 
-/* line 193, ../sass/breakpoints/_base.scss */
 #left-column {
   background: url(../images/bg-lines-left.png) top right;
   left: 0;
   margin-left: -200px; }
 
-/* line 198, ../sass/breakpoints/_base.scss */
 #right-column {
   background: url(../images/bg-lines-right.png) top left;
   right: 0;
@@ -2287,7 +2046,6 @@ COLUMNS
 /*********************
 FEATURE SLIDER
 *********************/
-/* line 207, ../sass/breakpoints/_base.scss */
 #feature-slider {
   position: relative;
   margin: 3px auto 0;
@@ -2295,15 +2053,12 @@ FEATURE SLIDER
   border-top: 2px solid #010101;
   border-bottom: 2px solid #010101;
   height: 130px; }
-  /* line 216, ../sass/breakpoints/_base.scss */
   #feature-slider .slide-item {
     height: 130px;
     position: relative; }
-    /* line 219, ../sass/breakpoints/_base.scss */
     #feature-slider .slide-item .slide-bg {
       position: absolute;
       z-index: 900; }
-    /* line 223, ../sass/breakpoints/_base.scss */
     #feature-slider .slide-item .slide-content {
       display: table;
       vertical-align: middle;
@@ -2328,7 +2083,6 @@ FEATURE SLIDER
       -o-transition-delay: 1s;
       -webkit-transition-delay: 1s;
       transition-delay: 1s; }
-      /* line 243, ../sass/breakpoints/_base.scss */
       #feature-slider .slide-item .slide-content.overlay {
         background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjgiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC4wIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
         background-size: 100%;
@@ -2336,10 +2090,8 @@ FEATURE SLIDER
         background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
         background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
         background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); }
-      /* line 246, ../sass/breakpoints/_base.scss */
       #feature-slider .slide-item .slide-content.right {
         right: 0; }
-        /* line 248, ../sass/breakpoints/_base.scss */
         #feature-slider .slide-item .slide-content.right.overlay {
           background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuNSIgeDI9IjEuMCIgeTI9IjAuNSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjAiLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC42NSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
           background-size: 100%;
@@ -2347,42 +2099,33 @@ FEATURE SLIDER
           background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
           background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
           background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); }
-      /* line 252, ../sass/breakpoints/_base.scss */
       #feature-slider .slide-item .slide-content .inner-content {
         display: table-cell;
         vertical-align: middle; }
-      /* line 257, ../sass/breakpoints/_base.scss */
       #feature-slider .slide-item .slide-content h1 div, #feature-slider .slide-item .slide-content h2 div {
         display: inline-block; }
-      /* line 261, ../sass/breakpoints/_base.scss */
       #feature-slider .slide-item .slide-content h1 {
         display: inline-block;
         font-size: 1.5em;
         margin: 0; }
-        /* line 265, ../sass/breakpoints/_base.scss */
         #feature-slider .slide-item .slide-content h1 .subtitle {
           font-size: 0.5em;
           line-height: 100%; }
-        /* line 269, ../sass/breakpoints/_base.scss */
         #feature-slider .slide-item .slide-content h1 .small {
           font-size: 0.6em;
           line-height: 100%; }
-      /* line 275, ../sass/breakpoints/_base.scss */
       #feature-slider .slide-item .slide-content h2 {
         display: inline-block;
         font-size: 1.2em;
         margin: 0; }
-      /* line 280, ../sass/breakpoints/_base.scss */
       #feature-slider .slide-item .slide-content img.divider {
         display: inline-block;
         -moz-transform: scale(0.5);
         -ms-transform: scale(0.5);
         -webkit-transform: scale(0.5);
         transform: scale(0.5); }
-      /* line 284, ../sass/breakpoints/_base.scss */
       #feature-slider .slide-item .slide-content a {
         color: #fff; }
-    /* line 288, ../sass/breakpoints/_base.scss */
     #feature-slider .slide-item .slide-overlay {
       position: absolute;
       width: 100%;
@@ -2399,7 +2142,6 @@ FEATURE SLIDER
       -o-transition-duration: 1s;
       -webkit-transition-duration: 1s;
       transition-duration: 1s; }
-  /* line 304, ../sass/breakpoints/_base.scss */
   #feature-slider .feature-nav {
     position: absolute;
     z-index: 9999;
@@ -2415,22 +2157,16 @@ FEATURE SLIDER
     -o-transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s; }
-    /* line 313, ../sass/breakpoints/_base.scss */
     #feature-slider .feature-nav.prev {
       left: 2%; }
-    /* line 316, ../sass/breakpoints/_base.scss */
     #feature-slider .feature-nav.next {
       right: 2%; }
-  /* line 321, ../sass/breakpoints/_base.scss */
   #feature-slider:hover .feature-nav {
     opacity: 1; }
-  /* line 324, ../sass/breakpoints/_base.scss */
   #feature-slider:hover .slick-prev, #feature-slider:hover .slick-next {
     opacity: 1; }
-  /* line 328, ../sass/breakpoints/_base.scss */
   #feature-slider .slick-list {
     overflow: visible; }
-  /* line 331, ../sass/breakpoints/_base.scss */
   #feature-slider .slick-prev, #feature-slider .slick-next {
     -moz-transition-property: opacity;
     -o-transition-property: opacity;
@@ -2441,10 +2177,8 @@ FEATURE SLIDER
     -webkit-transition-duration: 0.5s;
     transition-duration: 0.5s;
     opacity: 0; }
-  /* line 337, ../sass/breakpoints/_base.scss */
   #feature-slider .slide-item.slick-active .slide-content {
     opacity: 1; }
-  /* line 340, ../sass/breakpoints/_base.scss */
   #feature-slider .slide-item.slick-active .slide-overlay {
     opacity: 0;
     visibility: hidden; }
@@ -2452,7 +2186,6 @@ FEATURE SLIDER
 /*********************
 BACKGROUND
 *********************/
-/* line 353, ../sass/breakpoints/_base.scss */
 #background {
   position: fixed;
   top: 0px;
@@ -2462,7 +2195,6 @@ BACKGROUND
   z-index: -1;
   -webkit-transform: translateZ(0);
   pointer-events: none; }
-  /* line 362, ../sass/breakpoints/_base.scss */
   #background #intro-background {
     background: url(../images/home.jpg) center center no-repeat;
     background-size: cover;
@@ -2474,10 +2206,8 @@ BACKGROUND
     -webkit-transform: translateZ(0);
     pointer-events: none;
     position: fixed; }
-    /* line 374, ../sass/breakpoints/_base.scss */
     #background #intro-background.disable {
       opacity: 0; }
-    /* line 377, ../sass/breakpoints/_base.scss */
     #background #intro-background .overlay {
       position: absolute;
       width: 100%;
@@ -2485,7 +2215,6 @@ BACKGROUND
       background-color: rgba(0, 0, 0, 0.5);
       top: 0;
       z-index: 0; }
-  /* line 386, ../sass/breakpoints/_base.scss */
   #background #about-background {
     background: url(../images/profile-bcj2.jpg) center center no-repeat;
     background-size: cover;
@@ -2497,10 +2226,8 @@ BACKGROUND
     z-index: 1;
     -webkit-transform: translateZ(0);
     pointer-events: none; }
-    /* line 397, ../sass/breakpoints/_base.scss */
     #background #about-background.disable {
       opacity: 0; }
-    /* line 400, ../sass/breakpoints/_base.scss */
     #background #about-background .overlay {
       position: absolute;
       width: 100%;
@@ -2509,7 +2236,6 @@ BACKGROUND
       top: 0;
       z-index: 0;
       opacity: 0; }
-  /* line 413, ../sass/breakpoints/_base.scss */
   #background #page-background {
     background: center center no-repeat;
     background-size: cover;
@@ -2521,10 +2247,8 @@ BACKGROUND
     -webkit-transform: translateZ(0);
     pointer-events: none;
     position: fixed; }
-    /* line 424, ../sass/breakpoints/_base.scss */
     #background #page-background.disable {
       opacity: 0; }
-    /* line 427, ../sass/breakpoints/_base.scss */
     #background #page-background .overlay {
       position: absolute;
       width: 100%;
@@ -2536,30 +2260,34 @@ BACKGROUND
 /*********************
 INTRO
 *********************/
-/* line 440, ../sass/breakpoints/_base.scss */
 section#intro {
   height: 100%;
   background-size: cover;
   text-align: center;
   color: #fff;
   position: relative; }
-  /* line 448, ../sass/breakpoints/_base.scss */
   section#intro .content {
-    position: absolute;
-    z-index: 999;
-    top: 15vh;
-    left: 50%;
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
+    display: table;
+    height: 100%;
     width: 100%; }
-  /* line 456, ../sass/breakpoints/_base.scss */
-  section#intro .wrapper {
-    position: fixed;
-    width: 100%;
-    height: 100%; }
-  /* line 461, ../sass/breakpoints/_base.scss */
+    section#intro .content .profile {
+      display: table-row;
+      height: 60%; }
+      section#intro .content .profile > div {
+        display: table-cell;
+        vertical-align: bottom; }
+    section#intro .content .start {
+      display: table-row;
+      height: auto; }
+      section#intro .content .start > div {
+        display: table-cell;
+        vertical-align: middle; }
+    section#intro .content .navigation {
+      display: table-row;
+      height: 25%; }
+      section#intro .content .navigation > div {
+        display: table-cell;
+        vertical-align: middle; }
   section#intro .roles {
     font-size: 18px;
     display: inline-block;
@@ -2569,7 +2297,6 @@ section#intro {
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
     z-index: 999;
     position: relative; }
-  /* line 472, ../sass/breakpoints/_base.scss */
   section#intro .short-profile {
     max-width: 770px;
     width: 90%;
@@ -2578,7 +2305,6 @@ section#intro {
     font-weight: bold;
     position: relative;
     z-index: 9999; }
-  /* line 484, ../sass/breakpoints/_base.scss */
   section#intro .logo {
     font-size: 80px;
     text-transform: uppercase;
@@ -2588,12 +2314,10 @@ section#intro {
     line-height: 0;
     margin: 3vh 0;
     z-index: 999; }
-    /* line 494, ../sass/breakpoints/_base.scss */
     section#intro .logo img {
       width: 100px;
       height: auto;
       opacity: .9; }
-  /* line 501, ../sass/breakpoints/_base.scss */
   section#intro #scrolldownHome {
     -moz-animation: fade-in-out 5s ease-in-out infinite;
     -webkit-animation: fade-in-out 5s ease-in-out infinite;
@@ -2603,39 +2327,27 @@ section#intro {
     -ms-transform: scale(0.5, 0.5);
     -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5); }
-    /* line 505, ../sass/breakpoints/_base.scss */
     section#intro #scrolldownHome circle {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
       opacity: 0.9;
       -webkit-transition: opacity, 0.2s;
       transition: opacity, 0.2s; }
-    /* line 510, ../sass/breakpoints/_base.scss */
     section#intro #scrolldownHome:hover circle {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
       opacity: 0.5; }
-  /* line 515, ../sass/breakpoints/_base.scss */
   section#intro nav {
     display: none;
-    position: absolute;
-    left: 50%;
-    bottom: 2vh;
-    -moz-transform: translateX(-46%);
-    -ms-transform: translateX(-46%);
-    -webkit-transform: translateX(-46%);
-    transform: translateX(-46%);
+    position: relative;
     background: none;
     text-align: center;
     width: 600px;
     margin: auto;
     z-index: 999; }
-    /* line 529, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li a {
       color: #fff;
       letter-spacing: 0.1em; }
-    /* line 536, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li a:hover {
       text-decoration: none; }
-    /* line 539, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li:before {
       position: absolute;
       margin-top: 2.7em;
@@ -2646,22 +2358,16 @@ section#intro {
       display: block;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-    /* line 550, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-about:before {
       content: "BCJについて"; }
-    /* line 553, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-concerts:before {
       content: "コンサート"; }
-    /* line 556, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-discography:before {
       content: "ディスコグラフィ"; }
-    /* line 559, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-gallery:before {
       content: "ギャラリー"; }
-    /* line 562, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-friends_society:before {
       content: "フレンズ＆ソサエティ"; }
-    /* line 565, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li:after {
       position: absolute;
       margin-top: -2.5em;
@@ -2674,39 +2380,33 @@ section#intro {
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out;
       z-index: 9; }
-    /* line 578, ../sass/breakpoints/_base.scss */
     section#intro nav > ul li.menu-discography:after, section#intro nav > ul li.menu-gallery:after {
-      content: "Coming Soon"; }
-    /* line 590, ../sass/breakpoints/_base.scss */
+      content: "Coming Soon";
+      -moz-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg); }
     section#intro nav a {
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-    /* line 593, ../sass/breakpoints/_base.scss */
     section#intro nav .nav {
       font-size: 20px; }
-    /* line 597, ../sass/breakpoints/_base.scss */
     section#intro nav .nav li {
       display: inline-block;
       color: #989898; }
-      /* line 601, ../sass/breakpoints/_base.scss */
       section#intro nav .nav li a {
         padding: 0.2em 1.5em 0.2em;
         color: #989898; }
-      /* line 608, ../sass/breakpoints/_base.scss */
       section#intro nav .nav li:hover {
         color: #fff; }
-        /* line 613, ../sass/breakpoints/_base.scss */
         section#intro nav .nav li:hover a {
           color: #fff; }
-    /* line 619, ../sass/breakpoints/_base.scss */
     section#intro nav .nav li.menu-discography, section#intro nav .nav li.menu-gallery {
       color: #4d4d4d;
       cursor: default; }
-      /* line 622, ../sass/breakpoints/_base.scss */
       section#intro nav .nav li.menu-discography a, section#intro nav .nav li.menu-gallery a {
         color: #4d4d4d;
         cursor: default; }
-  /* line 630, ../sass/breakpoints/_base.scss */
   section#intro .overlay {
     position: absolute;
     width: 100%;
@@ -2721,11 +2421,9 @@ section#intro {
 /*********************
 SLICK SLIDER
 *********************/
-/* line 647, ../sass/breakpoints/_base.scss */
 .slick-slider {
   margin-bottom: 0px; }
 
-/* line 650, ../sass/breakpoints/_base.scss */
 .slick-next, .slick-prev {
   -moz-transform: translate3d(0, -50%, 0) scale(0.5);
   -ms-transform: translate3d(0, -50%, 0) scale(0.5);
@@ -2735,53 +2433,41 @@ SLICK SLIDER
   transition: opacity 0.2s;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5; }
-  /* line 655, ../sass/breakpoints/_base.scss */
   .slick-next:not(.slick-disabled):hover, .slick-prev:not(.slick-disabled):hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1; }
 
-/* line 661, ../sass/breakpoints/_base.scss */
 .slick-dots {
   visibility: hidden; }
 
 /*********************
 EVENT CALENDAR
 *********************/
-/* line 668, ../sass/breakpoints/_base.scss */
 .eventCalendar-wrap .arrow {
   width: auto; }
 
-/* line 671, ../sass/breakpoints/_base.scss */
 .eventsCalendar-currentTitle .monthTitle {
   font-size: 16px; }
 
-/* line 674, ../sass/breakpoints/_base.scss */
 .eventsCalendar-daysList {
   display: none; }
 
 /*********************
 UPCOMING CONCERTS
 *********************/
-/* line 683, ../sass/breakpoints/_base.scss */
 .upcoming .overview-holder-carousel {
   margin-top: 20px; }
-  /* line 685, ../sass/breakpoints/_base.scss */
   .upcoming .overview-holder-carousel.inactive {
     visibility: hidden; }
-  /* line 688, ../sass/breakpoints/_base.scss */
   .upcoming .overview-holder-carousel .slick-next {
     right: -60px; }
-  /* line 689, ../sass/breakpoints/_base.scss */
   .upcoming .overview-holder-carousel .slick-prev {
     left: -60px; }
-  /* line 690, ../sass/breakpoints/_base.scss */
   .upcoming .overview-holder-carousel .slick-list {
     padding-right: 1px; }
-/* line 696, ../sass/breakpoints/_base.scss */
 .upcoming .overview-holder {
   display: table;
   position: relative; }
-/* line 700, ../sass/breakpoints/_base.scss */
 .upcoming div.overview {
   vertical-align: top;
   text-align: left;
@@ -2791,27 +2477,21 @@ UPCOMING CONCERTS
   padding: 0 1em;
   overflow: hidden;
   border-left: 1px solid #010101; }
-  /* line 722, ../sass/breakpoints/_base.scss */
   .upcoming div.overview header {
     padding-bottom: 5px;
     border-bottom: 3px solid #840F15; }
-    /* line 725, ../sass/breakpoints/_base.scss */
     .upcoming div.overview header .date_time {
       padding-top: 25px;
       text-align: center; }
-    /* line 729, ../sass/breakpoints/_base.scss */
     .upcoming div.overview header .location {
       text-align: center;
       height: 40px;
       overflow: hidden;
       line-height: 1.5em; }
-      /* line 734, ../sass/breakpoints/_base.scss */
       .upcoming div.overview header .location .country {
         display: inline-block; }
-  /* line 740, ../sass/breakpoints/_base.scss */
   .upcoming div.overview section {
     position: relative; }
-    /* line 742, ../sass/breakpoints/_base.scss */
     .upcoming div.overview section .thumb {
       display: none;
       -moz-transition-property: opacity;
@@ -2826,12 +2506,10 @@ UPCOMING CONCERTS
       -o-transition-timing-function: ease-in;
       -webkit-transition-timing-function: ease-in;
       transition-timing-function: ease-in; }
-      /* line 747, ../sass/breakpoints/_base.scss */
       .upcoming div.overview section .thumb img {
         width: 100%;
         height: auto;
         display: block; }
-    /* line 753, ../sass/breakpoints/_base.scss */
     .upcoming div.overview section .title {
       padding: 5px 0px;
       text-align: center;
@@ -2847,7 +2525,6 @@ UPCOMING CONCERTS
       -o-transition-timing-function: ease-in;
       -webkit-transition-timing-function: ease-in;
       transition-timing-function: ease-in; }
-  /* line 765, ../sass/breakpoints/_base.scss */
   .upcoming div.overview .description {
     z-index: 999;
     top: 0;
@@ -2869,19 +2546,15 @@ UPCOMING CONCERTS
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
     font-size: 0.9em; }
-    /* line 783, ../sass/breakpoints/_base.scss */
     .upcoming div.overview .description .detail {
       overflow: hidden; }
-    /* line 789, ../sass/breakpoints/_base.scss */
     .upcoming div.overview .description .readmore {
       margin-bottom: 10px;
       text-decoration: underline; }
-    /* line 795, ../sass/breakpoints/_base.scss */
     .upcoming div.overview .description .buy-ticket-container {
       position: absolute;
       bottom: 10px;
       width: 100%; }
-      /* line 799, ../sass/breakpoints/_base.scss */
       .upcoming div.overview .description .buy-ticket-container .playguide {
         position: absolute;
         top: 0;
@@ -2889,78 +2562,74 @@ UPCOMING CONCERTS
         opacity: 0;
         width: 100%;
         color: #840F15; }
-        /* line 806, ../sass/breakpoints/_base.scss */
         .upcoming div.overview .description .buy-ticket-container .playguide span {
           border: 1px solid #840F15;
           margin-left: 4%;
           float: left;
           padding: 0.8em 0 0.4em;
           width: 48%; }
-          /* line 813, ../sass/breakpoints/_base.scss */
           .upcoming div.overview .description .buy-ticket-container .playguide span:not(.disabled):hover {
             background-color: rgba(255, 255, 255, 0.5); }
-          /* line 816, ../sass/breakpoints/_base.scss */
           .upcoming div.overview .description .buy-ticket-container .playguide span:first-child {
             margin-left: 0; }
-          /* line 819, ../sass/breakpoints/_base.scss */
           .upcoming div.overview .description .buy-ticket-container .playguide span a {
             color: #840F15;
             text-decoration: none; }
-          /* line 823, ../sass/breakpoints/_base.scss */
           .upcoming div.overview .description .buy-ticket-container .playguide span.disabled {
             opacity: 0.2; }
-      /* line 835, ../sass/breakpoints/_base.scss */
       .upcoming div.overview .description .buy-ticket-container:hover .buy-ticket {
         opacity: 0; }
-      /* line 838, ../sass/breakpoints/_base.scss */
       .upcoming div.overview .description .buy-ticket-container:hover .playguide {
         opacity: 1; }
-/* line 847, ../sass/breakpoints/_base.scss */
 .upcoming footer {
   margin-top: 20px;
   text-align: center; }
-  /* line 851, ../sass/breakpoints/_base.scss */
   .upcoming footer .category span {
     font-size: 6px; }
-  /* line 855, ../sass/breakpoints/_base.scss */
   .upcoming footer .specials {
     margin-top: 25px; }
-    /* line 858, ../sass/breakpoints/_base.scss */
-    .upcoming footer .specials img {
+    .upcoming footer .specials .category-filter {
       margin: 0 10px;
-      width: 120px; }
+      width: 120px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      -webkit-transition: opacity, 0.5s;
+      transition: opacity, 0.5s; }
+      .upcoming footer .specials .category-filter.off {
+        opacity: 0.2; }
+      .upcoming footer .specials .category-filter .title {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 0; }
+        .upcoming footer .specials .category-filter .title h3 {
+          color: #fff;
+          font-size: 1.7em; }
 
-/* line 873, ../sass/breakpoints/_base.scss */
 .no-touch .upcoming div.overview section .thumb {
   display: block; }
-/* line 876, ../sass/breakpoints/_base.scss */
 .no-touch .upcoming div.overview section .title {
   height: 100px; }
-/* line 880, ../sass/breakpoints/_base.scss */
 .no-touch .upcoming div.overview .description {
   opacity: 0;
   position: absolute; }
-/* line 886, ../sass/breakpoints/_base.scss */
 .no-touch .upcoming div.overview:hover .description {
   opacity: 1; }
-/* line 889, ../sass/breakpoints/_base.scss */
 .no-touch .upcoming div.overview:hover .thumb, .no-touch .upcoming div.overview:hover .title {
   opacity: 0; }
 
-/* line 912, ../sass/breakpoints/_base.scss */
 .schedule-nav {
   position: absolute;
   top: 50%;
   margin-top: -0.5em;
   cursor: pointer; }
-  /* line 918, ../sass/breakpoints/_base.scss */
   .schedule-nav.left {
     left: -6%; }
-  /* line 921, ../sass/breakpoints/_base.scss */
   .schedule-nav.right {
     right: -6%; }
 
-/* line 927, ../sass/breakpoints/_base.scss */
 .activities header {
   position: absolute;
   top: 0;
@@ -2971,28 +2640,21 @@ UPCOMING CONCERTS
   color: white;
   font-size: 1.5em; }
 
-/* line 937, ../sass/breakpoints/_base.scss */
 .activities article {
   position: relative;
   border: 1px solid #010101; }
-  /* line 940, ../sass/breakpoints/_base.scss */
   .activities article img {
     display: block; }
 
-/* line 954, ../sass/breakpoints/_base.scss */
 .news-holder {
   padding: 0 10%; }
-  /* line 956, ../sass/breakpoints/_base.scss */
   .news-holder h3 {
     color: #989898; }
-  /* line 960, ../sass/breakpoints/_base.scss */
   .news-holder .banner {
     margin: 50px 0; }
-    /* line 962, ../sass/breakpoints/_base.scss */
     .news-holder .banner img {
       width: 120px; }
 
-/* line 969, ../sass/breakpoints/_base.scss */
 .news-item {
   border-left: 1px solid #010101;
   padding: 10px;
@@ -3002,31 +2664,24 @@ UPCOMING CONCERTS
   position: relative;
   margin: 10px 0;
   border-right: 1px solid #010101; }
-  /* line 978, ../sass/breakpoints/_base.scss */
   .news-item:hover {
     background-color: rgba(255, 255, 255, 0.5); }
-  /* line 982, ../sass/breakpoints/_base.scss */
   .news-item header {
     font-weight: bold; }
-    /* line 984, ../sass/breakpoints/_base.scss */
     .news-item header .title {
       height: 2em; }
-    /* line 987, ../sass/breakpoints/_base.scss */
     .news-item header .date {
       font-weight: normal;
       font-size: 0.8em;
       display: block;
       text-align: right; }
-    /* line 993, ../sass/breakpoints/_base.scss */
     .news-item header .category {
       font-weight: normal;
       font-size: 0.8em;
       display: block;
       height: 2em; }
-  /* line 1003, ../sass/breakpoints/_base.scss */
   .news-item:last-child {
     border-right: 1px solid #010101; }
-  /* line 1007, ../sass/breakpoints/_base.scss */
   .news-item section .excerpt-read-more {
     display: block;
     margin-bottom: 10px;
@@ -3034,128 +2689,103 @@ UPCOMING CONCERTS
     bottom: 0px;
     font-size: 0.7em; }
 
-/* line 1021, ../sass/breakpoints/_base.scss */
 .social_widget {
   background-color: #000000;
   padding: 20px 0; }
 
-/* line 1027, ../sass/breakpoints/_base.scss */
 .bg-white {
   background-color: rgba(255, 255, 255, 0.8); }
 
-/* line 1035, ../sass/breakpoints/_base.scss */
 section#about {
   overflow: hidden;
   text-align: center;
   color: #fff;
   min-height: 1000px;
   position: relative; }
-  /* line 1044, ../sass/breakpoints/_base.scss */
   section#about .row-header {
     font-size: 16px;
     letter-spacing: 2px;
     color: #fff;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
-    /* line 1049, ../sass/breakpoints/_base.scss */
     section#about .row-header.focus {
       color: #989898; }
-  /* line 1053, ../sass/breakpoints/_base.scss */
   section#about .wrap {
     z-index: 1;
     width: 100%; }
-    /* line 1056, ../sass/breakpoints/_base.scss */
     section#about .wrap .wrap-inner {
       padding: 10%; }
-    /* line 1059, ../sass/breakpoints/_base.scss */
     section#about .wrap.pause {
       top: 0;
       position: fixed; }
-  /* line 1066, ../sass/breakpoints/_base.scss */
   section#about #about_bcj_1 {
     line-height: 1.5em;
     font-weight: bold;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     margin-bottom: 30px; }
-    /* line 1073, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_1.focus {
       opacity: 1; }
-  /* line 1078, ../sass/breakpoints/_base.scss */
   section#about #about_bcj_2 {
     margin-bottom: 0;
     margin-bottom: 30px;
     -webkit-transition: max-height 1s ease-in-out, margin-bottom 1s ease-in-out, opacity 1s ease-in-out 0.5s;
     transition: max-height 1s ease-in-out, margin-bottom 1s ease-in-out, opacity 1s ease-in-out 0.5s; }
-    /* line 1088, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_2.focus {
       visibility: visible;
       margin-bottom: 30px;
       max-height: 600px;
       opacity: 1; }
-  /* line 1097, ../sass/breakpoints/_base.scss */
   section#about #about_bcj_3 {
     width: 100%;
     margin: auto;
     line-height: 1.5em;
     text-align: center; }
-    /* line 1103, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_3 p {
       max-width: 520px;
       margin-right: auto;
       margin-left: auto;
       -webkit-transition: opacity 1s ease-in-out;
       transition: opacity 1s ease-in-out; }
-      /* line 1113, ../sass/breakpoints/_base.scss */
       section#about #about_bcj_3 p.second {
         -moz-transition-delay: 0.75s;
         -o-transition-delay: 0.75s;
         -webkit-transition-delay: 0.75s;
         transition-delay: 0.75s; }
-      /* line 1116, ../sass/breakpoints/_base.scss */
       section#about #about_bcj_3 p.third {
         -moz-transition-delay: 1.5s;
         -o-transition-delay: 1.5s;
         -webkit-transition-delay: 1.5s;
         transition-delay: 1.5s; }
-    /* line 1121, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_3.focus p {
       opacity: 1; }
-  /* line 1125, ../sass/breakpoints/_base.scss */
   section#about #about_bcj_4 {
     max-width: 700px;
     margin: auto;
     text-align: center;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
-    /* line 1131, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_4.focus {
       opacity: 1; }
-    /* line 1134, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_4 a {
       color: #fff;
       text-decoration: none; }
-    /* line 1138, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_4 .award_activitity {
       display: inline-block;
       padding: 2%;
       width: 46%;
       vertical-align: top; }
-      /* line 1143, ../sass/breakpoints/_base.scss */
       section#about #about_bcj_4 .award_activitity li {
         line-height: 1.3em;
         margin: 0.5em 0; }
-  /* line 1149, ../sass/breakpoints/_base.scss */
   section#about #about_bcj_5 {
     text-align: center;
     max-width: 700px;
     margin: auto;
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
-    /* line 1155, ../sass/breakpoints/_base.scss */
     section#about #about_bcj_5.focus {
       opacity: 1; }
-  /* line 1159, ../sass/breakpoints/_base.scss */
   section#about .overlay {
     position: absolute;
     width: 100%;
@@ -3167,59 +2797,46 @@ section#about {
     opacity: 0;
     -webkit-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out; }
-    /* line 1169, ../sass/breakpoints/_base.scss */
     section#about .overlay.focus {
       opacity: 1; }
-  /* line 1173, ../sass/breakpoints/_base.scss */
   section#about .cd-holder-carousel {
     position: relative;
     width: 100%; }
-    /* line 1176, ../sass/breakpoints/_base.scss */
     section#about .cd-holder-carousel .slick-slide {
       width: 150px;
       padding: 0 15px; }
-      /* line 1179, ../sass/breakpoints/_base.scss */
       section#about .cd-holder-carousel .slick-slide img {
         width: 100%;
         height: auto;
         display: block; }
-    /* line 1185, ../sass/breakpoints/_base.scss */
     section#about .cd-holder-carousel .slick-prev, section#about .cd-holder-carousel .slick-next {
       margin-top: 0; }
-    /* line 1188, ../sass/breakpoints/_base.scss */
     section#about .cd-holder-carousel .slick-next {
       right: -50px; }
-    /* line 1189, ../sass/breakpoints/_base.scss */
     section#about .cd-holder-carousel .slick-prev {
       left: -50px; }
-  /* line 1191, ../sass/breakpoints/_base.scss */
   section#about .cd-holder {
     width: 100%;
     position: relative; }
-    /* line 1195, ../sass/breakpoints/_base.scss */
     section#about .cd-holder .arrow-left {
       height: 100%;
       width: 60px;
       position: absolute;
       top: 35%;
       left: -55px; }
-    /* line 1202, ../sass/breakpoints/_base.scss */
     section#about .cd-holder .arrow-right {
       height: 100%;
       width: 60px;
       position: absolute;
       top: 35%;
       right: -55px; }
-    /* line 1209, ../sass/breakpoints/_base.scss */
     section#about .cd-holder .cd-holder-inner {
       overflow: scroll;
       width: 100%; }
-    /* line 1213, ../sass/breakpoints/_base.scss */
     section#about .cd-holder ul {
       list-style: none;
       display: table;
       margin: 0; }
-      /* line 1217, ../sass/breakpoints/_base.scss */
       section#about .cd-holder ul li {
         display: table-cell;
         width: 150px;
@@ -3227,7 +2844,6 @@ section#about {
         overflow: hidden;
         padding: 0 15px;
         vertical-align: top; }
-        /* line 1225, ../sass/breakpoints/_base.scss */
         section#about .cd-holder ul li img {
           width: 150px;
           height: auto;
@@ -3236,7 +2852,6 @@ section#about {
           -webkit-box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 10px;
           box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 10px; }
 
-/* line 1242, ../sass/breakpoints/_base.scss */
 section#support {
   overflow: hidden;
   text-align: center;
@@ -3246,7 +2861,6 @@ section#support {
   text-align: center;
   min-height: 800px;
   color: #010101; }
-  /* line 1258, ../sass/breakpoints/_base.scss */
   section#support .background {
     background: url(../images/himawari_masaaki.jpg) center -200px no-repeat;
     background-size: cover;
@@ -3255,7 +2869,6 @@ section#support {
     left: 0;
     width: 100%;
     height: 130%; }
-    /* line 1269, ../sass/breakpoints/_base.scss */
     section#support .background .overlay {
       position: absolute;
       width: 100%;
@@ -3265,33 +2878,26 @@ section#support {
       left: 0;
       z-index: 0;
       opacity: 0; }
-  /* line 1284, ../sass/breakpoints/_base.scss */
   section#support .wrap {
     z-index: 1; }
-    /* line 1287, ../sass/breakpoints/_base.scss */
     section#support .wrap .wrap-inner {
       padding: 10%; }
-  /* line 1291, ../sass/breakpoints/_base.scss */
   section#support #support_bcj_1 {
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
-    /* line 1295, ../sass/breakpoints/_base.scss */
     section#support #support_bcj_1.focus {
       opacity: 1; }
 
 /*********************
 LINK STYLES
 *********************/
-/* line 1314, ../sass/breakpoints/_base.scss */
 a, a:visited {
   color: #010101;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
-  /* line 1318, ../sass/breakpoints/_base.scss */
   a:hover, a:focus, a:visited:hover, a:visited:focus {
     color: #313131; }
-  /* line 1328, ../sass/breakpoints/_base.scss */
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -3302,7 +2908,6 @@ a, a:visited {
 /******************************************************************
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
-/* line 1342, ../sass/breakpoints/_base.scss */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   text-rendering: optimizelegibility;
   font-weight: 500;
@@ -3311,38 +2916,31 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   http://css-tricks.com/watch-your-font-weight/
   */
   /* removing text decoration from all headline links */ }
-  /* line 1351, ../sass/breakpoints/_base.scss */
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
 
-/* line 1356, ../sass/breakpoints/_base.scss */
 h1, .h1 {
   font-size: 2.5em;
   line-height: 1.333em; }
 
-/* line 1361, ../sass/breakpoints/_base.scss */
 h2, .h2 {
   font-size: 1.25em;
   line-height: 1.4em;
   margin-bottom: 0.375em; }
 
-/* line 1367, ../sass/breakpoints/_base.scss */
 h3, .h3 {
   font-size: 1.125em; }
 
-/* line 1371, ../sass/breakpoints/_base.scss */
 h4, .h4 {
   font-size: 1.1em;
   font-weight: 700; }
 
-/* line 1376, ../sass/breakpoints/_base.scss */
 h5, .h5 {
   font-size: 0.846em;
   line-height: 2.09em;
   text-transform: uppercase;
   letter-spacing: 2px; }
 
-/* line 1382, ../sass/breakpoints/_base.scss */
 .row-header {
   margin-top: 1.5em;
   font-size: 16px;
@@ -3354,15 +2952,12 @@ h5, .h5 {
 /*********************
 HEADER STYLES
 *********************/
-/* line 1394, ../sass/breakpoints/_base.scss */
 .header {
   padding-top: 15px;
   padding-bottom: 5px;
   text-align: center; }
-  /* line 1398, ../sass/breakpoints/_base.scss */
   .header a {
     display: block; }
-  /* line 1401, ../sass/breakpoints/_base.scss */
   .header img, .header svg, .header object {
     max-width: 1000px;
     width: 90%; }
@@ -3377,19 +2972,16 @@ easily write one group of styles for
 the navs on the site so our css is cleaner
 and more scalable.
 */
-/* line 1420, ../sass/breakpoints/_base.scss */
 .nav {
   font-size: 15px;
   text-transform: uppercase; }
 
-/* line 1431, ../sass/breakpoints/_base.scss */
 .nav {
   border-bottom: 0;
   margin: 0;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
-  /* line 1434, ../sass/breakpoints/_base.scss */
   .nav li {
     position: relative;
     /*
@@ -3399,7 +2991,6 @@ and more scalable.
     depend on the project. Here's some great info on it:
     http://www.alistapart.com/articles/organizing-mobile/
     */ }
-    /* line 1437, ../sass/breakpoints/_base.scss */
     .nav li a {
       display: block;
       text-decoration: none;
@@ -3412,13 +3003,11 @@ and more scalable.
       the style.scss file where it's relevant. We want to
       keep this file as small as possible!
       */ }
-    /* line 1469, ../sass/breakpoints/_base.scss */
     .nav li ul.sub-menu li a,
     .nav li ul.children li a {
       padding-left: 30px; }
 
 /* end .nav */
-/* line 1500, ../sass/breakpoints/_base.scss */
 nav.main-nav {
   width: 100%;
   text-align: center;
@@ -3426,12 +3015,10 @@ nav.main-nav {
   position: relative;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
-  /* line 1509, ../sass/breakpoints/_base.scss */
   nav.main-nav a, nav.main-nav a:hover, nav.main-nav a:visited {
     color: #010101;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out; }
-  /* line 1513, ../sass/breakpoints/_base.scss */
   nav.main-nav #menu-icon:before {
     content: "\f0c9";
     font: normal 21px/1em FontAwesome;
@@ -3440,26 +3027,19 @@ nav.main-nav {
     vertical-align: middle;
     display: inline-block;
     margin: -4px 5px 0 0; }
-  /* line 1522, ../sass/breakpoints/_base.scss */
   nav.main-nav .mobile-button {
     text-transform: uppercase;
     font-size: 1.5em; }
-  /* line 1526, ../sass/breakpoints/_base.scss */
   nav.main-nav > ul {
     display: none; }
-    /* line 1529, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li a {
       letter-spacing: 0.1em; }
-    /* line 1534, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li a:hover {
       text-decoration: none; }
-    /* line 1537, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li:hover {
       color: #818181; }
-      /* line 1539, ../sass/breakpoints/_base.scss */
       nav.main-nav > ul li:hover a {
         color: #818181; }
-    /* line 1543, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li:before {
       position: absolute;
       margin-top: 2.7em;
@@ -3470,7 +3050,6 @@ nav.main-nav {
       display: block;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-    /* line 1554, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li:after {
       position: absolute;
       top: 20px;
@@ -3482,107 +3061,85 @@ nav.main-nav {
       color: #010101;
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
-    /* line 1566, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-about:before {
       content: "BCJについて"; }
-    /* line 1569, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-concerts:before {
       content: "コンサート"; }
-    /* line 1572, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-discography:before {
       content: "ディスコグラフィ"; }
-    /* line 1576, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-gallery:before {
       content: "ギャラリー"; }
-    /* line 1580, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-friends_society:before {
       content: "フレンズ＆ソサエティ"; }
-    /* line 1584, ../sass/breakpoints/_base.scss */
     nav.main-nav > ul li.menu-discography:after, nav.main-nav > ul li.menu-gallery:after {
-      content: "Coming Soon"; }
-    /* line 1587, ../sass/breakpoints/_base.scss */
+      content: "Coming Soon";
+      -moz-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg); }
     nav.main-nav > ul li.menu-discography, nav.main-nav > ul li.menu-gallery {
-      color: #676767;
+      color: #b3b3b3;
       cursor: default; }
-      /* line 1590, ../sass/breakpoints/_base.scss */
       nav.main-nav > ul li.menu-discography a, nav.main-nav > ul li.menu-gallery a {
-        color: #676767;
+        color: #b3b3b3;
         cursor: default; }
 
-/* line 1597, ../sass/breakpoints/_base.scss */
 #lang_sel_list {
   display: inline-block;
   position: absolute;
   padding: 0;
   top: 0px;
   right: 5px; }
-  /* line 1606, ../sass/breakpoints/_base.scss */
   #lang_sel_list ul li {
     float: none; }
-    /* line 1608, ../sass/breakpoints/_base.scss */
     #lang_sel_list ul li a, #lang_sel_list ul li a:visited {
       background: none;
       font-size: 1.5em;
       margin: 0.5em 0.2em;
       font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", serif;
       text-transform: uppercase; }
-      /* line 1614, ../sass/breakpoints/_base.scss */
       #lang_sel_list ul li a.lang_sel_sel, #lang_sel_list ul li a:visited.lang_sel_sel {
         display: none; }
 
-/* line 1622, ../sass/breakpoints/_base.scss */
 nav.main-nav.inverse {
   color: #fff;
   background-color: rgba(1, 1, 1, 0.8); }
-  /* line 1625, ../sass/breakpoints/_base.scss */
   nav.main-nav.inverse a, nav.main-nav.inverse a:hover, nav.main-nav.inverse a:visited {
     color: #fff; }
-  /* line 1629, ../sass/breakpoints/_base.scss */
   nav.main-nav.inverse > ul li:hover {
     color: #818181; }
-    /* line 1631, ../sass/breakpoints/_base.scss */
     nav.main-nav.inverse > ul li:hover a {
       color: #818181; }
-  /* line 1636, ../sass/breakpoints/_base.scss */
   nav.main-nav.inverse li:after {
     color: #fff !important; }
-  /* line 1639, ../sass/breakpoints/_base.scss */
-  nav.main-nav.inverse li.discography, nav.main-nav.inverse li.gallery {
-    color: #676767 !important;
+  nav.main-nav.inverse li.menu-discography, nav.main-nav.inverse li.menu-gallery {
+    color: #4d4d4d !important;
     cursor: default; }
-    /* line 1642, ../sass/breakpoints/_base.scss */
-    nav.main-nav.inverse li.discography a, nav.main-nav.inverse li.gallery a {
-      color: #676767 !important;
+    nav.main-nav.inverse li.menu-discography a, nav.main-nav.inverse li.menu-gallery a {
+      color: #4d4d4d !important;
       cursor: default; }
 
 /*********************
 POSTS & CONTENT STYLES
 *********************/
-/* line 1656, ../sass/breakpoints/_base.scss */
 .hentry {
   margin-bottom: 1.5em;
   text-align: center; }
-  /* line 1663, ../sass/breakpoints/_base.scss */
   .hentry header {
     padding: 0.4em; }
-    /* line 1666, ../sass/breakpoints/_base.scss */
     .hentry header .leading img {
       width: 100%; }
-  /* line 1671, ../sass/breakpoints/_base.scss */
   .hentry footer {
     padding: 1em;
     border-top: 1px solid rgba(1, 1, 1, 0.5); }
-    /* line 1675, ../sass/breakpoints/_base.scss */
     .hentry footer p {
       margin: 0 0 1em; }
 
 /* end .hentry */
-/* line 1681, ../sass/breakpoints/_base.scss */
 .box-inner {
   margin: 2px;
   border: 1px solid rgba(1, 1, 1, 0.5); }
 
-/* line 1685, ../sass/breakpoints/_base.scss */
 .single-title,
 .page-title,
 .entry-title {
@@ -3598,14 +3155,12 @@ POSTS & CONTENT STYLES
 /* style by category (i.e. category-videos) */
 /* style by tag (i.e. tag-news) */
 /* post meta */
-/* line 1710, ../sass/breakpoints/_base.scss */
 .byline {
   color: #9fa6b4;
   font-style: italic;
   margin: 0; }
 
 /* entry content */
-/* line 1719, ../sass/breakpoints/_base.scss */
 .entry-content {
   padding: 0;
   /*
@@ -3614,71 +3169,55 @@ POSTS & CONTENT STYLES
   and floating images at the next breakpoint,
   but it's up to you. Feel free to change it up.
   */ }
-  /* line 1722, ../sass/breakpoints/_base.scss */
   .entry-content p {
     margin: 0 0 1.5em; }
-  /* line 1747, ../sass/breakpoints/_base.scss */
   .entry-content table {
     width: 100%;
     border: 1px solid #989898;
     margin-bottom: 1.5em; }
-    /* line 1752, ../sass/breakpoints/_base.scss */
     .entry-content table caption {
       margin: 0 0 7px;
       font-size: 0.75em;
       color: #9fa6b4;
       text-transform: uppercase;
       letter-spacing: 1px; }
-  /* line 1761, ../sass/breakpoints/_base.scss */
   .entry-content tr {
     border-bottom: 1px solid #989898; }
-    /* line 1764, ../sass/breakpoints/_base.scss */
     .entry-content tr:nth-child(even) {
       background-color: #ECECEC; }
-  /* line 1769, ../sass/breakpoints/_base.scss */
   .entry-content td {
     padding: 7px;
     border-right: 1px solid #989898; }
-    /* line 1773, ../sass/breakpoints/_base.scss */
     .entry-content td:last-child {
       border-right: 0; }
-  /* line 1778, ../sass/breakpoints/_base.scss */
   .entry-content th {
     background-color: #ECECEC;
     border-bottom: 1px solid #989898;
     border-right: 1px solid #989898; }
-    /* line 1783, ../sass/breakpoints/_base.scss */
     .entry-content th:last-child {
       border-right: 0; }
-  /* line 1788, ../sass/breakpoints/_base.scss */
   .entry-content blockquote {
     margin: 0 0 1.5em 0.75em;
     padding: 0 0 0 0.75em;
     border-left: 3px solid #2980b9;
     font-style: italic;
     color: #9fa6b4; }
-  /* line 1803, ../sass/breakpoints/_base.scss */
   .entry-content dd {
     margin-left: 0;
     font-size: 0.9em;
     color: #787878;
     margin-bottom: 1.5em; }
-  /* line 1810, ../sass/breakpoints/_base.scss */
   .entry-content img {
     max-width: 100%;
     height: auto;
     display: block; }
-  /* line 1816, ../sass/breakpoints/_base.scss */
   .entry-content .title, .entry-content .thumb, .entry-content .meta, .entry-content .excerpt {
     border-top: 1px solid rgba(1, 1, 1, 0.5); }
-  /* line 1819, ../sass/breakpoints/_base.scss */
   .entry-content .title, .entry-content .meta, .entry-content .excerpt {
     padding: 1em 1em 1em 0;
     text-align: right; }
-  /* line 1823, ../sass/breakpoints/_base.scss */
   .entry-content .meta .date_time {
     margin-bottom: 1em; }
-  /* line 1837, ../sass/breakpoints/_base.scss */
   .entry-content .size-auto,
   .entry-content .size-full,
   .entry-content .size-large,
@@ -3686,7 +3225,6 @@ POSTS & CONTENT STYLES
   .entry-content .size-thumbnail {
     max-width: 100%;
     height: auto; }
-  /* line 1846, ../sass/breakpoints/_base.scss */
   .entry-content pre {
     background: #010101;
     color: #ECECEC;
@@ -3696,7 +3234,6 @@ POSTS & CONTENT STYLES
     border-radius: 3px; }
 
 /* end .entry-content */
-/* line 1856, ../sass/breakpoints/_base.scss */
 .entry-content-page {
   max-width: 600px;
   margin: auto;
@@ -3704,33 +3241,27 @@ POSTS & CONTENT STYLES
   padding: 0.75em;
   text-align: left; }
 
-/* line 1865, ../sass/breakpoints/_base.scss */
 .page-template-template-full-php .entry-content-page {
   max-width: none;
   padding: 0; }
-  /* line 1868, ../sass/breakpoints/_base.scss */
   .page-template-template-full-php .entry-content-page img {
     width: 100%;
     height: auto; }
 
-/* line 1873, ../sass/breakpoints/_base.scss */
 .loadmore {
   border: 1px solid #010101;
   text-align: center;
   margin-bottom: 1.5em; }
 
-/* line 1878, ../sass/breakpoints/_base.scss */
 .wp-caption {
   max-width: 100%;
   background: #eee;
   padding: 5px;
   /* images inside wp-caption */ }
-  /* line 1884, ../sass/breakpoints/_base.scss */
   .wp-caption img {
     max-width: 100%;
     margin-bottom: 0;
     width: 100%; }
-  /* line 1890, ../sass/breakpoints/_base.scss */
   .wp-caption p.wp-caption-text {
     font-size: 0.85em;
     margin: 4px 0 7px;
@@ -3740,17 +3271,14 @@ POSTS & CONTENT STYLES
 /* image gallery styles */
 /* end .gallery */
 /* gallery caption styles */
-/* line 1924, ../sass/breakpoints/_base.scss */
 .tags {
   margin: 0; }
 
-/* line 1930, ../sass/breakpoints/_base.scss */
 a.go-top {
   color: #fff;
   display: inline-block;
   margin-top: 120px;
   margin-bottom: 0px; }
-  /* line 1936, ../sass/breakpoints/_base.scss */
   a.go-top svg {
     -moz-transform: scale(0.5, 0.5);
     -ms-transform: scale(0.5, 0.5);
@@ -3758,33 +3286,25 @@ a.go-top {
     transform: scale(0.5, 0.5);
     display: block;
     margin: auto; }
-    /* line 1940, ../sass/breakpoints/_base.scss */
     a.go-top svg circle {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
       opacity: 0.9;
       -webkit-transition: opacity, 0.2s;
       transition: opacity, 0.2s; }
-  /* line 1945, ../sass/breakpoints/_base.scss */
   a.go-top span {
     display: inline-block; }
-  /* line 1949, ../sass/breakpoints/_base.scss */
   a.go-top:hover {
     color: #fff; }
-    /* line 1950, ../sass/breakpoints/_base.scss */
     a.go-top:hover circle {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
       opacity: 0.5; }
-  /* line 1956, ../sass/breakpoints/_base.scss */
   a.go-top.invert {
     color: #010101; }
-    /* line 1958, ../sass/breakpoints/_base.scss */
     a.go-top.invert circle {
       filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
       opacity: 0.5; }
-    /* line 1961, ../sass/breakpoints/_base.scss */
     a.go-top.invert:hover {
       color: #010101; }
-      /* line 1963, ../sass/breakpoints/_base.scss */
       a.go-top.invert:hover circle {
         filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
         opacity: 0.2; }
@@ -3792,15 +3312,12 @@ a.go-top {
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 1976, ../sass/breakpoints/_base.scss */
 .pagination,
 .wp-prev-next {
   margin: 1.5em 0; }
 
-/* line 1980, ../sass/breakpoints/_base.scss */
 .pagination {
   text-align: center; }
-  /* line 1983, ../sass/breakpoints/_base.scss */
   .pagination ul {
     display: inline-block;
     background-color: #fff;
@@ -3808,7 +3325,6 @@ PAGE NAVI STYLES
     padding: 0;
     clear: both;
     border-radius: 3px; }
-  /* line 1992, ../sass/breakpoints/_base.scss */
   .pagination li {
     padding: 0;
     margin: 0;
@@ -3816,7 +3332,6 @@ PAGE NAVI STYLES
     display: inline;
     overflow: hidden;
     border-right: 1px solid #989898; }
-  /* line 2001, ../sass/breakpoints/_base.scss */
   .pagination a, .pagination span {
     margin: 0;
     text-decoration: none;
@@ -3828,25 +3343,20 @@ PAGE NAVI STYLES
     min-width: 1em;
     display: block;
     color: #2980b9; }
-    /* line 2013, ../sass/breakpoints/_base.scss */
     .pagination a:hover, .pagination a:focus, .pagination span:hover, .pagination span:focus {
       background-color: #2980b9;
       color: #fff; }
-  /* line 2019, ../sass/breakpoints/_base.scss */
   .pagination .current {
     cursor: default;
     color: #010101; }
-    /* line 2023, ../sass/breakpoints/_base.scss */
     .pagination .current:hover, .pagination .current:focus {
       background-color: #fff;
       color: #010101; }
 
 /* end .bones_page_navi */
 /* fallback previous & next links */
-/* line 2036, ../sass/breakpoints/_base.scss */
 .wp-prev-next .prev-link {
   float: left; }
-/* line 2040, ../sass/breakpoints/_base.scss */
 .wp-prev-next .next-link {
   float: right; }
 
@@ -3855,19 +3365,16 @@ PAGE NAVI STYLES
 COMMENT STYLES
 ******************************************************************/
 /* h3 comment title */
-/* line 2051, ../sass/breakpoints/_base.scss */
 #comments-title {
   padding: 0.75em;
   margin: 0;
   border-top: 1px solid #ECECEC;
   /* number of comments span */ }
 
-/* line 2071, ../sass/breakpoints/_base.scss */
 .commentlist {
   margin: 0;
   list-style-type: none; }
 
-/* line 2076, ../sass/breakpoints/_base.scss */
 .comment {
   position: relative;
   clear: both;
@@ -3878,64 +3385,49 @@ COMMENT STYLES
   /* end .commentlist .vcard */
   /* end children */
   /* general comment classes */ }
-  /* line 2083, ../sass/breakpoints/_base.scss */
   .comment .comment-author {
     padding: 7px;
     border: 0; }
-  /* line 2089, ../sass/breakpoints/_base.scss */
   .comment .vcard {
     margin-left: 50px; }
-    /* line 2092, ../sass/breakpoints/_base.scss */
     .comment .vcard cite.fn {
       font-weight: 700;
       font-style: normal; }
-    /* line 2100, ../sass/breakpoints/_base.scss */
     .comment .vcard time {
       display: block;
       font-size: 0.9em;
       font-style: italic; }
-      /* line 2105, ../sass/breakpoints/_base.scss */
       .comment .vcard time a {
         color: #9fa6b4;
         text-decoration: none; }
-        /* line 2109, ../sass/breakpoints/_base.scss */
         .comment .vcard time a:hover {
           text-decoration: underline; }
-    /* line 2119, ../sass/breakpoints/_base.scss */
     .comment .vcard .avatar {
       position: absolute;
       left: 16px;
       border-radius: 50%; }
-  /* line 2127, ../sass/breakpoints/_base.scss */
   .comment:last-child {
     margin-bottom: 0; }
-  /* line 2131, ../sass/breakpoints/_base.scss */
   .comment .children {
     margin: 0;
     /* variations */
     /* change number for different depth */ }
-  /* line 2149, ../sass/breakpoints/_base.scss */
   .comment[class*=depth-] {
     margin-top: 1.1em; }
-  /* line 2153, ../sass/breakpoints/_base.scss */
   .comment.depth-1 {
     margin-left: 0;
     margin-top: 0; }
-  /* line 2158, ../sass/breakpoints/_base.scss */
   .comment:not(.depth-1) {
     margin-top: 0;
     margin-left: 7px;
     padding: 7px; }
-  /* line 2171, ../sass/breakpoints/_base.scss */
   .comment.odd {
     background-color: #fff; }
-  /* line 2174, ../sass/breakpoints/_base.scss */
   .comment.even {
     background: #ECECEC; }
 
 /* comment meta */
 /* comment content */
-/* line 2208, ../sass/breakpoints/_base.scss */
 .comment_content p {
   margin: 0.7335em 0 1.5em;
   font-size: 1em;
@@ -3943,14 +3435,12 @@ COMMENT STYLES
 
 /* end .commentlist .comment_content */
 /* comment reply link */
-/* line 2217, ../sass/breakpoints/_base.scss */
 .comment-reply-link {
   font-size: 0.9em;
   float: right; }
 
 /* end .commentlist .comment-reply-link */
 /* edit comment link */
-/* line 2229, ../sass/breakpoints/_base.scss */
 .comment-edit-link {
   font-style: italic;
   margin: 0 7px;
@@ -3960,69 +3450,56 @@ COMMENT STYLES
 /******************************************************************
 COMMENT FORM STYLES
 ******************************************************************/
-/* line 2242, ../sass/breakpoints/_base.scss */
 .comment-respond {
   padding: 1.5em;
   border-top: 1px solid #ECECEC; }
 
-/* line 2248, ../sass/breakpoints/_base.scss */
 #reply-title {
   margin: 0; }
 
-/* line 2252, ../sass/breakpoints/_base.scss */
 .logged-in-as {
   color: #9fa6b4;
   font-style: italic;
   margin: 0; }
-  /* line 2257, ../sass/breakpoints/_base.scss */
   .logged-in-as a {
     color: #010101; }
 
-/* line 2262, ../sass/breakpoints/_base.scss */
 .comment-form-comment {
   margin: 1.5em 0 0.75em; }
 
-/* line 2266, ../sass/breakpoints/_base.scss */
 .form-allowed-tags {
   padding: 1.5em;
   background-color: #ECECEC;
   font-size: 0.9em; }
 
 /* comment submit button */
-/* line 2273, ../sass/breakpoints/_base.scss */
 #submit {
   float: right;
   font-size: 1em; }
 
 /* comment form title */
-/* line 2280, ../sass/breakpoints/_base.scss */
 #comment-form-title {
   margin: 0 0 1.1em; }
 
 /* cancel comment reply link */
 /* logged in comments */
 /* allowed tags */
-/* line 2293, ../sass/breakpoints/_base.scss */
 #allowed_tags {
   margin: 1.5em 10px 0.7335em 0; }
 
 /* no comments */
-/* line 2298, ../sass/breakpoints/_base.scss */
 .nocomments {
   margin: 0 20px 1.1em; }
 
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 2310, ../sass/breakpoints/_base.scss */
 .widget {
   margin-bottom: 1.5em;
   border: 1px solid #010101; }
-  /* line 2315, ../sass/breakpoints/_base.scss */
   .widget ul li {
     /* deep nesting */ }
 
-/* line 2334, ../sass/breakpoints/_base.scss */
 .no-widgets {
   background-color: #fff;
   padding: 1.5em;
@@ -4034,7 +3511,6 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 2347, ../sass/breakpoints/_base.scss */
 .footer {
   clear: both;
   border-top: 1px solid #010101;
@@ -4042,21 +3518,17 @@ FOOTER STYLES
   padding-bottom: 20px;
   background-color: rgba(1, 1, 1, 0.8);
   color: white; }
-  /* line 2356, ../sass/breakpoints/_base.scss */
   .footer nav a {
     color: white; }
 
-/* line 2363, ../sass/breakpoints/_base.scss */
 #page-footer.fixed {
   position: fixed;
   bottom: 0;
   width: 100%; }
 
-/* line 2368, ../sass/breakpoints/_base.scss */
 #inner-footer div {
   padding-top: 10px; }
 
-/* line 2373, ../sass/breakpoints/_base.scss */
 #footer-logo img {
   width: 120px; }
 
@@ -4069,25 +3541,20 @@ it simple because you'll have to
 override these styles for the desktop
 view.
 */
-/* line 2389, ../sass/breakpoints/_base.scss */
 .footer-links ul li {
   display: inline-block;
   float: none; }
 
 /* end .footer-links */
-/* line 2395, ../sass/breakpoints/_base.scss */
 .social-links ul {
   text-align: center;
   color: #989898; }
-  /* line 2398, ../sass/breakpoints/_base.scss */
   .social-links ul li {
     display: inline-block;
     float: none;
     margin-right: 10px; }
-  /* line 2399, ../sass/breakpoints/_base.scss */
   .social-links ul a {
     color: #989898; }
-  /* line 2402, ../sass/breakpoints/_base.scss */
   .social-links ul a:hover {
     color: #727272; }
 
@@ -4120,39 +3587,31 @@ tweeners.
   anymore, so just be aware that if you drop
   them in here, they won't work.
   */
-  /* line 24, ../sass/breakpoints/_481up.scss */
   body {
     font-size: 14px; }
 
-  /* line 28, ../sass/breakpoints/_481up.scss */
   .row-header {
     margin-top: 1.5em;
     font-size: 28px; }
 
-  /* line 41, ../sass/breakpoints/_481up.scss */
   section#intro .roles {
     font-size: 32px;
     line-height: 70px;
     height: 70px;
     padding: 10px; }
-  /* line 47, ../sass/breakpoints/_481up.scss */
   section#intro .short-profile {
     display: block;
     font-size: 14px; }
-  /* line 55, ../sass/breakpoints/_481up.scss */
   section#intro .logo img {
     width: 150px; }
-  /* line 59, ../sass/breakpoints/_481up.scss */
   section#intro #scrolldownHome {
     -moz-transform: scale(0.8, 0.8);
     -ms-transform: scale(0.8, 0.8);
     -webkit-transform: scale(0.8, 0.8);
     transform: scale(0.8, 0.8); }
-  /* line 63, ../sass/breakpoints/_481up.scss */
   section#intro nav {
     display: block; }
 
-  /* line 86, ../sass/breakpoints/_481up.scss */
   a.go-top svg {
     -moz-transform: scale(0.8, 0.8);
     -ms-transform: scale(0.8, 0.8);
@@ -4162,63 +3621,50 @@ tweeners.
   /*********************
   SLICK SLIDER
   *********************/
-  /* line 98, ../sass/breakpoints/_481up.scss */
   .slick-next, .slick-prev {
     -moz-transform: translate3d(0, -50%, 0) scale(1);
     -ms-transform: translate3d(0, -50%, 0) scale(1);
     -webkit-transform: translate3d(0, -50%, 0) scale(1);
     transform: translate3d(0, -50%, 0) scale(1); }
 
-  /* line 101, ../sass/breakpoints/_481up.scss */
   .slick-dots {
     visibility: visible; }
 
   /*********************
   EVENT CALENDAR
   *********************/
-  /* line 108, ../sass/breakpoints/_481up.scss */
   .eventCalendar-wrap .arrow {
     width: 39%; }
 
-  /* line 111, ../sass/breakpoints/_481up.scss */
   .eventsCalendar-currentTitle .monthTitle {
     font-size: 24px; }
 
-  /* line 114, ../sass/breakpoints/_481up.scss */
   .eventsCalendar-daysList {
     display: table; }
 
   /*********************
   UPCOMING CONCERTS
   *********************/
-  /* line 120, ../sass/breakpoints/_481up.scss */
   .upcoming {
     padding: 0 10%; }
-    /* line 194, ../sass/breakpoints/_481up.scss */
-    .upcoming footer .specials img {
+    .upcoming footer .specials .category-filter {
       width: 180px; }
 
-  /* line 208, ../sass/breakpoints/_481up.scss */
   .news-holder .banner img {
     width: 180px; }
 
-  /* line 214, ../sass/breakpoints/_481up.scss */
   .news-item {
     height: 270px;
     margin: 0;
     border-right: none; }
-    /* line 231, ../sass/breakpoints/_481up.scss */
     .news-item:last-child {
       border-right: 1px solid #010101; }
 
-  /* line 245, ../sass/breakpoints/_481up.scss */
   section#about .row-header {
     font-size: 28px; }
-  /* line 253, ../sass/breakpoints/_481up.scss */
   section#about .wrap .wrap-inner {
     padding: 100px; }
 
-  /* line 352, ../sass/breakpoints/_481up.scss */
   section#support .wrap .wrap-inner {
     padding: 100px; }
 
@@ -4226,20 +3672,16 @@ tweeners.
   NAVIGATION STYLES
   *********************/
   /* .menu is clearfixed inside mixins.scss */
-  /* line 375, ../sass/breakpoints/_481up.scss */
   .menu {
     /* end .menu ul */ }
-    /* line 376, ../sass/breakpoints/_481up.scss */
     .menu ul {
       /* end .menu ul li */
       /* highlight current page */
       /* end current highlighters */ }
-      /* line 377, ../sass/breakpoints/_481up.scss */
       .menu ul li {
         /*
         plan your menus and drop-downs wisely.
         */ }
-        /* line 378, ../sass/breakpoints/_481up.scss */
         .menu ul li a {
           /*
           you can use hover styles here even though this size
@@ -4247,7 +3689,6 @@ tweeners.
           */ }
 
   /* end .menu */
-  /* line 422, ../sass/breakpoints/_481up.scss */
   #lang_sel_list ul li a, #lang_sel_list ul li a:visited {
     font-size: 16px;
     margin: 0.75em 0.2em; }
@@ -4255,7 +3696,6 @@ tweeners.
   /*********************
   HEADER STYLES
   *********************/
-  /* line 435, ../sass/breakpoints/_481up.scss */
   .header {
     padding-top: 35px;
     padding-bottom: 20px; }
@@ -4263,21 +3703,16 @@ tweeners.
   /*********************
   FEATURE SLIDER
   *********************/
-  /* line 448, ../sass/breakpoints/_481up.scss */
   #feature-slider {
     height: 280px; }
-    /* line 451, ../sass/breakpoints/_481up.scss */
     #feature-slider .slide-item {
       height: 280px; }
-      /* line 457, ../sass/breakpoints/_481up.scss */
       #feature-slider .slide-item .slide-content {
         padding: 10px 50px;
         width: 400px;
         font-size: 1em; }
-        /* line 463, ../sass/breakpoints/_481up.scss */
         #feature-slider .slide-item .slide-content h1 {
           font-size: 2em; }
-        /* line 467, ../sass/breakpoints/_481up.scss */
         #feature-slider .slide-item .slide-content img.divider {
           -moz-transform: scale(1);
           -ms-transform: scale(1);
@@ -4288,20 +3723,16 @@ tweeners.
   POSTS & CONTENT STYLES
   *********************/
   /* entry content */
-  /* line 512, ../sass/breakpoints/_481up.scss */
   .entry-content {
     /* at this larger size, we can start to align images */ }
-    /* line 516, ../sass/breakpoints/_481up.scss */
     .entry-content .alignleft, .entry-content img.alignleft {
       margin-right: 1.5em;
       display: inline;
       float: left; }
-    /* line 521, ../sass/breakpoints/_481up.scss */
     .entry-content .alignright, .entry-content img.alignright {
       margin-left: 1.5em;
       display: inline;
       float: right; }
-    /* line 526, ../sass/breakpoints/_481up.scss */
     .entry-content .aligncenter, .entry-content img.aligncenter {
       margin-right: auto;
       margin-left: auto;
@@ -4343,14 +3774,12 @@ you can add resource intensive styles.
   /*********************
   LAYOUT & GRID STYLES
   *********************/
-  /* line 26, ../sass/breakpoints/_768up.scss */
   .wrap {
     width: 760px; }
 
   /*********************
   UPCOMING CONCERTS
   *********************/
-  /* line 36, ../sass/breakpoints/_768up.scss */
   .upcoming {
     padding: 0 10%; }
 
@@ -4360,18 +3789,15 @@ you can add resource intensive styles.
   /*********************
   NAVIGATION STYLES
   *********************/
-  /* line 53, ../sass/breakpoints/_768up.scss */
   .nav {
     font-size: 15px; }
 
-  /* line 56, ../sass/breakpoints/_768up.scss */
   #lang_sel_list {
     padding: 0 1em 0 1em;
     top: 5px;
     position: static;
     right: auto; }
 
-  /* line 63, ../sass/breakpoints/_768up.scss */
   nav.main-nav #menu-icon:before {
     content: "\f0c9";
     font: normal 21px/1em FontAwesome;
@@ -4380,36 +3806,29 @@ you can add resource intensive styles.
     vertical-align: middle;
     display: inline-block;
     margin: -4px 5px 0 0; }
-  /* line 72, ../sass/breakpoints/_768up.scss */
   nav.main-nav .mobile-button {
     display: none; }
-  /* line 75, ../sass/breakpoints/_768up.scss */
   nav.main-nav > ul {
     display: inline-block; }
 
-  /* line 79, ../sass/breakpoints/_768up.scss */
   .nav {
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
-    /* line 83, ../sass/breakpoints/_768up.scss */
     .nav li {
       display: inline-block;
       /*
       plan your menus and drop-downs wisely.
       */
       /* showing sub-menus */ }
-      /* line 87, ../sass/breakpoints/_768up.scss */
       .nav li a {
         /*
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */ }
-      /* line 103, ../sass/breakpoints/_768up.scss */
       .nav li ul.sub-menu,
       .nav li ul.children {
         /* highlight sub-menu current page */ }
-        /* line 107, ../sass/breakpoints/_768up.scss */
         .nav li ul.sub-menu li,
         .nav li ul.children li {
           /*
@@ -4422,7 +3841,6 @@ you can add resource intensive styles.
   /*********************
   SIDEBARS & ASIDES
   *********************/
-  /* line 175, ../sass/breakpoints/_768up.scss */
   .widget ul li {
     /* deep nesting */ }
 
@@ -4445,7 +3863,6 @@ you can add resource intensive styles.
   of overriding here if you styled them for
   mobile. Make sure to double check these!
   */
-  /* line 289, ../sass/breakpoints/_768up.scss */
   .footer-links ul li {
     /*
     be careful with the depth of your menus.
@@ -4458,37 +3875,30 @@ you can add resource intensive styles.
 
 *********************/
 @media only screen and (min-width: 880px) {
-  /* line 1, ../sass/breakpoints/_880up.scss */
   .top-nav {
     font-size: 17px; }
 
-  /* line 4, ../sass/breakpoints/_880up.scss */
   #lang_sel_list {
     padding: 0 1em 0 3em; }
 
-  /* line 14, ../sass/breakpoints/_880up.scss */
   nav {
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
-    /* line 18, ../sass/breakpoints/_880up.scss */
     nav li {
       /*
       plan your menus and drop-downs wisely.
       */
       /* showing sub-menus */ }
-      /* line 21, ../sass/breakpoints/_880up.scss */
       nav li a {
         padding: 0.2em 1em 0.75em;
         /*
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
         */ }
-      /* line 38, ../sass/breakpoints/_880up.scss */
       nav li ul.sub-menu,
       nav li ul.children {
         /* highlight sub-menu current page */ }
-        /* line 42, ../sass/breakpoints/_880up.scss */
         nav li ul.sub-menu li,
         nav li ul.children li {
           /*
@@ -4515,102 +3925,80 @@ you can add resource intensive styles.
   be seen on the Desktop.
   
   ******************************************************************/
-  /* line 12, ../sass/breakpoints/_1030up.scss */
   .wrap {
     width: 1040px; }
-    /* line 14, ../sass/breakpoints/_1030up.scss */
     .wrap .wrap-padding {
       padding: 0; }
 
   /*********************
   UPCOMING CONCERTS
   *********************/
-  /* line 42, ../sass/breakpoints/_1030up.scss */
   section#intro nav {
     max-width: 950px;
     width: 95%; }
-    /* line 46, ../sass/breakpoints/_1030up.scss */
     section#intro nav > ul li:before {
       font-size: 12px;
       margin-top: 4em; }
-    /* line 50, ../sass/breakpoints/_1030up.scss */
     section#intro nav .nav {
       font-size: 32px; }
 
-  /* line 65, ../sass/breakpoints/_1030up.scss */
   a.go-top svg {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1); }
 
-  /* line 75, ../sass/breakpoints/_1030up.scss */
   section#intro .logo img {
     width: 200px; }
-  /* line 80, ../sass/breakpoints/_1030up.scss */
   section#intro .short-profile {
     margin: 20px auto;
     font-size: 16px;
     line-height: inherit; }
-  /* line 86, ../sass/breakpoints/_1030up.scss */
   section#intro #scrolldownHome {
     -moz-transform: scale(1, 1);
     -ms-transform: scale(1, 1);
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1); }
-  /* line 89, ../sass/breakpoints/_1030up.scss */
   section#intro nav.main-nav {
     width: 1000px; }
-    /* line 92, ../sass/breakpoints/_1030up.scss */
     section#intro nav.main-nav > ul li:before {
       font-size: 12px;
       margin-top: 4em; }
-    /* line 96, ../sass/breakpoints/_1030up.scss */
     section#intro nav.main-nav .top-nav {
       font-size: 32px; }
 
-  /* line 109, ../sass/breakpoints/_1030up.scss */
   .top-nav {
     font-size: 20px; }
 
   /*********************
   FEATURE SLIDER
   *********************/
-  /* line 116, ../sass/breakpoints/_1030up.scss */
   #feature-slider {
     height: 360px; }
-    /* line 119, ../sass/breakpoints/_1030up.scss */
     #feature-slider .slide-item {
       height: 360px;
       position: relative; }
-      /* line 125, ../sass/breakpoints/_1030up.scss */
       #feature-slider .slide-item .slide-content {
         padding: 20px 100px;
         width: 600px; }
-        /* line 128, ../sass/breakpoints/_1030up.scss */
         #feature-slider .slide-item .slide-content h1 {
           font-size: 2em;
           margin-top: 10px; }
-          /* line 132, ../sass/breakpoints/_1030up.scss */
           #feature-slider .slide-item .slide-content h1 .subtitle {
             margin-bottom: 10px; }
 
   /*********************
   UPCOMING CONCERTS
   *********************/
-  /* line 161, ../sass/breakpoints/_1030up.scss */
   .upcoming div.overview {
     width: 24%;
     display: inline-block; }
-  /* line 206, ../sass/breakpoints/_1030up.scss */
   .upcoming footer .specials {
     margin-top: 50px; }
-    /* line 208, ../sass/breakpoints/_1030up.scss */
-    .upcoming footer .specials img {
+    .upcoming footer .specials .category-filter {
       margin: 10px;
       width: 276px; }
 
-  /* line 224, ../sass/breakpoints/_1030up.scss */
   .news-holder .banner img {
     width: 276px; } }
 /*********************
@@ -4693,7 +4081,6 @@ be set to display none.
   though, go for it.
   
   ******************************************************************/
-  /* line 13, ../sass/partials/_print.scss */
   * {
     background: transparent !important;
     color: black !important;
@@ -4701,53 +4088,42 @@ be set to display none.
     filter: none !important;
     -ms-filter: none !important; }
 
-  /* line 21, ../sass/partials/_print.scss */
   a, a:visited {
     color: #444 !important;
     text-decoration: underline; }
-    /* line 26, ../sass/partials/_print.scss */
     a:after, a:visited:after {
       content: " (" attr(href) ")"; }
-    /* line 31, ../sass/partials/_print.scss */
     a abbr[title]:after, a:visited abbr[title]:after {
       content: " (" attr(title) ")"; }
 
-  /* line 36, ../sass/partials/_print.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
 
-  /* line 42, ../sass/partials/_print.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
 
-  /* line 47, ../sass/partials/_print.scss */
   thead {
     display: table-header-group; }
 
-  /* line 51, ../sass/partials/_print.scss */
   tr, img {
     page-break-inside: avoid; }
 
-  /* line 55, ../sass/partials/_print.scss */
   img {
     max-width: 100% !important; }
 
   @page {
     margin: 0.5cm; }
-  /* line 63, ../sass/partials/_print.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3; }
 
-  /* line 68, ../sass/partials/_print.scss */
   h2,
   h3 {
     page-break-after: avoid; }
 
-  /* line 74, ../sass/partials/_print.scss */
   .sidebar,
   .page-navigation,
   .wp-prev-next,
@@ -4768,7 +4144,6 @@ be set to display none.
  |  }
  *
  */
-/* line 16, ../sass/plugins/_headhesive.scss */
 nav.main-nav--clone {
   /* Required styles */
   position: fixed;
@@ -4786,27 +4161,20 @@ nav.main-nav--clone {
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out; }
-  /* line 27, ../sass/plugins/_headhesive.scss */
   nav.main-nav--clone a, nav.main-nav--clone a:hover, nav.main-nav--clone a:visited {
     color: #fff; }
-  /* line 30, ../sass/plugins/_headhesive.scss */
   nav.main-nav--clone li:after {
     color: #fff !important; }
-  /* line 33, ../sass/plugins/_headhesive.scss */
-  nav.main-nav--clone li.discography, nav.main-nav--clone li.gallery {
-    color: #676767 !important;
+  nav.main-nav--clone li.menu-discography, nav.main-nav--clone li.menu-gallery {
+    color: #4d4d4d !important;
     cursor: default; }
-    /* line 36, ../sass/plugins/_headhesive.scss */
-    nav.main-nav--clone li.discography a, nav.main-nav--clone li.gallery a {
-      color: #676767 !important;
+    nav.main-nav--clone li.menu-discography a, nav.main-nav--clone li.menu-gallery a {
+      color: #4d4d4d !important;
       cursor: default; }
-  /* line 53, ../sass/plugins/_headhesive.scss */
   nav.main-nav--clone #lang_sel_list ul li a, nav.main-nav--clone #lang_sel_list ul li a:visited {
     color: #fff; }
-  /* line 61, ../sass/plugins/_headhesive.scss */
   nav.main-nav--clone.small li:before {
     opacity: 0; }
-  /* line 65, ../sass/plugins/_headhesive.scss */
   nav.main-nav--clone.small .nav li a {
     padding-bottom: 0; }
 
@@ -4821,7 +4189,6 @@ nav.main-nav--clone {
  |  }
  *
  */
-/* line 84, ../sass/plugins/_headhesive.scss */
 nav.main-nav--stick {
   /* Translate back to 0%; */
   -webkit-transform: translateY(0%);
@@ -4839,6 +4206,5 @@ nav.main-nav--stick {
  |  }
  *
  */
-/* line 104, ../sass/plugins/_headhesive.scss */
 nav.main-nav--unstick {
   /* Not required to use, but could be useful to have */ }

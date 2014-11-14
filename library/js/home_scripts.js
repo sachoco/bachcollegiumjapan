@@ -2,7 +2,6 @@
 
 jQuery(document).ready(function($) {
 
-
 if (location.hash) {
     var hash = window.location.hash;
 
@@ -25,14 +24,17 @@ if (location.hash) {
     }
 }
 
-// window.onload = function() {
+window.onload = function() {
+
+    resizeHandler();
+}
+
     $(window).resize(function(){
         resizeHandler();
     });
 
 
  
-// }
 
     $(document).scrollsnap({
         snaps: 'section.snap',
@@ -151,6 +153,24 @@ $('.overview-holder-carousel').slick({
       onInit: function(){ overviewCarouselReady = true; $(".overview-holder-carousel").removeClass("inactive"); }
 });
 
+var filtered = false;
+
+$('.category-filter').on('click', function(){
+  if(filtered === false) {
+    var cat = $(this).data("category");
+    $('.overview-holder-carousel').slickFilter(cat);
+    $(this).removeClass("off");
+    $('.category-filter').not(this).addClass("off");
+    filtered = true;
+  } else {
+    $('.overview-holder-carousel').slickUnfilter();
+    $('.category-filter').removeClass("off");
+    filtered = false;
+  }
+});
+
+
+
 $('.cd-holder-carousel').slick({
 	slidesToShow: 4,
 	slidesToScroll: 4,
@@ -203,6 +223,13 @@ var $sectionMain = $("section#main"), $sectionAbout = $("section#about"), $secti
 function resizeHandler(){
     winHeight = $window.height();
     $window.scroll();
+
+    var introHeight = $("section#intro .content").height();
+    if(introHeight>winHeight){
+        $("section#intro .navigation nav").css("display","none");
+    }else{
+        $("section#intro .navigation nav").css("display","block");
+    }
 }
 
 

@@ -89,7 +89,6 @@ I've edited it a bit, but it's a nice starting point.
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
-/* line 70, ../sass/partials/_typography.scss */
 p {
   -ms-word-break: break-all;
   -ms-word-wrap: break-all;
@@ -180,39 +179,31 @@ You can't use @extend within media queries
 anymore, so just be aware that if you drop
 them in here, they won't work.
 */
-/* line 24, ../sass/breakpoints/_481up.scss */
 body {
   font-size: 14px; }
 
-/* line 28, ../sass/breakpoints/_481up.scss */
 .row-header {
   margin-top: 1.5em;
   font-size: 28px; }
 
-/* line 41, ../sass/breakpoints/_481up.scss */
 section#intro .roles {
   font-size: 32px;
   line-height: 70px;
   height: 70px;
   padding: 10px; }
-/* line 47, ../sass/breakpoints/_481up.scss */
 section#intro .short-profile {
   display: block;
   font-size: 14px; }
-/* line 55, ../sass/breakpoints/_481up.scss */
 section#intro .logo img {
   width: 150px; }
-/* line 59, ../sass/breakpoints/_481up.scss */
 section#intro #scrolldownHome {
   -moz-transform: scale(0.8, 0.8);
   -ms-transform: scale(0.8, 0.8);
   -webkit-transform: scale(0.8, 0.8);
   transform: scale(0.8, 0.8); }
-/* line 63, ../sass/breakpoints/_481up.scss */
 section#intro nav {
   display: block; }
 
-/* line 86, ../sass/breakpoints/_481up.scss */
 a.go-top svg {
   -moz-transform: scale(0.8, 0.8);
   -ms-transform: scale(0.8, 0.8);
@@ -222,63 +213,50 @@ a.go-top svg {
 /*********************
 SLICK SLIDER
 *********************/
-/* line 98, ../sass/breakpoints/_481up.scss */
 .slick-next, .slick-prev {
   -moz-transform: translate3d(0, -50%, 0) scale(1);
   -ms-transform: translate3d(0, -50%, 0) scale(1);
   -webkit-transform: translate3d(0, -50%, 0) scale(1);
   transform: translate3d(0, -50%, 0) scale(1); }
 
-/* line 101, ../sass/breakpoints/_481up.scss */
 .slick-dots {
   visibility: visible; }
 
 /*********************
 EVENT CALENDAR
 *********************/
-/* line 108, ../sass/breakpoints/_481up.scss */
 .eventCalendar-wrap .arrow {
   width: 39%; }
 
-/* line 111, ../sass/breakpoints/_481up.scss */
 .eventsCalendar-currentTitle .monthTitle {
   font-size: 24px; }
 
-/* line 114, ../sass/breakpoints/_481up.scss */
 .eventsCalendar-daysList {
   display: table; }
 
 /*********************
 UPCOMING CONCERTS
 *********************/
-/* line 120, ../sass/breakpoints/_481up.scss */
 .upcoming {
   padding: 0 10%; }
-  /* line 194, ../sass/breakpoints/_481up.scss */
-  .upcoming footer .specials img {
+  .upcoming footer .specials .category-filter {
     width: 180px; }
 
-/* line 208, ../sass/breakpoints/_481up.scss */
 .news-holder .banner img {
   width: 180px; }
 
-/* line 214, ../sass/breakpoints/_481up.scss */
 .news-item {
   height: 270px;
   margin: 0;
   border-right: none; }
-  /* line 231, ../sass/breakpoints/_481up.scss */
   .news-item:last-child {
     border-right: 1px solid #010101; }
 
-/* line 245, ../sass/breakpoints/_481up.scss */
 section#about .row-header {
   font-size: 28px; }
-/* line 253, ../sass/breakpoints/_481up.scss */
 section#about .wrap .wrap-inner {
   padding: 100px; }
 
-/* line 352, ../sass/breakpoints/_481up.scss */
 section#support .wrap .wrap-inner {
   padding: 100px; }
 
@@ -286,20 +264,16 @@ section#support .wrap .wrap-inner {
 NAVIGATION STYLES
 *********************/
 /* .menu is clearfixed inside mixins.scss */
-/* line 375, ../sass/breakpoints/_481up.scss */
 .menu {
   /* end .menu ul */ }
-  /* line 376, ../sass/breakpoints/_481up.scss */
   .menu ul {
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
-    /* line 377, ../sass/breakpoints/_481up.scss */
     .menu ul li {
       /*
       plan your menus and drop-downs wisely.
       */ }
-      /* line 378, ../sass/breakpoints/_481up.scss */
       .menu ul li a {
         /*
         you can use hover styles here even though this size
@@ -307,7 +281,6 @@ NAVIGATION STYLES
         */ }
 
 /* end .menu */
-/* line 422, ../sass/breakpoints/_481up.scss */
 #lang_sel_list ul li a, #lang_sel_list ul li a:visited {
   font-size: 16px;
   margin: 0.75em 0.2em; }
@@ -315,7 +288,6 @@ NAVIGATION STYLES
 /*********************
 HEADER STYLES
 *********************/
-/* line 435, ../sass/breakpoints/_481up.scss */
 .header {
   padding-top: 35px;
   padding-bottom: 20px; }
@@ -323,21 +295,16 @@ HEADER STYLES
 /*********************
 FEATURE SLIDER
 *********************/
-/* line 448, ../sass/breakpoints/_481up.scss */
 #feature-slider {
   height: 280px; }
-  /* line 451, ../sass/breakpoints/_481up.scss */
   #feature-slider .slide-item {
     height: 280px; }
-    /* line 457, ../sass/breakpoints/_481up.scss */
     #feature-slider .slide-item .slide-content {
       padding: 10px 50px;
       width: 400px;
       font-size: 1em; }
-      /* line 463, ../sass/breakpoints/_481up.scss */
       #feature-slider .slide-item .slide-content h1 {
         font-size: 2em; }
-      /* line 467, ../sass/breakpoints/_481up.scss */
       #feature-slider .slide-item .slide-content img.divider {
         -moz-transform: scale(1);
         -ms-transform: scale(1);
@@ -348,20 +315,16 @@ FEATURE SLIDER
 POSTS & CONTENT STYLES
 *********************/
 /* entry content */
-/* line 512, ../sass/breakpoints/_481up.scss */
 .entry-content {
   /* at this larger size, we can start to align images */ }
-  /* line 516, ../sass/breakpoints/_481up.scss */
   .entry-content .alignleft, .entry-content img.alignleft {
     margin-right: 1.5em;
     display: inline;
     float: left; }
-  /* line 521, ../sass/breakpoints/_481up.scss */
   .entry-content .alignright, .entry-content img.alignright {
     margin-left: 1.5em;
     display: inline;
     float: right; }
-  /* line 526, ../sass/breakpoints/_481up.scss */
   .entry-content .aligncenter, .entry-content img.aligncenter {
     margin-right: auto;
     margin-left: auto;
@@ -396,14 +359,12 @@ GENERAL STYLES
 /*********************
 LAYOUT & GRID STYLES
 *********************/
-/* line 26, ../sass/breakpoints/_768up.scss */
 .wrap {
   width: 760px; }
 
 /*********************
 UPCOMING CONCERTS
 *********************/
-/* line 36, ../sass/breakpoints/_768up.scss */
 .upcoming {
   padding: 0 10%; }
 
@@ -413,18 +374,15 @@ HEADER STYLES
 /*********************
 NAVIGATION STYLES
 *********************/
-/* line 53, ../sass/breakpoints/_768up.scss */
 .nav {
   font-size: 15px; }
 
-/* line 56, ../sass/breakpoints/_768up.scss */
 #lang_sel_list {
   padding: 0 1em 0 1em;
   top: 5px;
   position: static;
   right: auto; }
 
-/* line 63, ../sass/breakpoints/_768up.scss */
 nav.main-nav #menu-icon:before {
   content: "\f0c9";
   font: normal 21px/1em FontAwesome;
@@ -433,36 +391,29 @@ nav.main-nav #menu-icon:before {
   vertical-align: middle;
   display: inline-block;
   margin: -4px 5px 0 0; }
-/* line 72, ../sass/breakpoints/_768up.scss */
 nav.main-nav .mobile-button {
   display: none; }
-/* line 75, ../sass/breakpoints/_768up.scss */
 nav.main-nav > ul {
   display: inline-block; }
 
-/* line 79, ../sass/breakpoints/_768up.scss */
 .nav {
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
-  /* line 83, ../sass/breakpoints/_768up.scss */
   .nav li {
     display: inline-block;
     /*
     plan your menus and drop-downs wisely.
     */
     /* showing sub-menus */ }
-    /* line 87, ../sass/breakpoints/_768up.scss */
     .nav li a {
       /*
       you can use hover styles here even though this size
       has the possibility of being a mobile device.
       */ }
-    /* line 103, ../sass/breakpoints/_768up.scss */
     .nav li ul.sub-menu,
     .nav li ul.children {
       /* highlight sub-menu current page */ }
-      /* line 107, ../sass/breakpoints/_768up.scss */
       .nav li ul.sub-menu li,
       .nav li ul.children li {
         /*
@@ -475,7 +426,6 @@ nav.main-nav > ul {
 /*********************
 SIDEBARS & ASIDES
 *********************/
-/* line 175, ../sass/breakpoints/_768up.scss */
 .widget ul li {
   /* deep nesting */ }
 
@@ -498,7 +448,6 @@ you'll probably need to do quite a bit
 of overriding here if you styled them for
 mobile. Make sure to double check these!
 */
-/* line 289, ../sass/breakpoints/_768up.scss */
 .footer-links ul li {
   /*
   be careful with the depth of your menus.
@@ -517,102 +466,80 @@ This is the desktop size. It's larger than an iPad so it will only
 be seen on the Desktop.
 
 ******************************************************************/
-/* line 12, ../sass/breakpoints/_1030up.scss */
 .wrap {
   width: 1040px; }
-  /* line 14, ../sass/breakpoints/_1030up.scss */
   .wrap .wrap-padding {
     padding: 0; }
 
 /*********************
 UPCOMING CONCERTS
 *********************/
-/* line 42, ../sass/breakpoints/_1030up.scss */
 section#intro nav {
   max-width: 950px;
   width: 95%; }
-  /* line 46, ../sass/breakpoints/_1030up.scss */
   section#intro nav > ul li:before {
     font-size: 12px;
     margin-top: 4em; }
-  /* line 50, ../sass/breakpoints/_1030up.scss */
   section#intro nav .nav {
     font-size: 32px; }
 
-/* line 65, ../sass/breakpoints/_1030up.scss */
 a.go-top svg {
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1); }
 
-/* line 75, ../sass/breakpoints/_1030up.scss */
 section#intro .logo img {
   width: 200px; }
-/* line 80, ../sass/breakpoints/_1030up.scss */
 section#intro .short-profile {
   margin: 20px auto;
   font-size: 16px;
   line-height: inherit; }
-/* line 86, ../sass/breakpoints/_1030up.scss */
 section#intro #scrolldownHome {
   -moz-transform: scale(1, 1);
   -ms-transform: scale(1, 1);
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1); }
-/* line 89, ../sass/breakpoints/_1030up.scss */
 section#intro nav.main-nav {
   width: 1000px; }
-  /* line 92, ../sass/breakpoints/_1030up.scss */
   section#intro nav.main-nav > ul li:before {
     font-size: 12px;
     margin-top: 4em; }
-  /* line 96, ../sass/breakpoints/_1030up.scss */
   section#intro nav.main-nav .top-nav {
     font-size: 32px; }
 
-/* line 109, ../sass/breakpoints/_1030up.scss */
 .top-nav {
   font-size: 20px; }
 
 /*********************
 FEATURE SLIDER
 *********************/
-/* line 116, ../sass/breakpoints/_1030up.scss */
 #feature-slider {
   height: 360px; }
-  /* line 119, ../sass/breakpoints/_1030up.scss */
   #feature-slider .slide-item {
     height: 360px;
     position: relative; }
-    /* line 125, ../sass/breakpoints/_1030up.scss */
     #feature-slider .slide-item .slide-content {
       padding: 20px 100px;
       width: 600px; }
-      /* line 128, ../sass/breakpoints/_1030up.scss */
       #feature-slider .slide-item .slide-content h1 {
         font-size: 2em;
         margin-top: 10px; }
-        /* line 132, ../sass/breakpoints/_1030up.scss */
         #feature-slider .slide-item .slide-content h1 .subtitle {
           margin-bottom: 10px; }
 
 /*********************
 UPCOMING CONCERTS
 *********************/
-/* line 161, ../sass/breakpoints/_1030up.scss */
 .upcoming div.overview {
   width: 24%;
   display: inline-block; }
-/* line 206, ../sass/breakpoints/_1030up.scss */
 .upcoming footer .specials {
   margin-top: 50px; }
-  /* line 208, ../sass/breakpoints/_1030up.scss */
-  .upcoming footer .specials img {
+  .upcoming footer .specials .category-filter {
     margin: 10px;
     width: 276px; }
 
-/* line 224, ../sass/breakpoints/_1030up.scss */
 .news-holder .banner img {
   width: 276px; }
 
