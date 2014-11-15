@@ -183,7 +183,12 @@ function filter_where( $where = '' ) {
                                 <?php
                                     $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "bcj-thumb-300" );
                                     // add more attributes if you need
-                                    printf( '<img src="http://placehold.it/300x170&text=+" data-lazy="%s"/>', esc_url( $thumbnail_src[0] ) );
+                                    if($thumbnail_src){
+                                        printf( '<img src="http://placehold.it/300x170&text=+" data-lazy="%s"/>', esc_url( $thumbnail_src[0] ) );
+
+                                    }else{
+                                        printf( '<img src="http://placehold.it/300x170&text=+" data-lazy="%s"/>', get_bloginfo(template_directory).'/library/images/nothumb.jpg' );
+                                    }
                                 ?>
                                 <?php //the_post_thumbnail( "bcj-thumb-300"); ?>
                             </div>

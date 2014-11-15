@@ -278,4 +278,66 @@ function schedule_register_sortable( $columns )
 
 add_filter("manage_edit-schedule_sortable_columns", "schedule_register_sortable" );
 
+// add_filter( 'posts_clauses', 'manage_wp_posts_be_qe_posts_clauses', 1, 2 );
+function manage_wp_posts_be_qe_posts_clauses( $pieces, $query ) {
+   global $wpdb;
+
+   /**
+    * We only want our code to run in the main WP query
+    * AND if an orderby query variable is designated.
+    */
+   if ( $query->is_main_query() && ( $orderby = $query->get( 'orderby' ) ) ) {
+
+      // Get the order query variable - ASC or DESC
+      $order = strtoupper( $query->get( 'order' ) );
+
+      // Make sure the order setting qualifies. If not, set default as ASC
+      if ( ! in_array( $order, array( 'ASC', 'DESC' ) ) )
+         $order = 'ASC';
+
+      switch( $orderby ) {
+  
+         // If we're ordering by release_date
+         case 'schedule-date':
+      
+            /**
+             * We have to join the postmeta table to
+             * include our release date in the query.
+             */
+            $pieces[ 'join' ] .= " LEFT JOIN $wpdb->postmeta wp_rd ON wp_rd.post_id = {$wpdb->posts}.ID AND wp_rd.meta_key = 'schedule-date'";
+        
+            // Then tell the query to order by our custom field.
+            // The STR_TO_DATE function converts the custom field
+            // to a DATE type from a string type for
+            // comparison purposes. '%m/%d/%Y' tells the query
+            // the string is in a month/day/year format.
+            $pieces[ 'orderby' ] = "STR_TO_DATE( wp_rd.meta_value,'%m/%d/%Y' ) $order, " . $pieces[ 'orderby' ];
+        
+         break;
+    
+      }
+  
+   }
+
+   return $pieces;
+
+}
+
+/*
+ * ADMIN COLUMN - SORTING - ORDERBY
+ * http://scribu.net/wordpress/custom-sortable-columns.html#comment-4732
+ */
+// add_filter( 'request', 'date_column_orderby' );
+function date_column_orderby( $vars ) {
+  if ( isset( $vars['orderby'] ) && 'schedule-date' == $vars['orderby'] ) {
+    $vars = array_merge( $vars, array(
+      'meta_key' => 'schedule-date',
+      //'orderby' => 'meta_value_num', // does not work
+      'orderby' => 'meta_value'
+      //'order' => 'asc' // don't use this; blocks toggle UI
+    ) );
+  }
+  return $vars;
+}
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>
