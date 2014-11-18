@@ -89,7 +89,8 @@
                             'depth' => 0,                                   // limit the depth of the nav
                             'fallback_cb' => ''                             // fallback function (if there is one)
                         )); ?>
-                        </nav>        
+                        </nav>  
+                        <div style="margin-top: 30px;font-size:1.2em">English content will be published soon. Please visit <a style="color:white;" href="http://bcj2014.bachcollegiumjapan.org/en">our old site</a> for the time being.</div>      
                     </div>
                 </div>
             </div>
