@@ -1621,7 +1621,9 @@ nav.main-nav {
 	position: relative;
 
 	@include transition(all .5s ease-in-out);
-
+	&.page {
+		border-bottom: 1px solid $border-color;
+	}
 	a, a:hover, a:visited {
 		color: $black;
 		@include transition(all .5s ease-in-out);
@@ -1971,7 +1973,7 @@ POSTS & CONTENT STYLES
 
 		} /* end .entry-content */
 		.entry-content-page {
-			max-width: 600px;
+			max-width: 500px;
 			margin: auto;
 			margin-bottom: 0;
 			padding: 0.75em;
@@ -2525,5 +2527,22 @@ FOOTER STYLES
 
 	.copyright {}
 
-
-
+.schedule-date {
+	font-size: 2em;
+}
+.centered {
+	text-align: center;
+}
+.entry-content-page {
+	hr { 
+		color: $black;
+		background-color: $black;
+		height: 1px;
+		border: none;
+	}
+}
+.single-schedule {
+	h1 {
+		margin-bottom: 0;
+	}	
+}

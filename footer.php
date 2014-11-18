@@ -3,8 +3,8 @@
           <div id="inner-footer" class="">
                 <div class="social-links">
                   <ul>
-                    <li><a href="https://twitter.com/bach_collegium" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
-                    <li><a href="https://www.facebook.com/bachcollegiumjapan" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li><a href="https://twitter.com/bach_collegium" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li><a href="https://www.facebook.com/bachcollegiumjapan" target="_blank"><i class="fa fa-facebook fa-lg"></i></a></li>
                   </ul>
                 </div>
 

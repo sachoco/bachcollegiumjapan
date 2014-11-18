@@ -340,4 +340,35 @@ function date_column_orderby( $vars ) {
   return $vars;
 }
 
+add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
+
+function my_mce_buttons_2( $buttons ) {
+    array_unshift( $buttons, 'styleselect' );
+    return $buttons;
+}
+
+add_filter( 'tiny_mce_before_init', 'my_mce_before_init' );
+
+function my_mce_before_init( $settings ) {
+
+    $style_formats = array(
+      array(
+        'title' => 'Schedule Date',
+        'inline' => 'span',
+        'classes' => 'schedule-date',
+        'wrapper' => true
+      )
+    );
+
+    $settings['style_formats'] = json_encode( $style_formats );
+
+    return $settings;
+
+}
+
+add_action( 'admin_init', 'add_my_editor_style' );
+
+function add_my_editor_style() {
+  add_editor_style();
+}
 /* DON'T DELETE THIS CLOSING TAG */ ?>

@@ -3056,6 +3056,8 @@ nav.main-nav {
   position: relative;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out; }
+  nav.main-nav.page {
+    border-bottom: 1px solid #010101; }
   nav.main-nav a, nav.main-nav a:hover, nav.main-nav a:visited {
     color: #010101;
     -webkit-transition: all 0.5s ease-in-out;
@@ -3276,7 +3278,7 @@ POSTS & CONTENT STYLES
 
 /* end .entry-content */
 .entry-content-page {
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
   margin-bottom: 0;
   padding: 0.75em;
@@ -3598,6 +3600,21 @@ view.
     color: #989898; }
   .social-links ul a:hover {
     color: #727272; }
+
+.schedule-date {
+  font-size: 2em; }
+
+.centered {
+  text-align: center; }
+
+.entry-content-page hr {
+  color: #010101;
+  background-color: #010101;
+  height: 1px;
+  border: none; }
+
+.single-schedule h1 {
+  margin-bottom: 0; }
 
 /*********************
 LARGER MOBILE DEVICES

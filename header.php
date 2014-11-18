@@ -117,7 +117,8 @@
                 </header>
             </div>
 <?php //endif; ?>
-            <nav class="main-nav <?php if( !is_home() && !is_front_page() ) echo 'inverse'  ?>" role="navigation" style="margin:0;">
+<!--             <nav class="main-nav <?php //if( !is_home() && !is_front_page() ) echo 'inverse'  ?>" role="navigation" style="margin:0;">
+ -->            <nav class="main-nav <?php if( !is_home() && !is_front_page() ) echo 'page'  ?>" role="navigation" style="margin:0;">
             <div id="menu-icon" class="mobile-button"><span>Menu</span></div>
             <?php wp_nav_menu(array(
             'container' => false,                           // remove nav container
