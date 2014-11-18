@@ -972,7 +972,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .blue-btn, .comment-reply-link, #submit, .bcj-btn, .buy-ticket {
   display: inline-block;
   position: relative;
-  font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", serif;
+  font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", YuMincho, "HGS明朝E", "メイリオ", Meiryo, serif;
   text-decoration: none;
   font-weight: normal;
   padding: 6px 24px;
@@ -1070,7 +1070,6 @@ textarea,
   border: 0;
   width: 100%;
   max-width: 400px;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #989898;
   -webkit-transition: background-color 0.24s ease-in-out;
   transition: background-color 0.24s ease-in-out; }
@@ -1866,7 +1865,7 @@ html {
 
 body {
   height: 100%;
-  font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", serif;
+  font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", YuMincho, "HGS明朝E", "メイリオ", Meiryo, serif;
   font-size: 10px;
   line-height: 2;
   color: #010101;
@@ -1929,7 +1928,6 @@ body {
   font-size: 0.7em; }
 
 .number {
-  font-family: "Playfair Display", "Alegreya", serif;
   font-weight: normal; }
 
 .clear {
@@ -2340,7 +2338,7 @@ section#intro {
     position: relative;
     background: none;
     text-align: center;
-    width: 600px;
+    max-width: 750px;
     margin: auto;
     z-index: 999; }
     section#intro nav > ul li a {
@@ -3139,7 +3137,7 @@ nav.main-nav {
       background: none;
       font-size: 1.5em;
       margin: 0.5em 0.2em;
-      font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", serif;
+      font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", YuMincho, "HGS明朝E", "メイリオ", Meiryo, serif;
       text-transform: uppercase; }
       #lang_sel_list ul li a.lang_sel_sel, #lang_sel_list ul li a:visited.lang_sel_sel {
         display: none; }
@@ -3977,7 +3975,7 @@ you can add resource intensive styles.
   UPCOMING CONCERTS
   *********************/
   section#intro nav {
-    max-width: 950px;
+    max-width: 1010px;
     width: 95%; }
     section#intro nav > ul li:before {
       font-size: 12px;

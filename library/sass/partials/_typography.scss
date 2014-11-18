@@ -47,21 +47,20 @@ https://github.com/devinhunt/typebase.css
 I've edited it a bit, but it's a nice starting point.
 */
 
-
 // font stacks
 $sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serif:             Perpetua, "Minion Pro", 'Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', serif;
+$serif:             Perpetua, "Minion Pro", 'Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', "游明朝", YuMincho, "HGS明朝E", "メイリオ", Meiryo, serif;
 // $serif:             Perpetua, "Minion Pro", Palatino, 'Kozuka Mincho Pro', 'Kozuka Mincho Std', '小塚明朝 Pro R', '小塚明朝 Std R', "Georgia", Cambria, Times New Roman, Times, serif;
 
 /*
  i imported this one in the functions file so bones would look sweet.
  don't forget to remove it for your site.
 */
-$lato:              'Lato', $sans-serif;
-$josef:             'Josefin Slab', serif;
-$cinzel:           'Cinzel', serif;
+// $lato:              'Lato', $sans-serif;
+// $josef:             'Josefin Slab', serif;
+// $cinzel:           'Cinzel', serif;
 
-$font-number: 'Playfair Display', 'Alegreya', serif;
+// $font-number: 'Playfair Display', 'Alegreya', serif;
 
 /*
 some nice typographical defaults

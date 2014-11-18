@@ -90,7 +90,7 @@ body {
 }
 
 .number {
-	font-family: $font-number;
+	// font-family: $font-number;
 	font-weight: normal;
 }
 .clear {
@@ -537,7 +537,7 @@ section#intro {
 
 		background: none;
 		text-align: center;
-		width: 600px;
+		max-width: 750px;
 		margin: auto;
 		z-index: 999;
 		>ul {
