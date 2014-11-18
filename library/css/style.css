@@ -1411,7 +1411,7 @@ Stylesheet for javascript plugins
   line-height: 1em;
   padding: 10px 10px;
   font-size: 1.7em;
-  width: 39%;
+  width: 30%;
   text-align: left; }
 
 .eventCalendar-wrap .arrow.prev {
@@ -2639,6 +2639,9 @@ UPCOMING CONCERTS
         border-color: #5A4687; }
       .upcoming footer .specials .category-filter.christmas {
         border-color: #785A00; }
+      .upcoming footer .specials .category-filter img {
+        width: 100%;
+        height: auto; }
       .upcoming footer .specials .category-filter .title {
         position: absolute;
         width: 100%;
@@ -2647,7 +2650,7 @@ UPCOMING CONCERTS
         top: 0; }
         .upcoming footer .specials .category-filter .title h3 {
           color: #fff;
-          font-size: 1.7em; }
+          font-size: 1.2em; }
 
 .no-touch .upcoming div.overview section .thumb {
   display: block; }
@@ -3691,9 +3694,6 @@ tweeners.
   /*********************
   EVENT CALENDAR
   *********************/
-  .eventCalendar-wrap .arrow {
-    width: 39%; }
-
   .eventsCalendar-currentTitle .monthTitle {
     font-size: 24px; }
 
@@ -3706,7 +3706,9 @@ tweeners.
   .upcoming {
     padding: 0 10%; }
     .upcoming footer .specials .category-filter {
-      width: 180px; }
+      width: 200px; }
+      .upcoming footer .specials .category-filter .title h3 {
+        font-size: 1.4em; }
 
   .news-holder .banner img {
     width: 180px; }
@@ -3714,7 +3716,9 @@ tweeners.
   .news-item {
     height: 270px;
     margin: 0;
-    border-right: none; }
+    margin-bottom: 10px; }
+    .news-item:nth-child(even) {
+      border-right: none; }
     .news-item:last-child {
       border-right: 1px solid #010101; }
 
@@ -3840,6 +3844,10 @@ you can add resource intensive styles.
   *********************/
   .upcoming {
     padding: 0 10%; }
+    .upcoming footer .specials .category-filter {
+      width: 276px; }
+      .upcoming footer .specials .category-filter .title h3 {
+        font-size: 1.7em; }
 
   /*********************
   HEADER STYLES
@@ -3928,7 +3936,12 @@ you can add resource intensive styles.
     the footer.
     */ }
 
-  /* end .footer-links */ }
+  /* end .footer-links */
+  /*********************
+  EVENT CALENDAR
+  *********************/
+  .eventCalendar-wrap .arrow {
+    width: 30%; } }
 /*********************
 
 *********************/
@@ -3991,6 +4004,9 @@ you can add resource intensive styles.
   /*********************
   UPCOMING CONCERTS
   *********************/
+  .news-item {
+    border-right: none; }
+
   section#intro nav {
     max-width: 1010px;
     width: 95%; }
@@ -4054,11 +4070,16 @@ you can add resource intensive styles.
   .upcoming footer .specials {
     margin-top: 50px; }
     .upcoming footer .specials .category-filter {
-      margin: 10px;
-      width: 276px; }
+      margin: 10px; }
 
   .news-holder .banner img {
-    width: 276px; } }
+    width: 276px; }
+
+  /*********************
+  EVENT CALENDAR
+  *********************/
+  .eventCalendar-wrap .arrow {
+    width: 37%; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

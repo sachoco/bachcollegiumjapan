@@ -106,7 +106,6 @@ SLICK SLIDER
 EVENT CALENDAR
 *********************/
 .eventCalendar-wrap .arrow {
-	width: 39%;
 }
 .eventsCalendar-currentTitle .monthTitle {
 	font-size: 24px;
@@ -192,9 +191,16 @@ UPCOMING CONCERTS
 		.specials {
 
 			.category-filter {
-				width: 180px;
 
+				width: 200px;
+				
+				.title {
+					h3 {
+						font-size: 1.4em;
+					}
+				}			
 			}
+
 		}
 
 	}
@@ -214,7 +220,10 @@ UPCOMING CONCERTS
 .news-item {
 	height: 270px;
 	margin: 0;
-	border-right: none;
+	margin-bottom: 10px;
+	&:nth-child(even) {
+		border-right: none;
+	}
 	header {
 	 	.title {
 	 	}

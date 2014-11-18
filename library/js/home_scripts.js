@@ -137,6 +137,19 @@ $('.overview-holder-carousel').slick({
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
+            centerMode: false,
+            centerPadding: '0px',
+            arrows: true
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            centerMode: false,
+            centerPadding: '0px',
+            arrows: true
           }
         },
         {

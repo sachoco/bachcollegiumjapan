@@ -225,9 +225,6 @@ SLICK SLIDER
 /*********************
 EVENT CALENDAR
 *********************/
-.eventCalendar-wrap .arrow {
-  width: 39%; }
-
 .eventsCalendar-currentTitle .monthTitle {
   font-size: 24px; }
 
@@ -240,7 +237,9 @@ UPCOMING CONCERTS
 .upcoming {
   padding: 0 10%; }
   .upcoming footer .specials .category-filter {
-    width: 180px; }
+    width: 200px; }
+    .upcoming footer .specials .category-filter .title h3 {
+      font-size: 1.4em; }
 
 .news-holder .banner img {
   width: 180px; }
@@ -248,7 +247,9 @@ UPCOMING CONCERTS
 .news-item {
   height: 270px;
   margin: 0;
-  border-right: none; }
+  margin-bottom: 10px; }
+  .news-item:nth-child(even) {
+    border-right: none; }
   .news-item:last-child {
     border-right: 1px solid #010101; }
 
@@ -367,6 +368,10 @@ UPCOMING CONCERTS
 *********************/
 .upcoming {
   padding: 0 10%; }
+  .upcoming footer .specials .category-filter {
+    width: 276px; }
+    .upcoming footer .specials .category-filter .title h3 {
+      font-size: 1.7em; }
 
 /*********************
 HEADER STYLES
@@ -456,6 +461,12 @@ mobile. Make sure to double check these!
   */ }
 
 /* end .footer-links */
+/*********************
+EVENT CALENDAR
+*********************/
+.eventCalendar-wrap .arrow {
+  width: 30%; }
+
 /******************************************************************
 Site Name:
 Author:
@@ -474,6 +485,9 @@ be seen on the Desktop.
 /*********************
 UPCOMING CONCERTS
 *********************/
+.news-item {
+  border-right: none; }
+
 section#intro nav {
   max-width: 1010px;
   width: 95%; }
@@ -537,11 +551,16 @@ UPCOMING CONCERTS
 .upcoming footer .specials {
   margin-top: 50px; }
   .upcoming footer .specials .category-filter {
-    margin: 10px;
-    width: 276px; }
+    margin: 10px; }
 
 .news-holder .banner img {
   width: 276px; }
+
+/*********************
+EVENT CALENDAR
+*********************/
+.eventCalendar-wrap .arrow {
+  width: 37%; }
 
 /*
 you can call the larger styles if you want, but there's really no need

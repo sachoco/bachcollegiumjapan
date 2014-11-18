@@ -29,15 +29,101 @@ LAYOUT & GRID STYLES
 }
 
 
-
 /*********************
 UPCOMING CONCERTS
 *********************/
 .upcoming  {
 	padding: 0 10%;
 
-}
+	.overview-holder-carousel {
 
+		.slick-next { }
+		.slick-prev {}
+		.slick-list {
+		}
+	}
+
+	.overview-holder {
+
+	}
+	div.overview {
+  		// height: 331px;
+
+
+  		&.slick-active {
+  		}
+
+		article {
+		}
+		header {
+
+			.date_time {
+
+	 		}
+	 		.location {
+
+				 .country {
+
+				}
+	 		}
+		}
+
+		section {
+	 		.thumb {
+
+				img {
+
+				}
+	 		}
+	 		.title {
+
+			}
+		}
+
+
+
+		.description {
+
+			.detail {
+
+			}
+
+		}
+
+		&:hover {
+			.description {
+			}
+			.thumb, .title {
+			}
+		}
+
+	}
+	footer {
+
+		.category {
+			span {
+			}
+		}
+		.specials {
+
+			.category-filter {
+
+				width: 276px;
+				
+				.title {
+					h3 {
+						font-size: 1.7em;
+					}
+				}			
+			}
+
+		}
+
+
+	}
+
+
+}
 
 /*********************
 HEADER STYLES
@@ -300,3 +386,9 @@ mobile. Make sure to double check these!
 	}
 } /* end .footer-links */
 
+/*********************
+EVENT CALENDAR
+*********************/
+.eventCalendar-wrap .arrow {
+	width: 30%;
+}

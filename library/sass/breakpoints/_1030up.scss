@@ -26,6 +26,7 @@ UPCOMING CONCERTS
 
 .news-item {
   //width: 100%;
+  border-right: none;
   &:nth-child(odd) {
     //margin-right: 0;
   }
@@ -207,7 +208,6 @@ UPCOMING CONCERTS
       margin-top: 50px;
       .category-filter {
         margin: 10px;
-        width: 276px;
       }
     }
 
@@ -225,4 +225,11 @@ UPCOMING CONCERTS
       width: 276px;
     }
   }
+}
+
+/*********************
+EVENT CALENDAR
+*********************/
+.eventCalendar-wrap .arrow {
+  width: 37%;
 }
