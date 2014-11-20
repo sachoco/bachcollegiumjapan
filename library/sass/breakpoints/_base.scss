@@ -216,6 +216,11 @@ FEATURE SLIDER
 	.slide-item {
 		height: 130px;
 		position: relative;
+		> a {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
 		.slide-bg {
 			position: absolute;
 			z-index: 900;
@@ -287,6 +292,8 @@ FEATURE SLIDER
 		}
 		.slide-overlay {
 			position: absolute;
+			top: 0;
+			left: 0;
 			width: 100%;
 			height: 100%;
 			z-index: 998;

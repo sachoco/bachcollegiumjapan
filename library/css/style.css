@@ -2054,6 +2054,10 @@ FEATURE SLIDER
   #feature-slider .slide-item {
     height: 130px;
     position: relative; }
+    #feature-slider .slide-item > a {
+      display: block;
+      width: 100%;
+      height: 100%; }
     #feature-slider .slide-item .slide-bg {
       position: absolute;
       z-index: 900; }
@@ -2126,6 +2130,8 @@ FEATURE SLIDER
         color: #fff; }
     #feature-slider .slide-item .slide-overlay {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
       z-index: 998;
