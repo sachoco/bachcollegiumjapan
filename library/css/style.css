@@ -1020,6 +1020,54 @@ and it will create a button dependant on those variables.
   text-align: center;
   position: relative; }
 
+.buy-ticket-container {
+  position: relative;
+  bottom: 10px;
+  width: 100%;
+  z-index: 999;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in; }
+  .buy-ticket-container .buy-ticket {
+    color: #010101;
+    border-color: #010101; }
+  .buy-ticket-container .playguide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #010101;
+    text-align: center; }
+    .buy-ticket-container .playguide span {
+      border: 1px solid #010101;
+      margin-left: 4%;
+      float: left;
+      padding: 0.8em 0 0.4em;
+      width: 48%; }
+      .buy-ticket-container .playguide span:not(.disabled):hover {
+        background-color: rgba(255, 255, 255, 0.5); }
+      .buy-ticket-container .playguide span:first-child {
+        margin-left: 0; }
+      .buy-ticket-container .playguide span a {
+        color: #010101;
+        text-decoration: none; }
+      .buy-ticket-container .playguide span.disabled {
+        opacity: 0.2; }
+  .buy-ticket-container:hover .buy-ticket {
+    opacity: 0; }
+  .buy-ticket-container:hover .playguide {
+    opacity: 1; }
+
 /******************************************************************
 Site Name:
 Author:
@@ -2555,39 +2603,9 @@ UPCOMING CONCERTS
     .upcoming div.overview .description .readmore {
       margin-bottom: 10px;
       text-decoration: underline; }
-    .upcoming div.overview .description .buy-ticket-container {
-      position: absolute;
-      bottom: 10px;
-      width: 100%; }
-      .upcoming div.overview .description .buy-ticket-container .buy-ticket {
-        color: #010101;
-        border-color: #010101; }
-      .upcoming div.overview .description .buy-ticket-container .playguide {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0;
-        width: 100%;
-        color: #010101; }
-        .upcoming div.overview .description .buy-ticket-container .playguide span {
-          border: 1px solid #010101;
-          margin-left: 4%;
-          float: left;
-          padding: 0.8em 0 0.4em;
-          width: 48%; }
-          .upcoming div.overview .description .buy-ticket-container .playguide span:not(.disabled):hover {
-            background-color: rgba(255, 255, 255, 0.5); }
-          .upcoming div.overview .description .buy-ticket-container .playguide span:first-child {
-            margin-left: 0; }
-          .upcoming div.overview .description .buy-ticket-container .playguide span a {
-            color: #010101;
-            text-decoration: none; }
-          .upcoming div.overview .description .buy-ticket-container .playguide span.disabled {
-            opacity: 0.2; }
-      .upcoming div.overview .description .buy-ticket-container:hover .buy-ticket {
-        opacity: 0; }
-      .upcoming div.overview .description .buy-ticket-container:hover .playguide {
-        opacity: 1; }
+  .upcoming div.overview .buy-ticket-container {
+    line-height: 1.2em;
+    font-size: 0.9em; }
   .upcoming div.overview.tokyo header {
     border-color: #840F15; }
   .upcoming div.overview.tokyo .description .buy-ticket {
@@ -2662,10 +2680,10 @@ UPCOMING CONCERTS
   display: block; }
 .no-touch .upcoming div.overview section .title {
   height: 100px; }
-.no-touch .upcoming div.overview .description {
+.no-touch .upcoming div.overview .description, .no-touch .upcoming div.overview .buy-ticket-container {
   opacity: 0;
   position: absolute; }
-.no-touch .upcoming div.overview:hover .description {
+.no-touch .upcoming div.overview:hover .description, .no-touch .upcoming div.overview:hover .buy-ticket-container {
   opacity: 1; }
 .no-touch .upcoming div.overview:hover .thumb, .no-touch .upcoming div.overview:hover .title {
   opacity: 0; }

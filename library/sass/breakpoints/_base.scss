@@ -818,59 +818,14 @@ UPCOMING CONCERTS
 				// font-size: 0.8em;
 				text-decoration: underline;
 			}
-			.buy-ticket-container {
-				position: absolute;
-				bottom: 10px;
-				width: 100%;
-				.buy-ticket {
-					color: $black;
-					border-color: $black;
-				}
-				.playguide {
-					position: absolute;
-					top: 0;
-					left: 0;
-					opacity: 0;
-					width: 100%;
-					color: $black;
-					span{
-						border: 1px solid $black;
-						margin-left: 4%;
-						float: left;
-						padding: 0.8em 0 0.4em;
-						width: 48%;
 
-						&:not(.disabled):hover {
-							background-color: rgba($white, 0.5);
-						}
-						&:first-child {
-							margin-left: 0;
-						}
-						a {
-							color: $black;
-							text-decoration: none;
-						}
-						&.disabled {
-							opacity: 0.2;
-
-
-						}
-					}
-				}
-
-
-
-
-				&:hover{
-					.buy-ticket {
-						opacity: 0;
-					}
-					.playguide {
-						opacity: 1;
-					}
-				}
-			}
 		}
+		.buy-ticket-container {
+			line-height: 1.2em;
+			font-size: 0.9em;
+		}
+
+
 		&.tokyo {
 			header {
 				border-color: $color-bcj;
@@ -1001,13 +956,13 @@ UPCOMING CONCERTS
 				height: 100px;
 			}
 		}
-		.description {
+		.description,  .buy-ticket-container {
 			opacity: 0;
 		 	position: absolute;
 		}
 
 		&:hover {
-			.description {
+			.description, .buy-ticket-container {
 				opacity: 1;
 			}
 			.thumb, .title {

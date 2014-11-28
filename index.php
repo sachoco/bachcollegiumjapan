@@ -13,7 +13,38 @@
 					</header>
 					<section class="entry-content-page">
 						<?php the_content(); ?>
+						<?php if(get_post_type( get_the_ID() )=="schedule"): ?>
+                        <div class="buy-ticket-container">
+                            <span class="buy-ticket "><span class="buy-text">チケット購入</span></span>
+                            <span class="playguide">
+                            <?php
+                                $pia = get_field('ticket_pia');
+                                $eplus = get_field('e+');
+                                if($pia||$eplus) :
+                            ?>
+                            <?php
+                                if($pia){
+                                   echo '<span><a target="_blank" href="'. $pia .'"">チケットぴあ</a></span>'; 
+                               }else{
+                                   echo '<span class="disabled">チケットぴあ</span>'; 
+                               }
+                                if($eplus){
+                                   echo '<span><a target="_blank" href="'. $eplus .'"">イープラス</a></span>'; 
+                               }else{
+                                   echo '<span class="disabled">イープラス</span>'; 
+                               }                                       
+                            ?>
+                            <?php
+                                else:
+
+                                echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
+
+                                endif;
+                            ?>
+                            </span>
+                        </div>	
 					</section>
+                        <?php endif; ?>					
 				</article>
 
 

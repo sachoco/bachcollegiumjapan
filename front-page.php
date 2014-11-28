@@ -168,6 +168,7 @@ function filter_where( $where = '' ) {
                 ?>
 
                     <div class="overview <?php echo($cats ? $cats: ""); ?>" data-month="<?php echo $month;?>">
+                    
                     <article>
                         <header>
 
@@ -195,39 +196,40 @@ function filter_where( $where = '' ) {
                             <div class="title">
                                 <h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
                             </div>
+                            <a href="<?php the_permalink(); ?>">
                             <div class="description">
                                 <div class="detail"><?php the_excerpt(); ?></div>
-                                <div class="readmore"><a href="<?php the_permalink(); ?>">詳細はこちら</a></div>
-                                <div class="buy-ticket-container">
-                                    <span class="buy-ticket "><span class="buy-text">チケット購入</span></span>
-                                    <span class="playguide">
-                                    <?php
-                                        $pia = get_field('ticket_pia');
-                                        $eplus = get_field('e+');
-                                        if($pia||$eplus) :
-                                    ?>
-                                    <?php
-                                        if($pia){
-                                           echo '<span><a target="_blank" href="'. $pia .'"">チケットぴあ</a></span>'; 
-                                       }else{
-                                           echo '<span class="disabled">チケットぴあ</span>'; 
-                                       }
-                                        if($eplus){
-                                           echo '<span><a target="_blank" href="'. $eplus .'"">イープラス</a></span>'; 
-                                       }else{
-                                           echo '<span class="disabled">イープラス</span>'; 
-                                       }                                       
-                                    ?>
-                                    <?php
-                                        else:
+                                <!-- <div class="readmore"><a href="<?php the_permalink(); ?>">詳細はこちら</a></div> -->
+                            </div>
+                            </a>
+                            <div class="buy-ticket-container">
+                                <span class="buy-ticket "><span class="buy-text">チケット購入</span></span>
+                                <span class="playguide">
+                                <?php
+                                    $pia = get_field('ticket_pia');
+                                    $eplus = get_field('e+');
+                                    if($pia||$eplus) :
+                                ?>
+                                <?php
+                                    if($pia){
+                                       echo '<span><a target="_blank" href="'. $pia .'"">チケットぴあ</a></span>'; 
+                                   }else{
+                                       echo '<span class="disabled">チケットぴあ</span>'; 
+                                   }
+                                    if($eplus){
+                                       echo '<span><a target="_blank" href="'. $eplus .'"">イープラス</a></span>'; 
+                                   }else{
+                                       echo '<span class="disabled">イープラス</span>'; 
+                                   }                                       
+                                ?>
+                                <?php
+                                    else:
 
-                                        echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
+                                    echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
 
-                                        endif;
-                                    ?>
-                                    </span>
-                                </div>
-
+                                    endif;
+                                ?>
+                                </span>
                             </div>
                         </section>
                     </article>
