@@ -276,10 +276,10 @@ function filter_where( $where = '' ) {
                             <div class="title"><h3>神戸定期演奏会</h3></div>
                             <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-kobe-bg.jpg" />
                         </div>
-                        <div data-category=".christmas" class="category-filter christmas" >
+                        <!-- <div data-category=".christmas" class="category-filter christmas" >
                             <div class="title"><h3>BCJクリスマス公演</h3></div>
                             <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-christmas-bg.jpg" />
-                        </div>
+                        </div> -->
                     </div>
                 </footer>
 
