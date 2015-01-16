@@ -2334,8 +2334,12 @@ section#intro {
       height: 60%;
       background-color: pink; }
       section#intro .content .profile > div {
-        display: table-cell;
-        vertical-align: bottom; }
+        display: table;
+        width: 100%;
+        height: 100%; }
+        section#intro .content .profile > div > div {
+          display: table-cell;
+          vertical-align: bottom; }
     section#intro .content .start {
       height: 15%;
       background-color: yellow; }
