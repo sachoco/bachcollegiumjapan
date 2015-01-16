@@ -41,9 +41,9 @@ window.onload = function() {
     //     proximity: 0.99
     // });
 if($.browser.mobile){
-    $(window).on("scroll", function(e){
-        window.requestAnimationFrame(scrollHandlerMobile);
-    });   
+    // $(window).on("scroll", function(e){
+    //     window.requestAnimationFrame(scrollHandlerMobile);
+    // });   
 }else{
     $(window).on("scroll", function(e){
         window.requestAnimationFrame(scrollHandler); 
