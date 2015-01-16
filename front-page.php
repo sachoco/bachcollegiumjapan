@@ -25,7 +25,7 @@
                         </div>
 
                      <!-- Slide item 2 -->
-                        <div class="slide-item">
+<!--                         <div class="slide-item">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/next-concert.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
                                 <div class="inner-content">
@@ -35,16 +35,14 @@
                                     <div class="subtitle">主に感謝せよ、その慈しみはとこしえに 〜ダビデ詩編（抄）〜</div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <h1 >11.22（神戸）<div class="small">（土）15時</div></h1>
-                                    <!-- <div>神戸松蔭女子学院大学</div> -->
                                     <div><a href="<?php echo get_home_url().'/schedule/h-シュッツの世界' ?>">神戸公演詳細はこちら</a></div>
                                      <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <h1>11.24（東京）<div class="small">（月・休）15時</div></h1>
-                                    <!-- <div>東京オペラシティ コンサートホール　タケミツメモリアル</div> -->
                                     <div><a href="<?php echo get_home_url().'/schedule/h-シュッツの世界-2' ?>">東京公演詳細はこちら</a></div>
                                 </div>
                             </div>
                             <div class="slide-overlay"></div>
-                        </div>
+                        </div> -->
 
                     <!-- Slide item 3 -->
                         <div class="slide-item">

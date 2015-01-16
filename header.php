@@ -34,7 +34,15 @@
         <?php wp_head(); ?>
         <?php // end of wordpress head ?>
           <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-
+        <?php 
+            $detect = new Mobile_Detect;
+            // Any mobile device (phones or tablets).
+            if ( $detect->isMobile() ) {
+        ?>
+            <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/library/css/mobile.css">
+        <?php
+            }
+        ?>
         <?php // drop Google Analytics Here ?>
         <?php // end analytics ?>
 
@@ -43,10 +51,10 @@
     <body <?php body_class(); ?>>
 <?php if( is_home() || is_front_page() ): ?>
         <!-- Background START -->
-<!--         <div id="background">
+        <div id="background">
             <div id="intro-background"><div class="overlay"></div></div>
             <div id="about-background" class="disable"><div class="overlay"></div></div>
-        </div> -->
+        </div>
         <!-- Background END -->
         <!-- Intro START -->
         <section id="intro" class="snap">

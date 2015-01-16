@@ -2313,19 +2313,10 @@ BACKGROUND
 INTRO
 *********************/
 section#intro {
-  background: url(../images/mobile/home.jpg) center center no-repeat;
-  background-size: cover;
   height: 100%;
   text-align: center;
   color: #fff;
   position: relative; }
-  section#intro .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    z-index: 0; }
   section#intro .content {
     height: 100%;
     width: 100%; }
@@ -2341,18 +2332,8 @@ section#intro {
       section#intro .content .start > #scrolldownHome {
         top: 50%;
         margin-top: -20px; }
-      section#intro .content .start > div {
-        display: table;
-        width: 100%;
-        height: 100%; }
-        section#intro .content .start > div > div {
-          display: table-cell;
-          vertical-align: middle; }
     section#intro .content .navigation {
       height: 25%; }
-      section#intro .content .navigation > div {
-        display: table-cell;
-        vertical-align: middle; }
   section#intro .roles {
     font-size: 18px;
     display: inline-block;
@@ -2473,16 +2454,6 @@ section#intro {
       section#intro nav .nav li.menu-discography a, section#intro nav .nav li.menu-gallery a {
         color: #4d4d4d;
         cursor: default; }
-  section#intro .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    z-index: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
 
 /*********************
 SLICK SLIDER
@@ -2783,9 +2754,7 @@ section#about {
   text-align: center;
   color: #fff;
   min-height: 1000px;
-  position: relative;
-  background: url(../images/mobile/profile-bcj2.jpg) top center no-repeat;
-  background-size: cover; }
+  position: relative; }
   section#about .row-header {
     font-size: 16px;
     letter-spacing: 2px;
@@ -2869,18 +2838,6 @@ section#about {
     -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out; }
     section#about #about_bcj_5.focus {
-      opacity: 1; }
-  section#about .overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    z-index: 0;
-    -webkit-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out; }
-    section#about .overlay.focus {
       opacity: 1; }
   section#about .cd-holder-carousel {
     position: relative;

@@ -151,7 +151,7 @@ adjustFooterPos();
 
 
 
-    $(".main-nav .mobile-button").on("click", function(){
+    $(document).on("click", '.mobile-button', function(){
         // console.log($(this));
         $( this ).siblings(".nav").slideToggle();
     });
