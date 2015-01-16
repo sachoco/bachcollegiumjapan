@@ -479,6 +479,9 @@ section#intro {
 			// display: table-row;
 			height: 15%;
 			background-color: yellow;
+			> a {
+				top: 40%;
+			}
 			>div {
 				display: table;
 				width: 100%;
@@ -546,7 +549,7 @@ section#intro {
 
 	#scrolldownHome {
 		@include animation(fade-in-out 5s ease-in-out infinite);
-		margin-top: 2vh;
+		// margin-top: 2vh;
 		@include scale(0.5);
 		circle {
 			@include opacity(0.9);

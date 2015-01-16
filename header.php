@@ -65,17 +65,14 @@
                     </div>
                 </div>
                 <div class="start">
-                    <div><div>
-                        <a href="#home" id="scrolldownHome" class="svg">
-                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
-                                <circle fill="#FFFFFF" cx="20" cy="19.647" r="20"/>
-                                <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="29,15.647 20,27.647 11,15.647" />
-                            </svg>
-                        </a>        
-                    </div></div>
+                    <a href="#home" id="scrolldownHome" class="svg">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
+                            <circle fill="#FFFFFF" cx="20" cy="19.647" r="20"/>
+                            <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="29,15.647 20,27.647 11,15.647" />
+                        </svg>
+                    </a>        
                 </div>
                 <div class="navigation">
-                    <div>
                         <nav style="position:relative;transform:none;left:auto;bottom:auto">
                         <?php wp_nav_menu(array(
                             'container' => false,                           // remove nav container
@@ -92,7 +89,6 @@
                         )); ?>
                         </nav>  
                         <div style="margin-top: 30px;font-size:1.2em">English content will be published soon. Please visit <a style="color:white;" href="http://bcj2014.bachcollegiumjapan.org/en">our old site</a> for the time being.</div>      
-                    </div>
                 </div>
             </div>
         </section>
