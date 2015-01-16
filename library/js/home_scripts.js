@@ -47,7 +47,16 @@ if($.browser.mobile){
 }else{
     $(window).on("scroll", function(e){
         window.requestAnimationFrame(scrollHandler); 
-    });     
+    });    
+    $.stellar({
+        horizontalScrolling:false,
+        positionProperty: 'transform',
+        responsive:true,
+        hideDistantElements: false,
+        // horizontalOffset: 0,
+        // verticalOffset: 0,
+        // rest of function
+    }); 
 }
 
 function goMain(){
@@ -461,14 +470,6 @@ function scrollHandlerMobile (){
 }
 
 
-$.stellar({
-    horizontalScrolling:false,
-    positionProperty: 'transform',
-    responsive:true,
-    hideDistantElements: false,
-    // horizontalOffset: 0,
-    // verticalOffset: 0,
-    // rest of function
-});
+
 
 }); /* end of as page load scripts */
