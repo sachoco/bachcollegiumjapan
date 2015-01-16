@@ -50,6 +50,7 @@
         <!-- Background END -->
         <!-- Intro START -->
         <section id="intro" class="snap">
+            <div class="overlay"></div>
             <div class="content">
                 <div class="profile">
                     <div style="display:table-cell;vertical-align:bottom">
