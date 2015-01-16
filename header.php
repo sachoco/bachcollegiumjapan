@@ -113,8 +113,9 @@
             <div class="wrap">
                 <header class="header" role="banner">
                     <a href="<?php echo home_url(); ?>#main" rel="nofollow" class="svg">
-                        <object data="<?php echo get_template_directory_uri(); ?>/library/images/bachcollegiumjapan-title.svg" type="image/svg+xml" class="mailicon">
-                        </object>
+                        <!-- <object data="<?php echo get_template_directory_uri(); ?>/library/images/bachcollegiumjapan-title.svg" type="image/svg+xml" class="mailicon">
+                        </object> -->
+                        <img src="<?php echo get_template_directory_uri(); ?>/library/images/bachcollegiumjapan-title.svg" >
                     </a>
                 </header>
             </div>
