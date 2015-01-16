@@ -776,6 +776,9 @@ UPCOMING CONCERTS
 				@include transition-duration(0.1s);
 				@include transition-timing-function(ease-in);
 			}
+			>a {
+				text-decoration: none;
+			}
 		}
 
 
@@ -797,6 +800,7 @@ UPCOMING CONCERTS
 			@include transition-duration(0.1s);
 			@include transition-timing-function(ease-in);
 			font-size: 0.9em;
+			margin-bottom: 20px;
 
 			.detail {
 				// height: 170px;

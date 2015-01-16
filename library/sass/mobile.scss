@@ -13,6 +13,19 @@ section#intro {
 		z-index: 0;
 	}
 }
+.upcoming div.overview { 
+	section {
+		height: 190px;
+	}
+	a {
+		text-decoration: none;
+	}
+	.description {
+		// height: 100px;
+	}
+
+}
+
 section#about {
 	background: url(../images/mobile/profile-bcj2.jpg) top center no-repeat;
 	background-size: cover;
@@ -24,5 +37,15 @@ section#about {
 		top: 0;
 		left: 0;
 		z-index: 0;
+	}
+}
+
+.buy-ticket-container {
+	position: absolute;
+	.buy-ticket {
+		opacity: 0;	
+	}
+	.playguide {
+		opacity: 1;
 	}
 }

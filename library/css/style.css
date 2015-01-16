@@ -2562,6 +2562,8 @@ UPCOMING CONCERTS
       -o-transition-timing-function: ease-in;
       -webkit-transition-timing-function: ease-in;
       transition-timing-function: ease-in; }
+    .upcoming div.overview section > a {
+      text-decoration: none; }
   .upcoming div.overview .description {
     z-index: 999;
     top: 0;
@@ -2582,7 +2584,8 @@ UPCOMING CONCERTS
     -o-transition-timing-function: ease-in;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
-    font-size: 0.9em; }
+    font-size: 0.9em;
+    margin-bottom: 20px; }
     .upcoming div.overview .description .detail {
       overflow: hidden; }
     .upcoming div.overview .description .readmore {

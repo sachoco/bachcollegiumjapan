@@ -29,10 +29,10 @@ if (location.hash) {
 
  
 
-    // $(document).scrollsnap({
-    //     snaps: 'section.snap',
-    //     proximity: 0.99
-    // });
+    $(document).scrollsnap({
+        snaps: 'section.snap',
+        proximity: 0.50
+    });
 if($.browser.mobile){
     $(window).on("scroll", function(e){
         // window.requestAnimationFrame(scrollHandlerMobile);
@@ -57,6 +57,7 @@ if($.browser.mobile){
         // rest of function
     }); 
 
+
 }
 
 function resizeHandler(){
@@ -64,7 +65,7 @@ function resizeHandler(){
     $window.scroll();
 
     var introHeight = $("section#intro .content").height();
-    console.log("win: " + winHeight + " vs intro: " + introHeight);
+    // console.log("win: " + winHeight + " vs intro: " + introHeight);
 
     if(introHeight>winHeight){
         $("section#intro .navigation nav").css("display","none");
@@ -265,6 +266,7 @@ var aboutOffsetTop, supportOffsetTop, topvalue, diffAbout , diffSupport, aboutHe
         // $("#section-about").css("height",aboutHeight+"px");
 
 
+// var old_scroll_top = 0;
 
 
 function scrollHandler (){
@@ -277,6 +279,15 @@ function scrollHandler (){
         diffAbout = aboutOffsetTop - topvalue;
         diffSupport = supportOffsetTop - topvalue;
         
+
+
+        // var current_scroll_top = $(document).scrollTop();
+        // var scroll_delta = current_scroll_top - old_scroll_top;
+        // old_scroll_top = current_scroll_top;
+        // if(diffMain>0&&scroll_delta>5){
+        //     console.log("fired");
+        // }
+    
         // mainTopPosPrev = mainTopPos;
         // mainTopPos = winHeight-diffMain;
         
