@@ -357,8 +357,8 @@ function filter_where( $where = '' ) {
         <!-- Main END -->
         <!-- About START -->
         <section id="about" >
-<!--             <div class="overlay"></div>
- -->            <div class="wrap cf" >
+            <div class="overlay"></div>
+            <div class="wrap cf" >
             <div class="wrap-inner">
                 <h2 class="h-font row-header" >About BCJ</h2>
                 <div id="about_bcj_1"><h2>バッハ・コレギウム・ジャパンと鈴木雅明</h2></div>

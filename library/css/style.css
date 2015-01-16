@@ -2248,7 +2248,7 @@ BACKGROUND
   -webkit-transform: translateZ(0);
   pointer-events: none; }
   #background #intro-background {
-    background: url(../images/mobile/home.jpg) center center no-repeat;
+    background: url(../images/home.jpg) center center no-repeat;
     background-size: cover;
     top: 0px;
     bottom: 0px;
@@ -2313,7 +2313,7 @@ BACKGROUND
 INTRO
 *********************/
 section#intro {
-  background: url(../images/home.jpg) center center no-repeat;
+  background: url(../images/mobile/home.jpg) center center no-repeat;
   background-size: cover;
   height: 100%;
   text-align: center;
@@ -2783,7 +2783,9 @@ section#about {
   text-align: center;
   color: #fff;
   min-height: 1000px;
-  position: relative; }
+  position: relative;
+  background: url(../images/mobile/profile-bcj2.jpg) top center no-repeat;
+  background-size: cover; }
   section#about .row-header {
     font-size: 16px;
     letter-spacing: 2px;

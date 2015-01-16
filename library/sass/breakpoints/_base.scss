@@ -367,7 +367,7 @@ BACKGROUND
 	-webkit-transform: translateZ(0);
 	pointer-events: none;
 	#intro-background {
-		background: url(../images/mobile/home.jpg) center center no-repeat;
+		background: url(../images/home.jpg) center center no-repeat;
 		background-size: cover;
 		top: 0px;
 		bottom: 0px;
@@ -445,7 +445,7 @@ BACKGROUND
 INTRO
 *********************/
 section#intro {
-	background: url(../images/home.jpg) center center no-repeat;
+	background: url(../images/mobile/home.jpg) center center no-repeat;
 	background-size: cover;
 	// padding: 0 6% 2% 6%;
 	.overlay {
@@ -1144,9 +1144,9 @@ section#about {
 	position: relative;
 	// visibility: hidden;
 	// display: none;
-	// background: url(../images/mobile/profile-bcj2.jpg) top center no-repeat;
-	// background-size: cover;
-	
+	background: url(../images/mobile/profile-bcj2.jpg) top center no-repeat;
+	background-size: cover;
+
 	.row-header {
 		font-size: 16px;
 		letter-spacing: 2px;
