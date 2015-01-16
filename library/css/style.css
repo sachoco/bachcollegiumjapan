@@ -2945,7 +2945,7 @@ section#support {
   min-height: 800px;
   color: #010101; }
   section#support .background {
-    background: url(../images/himawari_masaaki.jpg) center -200px no-repeat;
+    background: url(../images/mobile/himawari_masaaki.jpg) center -200px no-repeat;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -2959,8 +2959,7 @@ section#support {
       background-color: rgba(255, 255, 255, 0.5);
       top: 0;
       left: 0;
-      z-index: 0;
-      opacity: 0; }
+      z-index: 0; }
   section#support .wrap {
     z-index: 1; }
     section#support .wrap .wrap-inner {
@@ -2974,6 +2973,10 @@ section#support {
 section#contact {
   background: url(../images/bcj_bg_darker.jpg) top center no-repeat;
   background-size: cover; }
+  section#contact .wrap {
+    z-index: 1; }
+    section#contact .wrap .wrap-inner {
+      padding: 10%; }
 
 /*********************
 LINK STYLES

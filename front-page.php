@@ -464,11 +464,12 @@ function filter_where( $where = '' ) {
                     </div>
                     <a href="<?php echo get_permalink(get_page_by_path('friends_society')->ID); ?>"><span class="bcj-btn invert">BCJフレンズ＆ソサエティ詳細はこちら</span></a>
                 </div>
+                <div class="h_iframe">
+                    <img class="ratio" src="http://placehold.it/16x9"/>
+                <iframe width="853" height="480" src="//www.youtube.com/embed/J5bGxCWf0yM?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="h_iframe">
-                <img class="ratio" src="http://placehold.it/16x9"/>
-            <iframe width="853" height="480" src="//www.youtube.com/embed/J5bGxCWf0yM?rel=0" frameborder="0" allowfullscreen></iframe>
-            </div>
+
             <a href="#" class="go-top invert">
                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
                     <circle fill="#000000" cx="20" cy="20" r="20"/>

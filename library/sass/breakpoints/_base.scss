@@ -1362,7 +1362,7 @@ section#support {
 	//background-image: url(../images/himawari_masaaki.jpg);
 	color: $black;
 	.background {
-		background: url(../images/himawari_masaaki.jpg) center -200px no-repeat;
+		background: url(../images/mobile/himawari_masaaki.jpg) center -200px no-repeat;
 		background-size: cover;
 		position: absolute;
 		top: 0;
@@ -1380,7 +1380,7 @@ section#support {
 			top: 0;
 			left: 0;
 			z-index: 0;
-			opacity: 0;
+			// opacity: 0;
 			// @include transition(opacity 1s ease-in-out);
 			&.focus {
 				// opacity: 1;
@@ -1410,6 +1410,13 @@ section#contact {
 	// display: none;
 	background: url(../images/bcj_bg_darker.jpg) top center no-repeat;
 	background-size: cover;
+	.wrap {
+		//padding: 100px 0;
+		z-index: 1;
+		.wrap-inner {
+			padding: 10%;
+		}
+	}
 }
 section#intro {
 	// visibility: hidden;
