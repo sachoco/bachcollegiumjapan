@@ -465,12 +465,10 @@ section#intro {
 		// display: table;
 		height: 100%;
 		width: 100%;
-		background-color: purple;
 		.profile {
 			// display: table-row;
 			height: 60%;
 			position: relative;
-			background-color: pink;
 			>div {
 				bottom: 0px;
 				position: absolute;
@@ -480,7 +478,6 @@ section#intro {
 		.start {
 			// display: table-row;
 			height: 15%;
-			background-color: yellow;
 			> #scrolldownHome {
 				// position: absolute;
 				top: 50%;
@@ -500,7 +497,6 @@ section#intro {
 		.navigation {
 			// display: table-row;
 			height: 25%;
-			background-color: green;
 			>div {
 				display: table-cell;
 				vertical-align: middle;
@@ -530,7 +526,6 @@ section#intro {
 		font-weight: bold;
 		position:relative;
 		z-index:9999;
-		background-color: green;
 
 	}
 	.logo {
@@ -544,7 +539,6 @@ section#intro {
 		// margin: 3vh 0;
 		margin: 3% 0;
 		z-index: 999;
-		background-color: red;
 		img {
 			width: 100px;
 			height: auto;

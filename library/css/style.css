@@ -2328,19 +2328,16 @@ section#intro {
     z-index: 0; }
   section#intro .content {
     height: 100%;
-    width: 100%;
-    background-color: purple; }
+    width: 100%; }
     section#intro .content .profile {
       height: 60%;
-      position: relative;
-      background-color: pink; }
+      position: relative; }
       section#intro .content .profile > div {
         bottom: 0px;
         position: absolute;
         width: 100%; }
     section#intro .content .start {
-      height: 15%;
-      background-color: yellow; }
+      height: 15%; }
       section#intro .content .start > #scrolldownHome {
         top: 50%;
         margin-top: -20px; }
@@ -2352,8 +2349,7 @@ section#intro {
           display: table-cell;
           vertical-align: middle; }
     section#intro .content .navigation {
-      height: 25%;
-      background-color: green; }
+      height: 25%; }
       section#intro .content .navigation > div {
         display: table-cell;
         vertical-align: middle; }
@@ -2375,8 +2371,7 @@ section#intro {
     line-height: 1.4em;
     font-weight: bold;
     position: relative;
-    z-index: 9999;
-    background-color: green; }
+    z-index: 9999; }
   section#intro .logo {
     font-size: 80px;
     text-transform: uppercase;
@@ -2385,8 +2380,7 @@ section#intro {
     position: relative;
     line-height: 0;
     margin: 3% 0;
-    z-index: 999;
-    background-color: red; }
+    z-index: 999; }
     section#intro .logo img {
       width: 100px;
       height: auto;
