@@ -26,11 +26,11 @@ if (location.hash) {
 
 window.onload = function() {
 
-    resizeHandler();
+    // resizeHandler();
 }
 
     $(window).resize(function(){
-        resizeHandler();
+        // resizeHandler();
     });
 
 
@@ -85,144 +85,144 @@ function goFriendsSociety(){
     return false;
 }
 
-$('.slick-slides').slick({
-	autoplay: true,
-	autoplaySpeed: 7000,
-	arrows: true,
-	dots: true,
-	infinite: true,
-	pauseOnHover: true,
-	centerMode: true,
-	centerPadding: '1px',
-	speed: 1000,
-	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="24,29 12,20 24,11"/></g></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062"/></g></svg></button>',
-	// onAfterChange: function(slide){ console.log(slide.currentSlide); },
-	onInit: function(slide){
-                // Create a new instance of Headhesive
-                var options = {
-                    offset: '#main #schedule',
-                    classes: {
-                        clone:   'main-nav--clone',
-                        stick:   'main-nav--stick',
-                        unstick: 'main-nav--unstick'
-                    }
-                }
-                var headhesive = new Headhesive('nav.main-nav', options);
+// $('.slick-slides').slick({
+// 	autoplay: true,
+// 	autoplaySpeed: 7000,
+// 	arrows: true,
+// 	dots: true,
+// 	infinite: true,
+// 	pauseOnHover: true,
+// 	centerMode: true,
+// 	centerPadding: '1px',
+// 	speed: 1000,
+// 	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="24,29 12,20 24,11"/></g></svg></button>',
+// 	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062"/></g></svg></button>',
+// 	// onAfterChange: function(slide){ console.log(slide.currentSlide); },
+// 	onInit: function(slide){
+//                 // Create a new instance of Headhesive
+//                 var options = {
+//                     offset: '#main #schedule',
+//                     classes: {
+//                         clone:   'main-nav--clone',
+//                         stick:   'main-nav--stick',
+//                         unstick: 'main-nav--unstick'
+//                     }
+//                 }
+//                 var headhesive = new Headhesive('nav.main-nav', options);
 
-                //スクロール　アバウト
-                $(".menu-about").on('click', function () {
-                    goAbout();
-                });
+//                 //スクロール　アバウト
+//                 $(".menu-about").on('click', function () {
+//                     goAbout();
+//                 });
 
-                //スクロール　コンサート
-                $(".menu-concerts").on('click', function () {
-                    goConcerts();
-                });
+//                 //スクロール　コンサート
+//                 $(".menu-concerts").on('click', function () {
+//                     goConcerts();
+//                 });
 
-                //スクロール　サポート
-                $(".menu-friends_society").on('click', function () {
-                    goFriendsSociety();
-                });
+//                 //スクロール　サポート
+//                 $(".menu-friends_society").on('click', function () {
+//                     goFriendsSociety();
+//                 });
 
-            }
-});
+//             }
+// });
 
-var overviewCarouselReady = false;
-$('.overview-holder-carousel').slick({
-	slidesToShow: 4,
-	slidesToScroll: 4,
-	// centerMode: true,
-	// centerPadding: '1px',
-	arrows: true,
-	speed: 500,
-	infinite: false,
-	// prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="24,29 12,20 24,11 		"/></g></svg></button>',
-	// nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062 		"/></g></svg></button>',
-	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="24,29 12,20 24,11"/></g></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062"/></g></svg></button>',
-	// onAfterChange: function(slide){ console.log(slide.currentSlide); },
-	// onInit: function(slide){ console.log(slide.currentSlide); }
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            centerMode: false,
-            centerPadding: '0px',
-            arrows: true
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            centerMode: false,
-            centerPadding: '0px',
-            arrows: true
-          }
-        },
-        {
-          breakpoint: 481,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            centerMode: true,
-            centerPadding: '50px',
-            arrows: false
-          }
-        }
-      ],
-      onInit: function(){ overviewCarouselReady = true; $(".overview-holder-carousel").removeClass("inactive"); }
-});
+// var overviewCarouselReady = false;
+// $('.overview-holder-carousel').slick({
+// 	slidesToShow: 4,
+// 	slidesToScroll: 4,
+// 	// centerMode: true,
+// 	// centerPadding: '1px',
+// 	arrows: true,
+// 	speed: 500,
+// 	infinite: false,
+// 	// prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="24,29 12,20 24,11 		"/></g></svg></button>',
+// 	// nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062 		"/></g></svg></button>',
+// 	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="24,29 12,20 24,11"/></g></svg></button>',
+// 	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062"/></g></svg></button>',
+// 	// onAfterChange: function(slide){ console.log(slide.currentSlide); },
+// 	// onInit: function(slide){ console.log(slide.currentSlide); }
+//       responsive: [
+//         {
+//           breakpoint: 1024,
+//           settings: {
+//             slidesToShow: 3,
+//             slidesToScroll: 3,
+//             centerMode: false,
+//             centerPadding: '0px',
+//             arrows: true
+//           }
+//         },
+//         {
+//           breakpoint: 768,
+//           settings: {
+//             slidesToShow: 2,
+//             slidesToScroll: 2,
+//             centerMode: false,
+//             centerPadding: '0px',
+//             arrows: true
+//           }
+//         },
+//         {
+//           breakpoint: 481,
+//           settings: {
+//             slidesToShow: 1,
+//             slidesToScroll: 1,
+//             centerMode: true,
+//             centerPadding: '50px',
+//             arrows: false
+//           }
+//         }
+//       ],
+//       onInit: function(){ overviewCarouselReady = true; $(".overview-holder-carousel").removeClass("inactive"); }
+// });
 
-var filtered = false;
+// var filtered = false;
 
-$('.category-filter').on('click', function(){
-  if(filtered === false) {
-    var cat = $(this).data("category");
-    $('.overview-holder-carousel').slickFilter(cat);
-    $(this).removeClass("off");
-    $('.category-filter').not(this).addClass("off");
-    filtered = true;
-  } else {
-    $('.overview-holder-carousel').slickUnfilter();
-    $('.category-filter').removeClass("off");
-    filtered = false;
-  }
-});
+// $('.category-filter').on('click', function(){
+//   if(filtered === false) {
+//     var cat = $(this).data("category");
+//     $('.overview-holder-carousel').slickFilter(cat);
+//     $(this).removeClass("off");
+//     $('.category-filter').not(this).addClass("off");
+//     filtered = true;
+//   } else {
+//     $('.overview-holder-carousel').slickUnfilter();
+//     $('.category-filter').removeClass("off");
+//     filtered = false;
+//   }
+// });
 
 
 
-$('.cd-holder-carousel').slick({
-	slidesToShow: 4,
-	slidesToScroll: 4,
-	// centerMode: true,
-	// centerPadding: '1px',
-	arrows: true,
-	speed: 500,
-	infinite: false,
-	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="24,29 12,20 24,11 		"/></g></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062 		"/></g></svg></button>',
-          responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-              }
-            },
-            {
-              breakpoint: 481,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2
-              }
-            }
-          ]
-});
+// $('.cd-holder-carousel').slick({
+// 	slidesToShow: 4,
+// 	slidesToScroll: 4,
+// 	// centerMode: true,
+// 	// centerPadding: '1px',
+// 	arrows: true,
+// 	speed: 500,
+// 	infinite: false,
+// 	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="24,29 12,20 24,11 		"/></g></svg></button>',
+// 	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062 		"/></g></svg></button>',
+//           responsive: [
+//             {
+//               breakpoint: 1024,
+//               settings: {
+//                 slidesToShow: 3,
+//                 slidesToScroll: 3,
+//               }
+//             },
+//             {
+//               breakpoint: 481,
+//               settings: {
+//                 slidesToShow: 2,
+//                 slidesToScroll: 2
+//               }
+//             }
+//           ]
+// });
 
 
 
