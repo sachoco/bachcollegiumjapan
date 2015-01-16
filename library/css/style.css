@@ -2329,7 +2329,8 @@ section#intro {
   section#intro .content {
     display: table;
     height: 100%;
-    width: 100%; }
+    width: 100%;
+    background-color: purple; }
     section#intro .content .profile {
       display: table-row;
       height: 60%;
@@ -2367,7 +2368,8 @@ section#intro {
     line-height: 1.4em;
     font-weight: bold;
     position: relative;
-    z-index: 9999; }
+    z-index: 9999;
+    background-color: green; }
   section#intro .logo {
     font-size: 80px;
     text-transform: uppercase;
