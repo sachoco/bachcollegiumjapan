@@ -36,15 +36,16 @@ window.onload = function() {
 
  
 
-    $(document).scrollsnap({
-        snaps: 'section.snap',
-        proximity: 0.99
-    });
+    // $(document).scrollsnap({
+    //     snaps: 'section.snap',
+    //     proximity: 0.99
+    // });
 
     $(window).on("scroll", function(e){
         // if($("body.home").length){
-            window.requestAnimationFrame(scrollHandler);
+            // window.requestAnimationFrame(scrollHandler);
         // }
+        scrollHandler
     });   
 
 function goMain(){
@@ -238,7 +239,9 @@ function resizeHandler(){
     $window.scroll();
 
     var introHeight = $("section#intro .content").height();
-    if(introHeight>winHeight){
+    console.log("win: " + winHeight + " vs intro: " + introHeight);
+
+    if(introHeight>=winHeight){
         $("section#intro .navigation nav").css("display","none");
     }else{
         $("section#intro .navigation nav").css("display","block");

@@ -2348,7 +2348,9 @@ section#intro {
     color: #FFF;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.01);
     z-index: 999;
-    position: relative; }
+    position: relative;
+    padding: 0;
+    height: auto; }
   section#intro .short-profile {
     max-width: 770px;
     width: 90%;
@@ -3679,6 +3681,9 @@ tweeners.
     margin-top: 1.5em;
     font-size: 28px; }
 
+  /*********************
+  BACKGROUND
+  *********************/
   section#intro .roles {
     font-size: 32px;
     line-height: 70px;
