@@ -462,12 +462,12 @@ section#intro {
 	color: $white;
 	position: relative;
 	.content {
-		display: table;
+		// display: table;
 		height: 100%;
 		width: 100%;
 		background-color: purple;
 		.profile {
-			display: table-row;
+			// display: table-row;
 			height: 60%;
 			background-color: pink;
 			>div {
@@ -476,16 +476,24 @@ section#intro {
 			}
 		}
 		.start {
-			display: table-row;
-			height: auto;
+			// display: table-row;
+			height: 15%;
+			background-color: yellow;
 			>div {
-				display: table-cell;
-				vertical-align: middle;
+				display: table;
+				width: 100%;
+				height: 100%;
+				>div {
+					display: table-cell;
+					vertical-align: middle;
+				}
 			}
+			
 		}
 		.navigation {
-			display: table-row;
+			// display: table-row;
 			height: 25%;
+			background-color: green;
 			>div {
 				display: table-cell;
 				vertical-align: middle;

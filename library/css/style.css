@@ -2327,26 +2327,28 @@ section#intro {
     top: 0;
     z-index: 0; }
   section#intro .content {
-    display: table;
     height: 100%;
     width: 100%;
     background-color: purple; }
     section#intro .content .profile {
-      display: table-row;
       height: 60%;
       background-color: pink; }
       section#intro .content .profile > div {
         display: table-cell;
         vertical-align: bottom; }
     section#intro .content .start {
-      display: table-row;
-      height: auto; }
+      height: 15%;
+      background-color: yellow; }
       section#intro .content .start > div {
-        display: table-cell;
-        vertical-align: middle; }
+        display: table;
+        width: 100%;
+        height: 100%; }
+        section#intro .content .start > div > div {
+          display: table-cell;
+          vertical-align: middle; }
     section#intro .content .navigation {
-      display: table-row;
-      height: 25%; }
+      height: 25%;
+      background-color: green; }
       section#intro .content .navigation > div {
         display: table-cell;
         vertical-align: middle; }
