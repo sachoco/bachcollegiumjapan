@@ -24,14 +24,7 @@ if (location.hash) {
     }
 }
 
-window.onload = function() {
 
-    resizeHandler();
-}
-
-    $(window).resize(function(){
-        resizeHandler();
-    });
 
 
  
@@ -45,6 +38,12 @@ if($.browser.mobile){
         window.requestAnimationFrame(scrollHandlerMobile);
     });   
 }else{
+    window.onload = function() {
+        resizeHandler();
+    }
+    $(window).resize(function(){
+        resizeHandler();
+    });
     $(window).on("scroll", function(e){
         window.requestAnimationFrame(scrollHandler); 
     });    
@@ -57,8 +56,22 @@ if($.browser.mobile){
         // verticalOffset: 0,
         // rest of function
     }); 
+
 }
 
+function resizeHandler(){
+    winHeight = $window.height();
+    $window.scroll();
+
+    var introHeight = $("section#intro .content").height();
+    console.log("win: " + winHeight + " vs intro: " + introHeight);
+
+    if(introHeight>winHeight){
+        $("section#intro .navigation nav").css("display","none");
+    }else{
+        $("section#intro .navigation nav").css("display","block");
+    }
+}
 function goMain(){
     var p = $("section#main").offset().top;
     $('html,body').animate({ scrollTop: p+500 }, 800, 'easeInOutCubic');
@@ -244,20 +257,6 @@ var $aboutWrap = $("section#about .wrap")
 
 var $sectionMain = $("section#main"), $sectionAbout = $("section#about"), $sectionSupport = $("section#support");
 
-
-function resizeHandler(){
-    winHeight = $window.height();
-    $window.scroll();
-
-    var introHeight = $("section#intro .content").height();
-    console.log("win: " + winHeight + " vs intro: " + introHeight);
-
-    if(introHeight>winHeight){
-        $("section#intro .navigation nav").css("display","none");
-    }else{
-        $("section#intro .navigation nav").css("display","block");
-    }
-}
 
 
 var aboutOffsetTop, supportOffsetTop, topvalue, diffAbout , diffSupport, aboutHeight, mainDy, mainTopPos, mainTopPosPrev, isAnimateActive=false;
