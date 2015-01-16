@@ -2332,7 +2332,8 @@ section#intro {
     width: 100%; }
     section#intro .content .profile {
       display: table-row;
-      height: 60%; }
+      height: 60%;
+      background-color: pink; }
       section#intro .content .profile > div {
         display: table-cell;
         vertical-align: bottom; }
@@ -2375,7 +2376,8 @@ section#intro {
     position: relative;
     line-height: 0;
     margin: 3vh 0;
-    z-index: 999; }
+    z-index: 999;
+    background-color: red; }
     section#intro .logo img {
       width: 100px;
       height: auto;

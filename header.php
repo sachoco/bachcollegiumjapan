@@ -53,7 +53,7 @@
             <div class="overlay"></div>
             <div class="content">
                 <div class="profile">
-                    <div style="display:table-cell;vertical-align:bottom">
+                    <div>
                         <div class="logo">
                             <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" />
                         </div>

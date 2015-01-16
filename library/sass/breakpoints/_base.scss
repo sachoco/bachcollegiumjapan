@@ -468,6 +468,7 @@ section#intro {
 		.profile {
 			display: table-row;
 			height: 60%;
+			background-color: pink;
 			>div {
 				display: table-cell;
 				vertical-align: bottom;
@@ -523,8 +524,9 @@ section#intro {
 		position: relative;
 		// margin: 20% auto 0 auto;
 		line-height: 0;
-		// margin: 3vh 0;
+		margin: 3vh 0;
 		z-index: 999;
+		background-color: red;
 		img {
 			width: 100px;
 			height: auto;
