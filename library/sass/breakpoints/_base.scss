@@ -445,8 +445,8 @@ BACKGROUND
 INTRO
 *********************/
 section#intro {
-	background: url(../images/mobile/home.jpg) center center no-repeat;
-	background-size: cover;
+	// background: url(../images/mobile/home.jpg) center center no-repeat;
+	// background-size: cover;
 	// padding: 0 6% 2% 6%;
 	.overlay {
 		position: absolute;
@@ -1144,8 +1144,8 @@ section#about {
 	position: relative;
 	// visibility: hidden;
 	// display: none;
-	background: url(../images/mobile/profile-bcj2.jpg) top center no-repeat;
-	background-size: cover;
+	// background: url(../images/mobile/profile-bcj2.jpg) top center no-repeat;
+	// background-size: cover;
 
 	.row-header {
 		font-size: 16px;
@@ -1270,7 +1270,7 @@ section#about {
 		top: 0;
 		left: 0;
 		z-index: 0;
-		// opacity: 0;
+		opacity: 0;
 		@include transition(opacity 1s ease-in-out);
 		&.focus {
 			opacity: 1;

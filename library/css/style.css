@@ -2313,8 +2313,6 @@ BACKGROUND
 INTRO
 *********************/
 section#intro {
-  background: url(../images/mobile/home.jpg) center center no-repeat;
-  background-size: cover;
   height: 100%;
   text-align: center;
   color: #fff;
@@ -2783,9 +2781,7 @@ section#about {
   text-align: center;
   color: #fff;
   min-height: 1000px;
-  position: relative;
-  background: url(../images/mobile/profile-bcj2.jpg) top center no-repeat;
-  background-size: cover; }
+  position: relative; }
   section#about .row-header {
     font-size: 16px;
     letter-spacing: 2px;
@@ -2878,6 +2874,7 @@ section#about {
     top: 0;
     left: 0;
     z-index: 0;
+    opacity: 0;
     -webkit-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out; }
     section#about .overlay.focus {
