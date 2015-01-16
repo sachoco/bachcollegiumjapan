@@ -1121,7 +1121,9 @@ section#about {
 	position: relative;
 	// visibility: hidden;
 	// display: none;
-
+	// background: url(../images/mobile/profile-bcj2.jpg) top center no-repeat;
+	// background-size: cover;
+	
 	.row-header {
 		font-size: 16px;
 		letter-spacing: 2px;
@@ -1245,7 +1247,7 @@ section#about {
 		top: 0;
 		left: 0;
 		z-index: 0;
-		opacity: 0;
+		// opacity: 0;
 		@include transition(opacity 1s ease-in-out);
 		&.focus {
 			opacity: 1;
@@ -1383,6 +1385,8 @@ section#support {
 section#contact {
 	// visibility: hidden;
 	// display: none;
+	background: url(../images/bcj_bg_darker.jpg) top center no-repeat;
+	background-size: cover;
 }
 section#intro {
 	// visibility: hidden;

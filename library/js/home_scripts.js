@@ -40,13 +40,15 @@ window.onload = function() {
     //     snaps: 'section.snap',
     //     proximity: 0.99
     // });
-
+if($.browser.mobile){
     $(window).on("scroll", function(e){
-        // if($("body.home").length){
-            // window.requestAnimationFrame(scrollHandler);
-        // }
-        scrollHandler
+        window.requestAnimationFrame(scrollHandlerMobile);
     });   
+}else{
+    $(window).on("scroll", function(e){
+        window.requestAnimationFrame(scrollHandler); 
+    });     
+}
 
 function goMain(){
     var p = $("section#main").offset().top;
@@ -241,7 +243,7 @@ function resizeHandler(){
     var introHeight = $("section#intro .content").height();
     console.log("win: " + winHeight + " vs intro: " + introHeight);
 
-    if(introHeight>=winHeight){
+    if(introHeight>winHeight){
         $("section#intro .navigation nav").css("display","none");
     }else{
         $("section#intro .navigation nav").css("display","block");
@@ -433,7 +435,30 @@ function scrollHandler (){
 }
 
 
+function scrollHandlerMobile (){
+        var 
+        mainOffsetTop = $sectionMain.offset().top;
 
+        topvalue = $window.scrollTop();
+        diffMain = mainOffsetTop - topvalue;
+
+        
+        $("#about-background .overlay").css("opacity",1);
+
+        if(diffMain>=0){
+            $("#intro-background").removeClass("disable");
+            $("#about-background").addClass("disable");
+
+        }else{
+            $("#intro-background").addClass("disable");
+            $("#about-background").removeClass("disable");
+
+        }
+
+
+
+
+}
 
 
 $.stellar({
