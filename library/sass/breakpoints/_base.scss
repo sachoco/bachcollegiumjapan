@@ -469,15 +469,12 @@ section#intro {
 		.profile {
 			// display: table-row;
 			height: 60%;
+			position: relative;
 			background-color: pink;
 			>div {
-				display: table;
+				bottom: 0px;
+				position: absolute;
 				width: 100%;
-				height: 100%;
-				>div {
-					display: table-cell;
-					vertical-align: bottom;
-				}
 			}
 		}
 		.start {

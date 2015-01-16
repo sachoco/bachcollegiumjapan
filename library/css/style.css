@@ -2332,14 +2332,12 @@ section#intro {
     background-color: purple; }
     section#intro .content .profile {
       height: 60%;
+      position: relative;
       background-color: pink; }
       section#intro .content .profile > div {
-        display: table;
-        width: 100%;
-        height: 100%; }
-        section#intro .content .profile > div > div {
-          display: table-cell;
-          vertical-align: bottom; }
+        bottom: 0px;
+        position: absolute;
+        width: 100%; }
     section#intro .content .start {
       height: 15%;
       background-color: yellow; }
