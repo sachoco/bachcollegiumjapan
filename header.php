@@ -53,7 +53,7 @@
             <div class="overlay"></div>
             <div class="content">
                 <div class="profile">
-                    <div>
+<!--                     <div>
                         <div class="logo">
                             <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" />
                         </div>
@@ -62,7 +62,7 @@
                         <div class="short-profile">
                             J.S.バッハの音楽は人類共通の財産です<br>私たちバッハ・コレギウム・ジャパンは創設以来、日本から世界へバッハ音楽を発信し続けてきました。<br>この素晴らしい音楽を一人でも多くの人と共有したい<br>それが私たちの願いです。
                         </div>        
-                    </div>
+                    </div> -->
                 </div>
 
             </div>

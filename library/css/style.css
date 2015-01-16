@@ -2332,7 +2332,7 @@ section#intro {
     width: 100%;
     background-color: purple; }
     section#intro .content .profile {
-      display: table;
+      display: table-row;
       height: 60%;
       background-color: pink; }
       section#intro .content .profile > div {
