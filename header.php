@@ -43,10 +43,10 @@
     <body <?php body_class(); ?>>
 <?php if( is_home() || is_front_page() ): ?>
         <!-- Background START -->
-        <div id="background">
+<!--         <div id="background">
             <div id="intro-background"><div class="overlay"></div></div>
             <div id="about-background" class="disable"><div class="overlay"></div></div>
-        </div>
+        </div> -->
         <!-- Background END -->
         <!-- Intro START -->
         <section id="intro" class="snap">
