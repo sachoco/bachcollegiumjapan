@@ -2384,7 +2384,6 @@ section#intro {
     font-weight: lighter;
     position: relative;
     line-height: 0;
-    margin: 3vh 0;
     z-index: 999;
     background-color: red; }
     section#intro .logo img {
