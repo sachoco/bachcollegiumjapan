@@ -448,7 +448,61 @@ function filter_where( $where = '' ) {
 
         </section>
         <!-- About END -->
+        <!-- Support START -->
+        <!-- <div class="row"><div class="hr"></div></div> -->
+        <!-- <section id="support"  data-stellar-background-ratio="0.5"> -->
+        <section id="support"  >
+            <!-- <div class="background" data-stellar-ratio="0.5"><div class="overlay"></div></div> -->
+            <div class="background" ><div class="overlay"></div></div>
+            <div class="wrap cf" style="padding-bottom:100px">
+            <div class="wrap-inner" style="padding-bottom:50px">
+                <h2 class="h-font row-header ">Support BCJ</h2>
+                <div id="support_bcj_1">
+                    <h4 style="text-align: center;">フレンズ＆ソサエティのご案内</h4>
+                    <div style=" text-align: left;">
+                        バッハ・コレギウム・ジャパン（BCJ）は、日本から世界へと発信する有数のバロック・オーケストラおよび合唱団として、広く知られています。1990年に活動を開始して以来、15カ国、71都市で約1,000ものコンサートを行い、また80タイトル以上のCD録音（BISレーベル)を通して、世界の100万人以上の聴衆と共に、J.S.バッハの音楽のすばらしさを共有してきました。今後も、ますます多くの人々に、次世代を担う若い人々に、この宝を、伝えていきたいと願っています。J.S.バッハの音楽は、世界共通の言葉です。ヨーロッパ、アメリカ、さらにアジアの国々、至るところで、バッハを中心とする音楽の演奏・録音・教育活動を続けていくため、どうぞ、皆様のご支援をお願いいたします。<br><br><br>
+                    </div>
+                    <a href="<?php echo get_permalink(get_page_by_path('friends_society')->ID); ?>"><span class="bcj-btn invert">BCJフレンズ＆ソサエティ詳細はこちら</span></a>
+                </div>
+            </div>
+            <div class="h_iframe">
+                <img class="ratio" src="http://placehold.it/16x9"/>
+            <iframe width="853" height="480" src="//www.youtube.com/embed/J5bGxCWf0yM?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <a href="#" class="go-top invert">
+                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
+                    <circle fill="#000000" cx="20" cy="20" r="20"/>
+                    <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
+                </svg>
+                <span>TO THE TOP</span>
+            </a>
+            </div>
+            <!-- <div class="overlay"></div> -->
+        </section>
+        <!-- Support END -->
+        <section id="contact"  >
+            <div class="wrap cf" >
+            <div class="wrap-inner">
+                <h2 class="h-font row-header ">Contact Us</h2>
+                <h4 style="text-align: center;">コンタクト</h4>
+                <div style=" text-align: left;max-width:400px;margin:auto;padding:1em">
+                    <?php echo do_shortcode('[contact-form-7 id="2888" title="BCJ Contact"]'); ?>
+                </div>
+                <div style="text-align:center;margin-bottom: 100px">
+                    <a href="#" class="go-top invert">
+                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
+                            <circle fill="#000000" cx="20" cy="20" r="20"/>
+                            <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
+                        </svg>
+                        <span>TO THE TOP</span>
+                    </a>
+                </div>
 
+            </div>
+            </div>
+            <!-- <div class="overlay"></div> -->
+        </section>
+        <!-- Support END -->
         
 
 

@@ -35,7 +35,7 @@ if (location.hash) {
     // });
 if($.browser.mobile){
     $(window).on("scroll", function(e){
-        window.requestAnimationFrame(scrollHandlerMobile);
+        // window.requestAnimationFrame(scrollHandlerMobile);
     });   
 }else{
     window.onload = function() {
