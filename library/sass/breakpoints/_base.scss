@@ -479,8 +479,10 @@ section#intro {
 			// display: table-row;
 			height: 15%;
 			background-color: yellow;
-			> a {
-				top: 40%;
+			> #scrolldownHome {
+				// position: absolute;
+				top: 50%;
+				margin-top: -20px;
 			}
 			>div {
 				display: table;

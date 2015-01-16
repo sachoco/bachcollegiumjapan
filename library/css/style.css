@@ -2339,8 +2339,9 @@ section#intro {
     section#intro .content .start {
       height: 15%;
       background-color: yellow; }
-      section#intro .content .start > a {
-        top: 40%; }
+      section#intro .content .start > #scrolldownHome {
+        top: 50%;
+        margin-top: -20px; }
       section#intro .content .start > div {
         display: table;
         width: 100%;
