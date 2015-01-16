@@ -355,7 +355,100 @@ function filter_where( $where = '' ) {
 
         </section>
         <!-- Main END -->
- 
+        <!-- About START -->
+        <section id="about" >
+<!--             <div class="overlay"></div>
+ -->            <div class="wrap cf" >
+            <div class="wrap-inner">
+                <h2 class="h-font row-header" >About BCJ</h2>
+                <div id="about_bcj_1"><h2>バッハ・コレギウム・ジャパンと鈴木雅明</h2></div>
+                <div id="about_bcj_2" >
+                        <div class="h_iframe">
+                            <img class="ratio" src="http://placehold.it/16x9"/>
+                        <iframe src="//player.vimeo.com/video/61724704?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        </div>
+                </div>
+                <div id="about_bcj_3" >
+                    <p class="first">
+                    バッハ・コレギウム・ジャパン（BCJ）は世界的なバッハ演奏家、オルガン・チェンバロ奏者、指揮者、また音楽研究者としてもその才能を高く評価されている鈴木雅明がオリジナル楽器のスペシャリストを擁し、1990年に結成したオーケストラと合唱団です。
+                    </p>
+
+                    <p class="second">
+                    J.S.バッハの宗教作品を中心としたバロック音楽の理想的上演を目指し国内外で活発な演奏活動を展開してきました。1995年から時系列順で取り組んできた＜バッハ：教会カンタータ全曲シリーズ＞が2013年2月に全曲演奏・録音を完遂し、世界でもまれにみるこの偉業が国内外で大きな話題を呼びました。
+                    </p>
+
+                    <p class="third">
+                    2014年にはバッハ・コレギウム・ジャパンと鈴木雅明に対して第45回サントリー音楽賞受賞、初のニュージーランド、メキシコ公演を果たすなど、その活動は国境の枠を越え、ますます注目されています。
+                    </p>
+                    <div class="clear"></div>
+                </div>
+
+                <div id="about_bcj_4"  class="wrap-padding" >
+                    <div class="award_activitity">
+                        <h2 class="" >主な活動</h2>
+                        <ul>
+                            <li>東京・神戸・名古屋における定期演奏会</li>
+                            <li>海外公演</li>
+                        </ul>
+                    </div>
+                    <div  class="award_activitity">
+                        <h2 class="" >主な受賞</h2>
+                        <ul>
+                            <li>第45回サントリー音楽賞<br>（鈴木雅明とバッハ・コレギウム・ジャパン）</li>
+                            <li>エコー・クラシック賞2014<br>（バッハ・コレギウム・ジャパン）</li>
+                            <li>平成23年紫綬褒章<br>（鈴木雅明）</li>
+                            <li>平成20年度芸術推薦文部科学大臣賞<br>（鈴木雅明）</li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('bcj')->ID); ?>">BCJプロフィール詳細はこちら<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_bcj_profile.jpg" /></a></div>
+                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('masaaki_suzuki')->ID); ?>">鈴木雅明プロフィール詳細はこちら<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_masaaki_profile.jpg" /></a></div>
+                    <div class="clear"></div>
+                </div>
+
+                <div id="about_bcj_5" class="wrap-padding">
+                    <h2 class="h-font row-header" >BCJ Recordings</h2>
+                    <h2 style="margin-bottom: 50px">バッハ・コレギウム・ジャパン ディスコグラフィ</h2>
+
+                    <div class="cd-holder-carousel">
+                    <?php 
+                        $args = array(
+                          'post_type' => 'discography',
+                          'post_status' => 'publish',
+                          'orderby'   => 'rand',
+                          'force_no_custom_order' => TRUE,
+                          // 'order'     => 'ASC',
+                          'posts_per_page' => -1
+                        ); 
+                        $the_query = new WP_Query( $args );
+                        if ( $the_query->have_posts() ) :
+                            while ( $the_query->have_posts() ) : $the_query->the_post();
+                                $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "thumbnail" );
+                                printf( '<div><img data-lazy="%s"/></div>', esc_url( $thumbnail_src[0] ) );
+                            endwhile;
+                        endif;
+                        wp_reset_postdata();
+
+                    ?>
+                        
+                    </div>
+
+
+                    <!-- <span class="bcj-btn ">BCJディスコグラフィ詳細はこちら</span> -->
+                    <a href="#" class="go-top">
+                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
+                            <circle fill="#FFFFFF" cx="20" cy="20" r="20"/>
+                            <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
+                        </svg>
+                        <span>TO THE TOP</span>
+                    </a>
+                </div>
+            </div>
+            </div>
+
+        </section>
+        <!-- About END -->
+
         
 
 
