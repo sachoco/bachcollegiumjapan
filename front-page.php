@@ -25,6 +25,20 @@
                         </div>
 
 
+                    <!-- Slide item 5 -->
+                        <div class="slide-item">
+                            <a href="<?php echo get_permalink(get_page_by_path('friends_society')->ID); ?>">
+                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/support.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
+                            <div class="slide-content overlay">
+                                <div class="inner-content">
+                                    <div>更にワンランク上のご支援を</div>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h1 >SUPPORT BCJ<br>BCJソサエティ・フレンズ<br>会員募集中</h1>
+                                </div>
+                            </div>
+                            </a>
+                            <div class="slide-overlay"></div>
+                        </div>
                     </div>
                 </div>
 
