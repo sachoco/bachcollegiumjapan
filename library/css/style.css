@@ -2110,7 +2110,6 @@ FEATURE SLIDER
       position: absolute;
       z-index: 900; }
     #feature-slider .slide-item .slide-content {
-      display: table;
       vertical-align: middle;
       position: absolute;
       z-index: 901;
@@ -2150,7 +2149,6 @@ FEATURE SLIDER
           background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%);
           background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 100%); }
       #feature-slider .slide-item .slide-content .inner-content {
-        display: table-cell;
         vertical-align: middle; }
       #feature-slider .slide-item .slide-content h1 div, #feature-slider .slide-item .slide-content h2 div {
         display: inline-block; }
