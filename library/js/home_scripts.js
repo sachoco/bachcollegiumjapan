@@ -479,7 +479,24 @@ function scrollHandlerMobile (){
 
 }
 
+    var iframe = $('#vimeo_player')[0];
+    var player = $f(iframe);
+    player.addEvent('play', function(){
+        $.fullwidthAudioPlayer.pause();
+    });
 
+    var playerId = "ytplayer";
+    function onYouTubePlayerReady(playerId) {
+        console.log('loaded');
+        var ytPlayer = document.getElementById(playerId);
+        ytplayer.addEventListener("onStateChange", "onytplayerStateChange");
+    }
+
+    function onytplayerStateChange(newState) {
+        console.log("Player's new state: " + newState);
+        if(newState === 1) {
+         }
+    }
 
 
 }); /* end of as page load scripts */
