@@ -256,7 +256,9 @@ FEATURE SLIDER
 			}
 			.inner-content{
 				// display: table-cell;
-				vertical-align: middle;
+				top: 50%;
+				transform: translateY(-50%);
+				position: absolute;
 			}
 			h1,h2{
 				div {
