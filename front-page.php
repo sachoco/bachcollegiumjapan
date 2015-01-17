@@ -24,6 +24,62 @@
                             <div class="slide-overlay"></div>
                         </div>
 
+                     <!-- Slide item 2 -->
+<!--                         <div class="slide-item">
+                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/next-concert.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
+                            <div class="slide-content overlay">
+                                <div class="inner-content">
+                                    <div>次回BCJ定期公演</div>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h1 >H.シュッツの世界</h1>
+                                    <div class="subtitle">主に感謝せよ、その慈しみはとこしえに 〜ダビデ詩編（抄）〜</div>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h1 >11.22（神戸）<div class="small">（土）15時</div></h1>
+                                    <div><a href="<?php echo get_home_url().'/schedule/h-シュッツの世界' ?>">神戸公演詳細はこちら</a></div>
+                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h1>11.24（東京）<div class="small">（月・休）15時</div></h1>
+                                    <div><a href="<?php echo get_home_url().'/schedule/h-シュッツの世界-2' ?>">東京公演詳細はこちら</a></div>
+                                </div>
+                            </div>
+                            <div class="slide-overlay"></div>
+                        </div> -->
+
+                    <!-- Slide item 3 -->
+                        <div class="slide-item">
+                            <a href="<?php echo get_home_url().'/suntry' ?>">
+                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/suntory.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
+                            <div class="slide-content">
+                                <div class="inner-content">
+                                    <div>ニュース</div>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h2>鈴木雅明とバッハ・コレギウム・ジャパン</h2>
+                                    <h1>第45回サントリー音楽賞受賞</h1>
+                                </div>
+                            </div>
+                            </a>
+                            <div class="slide-overlay"></div>
+                        </div>
+
+                    <!-- Slide item 4 -->
+                        <div class="slide-item">
+                            <a href="<?php echo get_home_url().'/bcj_echo' ?>">
+                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/echo.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
+                            <div class="slide-content overlay">
+                                <div class="inner-content"><div>エコー・クラシック賞</div>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h1 >BCJ教会カンタータ<br>全曲録音完遂</h1>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+
+                                    <div>BISレコーズがエディトリアル・アチーブメント・オブ・ザ・イヤー部門を受賞</div>
+                                    <!--                                 <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h1 >6.22</h1>
+                                    <div>（水）14時</div>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <div>神戸松蔭チャペル</div> --></div>
+                            </div>
+                            </a>
+                            <div class="slide-overlay"></div>
+                        </div>
 
                     <!-- Slide item 5 -->
                         <div class="slide-item">
