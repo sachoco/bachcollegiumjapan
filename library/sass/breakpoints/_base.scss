@@ -257,7 +257,7 @@ FEATURE SLIDER
 			.inner-content{
 				// display: table-cell;
 				top: 50%;
-				transform: translateY(-50%);
+				@include transform(translateY(-50%));
 				position: absolute;
 			}
 			h1,h2{
