@@ -71,6 +71,11 @@ a.go-top {
 }
 
 section#intro {
+  .content {
+    .profile {
+      min-height: 480px;
+    }
+  }
   .logo{
 
     img {
@@ -205,7 +210,7 @@ UPCOMING CONCERTS
   footer {
 
     .specials {
-      margin-top: 50px;
+      // margin-top: 50px;
       .category-filter {
         margin: 10px;
       }
@@ -232,4 +237,16 @@ EVENT CALENDAR
 *********************/
 .eventCalendar-wrap .arrow {
   width: 37%;
+}
+
+
+
+
+
+body.en {
+  section#intro {
+    .short-profile {
+      font-size: 19px;
+    }
+  }
 }

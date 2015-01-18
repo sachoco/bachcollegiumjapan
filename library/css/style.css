@@ -2325,7 +2325,8 @@ section#intro {
     width: 100%; }
     section#intro .content .profile {
       height: 60%;
-      position: relative; }
+      position: relative;
+      min-height: 220px; }
       section#intro .content .profile > div {
         bottom: 0px;
         position: absolute;
@@ -2597,6 +2598,12 @@ UPCOMING CONCERTS
   .upcoming div.overview .buy-ticket-container {
     line-height: 1.2em;
     font-size: 0.9em; }
+    .upcoming div.overview .buy-ticket-container .ticket-info {
+      text-align: center; }
+      .upcoming div.overview .buy-ticket-container .ticket-info .small {
+        font-size: 0.7em; }
+    .upcoming div.overview .buy-ticket-container .ticket-btn {
+      position: relative; }
   .upcoming div.overview.tokyo header {
     border-color: #840F15; }
   .upcoming div.overview.tokyo .description .buy-ticket {
@@ -2635,37 +2642,35 @@ UPCOMING CONCERTS
   text-align: center; }
   .upcoming footer .category span {
     font-size: 6px; }
-  .upcoming footer .specials {
-    margin-top: 25px; }
-    .upcoming footer .specials .category-filter {
-      border-top: 3px solid #010101;
-      margin: 0 10px;
-      width: 120px;
-      cursor: pointer;
-      display: inline-block;
-      position: relative;
-      -webkit-transition: opacity, 0.5s;
-      transition: opacity, 0.5s; }
-      .upcoming footer .specials .category-filter.off {
-        opacity: 0.2; }
-      .upcoming footer .specials .category-filter.tokyo {
-        border-color: #840F15; }
-      .upcoming footer .specials .category-filter.kobe {
-        border-color: #5A4687; }
-      .upcoming footer .specials .category-filter.christmas {
-        border-color: #785A00; }
-      .upcoming footer .specials .category-filter img {
-        width: 100%;
-        height: auto; }
-      .upcoming footer .specials .category-filter .title {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        top: 0; }
-        .upcoming footer .specials .category-filter .title h3 {
-          color: #fff;
-          font-size: 1.2em; }
+  .upcoming footer .specials .category-filter {
+    border-top: 3px solid #010101;
+    margin: 0 10px;
+    width: 120px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: opacity, 0.5s;
+    transition: opacity, 0.5s; }
+    .upcoming footer .specials .category-filter.off {
+      opacity: 0.2; }
+    .upcoming footer .specials .category-filter.tokyo {
+      border-color: #840F15; }
+    .upcoming footer .specials .category-filter.kobe {
+      border-color: #5A4687; }
+    .upcoming footer .specials .category-filter.christmas {
+      border-color: #785A00; }
+    .upcoming footer .specials .category-filter img {
+      width: 100%;
+      height: auto; }
+    .upcoming footer .specials .category-filter .title {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      top: 0; }
+      .upcoming footer .specials .category-filter .title h3 {
+        color: #fff;
+        font-size: 1.2em; }
 
 .no-touch .upcoming div.overview section .thumb {
   display: block; }
@@ -3333,7 +3338,8 @@ a.go-top {
   color: #fff;
   display: inline-block;
   margin-top: 120px;
-  margin-bottom: 0px; }
+  margin-bottom: 0px;
+  font-size: 14px; }
   a.go-top svg {
     -moz-transform: scale(0.5, 0.5);
     -ms-transform: scale(0.5, 0.5);
@@ -3628,6 +3634,13 @@ view.
 .single-schedule h1 {
   margin-bottom: 0; }
 
+body.en section#intro .short-profile {
+  font-weight: normal;
+  line-height: 1.5em; }
+body.en section#support, body.en section#contact {
+  font-size: 18px;
+  line-height: 1.5em; }
+
 /*********************
 LARGER MOBILE DEVICES
 This is for devices like the Galaxy Note or something that's
@@ -3667,6 +3680,8 @@ tweeners.
   /*********************
   BACKGROUND
   *********************/
+  section#intro .content .profile {
+    min-height: 380px; }
   section#intro .roles {
     font-size: 32px;
     line-height: 70px;
@@ -3821,7 +3836,11 @@ tweeners.
   check your menus here. do they look good?
   do they need tweaking?
   */
-  /* end .footer-links */ }
+  /* end .footer-links */
+  body.en section#intro .roles {
+    font-size: 40px; }
+  body.en section#intro .short-profile {
+    font-size: 16px; } }
 /*********************
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -4034,6 +4053,8 @@ you can add resource intensive styles.
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1); }
 
+  section#intro .content .profile {
+    min-height: 480px; }
   section#intro .logo img {
     width: 200px; }
   section#intro .short-profile {
@@ -4079,10 +4100,8 @@ you can add resource intensive styles.
   .upcoming div.overview {
     width: 24%;
     display: inline-block; }
-  .upcoming footer .specials {
-    margin-top: 50px; }
-    .upcoming footer .specials .category-filter {
-      margin: 10px; }
+  .upcoming footer .specials .category-filter {
+    margin: 10px; }
 
   .news-holder .banner img {
     width: 276px; }
@@ -4091,7 +4110,10 @@ you can add resource intensive styles.
   EVENT CALENDAR
   *********************/
   .eventCalendar-wrap .arrow {
-    width: 37%; } }
+    width: 37%; }
+
+  body.en section#intro .short-profile {
+    font-size: 19px; } }
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.

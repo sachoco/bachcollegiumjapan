@@ -63,11 +63,10 @@ if($.browser.mobile){
 function resizeHandler(){
     winHeight = $window.height();
     $window.scroll();
+    var introHeight = $("section#intro .navigation").offset().top+$("section#intro .navigation").height();
+    console.log("win: " + winHeight + " vs intro: " + introHeight);
 
-    var introHeight = $("section#intro .content").height();
-    // console.log("win: " + winHeight + " vs intro: " + introHeight);
-
-    if(introHeight>winHeight){
+    if(introHeight>(winHeight+1)){
         $("section#intro .navigation nav").css("display","none");
     }else{
         $("section#intro .navigation nav").css("display","block");

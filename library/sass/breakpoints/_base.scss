@@ -461,6 +461,7 @@ section#intro {
 		.profile {
 			height: 60%;
 			position: relative;
+			min-height: 220px;
 			>div {
 				bottom: 0px;
 				position: absolute;
@@ -821,6 +822,18 @@ UPCOMING CONCERTS
 		.buy-ticket-container {
 			line-height: 1.2em;
 			font-size: 0.9em;
+			.ticket-info {
+				text-align: center;
+				.small {
+					font-size: 0.7em;
+				}
+				.number {
+					// font-size: 1.4em;
+				}
+			}
+		 	.ticket-btn {
+		 		position: relative;
+		 	}
 		}
 
 
@@ -896,7 +909,7 @@ UPCOMING CONCERTS
 			}
 		}
 		.specials {
-		    margin-top: 25px;
+		    // margin-top: 25px;
 
 			.category-filter {
 				border-top: 3px solid $black;
@@ -957,6 +970,7 @@ UPCOMING CONCERTS
 		.description,  .buy-ticket-container {
 			opacity: 0;
 		 	position: absolute;
+
 		}
 
 		&:hover {
@@ -2010,6 +2024,7 @@ POSTS & CONTENT STYLES
 		display: inline-block;
 		margin-top: 120px;
 		margin-bottom: 0px;
+		font-size: 14px;
 		svg {
 			@include scale(0.5);
 			display: block;
@@ -2504,3 +2519,16 @@ FOOTER STYLES
 		margin-bottom: 0;
 	}	
 }
+
+body.en {
+	section#intro {
+		.short-profile {
+			font-weight: normal;
+			line-height: 1.5em;
+		}
+	} 
+	section#support, section#contact {
+		font-size: 18px;
+		line-height: 1.5em;
+	}
+} 

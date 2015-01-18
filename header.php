@@ -65,11 +65,21 @@
                         <div class="logo">
                             <img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" />
                         </div>
+                        <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+                        <div class="roles">Bach’s music transmitted to the future</div>
+
+                        <div class="short-profile">
+                            The music of J.S. Bach is part of the joint patrimony of mankind.<br>
+Ever since the formation of Bach Collegium Japan, we have continued to convey Bach’s music from Japan out to the wider world.<br>
+Our desire is to enable as many people as possible to share with us the joy of this wonderful music.
+                        </div> 
+                        <?php else: ?>
                         <div class="roles">バッハの音楽を未来へ</div>
 
                         <div class="short-profile">
                             J.S.バッハの音楽は人類共通の財産です<br>私たちバッハ・コレギウム・ジャパンは創設以来、日本から世界へバッハ音楽を発信し続けてきました。<br>この素晴らしい音楽を一人でも多くの人と共有したい<br>それが私たちの願いです。
-                        </div>        
+                        </div>  
+                        <?php endif; ?>      
                     </div>
                 </div>
                 <div class="start">
@@ -96,7 +106,7 @@
                             'fallback_cb' => ''                             // fallback function (if there is one)
                         )); ?>
                         </nav>  
-                        <div style="margin-top: 30px;font-size:1.2em">English content will be published soon. Please visit <a style="color:white;" href="http://bcj2014.bachcollegiumjapan.org/en">our old site</a> for the time being.</div>      
+                        <div style="padding-top: 30px;font-size:1.2em">English content will be published soon. Please visit <a style="color:white;" href="http://bcj2014.bachcollegiumjapan.org/en">our old site</a> for the time being.</div>      
                 </div>
             </div>
         </section>
@@ -140,5 +150,5 @@
             'depth' => 0,                                   // limit the depth of the nav
             'fallback_cb' => ''                             // fallback function (if there is one)
             )); ?>
-            <?php //do_action('icl_language_selector'); ?>
+            <?php do_action('icl_language_selector'); ?>
             </nav>

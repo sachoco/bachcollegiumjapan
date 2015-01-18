@@ -189,6 +189,8 @@ body {
 /*********************
 BACKGROUND
 *********************/
+section#intro .content .profile {
+  min-height: 380px; }
 section#intro .roles {
   font-size: 32px;
   line-height: 70px;
@@ -344,6 +346,11 @@ check your menus here. do they look good?
 do they need tweaking?
 */
 /* end .footer-links */
+body.en section#intro .roles {
+  font-size: 40px; }
+body.en section#intro .short-profile {
+  font-size: 16px; }
+
 /******************************************************************
 Site Name:
 Author:
@@ -506,6 +513,8 @@ a.go-top svg {
   -webkit-transform: scale(1, 1);
   transform: scale(1, 1); }
 
+section#intro .content .profile {
+  min-height: 480px; }
 section#intro .logo img {
   width: 200px; }
 section#intro .short-profile {
@@ -551,10 +560,8 @@ UPCOMING CONCERTS
 .upcoming div.overview {
   width: 24%;
   display: inline-block; }
-.upcoming footer .specials {
-  margin-top: 50px; }
-  .upcoming footer .specials .category-filter {
-    margin: 10px; }
+.upcoming footer .specials .category-filter {
+  margin: 10px; }
 
 .news-holder .banner img {
   width: 276px; }
@@ -564,6 +571,9 @@ EVENT CALENDAR
 *********************/
 .eventCalendar-wrap .arrow {
   width: 37%; }
+
+body.en section#intro .short-profile {
+  font-size: 19px; }
 
 /*
 you can call the larger styles if you want, but there's really no need

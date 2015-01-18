@@ -372,4 +372,10 @@ add_action( 'admin_init', 'add_my_editor_style' );
 function add_my_editor_style() {
   add_editor_style();
 }
+
+add_filter('body_class', 'append_language_class');
+function append_language_class($classes){
+  $classes[] = ICL_LANGUAGE_CODE;  //or however you want to name your class based on the language code
+  return $classes;
+}
 /* DON'T DELETE THIS CLOSING TAG */ ?>

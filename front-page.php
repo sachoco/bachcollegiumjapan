@@ -101,7 +101,7 @@
              </div>
 
             <div class="upcoming m-all t-all d-all" id="schedule">
-                <h2 class="h-font row-header upcoming"><?php _e( '公演情報', 'bonestheme' ); ?></h2>
+                <h2 class="h-font row-header upcoming"><?php _e( 'Concerts', 'bonestheme' ); ?></h2>
                 <div class="" style="max-width: 1000px; margin:auto;">
                     <div id="eventCalendarCalendarLine"></div>
 
@@ -201,33 +201,42 @@ function filter_where( $where = '' ) {
                             </div>
                             </a>
                             <div class="buy-ticket-container">
-                                <span class="buy-ticket "><span class="buy-text">チケット購入</span></span>
-                                <span class="playguide">
-                                <?php
-                                    $pia = get_field('ticket_pia');
-                                    $eplus = get_field('e+');
-                                    if($pia||$eplus) :
-                                ?>
-                                <?php
-                                    if($pia){
-                                       echo '<span><a target="_blank" href="'. $pia .'"">チケットぴあ</a></span>'; 
-                                   }else{
-                                       echo '<span class="disabled">チケットぴあ</span>'; 
-                                   }
-                                    if($eplus){
-                                       echo '<span><a target="_blank" href="'. $eplus .'"">イープラス</a></span>'; 
-                                   }else{
-                                       echo '<span class="disabled">イープラス</span>'; 
-                                   }                                       
-                                ?>
-                                <?php
-                                    else:
 
-                                    echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
+                                <div class="ticket-info">
+                                    <?php
+                                        $contact = get_field('contact_info');
+                                        if($contact){ echo $contact; }else{ echo '<span class="small">バッハ・コレギウム・ジャパン チケットセンター </span><br><span class="number">℡ 03-5301-0950</span>'; }
+                                    ?>
+                                </div>
+                                <div class="ticket-btn">
+                                    <span class="buy-ticket "><span class="buy-text">チケット購入</span></span>
+                                    <span class="playguide">
+                                    <?php
+                                        $pia = get_field('ticket_pia');
+                                        $eplus = get_field('e+');
+                                        // if($pia||$eplus) :
+                                    ?>
+                                    <?php
+                                        if($pia){
+                                           echo '<span><a target="_blank" href="'. $pia .'"">チケットぴあ</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">チケットぴあ</span>'; 
+                                       }
+                                        if($eplus){
+                                           echo '<span><a target="_blank" href="'. $eplus .'"">イープラス</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">イープラス</span>'; 
+                                       }                                       
+                                    ?>
+                                    <?php
+                                        // else:
 
-                                    endif;
-                                ?>
-                                </span>
+                                        // echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
+
+                                        // endif;
+                                    ?>
+                                    </span>
+                                </div>
                             </div>
                         </section>
                     </article>
@@ -265,6 +274,11 @@ function filter_where( $where = '' ) {
 
 
                 <footer class="article-footer cf">
+                    <p>
+                    ＜チケットに関するお問い合わせ＞<br>
+                    バッハ・コレギウム・ジャパン チケットセンター<br>
+                    ℡ 03-5301-0950
+                    </p>
                     <div class="specials">
                         <div data-category=".tokyo" class="category-filter tokyo" >
                             <div class="title"><h3>東京定期演奏会</h3></div>
@@ -383,6 +397,28 @@ function filter_where( $where = '' ) {
                 </div>
 
                 <div id="about_bcj_4"  class="wrap-padding" >
+                    <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+                    <div class="award_activitity">
+                        <h2 class="" >Principal activities:</h2>
+                        <ul>
+                            <li>Regular concerts in Tokyo, Kobe and Nagoya</li>
+                            <li>Overseas performances</li>
+                        </ul>
+                    </div>
+                    <div  class="award_activitity">
+                        <h2 class="" >Principal awards:</h2>
+                        <ul>
+                            <li>45th Suntory Music Prize <br>(Masaaki Suzuki and Bach Collegium Japan)</li>
+                            <li>Echo Classical Music Prize 2014 <br>(Bach Collegium Japan)</li>
+                            <li>Medal with Purple Ribbon, 2011 <br>(Masaaki Suzuki)</li>
+                            <li>2008 Arts Award sponsored by the Agency for Cultural Affairs (Prize of the Minister of Education, Culture, Sports, Science and Technology) <br>(Masaaki Suzuki)</li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('bcj')->ID); ?>">BCJ profile<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_bcj_profile.jpg" /></a></div>
+                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('masaaki_suzuki')->ID); ?>">Masaaki Suzuki profile<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_masaaki_profile.jpg" /></a></div>
+                    <div class="clear"></div>
+                    <?php else: ?>
                     <div class="award_activitity">
                         <h2 class="" >主な活動</h2>
                         <ul>
@@ -402,7 +438,9 @@ function filter_where( $where = '' ) {
                     <div class="clear"></div>
                     <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('bcj')->ID); ?>">BCJプロフィール詳細はこちら<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_bcj_profile.jpg" /></a></div>
                     <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('masaaki_suzuki')->ID); ?>">鈴木雅明プロフィール詳細はこちら<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_masaaki_profile.jpg" /></a></div>
-                    <div class="clear"></div>
+                    <div class="clear"></div> 
+                    <?php endif; ?> 
+                    
                 </div>
 
                 <div id="about_bcj_5" class="wrap-padding">
@@ -457,11 +495,16 @@ function filter_where( $where = '' ) {
             <div class="wrap-inner" style="padding-bottom:50px">
                 <h2 class="h-font row-header ">Support BCJ</h2>
                 <div id="support_bcj_1">
-                    <h4 style="text-align: center;">フレンズ＆ソサエティのご案内</h4>
+                    <h4 style="text-align: center;"><?php _e( 'Introduction to the BCJ Friends and Society', 'bonestheme' ); ?></h4>
                     <div style=" text-align: left;">
-                        バッハ・コレギウム・ジャパン（BCJ）は、日本から世界へと発信する有数のバロック・オーケストラおよび合唱団として、広く知られています。1990年に活動を開始して以来、15カ国、71都市で約1,000ものコンサートを行い、また80タイトル以上のCD録音（BISレーベル)を通して、世界の100万人以上の聴衆と共に、J.S.バッハの音楽のすばらしさを共有してきました。今後も、ますます多くの人々に、次世代を担う若い人々に、この宝を、伝えていきたいと願っています。J.S.バッハの音楽は、世界共通の言葉です。ヨーロッパ、アメリカ、さらにアジアの国々、至るところで、バッハを中心とする音楽の演奏・録音・教育活動を続けていくため、どうぞ、皆様のご支援をお願いいたします。<br><br><br>
+                        <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and chorus active in Japan but with a worldwide reach. Since its foundation in 1990, it has given around a thousand concerts in 71 cities in 15 countries and has issued more than 80 CDs on the BIS label, and has thus shared the wonders of the music of J.S. Bach with more than a million people all over the world. We aim to continue conveying this precious legacy to more and more people and especially to the young people with whom the future lies. The music of J.S. Bach is composed in a language shared by the whole of mankind. We would look forward to your support and patronage in enabling us to continue our performance, recording and educational activities centring on the music of Bach throughout Europe, America and Asia.
+                        <?php else: ?>
+                        バッハ・コレギウム・ジャパン（BCJ）は、日本から世界へと発信する有数のバロック・オーケストラおよび合唱団として、広く知られています。1990年に活動を開始して以来、15カ国、71都市で約1,000ものコンサートを行い、また80タイトル以上のCD録音（BISレーベル)を通して、世界の100万人以上の聴衆と共に、J.S.バッハの音楽のすばらしさを共有してきました。今後も、ますます多くの人々に、次世代を担う若い人々に、この宝を、伝えていきたいと願っています。J.S.バッハの音楽は、世界共通の言葉です。ヨーロッパ、アメリカ、さらにアジアの国々、至るところで、バッハを中心とする音楽の演奏・録音・教育活動を続けていくため、どうぞ、皆様のご支援をお願いいたします。
+                        <?php endif; ?> 
+                        <br><br><br>
                     </div>
-                    <a href="<?php echo get_permalink(get_page_by_path('friends_society')->ID); ?>"><span class="bcj-btn invert">BCJフレンズ＆ソサエティ詳細はこちら</span></a>
+                    <a href="<?php echo get_permalink(get_page_by_path('friends_society')->ID); ?>"><span class="bcj-btn invert"><?php _e( 'Read more about BCJ Friends & Society', 'bonestheme' ); ?></span></a>
                 </div>
                 <div class="h_iframe">
                     <img class="ratio" src="http://placehold.it/16x9"/>
@@ -530,7 +573,11 @@ function filter_where( $where = '' ) {
                 <h2 class="h-font row-header ">Contact Us</h2>
                 <h4 style="text-align: center;">コンタクト</h4>
                 <div style=" text-align: left;max-width:400px;margin:auto;padding:1em">
+                    <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+                    <?php echo do_shortcode('[contact-form-7 id="3307" title="BCJ Contact (EN)"]'); ?>
+                    <?php else: ?>
                     <?php echo do_shortcode('[contact-form-7 id="2888" title="BCJ Contact"]'); ?>
+                    <?php endif; ?> 
                 </div>
                 <div style="text-align:center;margin-bottom: 100px">
                     <a href="#" class="go-top invert">

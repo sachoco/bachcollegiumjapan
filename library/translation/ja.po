@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme bones\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-20 08:54+0100\n"
+"POT-Creation-Date: 2015-01-18 14:25+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Satoshi Shiraishi <sachoco@gmail.com>\n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
@@ -14,186 +14,126 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_n;esc_attr_e;esc_attr__;esc_html_e;esc_html__;"
 "_x\n"
 "X-Poedit-Basepath: .\n"
-"X-Generator: Poedit 1.6.7\n"
+"X-Generator: Poedit 1.5.7\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: ../..\n"
 
-#: ../../404.php:13
-msgid "Epic 404 - Article Not Found"
-msgstr "404エラー ページが見つかりません"
-
-#: ../../404.php:19
-msgid ""
-"The article you were looking for was not found, but maybe try looking again!"
-msgstr "ページが見つかりませんでした。"
-
-#: ../../404.php:31
-msgid "This is the 404.php template."
-msgstr ""
-
-#: ../../archive-custom_type.php:33 ../../index.php:17
-#: ../../page-custom.php:33 ../../page.php:18
-#: ../../post-formats/format-aside.php:10
-#: ../../post-formats/format-audio.php:10
-#: ../../post-formats/format-chat.php:10
-#: ../../post-formats/format-gallery.php:10
-#: ../../post-formats/format-image.php:10
-#: ../../post-formats/format-link.php:10
-#: ../../post-formats/format-quote.php:10
-#: ../../post-formats/format-status.php:10
-#: ../../post-formats/format-video.php:10 ../../post-formats/format.php:24
-#: ../../search.php:19
-#, fuzzy, php-format
-msgid ""
-"Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by "
-"<span class=\"author\">%3$s</span>"
-msgstr ""
-"<time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> | <span class="
-"\"author\">%3$s</span>"
-
-#: ../../archive-custom_type.php:33 ../../archive.php:52
-#: ../../functions.php:176 ../../taxonomy-custom_cat.php:33
-msgid "F jS, Y"
-msgstr "Y年n月j日"
-
-#: ../../archive-custom_type.php:58 ../../archive.php:79 ../../index.php:49
-#: ../../page-custom.php:80 ../../page.php:61 ../../single-custom_type.php:80
-#: ../../single.php:34 ../../taxonomy-custom_cat.php:57
-msgid "Oops, Post Not Found!"
-msgstr "投稿が見つかりません"
-
-#: ../../archive-custom_type.php:61 ../../archive.php:82 ../../index.php:52
-#: ../../page-custom.php:83 ../../page.php:64 ../../single-custom_type.php:83
-#: ../../single.php:37 ../../taxonomy-custom_cat.php:60
-msgid "Uh Oh. Something is missing. Try double checking things."
-msgstr ""
-
-#: ../../archive-custom_type.php:64
-msgid "This is the error message in the custom posty type archive template."
-msgstr ""
-
-#: ../../archive.php:11 ../../taxonomy-custom_cat.php:23
-msgid "Posts Categorized:"
-msgstr "カテゴリー別アーカイブ:"
-
-#: ../../archive.php:16
-msgid "Posts Tagged:"
-msgstr "タグ別アーカイブ:"
-
-#: ../../archive.php:25
-msgid "Posts By:"
-msgstr "投稿者:"
-
-#: ../../archive.php:30
-msgid "Daily Archives:"
-msgstr "日別アーカイブ:"
-
-#: ../../archive.php:35
-msgid "Monthly Archives:"
-msgstr "月別アーカイブ:"
-
-#: ../../archive.php:40
-msgid "Yearly Archives:"
-msgstr "年別アーカイブ:"
-
-#: ../../archive.php:52
-#, fuzzy
-msgid "Posted"
-msgstr "タグ別アーカイブ:"
-
-#: ../../archive.php:52
-msgid "by"
-msgstr ""
-
-#: ../../archive.php:52 ../../index.php:32
-msgid "filed under"
-msgstr ""
-
-#: ../../archive.php:85
-msgid "This is the error message in the archive.php template."
-msgstr ""
-
-#: ../../comments.php:17 ../../index.php:28
-#, fuzzy
-msgid "<span>No</span> Comments"
-msgstr "コメントはありません"
-
-#: ../../comments.php:17 ../../index.php:28
-#, fuzzy
-msgid "<span>One</span> Comment"
-msgstr "<span>1件</span>のコメント"
-
-#: ../../comments.php:17 ../../index.php:28
-#, fuzzy
-msgid "<span>%</span> Comments"
-msgstr "<span>%件</span>のコメント"
-
-#: ../../comments.php:38
-msgid "&larr; Previous Comments"
-msgstr ""
-
-#: ../../comments.php:39
-#, fuzzy
-msgid "More Comments &rarr;"
-msgstr "コメントを入力して下さい…"
-
-#: ../../comments.php:44
-msgid "Comments are closed."
-msgstr "コメントは閉鎖されています。"
-
-#: ../../footer.php:11 ../../library/bones.php:217
+#: ../../footer.php:16 ../../page-test.php:402 ../../library/bones.php:229
 msgid "Footer Links"
 msgstr "フッターのリンク"
 
-#: ../../functions.php:100
-msgid "600px by 150px"
+#: ../../front-page.php:104
+msgid "Concerts"
+msgstr "公演情報"
+
+#: ../../front-page.php:498
+msgid "Introduction to the BCJ Friends and Society"
+msgstr "フレンズ＆ソサエティのご案内"
+
+#: ../../front-page.php:507
+msgid "Read more about BCJ Friends & Society"
+msgstr "BCJフレンズ＆ソサエティ詳細はこちら"
+
+#: ../../functions.php:107
+msgid "600px by 300px"
 msgstr ""
 
-#: ../../functions.php:101
-msgid "300px by 100px"
+#: ../../functions.php:108
+msgid "300px by 150px"
 msgstr ""
 
-#: ../../functions.php:119
+#: ../../functions.php:109
+msgid "300px by 170px"
+msgstr ""
+
+#: ../../functions.php:127
 msgid "Sidebar 1"
 msgstr "サイドバー 1"
 
-#: ../../functions.php:120
+#: ../../functions.php:128
 msgid "The first (primary) sidebar."
 msgstr "メインのサイドバー"
 
-#: ../../functions.php:175
+#: ../../functions.php:137
+msgid "Home Section"
+msgstr ""
+
+#: ../../functions.php:138
+msgid "Items for Home page"
+msgstr ""
+
+#: ../../functions.php:193
 #, fuzzy, php-format
 msgid "<cite class=\"fn\">%1$s</cite> %2$s"
 msgstr "<cite class=\"fn\">%s</cite>"
 
-#: ../../functions.php:175
+#: ../../functions.php:193
 msgid "(Edit)"
 msgstr "(編集)"
 
-#: ../../functions.php:181
+#: ../../functions.php:194 ../../not_in_use/archive-custom_type.php:33
+#: ../../not_in_use/archive.php:52 ../../not_in_use/taxonomy-custom_cat.php:33
+msgid "F jS, Y"
+msgstr "Y年n月j日"
+
+#: ../../functions.php:199
 msgid "Your comment is awaiting moderation."
 msgstr "あなたのコメントは管理者の承認待ちです。"
 
-#: ../../header.php:68 ../../library/bones.php:216
+#: ../../functions.php:234
+msgid "Thumbnail"
+msgstr ""
+
+#: ../../functions.php:235
+msgid "Title"
+msgstr ""
+
+#: ../../functions.php:237
+#, fuzzy
+msgid "Schedule Date"
+msgstr "スケジュール"
+
+#: ../../functions.php:238
+#, fuzzy
+msgid "Categories"
+msgstr "カスタムカテゴリ"
+
+#: ../../functions.php:239
+msgid "Author"
+msgstr ""
+
+#: ../../functions.php:240
+msgid "Date"
+msgstr ""
+
+#: ../../header.php:98 ../../header.php:143 ../../page-test.php:30
+#: ../../page-test.php:59 ../../library/bones.php:228
 msgid "The Main Menu"
 msgstr "メインメニュー"
 
-#: ../../index.php:34 ../../page-custom.php:68
-#: ../../post-formats/format-aside.php:42
-#: ../../post-formats/format-audio.php:42
-#: ../../post-formats/format-chat.php:42
-#: ../../post-formats/format-gallery.php:42
-#: ../../post-formats/format-image.php:42
-#: ../../post-formats/format-link.php:45
-#: ../../post-formats/format-quote.php:45
-#: ../../post-formats/format-status.php:42
-#: ../../post-formats/format-video.php:42 ../../post-formats/format.php:59
-#: ../../search.php:33
-msgid "Tags:"
-msgstr "タグ:"
+#: ../../index-0922.php:36 ../../index.php:59 ../../template-full.php:33
+#: ../../not_in_use/archive-custom_type.php:58 ../../not_in_use/archive.php:79
+#: ../../not_in_use/page-custom.php:80 ../../not_in_use/page.php:41
+#: ../../not_in_use/single-custom_type.php:80 ../../not_in_use/single.php:34
+#: ../../not_in_use/taxonomy-custom_cat.php:57
+msgid "Oops, Post Not Found!"
+msgstr "投稿が見つかりません"
 
-#: ../../index.php:55
+#: ../../index-0922.php:39 ../../index.php:62 ../../template-full.php:36
+#: ../../not_in_use/archive-custom_type.php:61 ../../not_in_use/archive.php:82
+#: ../../not_in_use/page-custom.php:83 ../../not_in_use/page.php:44
+#: ../../not_in_use/single-custom_type.php:83 ../../not_in_use/single.php:37
+#: ../../not_in_use/taxonomy-custom_cat.php:60
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr ""
+
+#: ../../index-0922.php:42 ../../index.php:65 ../../template-full.php:39
+#: ../../not_in_use/page.php:47
 msgid "This is the error message in the index.php template."
+msgstr ""
+
+#: ../../page-test.php:127
+msgid "公演情報"
 msgstr ""
 
 #: ../../library/admin.php:78
@@ -219,15 +159,15 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: ../../library/bones.php:247
+#: ../../library/bones.php:259
 msgid "No Related Posts Yet!"
 msgstr "関連する記事はありません。"
 
-#: ../../library/bones.php:292
+#: ../../library/bones.php:304
 msgid "Read "
 msgstr ""
 
-#: ../../library/bones.php:292 ../../search.php:25
+#: ../../library/bones.php:304 ../../not_in_use/search.php:25
 msgid "Read more &raquo;"
 msgstr "もっと読む &raquo;"
 
@@ -306,43 +246,52 @@ msgid "Search Discography"
 msgstr "ディスコグラフィを検索"
 
 #: ../../library/custom-post-type.php:130
-msgid "Custom Categories"
+#, fuzzy
+msgid "Page Categories"
 msgstr "カスタムカテゴリ"
 
 #: ../../library/custom-post-type.php:131
-msgid "Custom Category"
-msgstr "カスタムカテゴリ"
+#, fuzzy
+msgid "Page Category"
+msgstr "親のカスタムカテゴリー"
 
 #: ../../library/custom-post-type.php:132
-msgid "Search Custom Categories"
+#, fuzzy
+msgid "Search Page Categories"
 msgstr "カスタムカテゴリーを検索"
 
 #: ../../library/custom-post-type.php:133
-msgid "All Custom Categories"
+#, fuzzy
+msgid "All Page Categories"
 msgstr "カスタムカテゴリ一覧"
 
 #: ../../library/custom-post-type.php:134
-msgid "Parent Custom Category"
+#, fuzzy
+msgid "Parent Page Category"
 msgstr "親のカスタムカテゴリー"
 
 #: ../../library/custom-post-type.php:135
-msgid "Parent Custom Category:"
+#, fuzzy
+msgid "Parent Page Category:"
 msgstr "親のカスタムカテゴリー:"
 
 #: ../../library/custom-post-type.php:136
-msgid "Edit Custom Category"
+#, fuzzy
+msgid "Edit Page Category"
 msgstr "カスタムカテゴリーを編集"
 
 #: ../../library/custom-post-type.php:137
-msgid "Update Custom Category"
+#, fuzzy
+msgid "Update Page Category"
 msgstr "カスタムカテゴリーを更新"
 
 #: ../../library/custom-post-type.php:138
-msgid "Add New Custom Category"
+#, fuzzy
+msgid "Add New Page Category"
 msgstr "新規カスタムカテゴリーを追加"
 
 #: ../../library/custom-post-type.php:139
-msgid "New Custom Category Name"
+msgid "New Page Category Name"
 msgstr ""
 
 #: ../../library/custom-post-type.php:153
@@ -385,7 +334,203 @@ msgstr "新規カスタムタグを追加"
 msgid "New Custom Tag Name"
 msgstr ""
 
-#: ../../page-custom.php:57 ../../page.php:41
+#: ../../library/custom-post-type.php:175
+#: ../../library/custom-post-type.php:176
+#: ../../library/custom-post-type.php:189
+msgid "ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:177
+msgid "Search ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:178
+msgid "Popular ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:179
+msgid "All ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:180
+msgid "Parent ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:181
+msgid "Parent ディスコグラフィーカテゴリ:"
+msgstr ""
+
+#: ../../library/custom-post-type.php:182
+msgid "Edit ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:183
+msgid "Update ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:184
+msgid "Add New ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:185
+msgid "New ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:186
+msgid "Separate ディスコグラフィーカテゴリ with commas"
+msgstr ""
+
+#: ../../library/custom-post-type.php:187
+msgid "Add or remove ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:188
+msgid "Choose from the most used ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-widget.php:11
+msgid "BCJ Calendar Widget"
+msgstr ""
+
+#: ../../library/custom-widget.php:14
+msgid "Shows BCJ schedule calendar"
+msgstr ""
+
+#: ../../library/custom-widget.php:21
+msgid "Calendar"
+msgstr ""
+
+#: ../../library/custom-widget.php:66
+msgid "BCJ Next Show Widget"
+msgstr ""
+
+#: ../../library/custom-widget.php:69
+msgid "Shows BCJ next concert"
+msgstr ""
+
+#: ../../library/custom-widget.php:76
+msgid "Next Concert"
+msgstr ""
+
+#: ../../library/custom-widget.php:143
+msgid "BCJ Featured Show Widget"
+msgstr ""
+
+#: ../../library/custom-widget.php:146
+msgid "Shows BCJ featured concert"
+msgstr ""
+
+#: ../../library/custom-widget.php:153
+msgid "Concert"
+msgstr ""
+
+#: ../../not_in_use/404.php:13
+msgid "Epic 404 - Article Not Found"
+msgstr "404エラー ページが見つかりません"
+
+#: ../../not_in_use/404.php:19
+msgid ""
+"The article you were looking for was not found, but maybe try looking again!"
+msgstr "ページが見つかりませんでした。"
+
+#: ../../not_in_use/404.php:31
+msgid "This is the 404.php template."
+msgstr ""
+
+#: ../../not_in_use/archive-custom_type.php:33
+#: ../../not_in_use/page-custom.php:33 ../../not_in_use/search.php:19
+#: ../../post-formats/format-aside.php:10
+#: ../../post-formats/format-audio.php:10
+#: ../../post-formats/format-chat.php:10
+#: ../../post-formats/format-gallery.php:10
+#: ../../post-formats/format-image.php:10
+#: ../../post-formats/format-link.php:10
+#: ../../post-formats/format-quote.php:10
+#: ../../post-formats/format-status.php:10
+#: ../../post-formats/format-video.php:10 ../../post-formats/format.php:24
+#, fuzzy, php-format
+msgid ""
+"Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by "
+"<span class=\"author\">%3$s</span>"
+msgstr ""
+"<time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> | <span class="
+"\"author\">%3$s</span>"
+
+#: ../../not_in_use/archive-custom_type.php:64
+msgid "This is the error message in the custom posty type archive template."
+msgstr ""
+
+#: ../../not_in_use/archive.php:11 ../../not_in_use/taxonomy-custom_cat.php:23
+msgid "Posts Categorized:"
+msgstr "カテゴリー別アーカイブ:"
+
+#: ../../not_in_use/archive.php:16
+msgid "Posts Tagged:"
+msgstr "タグ別アーカイブ:"
+
+#: ../../not_in_use/archive.php:25
+msgid "Posts By:"
+msgstr "投稿者:"
+
+#: ../../not_in_use/archive.php:30
+msgid "Daily Archives:"
+msgstr "日別アーカイブ:"
+
+#: ../../not_in_use/archive.php:35
+msgid "Monthly Archives:"
+msgstr "月別アーカイブ:"
+
+#: ../../not_in_use/archive.php:40
+msgid "Yearly Archives:"
+msgstr "年別アーカイブ:"
+
+#: ../../not_in_use/archive.php:52
+#, fuzzy
+msgid "Posted"
+msgstr "タグ別アーカイブ:"
+
+#: ../../not_in_use/archive.php:52
+msgid "by"
+msgstr ""
+
+#: ../../not_in_use/archive.php:52
+msgid "filed under"
+msgstr ""
+
+#: ../../not_in_use/archive.php:85
+msgid "This is the error message in the archive.php template."
+msgstr ""
+
+#: ../../not_in_use/comments.php:17
+#, fuzzy
+msgid "<span>No</span> Comments"
+msgstr "コメントはありません"
+
+#: ../../not_in_use/comments.php:17
+#, fuzzy
+msgid "<span>One</span> Comment"
+msgstr "<span>1件</span>のコメント"
+
+#: ../../not_in_use/comments.php:17
+#, fuzzy
+msgid "<span>%</span> Comments"
+msgstr "<span>%件</span>のコメント"
+
+#: ../../not_in_use/comments.php:38
+msgid "&larr; Previous Comments"
+msgstr ""
+
+#: ../../not_in_use/comments.php:39
+#, fuzzy
+msgid "More Comments &rarr;"
+msgstr "コメントを入力して下さい…"
+
+#: ../../not_in_use/comments.php:44
+msgid "Comments are closed."
+msgstr "コメントは閉鎖されています。"
+
+#: ../../not_in_use/page-custom.php:57
+#: ../../not_in_use/single-custom_type.php:57
 #: ../../post-formats/format-aside.php:33
 #: ../../post-formats/format-audio.php:33
 #: ../../post-formats/format-chat.php:33
@@ -395,46 +540,54 @@ msgstr ""
 #: ../../post-formats/format-quote.php:33
 #: ../../post-formats/format-status.php:33
 #: ../../post-formats/format-video.php:33 ../../post-formats/format.php:47
-#: ../../single-custom_type.php:57
 msgid "Pages:"
 msgstr ""
 
-#: ../../page-custom.php:86
+#: ../../not_in_use/page-custom.php:68 ../../not_in_use/search.php:33
+#: ../../post-formats/format-aside.php:42
+#: ../../post-formats/format-audio.php:42
+#: ../../post-formats/format-chat.php:42
+#: ../../post-formats/format-gallery.php:42
+#: ../../post-formats/format-image.php:42
+#: ../../post-formats/format-link.php:45
+#: ../../post-formats/format-quote.php:45
+#: ../../post-formats/format-status.php:42
+#: ../../post-formats/format-video.php:42 ../../post-formats/format.php:59
+msgid "Tags:"
+msgstr "タグ:"
+
+#: ../../not_in_use/page-custom.php:86
 msgid "This is the error message in the page-custom.php template."
 msgstr ""
 
-#: ../../page.php:67
-msgid "This is the error message in the page.php template."
-msgstr ""
+#: ../../not_in_use/search.php:8
+msgid "Search Results for:"
+msgstr "検索結果:"
 
-#: ../../post-formats/format-link.php:43
+#: ../../not_in_use/search.php:31 ../../post-formats/format-link.php:43
 #: ../../post-formats/format-quote.php:43 ../../post-formats/format.php:57
-#: ../../search.php:31
 #, php-format
 msgid "Filed under: %1$s"
 msgstr ""
 
-#: ../../search.php:8
-msgid "Search Results for:"
-msgstr "検索結果:"
-
-#: ../../search.php:47
+#: ../../not_in_use/search.php:47
 msgid "Sorry, No Results."
 msgstr "表示できるものがありません。"
 
-#: ../../search.php:50
+#: ../../not_in_use/search.php:50
 msgid "Try your search again."
 msgstr "もう一度検索してみてださい。"
 
-#: ../../search.php:53
+#: ../../not_in_use/search.php:53
 msgid "This is the error message in the search.php template."
 msgstr ""
 
-#: ../../sidebar.php:16
+#: ../../not_in_use/sidebar.php:16
 msgid "This is a widget ready area. Add some and they will appear here."
 msgstr ""
 
-#: ../../single-custom_type.php:34 ../../taxonomy-custom_cat.php:33
+#: ../../not_in_use/single-custom_type.php:34
+#: ../../not_in_use/taxonomy-custom_cat.php:33
 #, php-format
 msgid ""
 "Posted <time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> by "
@@ -444,25 +597,28 @@ msgstr ""
 "<time class=\"updated\" datetime=\"%1$s\" pubdate>%2$s</time> | <span class="
 "\"author\">%3$s</span> | %4$s"
 
-#: ../../single-custom_type.php:66
+#: ../../not_in_use/single-custom_type.php:66
 msgid "Custom Tags:"
 msgstr "カスタムタグ:"
 
-#: ../../single-custom_type.php:86
+#: ../../not_in_use/single-custom_type.php:86
 msgid "This is the error message in the single-custom_type.php template."
 msgstr ""
 
-#: ../../single.php:40
+#: ../../not_in_use/single.php:40
 msgid "This is the error message in the single.php template."
 msgstr ""
 
-#: ../../taxonomy-custom_cat.php:39
+#: ../../not_in_use/taxonomy-custom_cat.php:39
 msgid "Read More &raquo;"
 msgstr "もっと読む &raquo;"
 
-#: ../../taxonomy-custom_cat.php:63
+#: ../../not_in_use/taxonomy-custom_cat.php:63
 msgid "This is the error message in the taxonomy-custom_cat.php template."
 msgstr ""
+
+#~ msgid "Custom Category"
+#~ msgstr "カスタムカテゴリ"
 
 #~ msgid "&laquo; Older Entries"
 #~ msgstr "&laquo; 前の記事へ"
