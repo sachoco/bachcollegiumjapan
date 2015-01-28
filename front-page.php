@@ -205,11 +205,11 @@ function filter_where( $where = '' ) {
                                 <div class="ticket-info">
                                     <?php
                                         $contact = get_field('contact_info');
-                                        if($contact){ echo $contact; }else{ echo '<span class="small">バッハ・コレギウム・ジャパン チケットセンター </span><br><span class="number">℡ 03-5301-0950</span>'; }
+                                        if($contact){ echo $contact; }else{ echo '<span class="small">'.__("Bach Collegium Japan Ticket Center","bonestheme").' </span><br><span class="number">℡ 03-5301-0950</span>'; }
                                     ?>
                                 </div>
                                 <div class="ticket-btn">
-                                    <span class="buy-ticket "><span class="buy-text">チケット購入</span></span>
+                                    <span class="buy-ticket "><span class="buy-text"><?php _e("Buy Ticket","bonestheme"); ?></span></span>
                                     <span class="playguide">
                                     <?php
                                         $pia = get_field('ticket_pia');
@@ -218,14 +218,14 @@ function filter_where( $where = '' ) {
                                     ?>
                                     <?php
                                         if($pia){
-                                           echo '<span><a target="_blank" href="'. $pia .'"">チケットぴあ</a></span>'; 
+                                           echo '<span><a target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>'; 
                                        }else{
-                                           echo '<span class="disabled">チケットぴあ</span>'; 
+                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>'; 
                                        }
                                         if($eplus){
-                                           echo '<span><a target="_blank" href="'. $eplus .'"">イープラス</a></span>'; 
+                                           echo '<span><a target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>'; 
                                        }else{
-                                           echo '<span class="disabled">イープラス</span>'; 
+                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>'; 
                                        }                                       
                                     ?>
                                     <?php

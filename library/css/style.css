@@ -3644,6 +3644,8 @@ body.en h3, body.en .h3 {
   font-size: 1.7em; }
 body.en .upcoming footer .specials .category-filter .title h3 {
   line-height: 1.2em; }
+body.en .upcoming div.overview .buy-ticket-container .ticket-info .small {
+  font-size: 1em; }
 
 /*********************
 LARGER MOBILE DEVICES

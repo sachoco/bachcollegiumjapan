@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme bones\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-28 10:09+0100\n"
+"POT-Creation-Date: 2015-01-28 10:31+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Satoshi Shiraishi <sachoco@gmail.com>\n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
@@ -26,6 +26,22 @@ msgstr "フッターのリンク"
 msgid "Concerts"
 msgstr "公演情報"
 
+#: ../../front-page.php:208
+msgid "Bach Collegium Japan Ticket Center"
+msgstr "バッハ・コレギウム・ジャパン チケットセンター"
+
+#: ../../front-page.php:212
+msgid "Buy Ticket"
+msgstr "チケット購入"
+
+#: ../../front-page.php:221
+msgid "Ticket Pia"
+msgstr "チケットぴあ"
+
+#: ../../front-page.php:226
+msgid "e+"
+msgstr "イープラス"
+
 #: ../../front-page.php:280
 msgid "Subscription Concert<br>in Tokyo"
 msgstr "東京定期演奏会"
@@ -43,11 +59,11 @@ msgstr "お知らせ"
 msgid "Bach Collegium Japan and Masaaki Suzuki"
 msgstr "バッハ・コレギウム・ジャパンと鈴木雅明"
 
-#: ../../front-page.php:505
+#: ../../front-page.php:506
 msgid "Introduction to the BCJ Friends and Society"
 msgstr "フレンズ＆ソサエティのご案内"
 
-#: ../../front-page.php:514
+#: ../../front-page.php:515
 msgid "Read more about BCJ Friends & Society"
 msgstr "BCJフレンズ＆ソサエティ詳細はこちら"
 
