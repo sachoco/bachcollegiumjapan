@@ -2604,27 +2604,27 @@ UPCOMING CONCERTS
         font-size: 0.7em; }
     .upcoming div.overview .buy-ticket-container .ticket-btn {
       position: relative; }
-  .upcoming div.overview.tokyo header {
+  .upcoming div.overview.tokyo header, .upcoming div.overview.tokyo-en header {
     border-color: #840F15; }
-  .upcoming div.overview.tokyo .description .buy-ticket {
+  .upcoming div.overview.tokyo .description .buy-ticket, .upcoming div.overview.tokyo-en .description .buy-ticket {
     color: #840F15;
     border-color: #840F15; }
-  .upcoming div.overview.tokyo .description .playguide {
+  .upcoming div.overview.tokyo .description .playguide, .upcoming div.overview.tokyo-en .description .playguide {
     color: #840F15; }
-    .upcoming div.overview.tokyo .description .playguide span {
+    .upcoming div.overview.tokyo .description .playguide span, .upcoming div.overview.tokyo-en .description .playguide span {
       border-color: #840F15; }
-      .upcoming div.overview.tokyo .description .playguide span a {
+      .upcoming div.overview.tokyo .description .playguide span a, .upcoming div.overview.tokyo-en .description .playguide span a {
         color: #840F15; }
-  .upcoming div.overview.kobe header {
+  .upcoming div.overview.kobe header, .upcoming div.overview.kobe-en header {
     border-color: #5A4687; }
-  .upcoming div.overview.kobe .description .buy-ticket {
+  .upcoming div.overview.kobe .description .buy-ticket, .upcoming div.overview.kobe-en .description .buy-ticket {
     color: #5A4687;
     border-color: #5A4687; }
-  .upcoming div.overview.kobe .description .playguide {
+  .upcoming div.overview.kobe .description .playguide, .upcoming div.overview.kobe-en .description .playguide {
     color: #5A4687; }
-    .upcoming div.overview.kobe .description .playguide span {
+    .upcoming div.overview.kobe .description .playguide span, .upcoming div.overview.kobe-en .description .playguide span {
       border-color: #5A4687; }
-      .upcoming div.overview.kobe .description .playguide span a {
+      .upcoming div.overview.kobe .description .playguide span a, .upcoming div.overview.kobe-en .description .playguide span a {
         color: #5A4687; }
   .upcoming div.overview.christmas header {
     border-color: #785A00; }
@@ -3640,6 +3640,10 @@ body.en section#intro .short-profile {
 body.en section#support, body.en section#contact {
   font-size: 18px;
   line-height: 1.5em; }
+body.en h3, body.en .h3 {
+  font-size: 1.7em; }
+body.en .upcoming footer .specials .category-filter .title h3 {
+  line-height: 1.2em; }
 
 /*********************
 LARGER MOBILE DEVICES

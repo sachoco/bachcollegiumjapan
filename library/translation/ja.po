@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme bones\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-18 14:25+0100\n"
+"POT-Creation-Date: 2015-01-28 10:09+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Satoshi Shiraishi <sachoco@gmail.com>\n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
@@ -26,11 +26,28 @@ msgstr "フッターのリンク"
 msgid "Concerts"
 msgstr "公演情報"
 
-#: ../../front-page.php:498
+#: ../../front-page.php:280
+msgid "Subscription Concert<br>in Tokyo"
+msgstr "東京定期演奏会"
+
+#: ../../front-page.php:284
+#, fuzzy
+msgid "Subscription Concert<br>in Kobe"
+msgstr "神戸定期演奏会"
+
+#: ../../front-page.php:309
+msgid "News"
+msgstr "お知らせ"
+
+#: ../../front-page.php:383
+msgid "Bach Collegium Japan and Masaaki Suzuki"
+msgstr "バッハ・コレギウム・ジャパンと鈴木雅明"
+
+#: ../../front-page.php:505
 msgid "Introduction to the BCJ Friends and Society"
 msgstr "フレンズ＆ソサエティのご案内"
 
-#: ../../front-page.php:507
+#: ../../front-page.php:514
 msgid "Read more about BCJ Friends & Society"
 msgstr "BCJフレンズ＆ソサエティ詳細はこちら"
 
@@ -616,6 +633,9 @@ msgstr "もっと読む &raquo;"
 #: ../../not_in_use/taxonomy-custom_cat.php:63
 msgid "This is the error message in the taxonomy-custom_cat.php template."
 msgstr ""
+
+#~ msgid "Tokyo Subscription Concert"
+#~ msgstr "東京定期演奏会"
 
 #~ msgid "Custom Category"
 #~ msgstr "カスタムカテゴリ"

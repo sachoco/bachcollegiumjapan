@@ -274,18 +274,14 @@ function filter_where( $where = '' ) {
 
 
                 <footer class="article-footer cf">
-                    <p>
-                    ＜チケットに関するお問い合わせ＞<br>
-                    バッハ・コレギウム・ジャパン チケットセンター<br>
-                    ℡ 03-5301-0950
-                    </p>
+
                     <div class="specials">
-                        <div data-category=".tokyo" class="category-filter tokyo" >
-                            <div class="title"><h3>東京定期演奏会</h3></div>
+                        <div data-category="<?php echo(ICL_LANGUAGE_CODE=='en' ? '.tokyo-en' : '.tokyo'); ?>" class="category-filter tokyo" >
+                            <div class="title"><h3><?php _e("Subscription Concert<br>in Tokyo","bonestheme"); ?></h3></div>
                             <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-tokyo-bg.jpg" />
                         </div>
-                        <div data-category=".kobe" class="category-filter kobe" >
-                            <div class="title"><h3>神戸定期演奏会</h3></div>
+                        <div data-category="<?php echo(ICL_LANGUAGE_CODE=='en' ? '.kobe-en' : '.kobe'); ?>" class="category-filter kobe" >
+                            <div class="title"><h3><?php _e("Subscription Concert<br>in Kobe","bonestheme"); ?></h3></div>
                             <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-kobe-bg.jpg" />
                         </div>
                         <!-- <div data-category=".christmas" class="category-filter christmas" >
@@ -293,13 +289,24 @@ function filter_where( $where = '' ) {
                             <img src="<?php echo bloginfo('template_directory' ); ?>/library/images/bcj-banner-christmas-bg.jpg" />
                         </div> -->
                     </div>
+                    <p>
+                    <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+                    &lt;GENERAL TICKET INFORMATION&gt;<br>
+                    Bach Collegium Japan Ticket Center<br>
+                    <?php else: ?>
+                    ＜チケットに関するお問い合わせ＞<br>
+                    バッハ・コレギウム・ジャパン チケットセンター<br> 
+                    <?php endif; ?>
+                    ℡ 03-5301-0950
+
+                    </p>
                 </footer>
 
             </div>
             <div class="news-holder wrap-padding">
                 <div class="m-all t-all d-all last-col" >
                     <div class="m-all t-all d-all news" >
-                        <h3>お知らせ</h3>
+                        <h3><?php _e("News","bonestheme"); ?></h3>
                 <?php
                     $args = array(
                       'post_type' => 'post',
@@ -334,7 +341,7 @@ function filter_where( $where = '' ) {
                                     $cats = get_the_category( );
                                     $i = 0;
                                     foreach ($cats as $cat){
-                                        if($cat->slug!="uncategorized") echo $cat->name;
+                                        if($cat->slug!="uncategorized"&&$cat->slug!="uncategorized-en") echo $cat->name;
                                         $i++;
                                     }
 
@@ -373,7 +380,7 @@ function filter_where( $where = '' ) {
             <div class="wrap cf" >
             <div class="wrap-inner">
                 <h2 class="h-font row-header" >About BCJ</h2>
-                <div id="about_bcj_1"><h2>バッハ・コレギウム・ジャパンと鈴木雅明</h2></div>
+                <div id="about_bcj_1"><h2><?php _e("Bach Collegium Japan and Masaaki Suzuki","bonestheme"); ?></h2></div>
                 <div id="about_bcj_2" >
                         <div class="h_iframe">
                             <img class="ratio" src="http://placehold.it/16x9"/>
@@ -445,8 +452,9 @@ function filter_where( $where = '' ) {
 
                 <div id="about_bcj_5" class="wrap-padding">
                     <h2 class="h-font row-header" >BCJ Recordings</h2>
+                    <?php if(ICL_LANGUAGE_CODE!="en"): ?>
                     <h2 style="margin-bottom: 50px">バッハ・コレギウム・ジャパン ディスコグラフィ</h2>
-
+                    <?php endif; ?>
                     <div class="cd-holder-carousel">
                     <?php 
                         $args = array(
@@ -571,7 +579,9 @@ Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and ch
             <div class="wrap cf" >
             <div class="wrap-inner">
                 <h2 class="h-font row-header ">Contact Us</h2>
+                <?php if(ICL_LANGUAGE_CODE!="en"): ?>
                 <h4 style="text-align: center;">コンタクト</h4>
+                <?php endif; ?>
                 <div style=" text-align: left;max-width:400px;margin:auto;padding:1em">
                     <?php if(ICL_LANGUAGE_CODE=="en"): ?>
                     <?php echo do_shortcode('[contact-form-7 id="3307" title="BCJ Contact (EN)"]'); ?>
@@ -595,6 +605,5 @@ Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and ch
         </section>
         <!-- Support END -->
         
-
 
 <?php get_footer(); ?>
