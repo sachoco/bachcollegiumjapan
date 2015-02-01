@@ -64,7 +64,7 @@ function resizeHandler(){
     winHeight = $window.height();
     $window.scroll();
     var introHeight = $("section#intro .navigation").offset().top+$("section#intro .navigation").height();
-    console.log("win: " + winHeight + " vs intro: " + introHeight);
+    // console.log("win: " + winHeight + " vs intro: " + introHeight);
 
     if(introHeight>(winHeight+1)){
         $("section#intro .navigation nav").css("display","none");
@@ -108,8 +108,8 @@ $('.slick-slides').slick({
 	centerMode: true,
 	centerPadding: '1px',
 	speed: 1000,
-	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="24,29 12,20 24,11"/></g></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062"/></g></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" class="bcj-btn-white"><g><circle stroke="#FFFFFF" fill="none" cx="20" cy="20" r="19.5"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="24,29 12,20 24,11"/></g></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" class="bcj-btn-white"><g><circle stroke="#FFFFFF" fill="none" cx="20" cy="20" r="19.5"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062"/></g></svg></button>',
 	// onAfterChange: function(slide){ console.log(slide.currentSlide); },
 	onInit: function(slide){
                 // Create a new instance of Headhesive
@@ -152,13 +152,13 @@ $('.overview-holder-carousel').slick({
 	infinite: false,
 	// prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="24,29 12,20 24,11 		"/></g></svg></button>',
 	// nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062 		"/></g></svg></button>',
-	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="24,29 12,20 24,11"/></g></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#000000" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062"/></g></svg></button>',
+	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" class="bcj-btn-black"><g><circle stroke="#000000" fill="none" cx="20" cy="20" r="19.5"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="24,29 12,20 24,11"/></g></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" class="bcj-btn-black"><g><circle stroke="#000000" fill="none" cx="20" cy="20" r="19.5"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062"/></g></svg></button>',
 	// onAfterChange: function(slide){ console.log(slide.currentSlide); },
 	// onInit: function(slide){ console.log(slide.currentSlide); }
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1124,
           settings: {
             slidesToShow: 3,
             slidesToScroll: 3,
@@ -217,8 +217,8 @@ $('.cd-holder-carousel').slick({
 	arrows: true,
 	speed: 500,
 	infinite: false,
-	prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="24,29 12,20 24,11 		"/></g></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" ><g><circle opacity="0.7" fill="#FFFFFF" cx="20" cy="20.062" r="20"/><polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062 		"/></g></svg></button>',
+    prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" class="bcj-btn-white"><g><circle stroke="#FFFFFF" fill="none" cx="20" cy="20" r="19.5"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="24,29 12,20 24,11"/></g></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" class="bcj-btn-white"><g><circle stroke="#FFFFFF" fill="none" cx="20" cy="20" r="19.5"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062"/></g></svg></button>',
           responsive: [
             {
               breakpoint: 1024,

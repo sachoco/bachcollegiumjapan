@@ -95,6 +95,36 @@ and it will create a button dependant on those variables.
     text-align: center;
     position: relative;
 }
+.bcj-btn-white {
+  circle {
+    fill: rgba(255,255,255,0);
+    @include transition(fill, .2s);     
+  }
+  &:hover {
+    circle {
+      fill: rgba(255,255,255,0.5);
+    }
+  }  
+}
+.bcj-btn-black {
+  circle {
+    fill: rgba(0,0,0,0);
+    @include transition(fill, .2s);     
+  }
+  &:hover {
+    circle {
+      fill: rgba(0,0,0,0.5);
+    }
+  }  
+}
+.slick-disabled {
+  .bcj-btn-white:hover circle{
+    fill: rgba(255,255,255,0);
+  }
+  .bcj-btn-black:hover circle{
+    fill: rgba(0,0,0,0);
+  }
+}
 
 // button {
 //   @extend %btn;
@@ -107,7 +137,7 @@ and it will create a button dependant on those variables.
     .buy-ticket-container {
       // position: absolute;
       position: relative;
-      bottom: 10px;
+      bottom: 0px;
       width: 100%;
       z-index: 999;
       @include transition-property(opacity);

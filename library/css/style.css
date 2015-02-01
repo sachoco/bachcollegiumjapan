@@ -1020,9 +1020,28 @@ and it will create a button dependant on those variables.
   text-align: center;
   position: relative; }
 
+.bcj-btn-white circle {
+  fill: rgba(255, 255, 255, 0);
+  -webkit-transition: fill, 0.2s;
+  transition: fill, 0.2s; }
+.bcj-btn-white:hover circle {
+  fill: rgba(255, 255, 255, 0.5); }
+
+.bcj-btn-black circle {
+  fill: transparent;
+  -webkit-transition: fill, 0.2s;
+  transition: fill, 0.2s; }
+.bcj-btn-black:hover circle {
+  fill: rgba(0, 0, 0, 0.5); }
+
+.slick-disabled .bcj-btn-white:hover circle {
+  fill: rgba(255, 255, 255, 0); }
+.slick-disabled .bcj-btn-black:hover circle {
+  fill: transparent; }
+
 .buy-ticket-container {
   position: relative;
-  bottom: 10px;
+  bottom: 0px;
   width: 100%;
   z-index: 999;
   -moz-transition-property: opacity;
@@ -2374,18 +2393,19 @@ section#intro {
     -moz-animation: fade-in-out 5s ease-in-out infinite;
     -webkit-animation: fade-in-out 5s ease-in-out infinite;
     animation: fade-in-out 5s ease-in-out infinite;
+    line-height: 150%;
     -moz-transform: scale(0.5, 0.5);
     -ms-transform: scale(0.5, 0.5);
     -webkit-transform: scale(0.5, 0.5);
     transform: scale(0.5, 0.5); }
     section#intro #scrolldownHome circle {
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-      opacity: 0.9;
-      -webkit-transition: opacity, 0.2s;
-      transition: opacity, 0.2s; }
+      fill: rgba(255, 255, 255, 0);
+      -webkit-transition: fill, 0.2s;
+      transition: fill, 0.2s; }
     section#intro #scrolldownHome:hover circle {
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-      opacity: 0.5; }
+      fill: rgba(255, 255, 255, 0.5); }
+    section#intro #scrolldownHome span {
+      color: #fff; }
   section#intro nav {
     display: none;
     position: relative;
@@ -2458,6 +2478,19 @@ section#intro {
       section#intro nav .nav li.menu-discography a, section#intro nav .nav li.menu-gallery a {
         color: #4d4d4d;
         cursor: default; }
+  section#intro #lang_sel_list {
+    display: block;
+    text-align: center;
+    padding: 0;
+    position: relative; }
+    section#intro #lang_sel_list ul li {
+      display: inline; }
+      section#intro #lang_sel_list ul li a, section#intro #lang_sel_list ul li a:visited {
+        font-size: 1em;
+        color: #fff;
+        display: inline-block; }
+        section#intro #lang_sel_list ul li a.lang_sel_sel, section#intro #lang_sel_list ul li a:visited.lang_sel_sel {
+          color: #989898; }
 
 /*********************
 SLICK SLIDER
@@ -2471,9 +2504,7 @@ SLICK SLIDER
   -webkit-transform: translate3d(0, -50%, 0) scale(0.5);
   transform: translate3d(0, -50%, 0) scale(0.5);
   -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5; }
+  transition: opacity 0.2s; }
   .slick-next:not(.slick-disabled):hover, .slick-prev:not(.slick-disabled):hover {
     filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
     opacity: 1; }
@@ -2496,181 +2527,198 @@ EVENT CALENDAR
 /*********************
 UPCOMING CONCERTS
 *********************/
-.upcoming .overview-holder-carousel {
-  margin-top: 20px; }
-  .upcoming .overview-holder-carousel.inactive {
-    visibility: hidden; }
-  .upcoming .overview-holder-carousel .slick-next {
-    right: -60px; }
-  .upcoming .overview-holder-carousel .slick-prev {
-    left: -60px; }
-  .upcoming .overview-holder-carousel .slick-list {
-    padding-right: 1px; }
-.upcoming .overview-holder {
-  display: table;
-  position: relative; }
-.upcoming div.overview {
-  vertical-align: top;
-  text-align: left;
-  border: none;
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.3);
-  padding: 0 1em;
-  overflow: hidden;
-  border-left: 1px solid #010101; }
-  .upcoming div.overview header {
-    padding-bottom: 5px;
-    border-bottom: 3px solid #010101; }
-    .upcoming div.overview header .date_time {
-      padding-top: 25px;
-      text-align: center; }
-    .upcoming div.overview header .location {
-      text-align: center;
-      height: 40px;
-      overflow: hidden;
-      line-height: 1.5em; }
-      .upcoming div.overview header .location .country {
-        display: inline-block; }
-  .upcoming div.overview section {
+.upcoming {
+  max-width: 1800px;
+  float: none;
+  margin: auto; }
+  .upcoming .overview-holder-carousel {
+    margin-top: 20px; }
+    .upcoming .overview-holder-carousel.inactive {
+      visibility: hidden; }
+    .upcoming .overview-holder-carousel .slick-next {
+      right: -60px; }
+    .upcoming .overview-holder-carousel .slick-prev {
+      left: -60px; }
+    .upcoming .overview-holder-carousel .slick-list {
+      padding-right: 1px; }
+  .upcoming .overview-holder {
+    display: table;
     position: relative; }
-    .upcoming div.overview section .thumb {
-      display: none;
-      -moz-transition-property: opacity;
-      -o-transition-property: opacity;
-      -webkit-transition-property: opacity;
-      transition-property: opacity;
-      -moz-transition-duration: 0.1s;
-      -o-transition-duration: 0.1s;
-      -webkit-transition-duration: 0.1s;
-      transition-duration: 0.1s;
-      -moz-transition-timing-function: ease-in;
-      -o-transition-timing-function: ease-in;
-      -webkit-transition-timing-function: ease-in;
-      transition-timing-function: ease-in; }
-      .upcoming div.overview section .thumb img {
-        width: 100%;
-        height: auto;
-        display: block; }
-    .upcoming div.overview section .title {
-      padding: 5px 0px;
-      text-align: center;
-      -moz-transition-property: opacity;
-      -o-transition-property: opacity;
-      -webkit-transition-property: opacity;
-      transition-property: opacity;
-      -moz-transition-duration: 0.1s;
-      -o-transition-duration: 0.1s;
-      -webkit-transition-duration: 0.1s;
-      transition-duration: 0.1s;
-      -moz-transition-timing-function: ease-in;
-      -o-transition-timing-function: ease-in;
-      -webkit-transition-timing-function: ease-in;
-      transition-timing-function: ease-in; }
-    .upcoming div.overview section > a {
-      text-decoration: none; }
-  .upcoming div.overview .description {
-    z-index: 999;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    line-height: 1.2em;
-    text-align: center;
-    -moz-transition-property: opacity;
-    -o-transition-property: opacity;
-    -webkit-transition-property: opacity;
-    transition-property: opacity;
-    -moz-transition-duration: 0.1s;
-    -o-transition-duration: 0.1s;
-    -webkit-transition-duration: 0.1s;
-    transition-duration: 0.1s;
-    -moz-transition-timing-function: ease-in;
-    -o-transition-timing-function: ease-in;
-    -webkit-transition-timing-function: ease-in;
-    transition-timing-function: ease-in;
-    font-size: 0.9em;
-    margin-bottom: 20px; }
-    .upcoming div.overview .description .detail {
-      overflow: hidden; }
-    .upcoming div.overview .description .readmore {
-      margin-bottom: 10px;
-      text-decoration: underline; }
-  .upcoming div.overview .buy-ticket-container {
-    line-height: 1.2em;
-    font-size: 0.9em; }
-    .upcoming div.overview .buy-ticket-container .ticket-info {
-      text-align: center; }
-      .upcoming div.overview .buy-ticket-container .ticket-info .small {
-        font-size: 0.7em; }
-    .upcoming div.overview .buy-ticket-container .ticket-btn {
-      position: relative; }
-  .upcoming div.overview.tokyo header, .upcoming div.overview.tokyo-en header {
-    border-color: #840F15; }
-  .upcoming div.overview.tokyo .description .buy-ticket, .upcoming div.overview.tokyo-en .description .buy-ticket {
-    color: #840F15;
-    border-color: #840F15; }
-  .upcoming div.overview.tokyo .description .playguide, .upcoming div.overview.tokyo-en .description .playguide {
-    color: #840F15; }
-    .upcoming div.overview.tokyo .description .playguide span, .upcoming div.overview.tokyo-en .description .playguide span {
-      border-color: #840F15; }
-      .upcoming div.overview.tokyo .description .playguide span a, .upcoming div.overview.tokyo-en .description .playguide span a {
-        color: #840F15; }
-  .upcoming div.overview.kobe header, .upcoming div.overview.kobe-en header {
-    border-color: #5A4687; }
-  .upcoming div.overview.kobe .description .buy-ticket, .upcoming div.overview.kobe-en .description .buy-ticket {
-    color: #5A4687;
-    border-color: #5A4687; }
-  .upcoming div.overview.kobe .description .playguide, .upcoming div.overview.kobe-en .description .playguide {
-    color: #5A4687; }
-    .upcoming div.overview.kobe .description .playguide span, .upcoming div.overview.kobe-en .description .playguide span {
-      border-color: #5A4687; }
-      .upcoming div.overview.kobe .description .playguide span a, .upcoming div.overview.kobe-en .description .playguide span a {
-        color: #5A4687; }
-  .upcoming div.overview.christmas header {
-    border-color: #785A00; }
-  .upcoming div.overview.christmas .descrition .buy-ticket {
-    color: #785A00;
-    border-color: #785A00; }
-  .upcoming div.overview.christmas .descrition .playguide {
-    color: #785A00; }
-    .upcoming div.overview.christmas .descrition .playguide span {
-      border-color: #785A00; }
-      .upcoming div.overview.christmas .descrition .playguide span a {
-        color: #785A00; }
-.upcoming footer {
-  margin-top: 20px;
-  text-align: center; }
-  .upcoming footer .category span {
-    font-size: 6px; }
-  .upcoming footer .specials .category-filter {
-    border-top: 3px solid #010101;
-    margin: 0 10px;
-    width: 120px;
-    cursor: pointer;
-    display: inline-block;
+  .upcoming div.overview {
+    vertical-align: top;
+    text-align: left;
+    border: none;
     position: relative;
-    -webkit-transition: opacity, 0.5s;
-    transition: opacity, 0.5s; }
-    .upcoming footer .specials .category-filter.off {
-      opacity: 0.2; }
-    .upcoming footer .specials .category-filter.tokyo {
-      border-color: #840F15; }
-    .upcoming footer .specials .category-filter.kobe {
-      border-color: #5A4687; }
-    .upcoming footer .specials .category-filter.christmas {
-      border-color: #785A00; }
-    .upcoming footer .specials .category-filter img {
-      width: 100%;
-      height: auto; }
-    .upcoming footer .specials .category-filter .title {
-      position: absolute;
-      width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 0;
+    overflow: hidden;
+    border-left: 1px solid #010101; }
+    .upcoming div.overview header {
+      padding-bottom: 5px;
+      border-bottom: 3px solid #010101; }
+      .upcoming div.overview header .date_time {
+        padding-top: 25px;
+        text-align: center; }
+      .upcoming div.overview header .location {
+        text-align: center;
+        height: 40px;
+        overflow: hidden;
+        line-height: 1.5em; }
+        .upcoming div.overview header .location .country {
+          display: block;
+          width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis; }
+    .upcoming div.overview section {
+      position: relative; }
+      .upcoming div.overview section .thumb {
+        display: none;
+        -moz-transition-property: opacity;
+        -o-transition-property: opacity;
+        -webkit-transition-property: opacity;
+        transition-property: opacity;
+        -moz-transition-duration: 0.1s;
+        -o-transition-duration: 0.1s;
+        -webkit-transition-duration: 0.1s;
+        transition-duration: 0.1s;
+        -moz-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in; }
+        .upcoming div.overview section .thumb img {
+          width: 100%;
+          height: auto;
+          display: block; }
+      .upcoming div.overview section .title {
+        padding: 10px 5px;
+        text-align: center;
+        -moz-transition-property: opacity;
+        -o-transition-property: opacity;
+        -webkit-transition-property: opacity;
+        transition-property: opacity;
+        -moz-transition-duration: 0.1s;
+        -o-transition-duration: 0.1s;
+        -webkit-transition-duration: 0.1s;
+        transition-duration: 0.1s;
+        -moz-transition-timing-function: ease-in;
+        -o-transition-timing-function: ease-in;
+        -webkit-transition-timing-function: ease-in;
+        transition-timing-function: ease-in; }
+      .upcoming div.overview section > a {
+        text-decoration: none; }
+    .upcoming div.overview .description {
+      z-index: 999;
+      top: 0;
+      left: 0;
       height: 100%;
+      width: 100%;
+      line-height: 1.5em;
       text-align: center;
-      top: 0; }
-      .upcoming footer .specials .category-filter .title h3 {
-        color: #fff;
-        font-size: 1.2em; }
+      -moz-transition-property: opacity;
+      -o-transition-property: opacity;
+      -webkit-transition-property: opacity;
+      transition-property: opacity;
+      -moz-transition-duration: 0.1s;
+      -o-transition-duration: 0.1s;
+      -webkit-transition-duration: 0.1s;
+      transition-duration: 0.1s;
+      -moz-transition-timing-function: ease-in;
+      -o-transition-timing-function: ease-in;
+      -webkit-transition-timing-function: ease-in;
+      transition-timing-function: ease-in;
+      margin-bottom: 20px;
+      padding: 0 5px; }
+      .upcoming div.overview .description .detail {
+        height: 80px;
+        overflow: hidden;
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, black), color-stop(0.35, black), color-stop(0.5, black), color-stop(0.7, black), color-stop(1, transparent)); }
+        .upcoming div.overview .description .detail p {
+          display: block;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          width: 100%;
+          overflow: hidden; }
+      .upcoming div.overview .description .readmore {
+        margin-bottom: 10px;
+        text-decoration: underline; }
+    .upcoming div.overview .buy-ticket-container {
+      line-height: 1.2em;
+      font-size: 0.9em;
+      padding: 10px; }
+      .upcoming div.overview .buy-ticket-container .ticket-info {
+        text-align: center; }
+        .upcoming div.overview .buy-ticket-container .ticket-info .small {
+          font-size: 0.7em; }
+      .upcoming div.overview .buy-ticket-container .ticket-btn {
+        position: relative; }
+    .upcoming div.overview.tokyo header, .upcoming div.overview.tokyo-en header {
+      border-color: #840F15; }
+    .upcoming div.overview.tokyo .description .buy-ticket, .upcoming div.overview.tokyo-en .description .buy-ticket {
+      color: #840F15;
+      border-color: #840F15; }
+    .upcoming div.overview.tokyo .description .playguide, .upcoming div.overview.tokyo-en .description .playguide {
+      color: #840F15; }
+      .upcoming div.overview.tokyo .description .playguide span, .upcoming div.overview.tokyo-en .description .playguide span {
+        border-color: #840F15; }
+        .upcoming div.overview.tokyo .description .playguide span a, .upcoming div.overview.tokyo-en .description .playguide span a {
+          color: #840F15; }
+    .upcoming div.overview.kobe header, .upcoming div.overview.kobe-en header {
+      border-color: #5A4687; }
+    .upcoming div.overview.kobe .description .buy-ticket, .upcoming div.overview.kobe-en .description .buy-ticket {
+      color: #5A4687;
+      border-color: #5A4687; }
+    .upcoming div.overview.kobe .description .playguide, .upcoming div.overview.kobe-en .description .playguide {
+      color: #5A4687; }
+      .upcoming div.overview.kobe .description .playguide span, .upcoming div.overview.kobe-en .description .playguide span {
+        border-color: #5A4687; }
+        .upcoming div.overview.kobe .description .playguide span a, .upcoming div.overview.kobe-en .description .playguide span a {
+          color: #5A4687; }
+    .upcoming div.overview.christmas header {
+      border-color: #785A00; }
+    .upcoming div.overview.christmas .descrition .buy-ticket {
+      color: #785A00;
+      border-color: #785A00; }
+    .upcoming div.overview.christmas .descrition .playguide {
+      color: #785A00; }
+      .upcoming div.overview.christmas .descrition .playguide span {
+        border-color: #785A00; }
+        .upcoming div.overview.christmas .descrition .playguide span a {
+          color: #785A00; }
+  .upcoming footer {
+    margin-top: 20px;
+    text-align: center; }
+    .upcoming footer .category span {
+      font-size: 6px; }
+    .upcoming footer .specials .category-filter {
+      border-top: 3px solid #010101;
+      margin: 0 10px;
+      width: 120px;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      -webkit-transition: opacity, 0.5s;
+      transition: opacity, 0.5s; }
+      .upcoming footer .specials .category-filter.off {
+        opacity: 0.2; }
+      .upcoming footer .specials .category-filter.tokyo {
+        border-color: #840F15; }
+      .upcoming footer .specials .category-filter.kobe {
+        border-color: #5A4687; }
+      .upcoming footer .specials .category-filter.christmas {
+        border-color: #785A00; }
+      .upcoming footer .specials .category-filter img {
+        width: 100%;
+        height: auto; }
+      .upcoming footer .specials .category-filter .title {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        top: 0; }
+        .upcoming footer .specials .category-filter .title h3 {
+          color: #fff;
+          font-size: 1.2em; }
 
 .no-touch .upcoming div.overview section .thumb {
   display: block; }
@@ -2711,7 +2759,10 @@ UPCOMING CONCERTS
     display: block; }
 
 .news-holder {
-  padding: 0 10%; }
+  padding: 0 10%;
+  max-width: 1800px;
+  margin: auto;
+  float: none; }
   .news-holder h3 {
     color: #989898; }
   .news-holder .banner {
@@ -3347,28 +3398,14 @@ a.go-top {
     transform: scale(0.5, 0.5);
     display: block;
     margin: auto; }
-    a.go-top svg circle {
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
-      opacity: 0.9;
-      -webkit-transition: opacity, 0.2s;
-      transition: opacity, 0.2s; }
   a.go-top span {
     display: inline-block; }
   a.go-top:hover {
     color: #fff; }
-    a.go-top:hover circle {
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-      opacity: 0.5; }
   a.go-top.invert {
     color: #010101; }
-    a.go-top.invert circle {
-      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-      opacity: 0.5; }
     a.go-top.invert:hover {
       color: #010101; }
-      a.go-top.invert:hover circle {
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
-        opacity: 0.2; }
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -3634,6 +3671,9 @@ view.
 .single-schedule h1 {
   margin-bottom: 0; }
 
+svg:not(:root) {
+  overflow: visible; }
+
 body.en section#intro .short-profile {
   font-weight: normal;
   line-height: 1.5em; }
@@ -3646,6 +3686,10 @@ body.en .upcoming footer .specials .category-filter .title h3 {
   line-height: 1.2em; }
 body.en .upcoming div.overview .buy-ticket-container .ticket-info .small {
   font-size: 1em; }
+body.en section#about {
+  font-size: 18px; }
+  body.en section#about p {
+    max-width: 560px !important; }
 
 /*********************
 LARGER MOBILE DEVICES
@@ -3738,6 +3782,8 @@ tweeners.
   *********************/
   .upcoming {
     padding: 0 10%; }
+    .upcoming div.overview .description .detail {
+      height: 180px; }
     .upcoming footer .specials .category-filter {
       width: 200px; }
       .upcoming footer .specials .category-filter .title h3 {

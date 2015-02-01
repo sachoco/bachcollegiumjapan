@@ -9,15 +9,15 @@
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/teiki.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
                                 <div class="inner-content">
-                                    <div>バッハ・コレギウム・ジャパン</div>
+                                    <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <h1 >２０１５年度定期演奏会<br>公演ラインナップ発表</h1>
+                                    <h1 ><?php _e("Subscription concerts in 2015<br>have been announced","bonestheme"); ?></h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <h1>定期会員募集中</h1>
+                                    <h1><?php _e("Call for new subscribers","bonestheme"); ?></h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <div>詳細はこちら</div>
+                                    <div><?php _e("Read more","bonestheme"); ?></div>
                                 </div>
                             </div>
                             </a>
@@ -50,10 +50,10 @@
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/suntory.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content">
                                 <div class="inner-content">
-                                    <div>ニュース</div>
+                                    <div><?php _e("News","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h2>鈴木雅明とバッハ・コレギウム・ジャパン</h2>
-                                    <h1>第45回サントリー音楽賞受賞</h1>
+                                    <h2><?php _e("Masaaki Suzuki & Bach Collegium Japan","bonestheme"); ?></h2>
+                                    <h1><?php _e("awarded the 45th Suntory Music Prize","bonestheme"); ?></h1>
                                 </div>
                             </div>
                             </a>
@@ -65,12 +65,12 @@
                             <a href="<?php echo get_home_url().'/bcj_echo' ?>">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/echo.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
-                                <div class="inner-content"><div>エコー・クラシック賞</div>
+                                <div class="inner-content"><div><?php _e("Echo Klassik Prize","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 >BCJ教会カンタータ<br>全曲録音完遂</h1>
+                                    <h1 ><?php _e("Completion of recordings<br>of all the church cantatas","bonestheme"); ?></h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <div>BISレコーズがエディトリアル・アチーブメント・オブ・ザ・イヤー部門を受賞</div>
+                                    <div><?php _e("BIS Records receives the Editorial Achievement of the Year prize","bonestheme"); ?></div>
                                     <!--                                 <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <h1 >6.22</h1>
                                     <div>（水）14時</div>
@@ -87,9 +87,17 @@
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/support.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
                                 <div class="inner-content">
+                                    <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+                                    <div>Keep the legacy of Bach alive</div>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h1 >SUPPORT BCJ<br>Call for new member<br>of the BCJ Friends & Society</h1>
+                                    <?php else: ?>
                                     <div>更にワンランク上のご支援を</div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <h1 >SUPPORT BCJ<br>BCJソサエティ・フレンズ<br>会員募集中</h1>
+                                    <?php endif; ?>
+                                    
+                                    
                                 </div>
                             </div>
                             </a>
@@ -175,7 +183,7 @@ function filter_where( $where = '' ) {
 
                             </div>
 
-                            <div class="location"><span class="country"><?php the_field('location', $post->ID); ?></span> <br><span class="country">（<?php the_field('country', $post->ID); ?>）</span></div>
+                            <div class="location"><span class="country"><?php the_field('location', $post->ID); ?></span><span class="country">（<?php the_field('country', $post->ID); ?>）</span></div>
                         </header>
                         <section>
                             <div class="thumb">
@@ -197,6 +205,7 @@ function filter_where( $where = '' ) {
                             <a href="<?php the_permalink(); ?>">
                             <div class="description">
                                 <div class="detail"><?php the_excerpt(); ?></div>
+                                <div class="overlay"></div>
                                 <!-- <div class="readmore"><a href="<?php the_permalink(); ?>">詳細はこちら</a></div> -->
                             </div>
                             </a>
@@ -306,7 +315,7 @@ function filter_where( $where = '' ) {
             <div class="news-holder wrap-padding">
                 <div class="m-all t-all d-all last-col" >
                     <div class="m-all t-all d-all news" >
-                        <h3><?php _e("News","bonestheme"); ?></h3>
+                        <h3><?php _e("Latest News","bonestheme"); ?></h3>
                 <?php
                     $args = array(
                       'post_type' => 'post',
@@ -389,6 +398,19 @@ function filter_where( $where = '' ) {
                         </div>
                 </div>
                 <div id="about_bcj_3" >
+                    <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+                    <p class="first">
+                    Bach Collegium Japan is an ensemble consisting of performers of original instruments and choir formed in 1990 by Masaaki Suzuki, the internationally renowned and highly reputed Bach performer, organist, harpsichordist, conductor and musicologist.
+                    </p>
+
+                    <p class="second">
+                    Bach Collegium Japan performs frequently in Japan and overseas with the aim of presenting ideal interpretations of Baroque music centring on the religious works of J.S. Bach. In 1995 the ensemble embarked on a project aimed at recording Bach’s complete church cantatas in chronological order. This project was eventually completed in February 2013 and has met with lavish praise in Japan and overseas as an internationally outstanding and exceptional achievement of the first order.
+                    </p>
+
+                    <p class="third">
+                    Bach Collegium Japan and Masaaki Suzuki were awarded the 45th Suntory Music Prize in 2014. This was also the year when they performed for the first time as far afield as New Zealand and Mexico. The activities of the ensemble are thus increasingly overstepping national borders to win the ensemble a high degree of international recognition.
+                    </p>                    
+                    <?php else: ?>
                     <p class="first">
                     バッハ・コレギウム・ジャパン（BCJ）は世界的なバッハ演奏家、オルガン・チェンバロ奏者、指揮者、また音楽研究者としてもその才能を高く評価されている鈴木雅明がオリジナル楽器のスペシャリストを擁し、1990年に結成したオーケストラと合唱団です。
                     </p>
@@ -400,6 +422,8 @@ function filter_where( $where = '' ) {
                     <p class="third">
                     2014年にはバッハ・コレギウム・ジャパンと鈴木雅明に対して第45回サントリー音楽賞受賞、初のニュージーランド、メキシコ公演を果たすなど、その活動は国境の枠を越え、ますます注目されています。
                     </p>
+                    <?php endif; ?> 
+
                     <div class="clear"></div>
                 </div>
 
@@ -422,8 +446,8 @@ function filter_where( $where = '' ) {
                         </ul>
                     </div>
                     <div class="clear"></div>
-                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('bcj')->ID); ?>">BCJ profile<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_bcj_profile.jpg" /></a></div>
-                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('masaaki_suzuki')->ID); ?>">Masaaki Suzuki profile<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_masaaki_profile.jpg" /></a></div>
+                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(10); ?>">BCJ profile<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_bcj_profile.jpg" /></a></div>
+                    <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(3377); ?>">Masaaki Suzuki profile<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_masaaki_profile.jpg" /></a></div>
                     <div class="clear"></div>
                     <?php else: ?>
                     <div class="award_activitity">
@@ -481,9 +505,9 @@ function filter_where( $where = '' ) {
 
                     <!-- <span class="bcj-btn ">BCJディスコグラフィ詳細はこちら</span> -->
                     <a href="#" class="go-top">
-                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
-                            <circle fill="#FFFFFF" cx="20" cy="20" r="20"/>
-                            <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
+                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px" class="bcj-btn-white">
+                            <circle fill="none" stroke="#FFFFFF" cx="20" cy="20" r="19.5"/>
+                            <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
                         </svg>
                         <span>TO THE TOP</span>
                     </a>
@@ -565,9 +589,9 @@ Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and ch
             </div>
 
             <a href="#" class="go-top invert">
-                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
-                    <circle fill="#000000" cx="20" cy="20" r="20"/>
-                    <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
+                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px" class="bcj-btn-black">
+                    <circle fill="none" stroke="#000000" cx="20" cy="20" r="19.5"/>
+                    <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
                 </svg>
                 <span>TO THE TOP</span>
             </a>
@@ -591,9 +615,9 @@ Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and ch
                 </div>
                 <div style="text-align:center;margin-bottom: 100px">
                     <a href="#" class="go-top invert">
-                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
-                            <circle fill="#000000" cx="20" cy="20" r="20"/>
-                            <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
+                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px" class="bcj-btn-black">
+                            <circle fill="none" stroke="#000000" cx="20" cy="20" r="19.5"/>
+                            <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
                         </svg>
                         <span>TO THE TOP</span>
                     </a>

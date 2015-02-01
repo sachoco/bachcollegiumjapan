@@ -529,15 +529,22 @@ section#intro {
 	#scrolldownHome {
 		@include animation(fade-in-out 5s ease-in-out infinite);
 		// margin-top: 2vh;
+		line-height: 150%;
 		@include scale(0.5);
+		
 		circle {
-			@include opacity(0.9);
-			@include transition(opacity, .2s);
+			fill: rgba(255,255,255,0);
+			// @include opacity(0);
+			@include transition(fill, .2s);			
 		}
 		&:hover {
 			circle {
-				@include opacity(0.5);
+				fill: rgba(255,255,255,0.5);
+				// @include opacity(0.5);					
 			}
+		}
+		span {
+			color: $white;
 		}
 	}
 	nav {
@@ -658,6 +665,28 @@ section#intro {
 
 	}
 
+	#lang_sel_list {
+		// padding: 0 1em 0 1em;
+		display: block;
+		text-align: center;
+		padding: 0;
+		// top: 5px;
+		position: relative;
+		ul {
+			li {
+				display: inline;
+				a, a:visited {
+					font-size: 1em;
+					color: $white;
+					display: inline-block;
+					&.lang_sel_sel {						
+						color: $gray;
+					}
+				}
+			}
+		}
+	}
+
 }
 
 
@@ -670,7 +699,7 @@ SLICK SLIDER
 .slick-next, .slick-prev {
 	@include transform(translate3d(0,-50%,0) scale(0.5));
 	@include transition(opacity .2s);
-	@include opacity(.5);
+	// @include opacity(.5);
 	&:not(.slick-disabled) {
 		&:hover {
 			@include opacity(1);
@@ -699,7 +728,9 @@ UPCOMING CONCERTS
 *********************/
 .upcoming  {
 	// padding: 0 10%;
-
+	max-width: 1800px;
+	float: none;
+	margin: auto;
 	.overview-holder-carousel {
 		margin-top: 20px;
 		&.inactive {
@@ -724,7 +755,8 @@ UPCOMING CONCERTS
 		 border: none;
 		 position: relative;
 		 background-color: rgba($white,0.3);
-		 padding: 0 1em;
+		 // padding: 0 1em;
+		 padding: 0;
 		 overflow: hidden;
 //@include box-shadow(rgba(black, 0.4) 0px 1px 2px);
   		border-left: 1px solid $border-color;
@@ -752,7 +784,11 @@ UPCOMING CONCERTS
 				 overflow: hidden;
 				 line-height: 1.5em;
 				 .country {
-					display: inline-block;
+					display: block;
+					width: 100%;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
 				}
 	 		}
 		}
@@ -772,7 +808,7 @@ UPCOMING CONCERTS
 				}
 	 		}
 	 		.title {
-			 	padding: 5px 0px;
+			 	padding: 10px 5px;
 			 	text-align: center;
 			 	// height: 100px;
 				@include transition-property(opacity);
@@ -789,6 +825,7 @@ UPCOMING CONCERTS
 		.description {
 			//@include box-shadow(rgba(black, 0.4) 0px 1px 2px);
 
+
 		 	// position: absolute;
 		 	z-index: 999;
 			//margin-top: 320px;
@@ -796,19 +833,38 @@ UPCOMING CONCERTS
 			left: 0;
 			height: 100%;
 			width: 100%;
-			line-height: 1.2em;
+			line-height: 1.5em;
 			text-align: center;
 			// opacity: 0;
 			@include transition-property(opacity);
 			@include transition-duration(0.1s);
 			@include transition-timing-function(ease-in);
-			font-size: 0.9em;
+			// font-size: 0.9em;
 			margin-bottom: 20px;
+			padding: 0 5px;
 
 			.detail {
 				// height: 170px;
 				// margin-bottom: 10px;
+				height: 80px;
 				overflow: hidden;
+				-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+			    color-stop(0.00,  rgba(0,0,0,1)),
+			    color-stop(0.35,  rgba(0,0,0,1)),
+			    color-stop(0.50,  rgba(0,0,0,1)),
+			    color-stop(0.70,  rgba(0,0,0,1)),
+			    color-stop(1.00,  rgba(0,0,0,0)));
+				p {
+
+					display: block;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					width: 100%;
+					overflow: hidden;
+					
+					
+				}
+				
 
 			}
 			.readmore {
@@ -817,11 +873,19 @@ UPCOMING CONCERTS
 				// font-size: 0.8em;
 				text-decoration: underline;
 			}
+			// .overlay {
+			// 	position: absolute;
+			// 	bottom: 0;
+			// 	width: 100%;
+			// 	height: 30px;
+			// 	@include background-image(linear-gradient(bottom,  rgba(255,255,255,255.8) 0%,rgba(255,255,255,0) 100%));
+			// }
 
 		}
 		.buy-ticket-container {
 			line-height: 1.2em;
 			font-size: 0.9em;
+			padding: 10px;
 			.ticket-info {
 				text-align: center;
 				.small {
@@ -1044,6 +1108,9 @@ UPCOMING CONCERTS
 
 .news-holder {
 	padding: 0 10%;
+	max-width: 1800px;
+	margin: auto;
+	float: none;
 	h3 {
 		color:  $gray;
 
@@ -2030,8 +2097,8 @@ POSTS & CONTENT STYLES
 			display: block;
 			margin: auto;
 			circle {
-				@include opacity(0.9);
-				@include transition(opacity, .2s);
+				// @include opacity(0.9);
+				// @include transition(opacity, .2s);
 			}
 		}
 		span {
@@ -2040,7 +2107,7 @@ POSTS & CONTENT STYLES
 
 		&:hover {
 			circle {
-				@include opacity(0.5);
+				// @include opacity(0.5);
 			}
 			color: $white;
 		}
@@ -2048,12 +2115,12 @@ POSTS & CONTENT STYLES
 		&.invert {
 			color: $black;
 			circle {
-				@include opacity(0.5);
+				// @include opacity(0.5);
 			}
 			&:hover {
 				color: $black;
 				circle {
-					@include opacity(0.2);
+					// @include opacity(0.2);
 				}
 			}
 		}
@@ -2520,6 +2587,9 @@ FOOTER STYLES
 	}	
 }
 
+svg:not(:root) {
+	overflow: visible;
+}
 body.en {
 	section#intro {
 		.short-profile {
@@ -2539,5 +2609,11 @@ body.en {
 	}
 	.upcoming div.overview .buy-ticket-container .ticket-info .small {
 		font-size: 1em;
+	}
+	section#about {
+		font-size: 18px;
+		p {
+			max-width: 560px !important;
+		}
 	}
 } 

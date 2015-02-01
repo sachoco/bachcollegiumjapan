@@ -241,6 +241,8 @@ UPCOMING CONCERTS
 *********************/
 .upcoming {
   padding: 0 10%; }
+  .upcoming div.overview .description .detail {
+    height: 180px; }
   .upcoming footer .specials .category-filter {
     width: 200px; }
     .upcoming footer .specials .category-filter .title h3 {

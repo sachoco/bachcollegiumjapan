@@ -378,4 +378,11 @@ function append_language_class($classes){
   $classes[] = ICL_LANGUAGE_CODE;  //or however you want to name your class based on the language code
   return $classes;
 }
+
+function translate_date_format($format) {
+  if (function_exists('icl_translate'))
+    $format = icl_translate('Formats', $format, $format);
+return $format;
+}
+add_filter('option_date_format', 'translate_date_format');
 /* DON'T DELETE THIS CLOSING TAG */ ?>

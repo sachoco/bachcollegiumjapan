@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme bones\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-01-28 10:31+0100\n"
+"POT-Creation-Date: 2015-02-01 00:29+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Satoshi Shiraishi <sachoco@gmail.com>\n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
@@ -22,48 +22,89 @@ msgstr ""
 msgid "Footer Links"
 msgstr "フッターのリンク"
 
-#: ../../front-page.php:104
+#: ../../front-page.php:12
+msgid "Bach Collegium Japan"
+msgstr "バッハ・コレギウム・ジャパン "
+
+#: ../../front-page.php:15
+msgid "Subscription concerts in 2015<br>have been announced"
+msgstr "２０１５年度定期演奏会<br>公演ラインナップ発表"
+
+#: ../../front-page.php:18
+msgid "Call for new subscribers"
+msgstr "定期会員募集中"
+
+#: ../../front-page.php:20
+msgid "Read more"
+msgstr "詳細はこちら"
+
+#: ../../front-page.php:53
+msgid "News"
+msgstr "ニュース"
+
+#: ../../front-page.php:55
+msgid "Masaaki Suzuki & Bach Collegium Japan"
+msgstr "鈴木雅明とバッハ・コレギウム・ジャパン"
+
+#: ../../front-page.php:56
+msgid "awarded the 45th Suntory Music Prize"
+msgstr "第45回サントリー音楽賞受賞"
+
+#: ../../front-page.php:68
+msgid "Echo Klassik Prize"
+msgstr "エコー・クラシック賞"
+
+#: ../../front-page.php:70
+msgid "Completion of recordings<br>of all the church cantatas"
+msgstr "BCJ教会カンタータ<br>全曲録音完遂"
+
+#: ../../front-page.php:73
+msgid "BIS Records receives the Editorial Achievement of the Year prize"
+msgstr ""
+"BISレコーズがエディトリアル・アチーブメント・オブ・ザ・イヤー部門を受賞"
+
+#: ../../front-page.php:112
 msgid "Concerts"
 msgstr "公演情報"
 
-#: ../../front-page.php:208
+#: ../../front-page.php:216
 msgid "Bach Collegium Japan Ticket Center"
 msgstr "バッハ・コレギウム・ジャパン チケットセンター"
 
-#: ../../front-page.php:212
+#: ../../front-page.php:220
 msgid "Buy Ticket"
 msgstr "チケット購入"
 
-#: ../../front-page.php:221
+#: ../../front-page.php:229 ../../front-page.php:231
 msgid "Ticket Pia"
 msgstr "チケットぴあ"
 
-#: ../../front-page.php:226
+#: ../../front-page.php:234 ../../front-page.php:236
 msgid "e+"
 msgstr "イープラス"
 
-#: ../../front-page.php:280
+#: ../../front-page.php:288
 msgid "Subscription Concert<br>in Tokyo"
 msgstr "東京定期演奏会"
 
-#: ../../front-page.php:284
-#, fuzzy
+#: ../../front-page.php:292
 msgid "Subscription Concert<br>in Kobe"
 msgstr "神戸定期演奏会"
 
-#: ../../front-page.php:309
-msgid "News"
+#: ../../front-page.php:317
+#, fuzzy
+msgid "Latest News"
 msgstr "お知らせ"
 
-#: ../../front-page.php:383
+#: ../../front-page.php:391
 msgid "Bach Collegium Japan and Masaaki Suzuki"
 msgstr "バッハ・コレギウム・ジャパンと鈴木雅明"
 
-#: ../../front-page.php:506
+#: ../../front-page.php:529
 msgid "Introduction to the BCJ Friends and Society"
 msgstr "フレンズ＆ソサエティのご案内"
 
-#: ../../front-page.php:515
+#: ../../front-page.php:538
 msgid "Read more about BCJ Friends & Society"
 msgstr "BCJフレンズ＆ソサエティ詳細はこちら"
 
@@ -139,7 +180,7 @@ msgstr ""
 msgid "Date"
 msgstr ""
 
-#: ../../header.php:98 ../../header.php:143 ../../page-test.php:30
+#: ../../header.php:99 ../../header.php:145 ../../page-test.php:30
 #: ../../page-test.php:59 ../../library/bones.php:228
 msgid "The Main Menu"
 msgstr "メインメニュー"

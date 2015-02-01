@@ -85,9 +85,10 @@ Our desire is to enable as many people as possible to share with us the joy of t
                 <div class="start">
                     <a href="#home" id="scrolldownHome" class="svg">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px">
-                            <circle fill="#FFFFFF" cx="20" cy="19.647" r="20"/>
-                            <polyline fill="none" stroke="#000000" stroke-miterlimit="10" points="29,15.647 20,27.647 11,15.647" />
+                            <circle fill="#FFFFFF" stroke="#FFFFFF" stroke-miterlimit="10" cx="20" cy="20" r="19.5"/>
+                            <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="29,15.647 20,27.647 11,15.647" />
                         </svg>
+                        <br><span>SCROLL DOWN</span>
                     </a>        
                 </div>
                 <div class="navigation">
@@ -106,7 +107,8 @@ Our desire is to enable as many people as possible to share with us the joy of t
                             'fallback_cb' => ''                             // fallback function (if there is one)
                         )); ?>
                         </nav>  
-                        <div style="padding-top: 30px;font-size:1.2em">English content will be published soon. Please visit <a style="color:white;" href="http://bcj2014.bachcollegiumjapan.org/en">our old site</a> for the time being.</div>      
+                        <div style="padding-top: 30px;font-size:1.2em"><?php do_action('icl_language_selector'); ?></div>      
+                        <!-- <div style="padding-top: 30px;font-size:1.2em">English content will be published soon. Please visit <a style="color:white;" href="http://bcj2014.bachcollegiumjapan.org/en">our old site</a> for the time being.</div>       -->
                 </div>
             </div>
         </section>
