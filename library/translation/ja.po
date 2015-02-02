@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme bones\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-01 00:29+0100\n"
+"POT-Creation-Date: 2015-02-02 11:56+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Satoshi Shiraishi <sachoco@gmail.com>\n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
@@ -67,44 +67,45 @@ msgstr ""
 msgid "Concerts"
 msgstr "公演情報"
 
-#: ../../front-page.php:216
+#: ../../front-page.php:217
 msgid "Bach Collegium Japan Ticket Center"
 msgstr "バッハ・コレギウム・ジャパン チケットセンター"
 
-#: ../../front-page.php:220
+#: ../../front-page.php:221 ../../index.php:18
 msgid "Buy Ticket"
 msgstr "チケット購入"
 
-#: ../../front-page.php:229 ../../front-page.php:231
+#: ../../front-page.php:230 ../../front-page.php:232 ../../index.php:27
+#: ../../index.php:29
 msgid "Ticket Pia"
 msgstr "チケットぴあ"
 
-#: ../../front-page.php:234 ../../front-page.php:236
+#: ../../front-page.php:235 ../../front-page.php:237 ../../index.php:32
+#: ../../index.php:34
 msgid "e+"
 msgstr "イープラス"
 
-#: ../../front-page.php:288
+#: ../../front-page.php:289
 msgid "Subscription Concert<br>in Tokyo"
 msgstr "東京定期演奏会"
 
-#: ../../front-page.php:292
+#: ../../front-page.php:293
 msgid "Subscription Concert<br>in Kobe"
 msgstr "神戸定期演奏会"
 
-#: ../../front-page.php:317
-#, fuzzy
+#: ../../front-page.php:318
 msgid "Latest News"
 msgstr "お知らせ"
 
-#: ../../front-page.php:391
+#: ../../front-page.php:392
 msgid "Bach Collegium Japan and Masaaki Suzuki"
 msgstr "バッハ・コレギウム・ジャパンと鈴木雅明"
 
-#: ../../front-page.php:529
+#: ../../front-page.php:530
 msgid "Introduction to the BCJ Friends and Society"
 msgstr "フレンズ＆ソサエティのご案内"
 
-#: ../../front-page.php:538
+#: ../../front-page.php:539
 msgid "Read more about BCJ Friends & Society"
 msgstr "BCJフレンズ＆ソサエティ詳細はこちら"
 

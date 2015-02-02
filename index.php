@@ -15,31 +15,31 @@
 						<?php the_content(); ?>
 						<?php if(get_post_type( get_the_ID() )=="schedule"): ?>
                         <div class="buy-ticket-container">
-                            <span class="buy-ticket "><span class="buy-text">チケット購入</span></span>
+                            <span class="buy-ticket "><span class="buy-text"><?php _e("Buy Ticket","bonestheme"); ?></span></span>
                             <span class="playguide">
                             <?php
                                 $pia = get_field('ticket_pia');
                                 $eplus = get_field('e+');
-                                if($pia||$eplus) :
+                                // if($pia||$eplus) :
                             ?>
+                                    <?php
+                                        if($pia){
+                                           echo '<span><a target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>'; 
+                                       }
+                                        if($eplus){
+                                           echo '<span><a target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>'; 
+                                       }                                       
+                                    ?>
                             <?php
-                                if($pia){
-                                   echo '<span><a target="_blank" href="'. $pia .'"">チケットぴあ</a></span>'; 
-                               }else{
-                                   echo '<span class="disabled">チケットぴあ</span>'; 
-                               }
-                                if($eplus){
-                                   echo '<span><a target="_blank" href="'. $eplus .'"">イープラス</a></span>'; 
-                               }else{
-                                   echo '<span class="disabled">イープラス</span>'; 
-                               }                                       
-                            ?>
-                            <?php
-                                else:
+                                // else:
 
-                                echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
+                                // echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
 
-                                endif;
+                                // endif;
                             ?>
                             </span>
                         </div>	

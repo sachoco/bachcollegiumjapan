@@ -972,7 +972,7 @@ http://www.youtube.com/watch?v=hwdVpKiJzac
 .blue-btn, .comment-reply-link, #submit, .bcj-btn, .buy-ticket {
   display: inline-block;
   position: relative;
-  font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", YuMincho, "HGS明朝E", "メイリオ", Meiryo, serif;
+  font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", YuMincho, "Palatino Linotype", "Book Antiqua", Palatino, "HG明朝E", "メイリオ", Meiryo, serif;
   text-decoration: none;
   font-weight: normal;
   padding: 6px 24px;
@@ -1932,7 +1932,7 @@ html {
 
 body {
   height: 100%;
-  font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", YuMincho, "HGS明朝E", "メイリオ", Meiryo, serif;
+  font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", YuMincho, "Palatino Linotype", "Book Antiqua", Palatino, "HG明朝E", "メイリオ", Meiryo, serif;
   font-size: 10px;
   line-height: 2;
   color: #010101;
@@ -2354,7 +2354,8 @@ section#intro {
       height: 15%; }
       section#intro .content .start > #scrolldownHome {
         top: 50%;
-        margin-top: -20px; }
+        margin-top: -20px;
+        text-decoration: none; }
     section#intro .content .navigation {
       height: 25%; }
   section#intro .roles {
@@ -3167,7 +3168,7 @@ nav.main-nav {
       font-size: 0.6em;
       width: 100%;
       text-align: center;
-      z-index: 0;
+      z-index: 10;
       display: block;
       color: #010101;
       -webkit-transition: all 0.5s ease-in-out;
@@ -3207,7 +3208,7 @@ nav.main-nav {
       background: none;
       font-size: 1.5em;
       margin: 0.5em 0.2em;
-      font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", YuMincho, "HGS明朝E", "メイリオ", Meiryo, serif;
+      font-family: Perpetua, "Minion Pro", "Kozuka Mincho Pro", "Kozuka Mincho Std", "小塚明朝 Pro R", "小塚明朝 Std R", "游明朝", YuMincho, "Palatino Linotype", "Book Antiqua", Palatino, "HG明朝E", "メイリオ", Meiryo, serif;
       text-transform: uppercase; }
       #lang_sel_list ul li a.lang_sel_sel, #lang_sel_list ul li a:visited.lang_sel_sel {
         display: none; }
@@ -3690,6 +3691,8 @@ body.en section#about {
   font-size: 18px; }
   body.en section#about p {
     max-width: 560px !important; }
+body.en .news-item header .title {
+  height: 4em; }
 
 /*********************
 LARGER MOBILE DEVICES

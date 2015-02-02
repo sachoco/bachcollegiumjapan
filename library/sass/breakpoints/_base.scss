@@ -474,6 +474,7 @@ section#intro {
 				// position: absolute;
 				top: 50%;
 				margin-top: -20px;
+				text-decoration: none;
 			}
 
 			
@@ -1714,7 +1715,7 @@ nav.main-nav {
 			font-size: 0.6em;
 			width: 100%;
 			text-align: center;
-			z-index: 0;
+			z-index: 10;
 			display: block;
 			color: $black;
 			// opacity: 0;
@@ -2615,5 +2616,8 @@ body.en {
 		p {
 			max-width: 560px !important;
 		}
+	}
+	.news-item header .title {
+		height: 4em;
 	}
 } 
