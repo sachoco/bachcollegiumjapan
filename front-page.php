@@ -219,7 +219,7 @@ function filter_where( $where = '' ) {
                                             echo '<span class="small">'.__("Bach Collegium Japan Ticket Center","bonestheme").' </span><br>'; 
                                             echo '<span class="number">℡ ';
                                             if(ICL_LANGUAGE_CODE=="en"){
-                                                echo '+81-33-5301-0950';    
+                                                echo '+81-3-5301-0950';    
                                             }else{
                                                 echo '03-5301-0950'; 
                                             }
@@ -317,7 +317,13 @@ function filter_where( $where = '' ) {
                     ＜チケットに関するお問い合わせ＞<br>
                     バッハ・コレギウム・ジャパン チケットセンター<br> 
                     <?php endif; ?>
-                    ℡ 03-5301-0950
+                     <?php
+                        if(ICL_LANGUAGE_CODE=="en"){
+                            echo '℡ +81-3-5301-0950';    
+                        }else{
+                            echo '℡ 03-5301-0950'; 
+                        }
+                     ?>
 
                     </p>
                 </footer>
