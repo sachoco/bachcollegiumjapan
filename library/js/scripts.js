@@ -115,7 +115,7 @@ jQuery(document).ready(function($) {
   loadGravatars();
 
 function adjustFooterPos(){
-  if($("body.single").length&&$("section#main").height()+$("#page-footer").height()<$(window).height()){
+  if(($("body.single").length||$("body.page").length)&&$("section#main").height()+$("#page-footer").height()<$(window).height()){
     $("#page-footer").addClass("fixed");
   }else if($("#page-footer").hasClass("fixed")){
     $("#page-footer").removeClass("fixed");
@@ -156,6 +156,11 @@ adjustFooterPos();
         $( this ).siblings(".nav").slideToggle();
     });
 
+    $("li.menu-about").on("hover", function(event){
+      event.preventDefault();
+      $(this).find(".sub-menu").toggleClass("show-sub");
+      // $("#main >header").toggleClass("show-sub");
+    });
 
 
 }); /* end of as page load scripts */

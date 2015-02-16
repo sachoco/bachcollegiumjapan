@@ -101,7 +101,7 @@ a {
  * Address `outline` inconsistency between Chrome and other browsers.
  */
 a:focus {
-  outline: thin dotted; }
+  outline: none; }
 
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
@@ -2078,6 +2078,11 @@ LAYOUT & GRID STYLES
   background-color: #ECECEC;
   background: url(../images/bcj_bg_darker.jpg) top center;
   padding-bottom: 4em; }
+  #main > header {
+    -webkit-transition: all, 0.2s;
+    transition: all, 0.2s; }
+    #main > header.show-sub {
+      margin-bottom: 30px; }
 
 .wrap {
   width: 100%;
@@ -2113,7 +2118,7 @@ FEATURE SLIDER
 *********************/
 #feature-slider {
   position: relative;
-  margin: 3px auto 0;
+  margin: 0px auto 0;
   overflow: hidden;
   border-top: 2px solid #010101;
   border-bottom: 2px solid #010101;
@@ -2420,27 +2425,26 @@ section#intro {
       letter-spacing: 0.1em; }
     section#intro nav > ul li a:hover {
       text-decoration: none; }
-    section#intro nav > ul li:before {
+    section#intro nav > ul li > a:before {
       position: absolute;
-      margin-top: 2.7em;
-      font-size: 0.6em;
+      font-size: 0.4em;
       width: 100%;
       text-align: center;
       z-index: 0;
       display: block;
-      -webkit-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out; }
-    section#intro nav > ul li.menu-about:before {
+      bottom: -3px;
+      letter-spacing: 0px; }
+    section#intro nav > ul li.menu-about > a:before {
       content: "BCJについて"; }
-    section#intro nav > ul li.menu-concerts:before {
+    section#intro nav > ul li.menu-concerts > a:before {
       content: "コンサート"; }
-    section#intro nav > ul li.menu-discography:before {
+    section#intro nav > ul li.menu-discography > a:before {
       content: "ディスコグラフィ"; }
-    section#intro nav > ul li.menu-gallery:before {
+    section#intro nav > ul li.menu-gallery > a:before {
       content: "ギャラリー"; }
-    section#intro nav > ul li.menu-friends_society:before {
+    section#intro nav > ul li.menu-friends_society > a:before {
       content: "フレンズ＆ソサエティ"; }
-    section#intro nav > ul li:after {
+    section#intro nav > ul li > a:after {
       position: absolute;
       margin-top: -2.5em;
       font-size: 0.6em;
@@ -2449,10 +2453,9 @@ section#intro {
       z-index: 0;
       display: block;
       color: #989898;
-      -webkit-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out;
-      z-index: 9; }
-    section#intro nav > ul li.menu-discography:after, section#intro nav > ul li.menu-gallery:after {
+      z-index: 9;
+      letter-spacing: 0px; }
+    section#intro nav > ul li.menu-discography > a:after, section#intro nav > ul li.menu-gallery > a:after {
       content: "Coming Soon";
       -moz-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
@@ -2467,7 +2470,7 @@ section#intro {
       display: inline-block;
       color: #989898; }
       section#intro nav .nav li a {
-        padding: 0.2em 1.5em 0.2em;
+        margin: 0.2em 1.5em 0.2em;
         color: #989898; }
       section#intro nav .nav li:hover {
         color: #fff; }
@@ -3093,7 +3096,6 @@ and more scalable.
   /* highlight current page */
   /* end current highlighters */ }
   .nav li {
-    position: relative;
     /*
     so you really have to rethink your dropdowns for mobile.
     you don't want to have it expand too much because the
@@ -3104,7 +3106,7 @@ and more scalable.
     .nav li a {
       display: block;
       text-decoration: none;
-      padding: 0.2em 0.75em 0.75em;
+      margin: 0.2em 0.75em 1em;
       position: relative;
       z-index: 1;
       /*
@@ -3113,9 +3115,31 @@ and more scalable.
       the style.scss file where it's relevant. We want to
       keep this file as small as possible!
       */ }
-    .nav li ul.sub-menu li a,
-    .nav li ul.children li a {
-      padding-left: 30px; }
+    .nav li ul.sub-menu,
+    .nav li ul.children {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      font-size: 14px;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      display: none;
+      background-color: #ECECEC;
+      background: url(../images/bcj_bg_darker.jpg) top center;
+      z-index: 999; }
+      .nav li ul.sub-menu.show-sub,
+      .nav li ul.children.show-sub {
+        display: block; }
+      .nav li ul.sub-menu li a,
+      .nav li ul.children li a {
+        padding-left: 10px;
+        margin-bottom: 0px;
+        line-height: 250%;
+        letter-spacing: 0px; }
+        .nav li ul.sub-menu li a:nth-child(1),
+        .nav li ul.children li a:nth-child(1) {
+          padding-left: 0; }
 
 /* end .nav */
 nav.main-nav {
@@ -3148,42 +3172,37 @@ nav.main-nav {
       letter-spacing: 0.1em; }
     nav.main-nav > ul li a:hover {
       text-decoration: none; }
-    nav.main-nav > ul li:hover {
+    nav.main-nav > ul li:hover > a {
       color: #818181; }
-      nav.main-nav > ul li:hover a {
-        color: #818181; }
-    nav.main-nav > ul li:before {
+    nav.main-nav > ul li a:before {
       position: absolute;
-      margin-top: 2.7em;
       font-size: 0.6em;
       width: 100%;
       text-align: center;
       z-index: 0;
       display: block;
-      -webkit-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out; }
-    nav.main-nav > ul li:after {
+      bottom: -1em; }
+    nav.main-nav > ul li a:after {
       position: absolute;
       top: 20px;
       font-size: 0.6em;
       width: 100%;
+      min-width: 120px;
       text-align: center;
       z-index: 10;
       display: block;
-      color: #010101;
-      -webkit-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out; }
-    nav.main-nav > ul li.menu-about:before {
+      color: #010101; }
+    nav.main-nav > ul li.menu-about > a:before {
       content: "BCJについて"; }
-    nav.main-nav > ul li.menu-concerts:before {
+    nav.main-nav > ul li.menu-concerts > a:before {
       content: "コンサート"; }
-    nav.main-nav > ul li.menu-discography:before {
+    nav.main-nav > ul li.menu-discography > a:before {
       content: "ディスコグラフィ"; }
-    nav.main-nav > ul li.menu-gallery:before {
+    nav.main-nav > ul li.menu-gallery > a:before {
       content: "ギャラリー"; }
-    nav.main-nav > ul li.menu-friends_society:before {
+    nav.main-nav > ul li.menu-friends_society > a:before {
       content: "フレンズ＆ソサエティ"; }
-    nav.main-nav > ul li.menu-discography:after, nav.main-nav > ul li.menu-gallery:after {
+    nav.main-nav > ul li.menu-discography a:after, nav.main-nav > ul li.menu-gallery a:after {
       content: "Coming Soon";
       -moz-transform: rotate(-10deg);
       -ms-transform: rotate(-10deg);
@@ -3235,7 +3254,7 @@ nav.main-nav.inverse {
 POSTS & CONTENT STYLES
 *********************/
 .hentry {
-  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
   text-align: center; }
   .hentry header {
     padding: 0.4em; }
@@ -3407,6 +3426,43 @@ a.go-top {
     color: #010101; }
     a.go-top.invert:hover {
       color: #010101; }
+
+/**
+*
+* Profile BCJ
+*
+**/
+body.page-id-8 .content {
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  text-align: center; }
+  body.page-id-8 .content .title {
+    margin-top: 50px; }
+    body.page-id-8 .content .title h1 {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 3.4em;
+      position: relative; }
+      body.page-id-8 .content .title h1:before {
+        position: absolute;
+        bottom: -3em;
+        font-size: 0.3em;
+        letter-spacing: 0px;
+        content: "バッハ・コレギウム・ジャパン";
+        text-align: center;
+        width: 100%;
+        left: 0; }
+  body.page-id-8 .content .wrap {
+    z-index: 10; }
+body.page-id-8 #background #page-background {
+  background-image: url(../images/home.jpg); }
+body.page-id-8 #main {
+  background: none;
+  padding-bottom: 0; }
+  body.page-id-8 #main > header {
+    background-color: #ECECEC;
+    background: url(../images/bcj_bg_darker.jpg) top center; }
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -4048,7 +4104,6 @@ you can add resource intensive styles.
       */
       /* showing sub-menus */ }
       nav li a {
-        padding: 0.2em 1em 0.75em;
         /*
         you can use hover styles here even though this size
         has the possibility of being a mobile device.
