@@ -212,20 +212,20 @@ function filter_where( $where = '' ) {
                             <div class="buy-ticket-container">
 
                                 <div class="ticket-info">
-                                    <?php
+                                     <?php
                                         $contact = get_field('contact_info');
                                         if($contact){ echo $contact; }else{ 
                                             echo '<span class="small">'.__("Bach Collegium Japan Ticket Center","bonestheme").' </span><br>'; 
                                             echo '<span class="number">℡ ';
                                             if(ICL_LANGUAGE_CODE=="en"){
-                                                echo '+81-33-5301-0950';    
+                                                echo '+81-3-5301-0950';    
                                             }else{
                                                 echo '03-5301-0950'; 
                                             }
                                             echo '</span>';
-                                            
+
                                         }
-                                    ?>
+                                     ?>
                                 </div>
                                 <div class="ticket-btn">
                                     <span class="buy-ticket "><span class="buy-text"><?php _e("Buy Ticket","bonestheme"); ?></span></span>
@@ -316,7 +316,13 @@ function filter_where( $where = '' ) {
                     ＜チケットに関するお問い合わせ＞<br>
                     バッハ・コレギウム・ジャパン チケットセンター<br> 
                     <?php endif; ?>
-                    ℡ 03-5301-0950
+                     <?php
+                        if(ICL_LANGUAGE_CODE=="en"){
+                            echo '℡ +81-3-5301-0950';    
+                        }else{
+                            echo '℡ 03-5301-0950'; 
+                        }
+                     ?>
 
                     </p>
                 </footer>
