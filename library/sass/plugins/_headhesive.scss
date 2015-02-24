@@ -27,16 +27,20 @@ nav.main-nav--clone {
     a,a:hover,a:visited {
         color: $white;
     }
-    li:after {
+    li a:after {
         color: $white !important;
     }
-    li.menu-discography, li.menu-gallery {
+    li.menu-gallery {
          color: darken($white, 70%) !important;
          cursor: default;
          a {
              color: darken($white, 70%) !important;
              cursor: default;               
          }
+    }
+    ul.sub-menu {
+        background-color: rgba($black,.8);
+        background-image: none;
     }
     /* Translate -100% to move off screen */
     -webkit-transform: translateY(-100%);

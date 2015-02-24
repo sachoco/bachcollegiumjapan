@@ -117,6 +117,54 @@ function custom_post_discography() {
 	add_action( 'init', 'custom_post_discography');
 
 
+
+function custom_post_artist() {
+	// creating (registering) the custom type
+	register_post_type( 'artist', /* (http://codex.wordpress.org/Function_Reference/register_post_type) */
+		// let's now add all the options for this post type
+		array( 'labels' => array(
+			'name' => __( 'Artist', 'bonestheme' ), /* This is the Title of the Group */
+			'singular_name' => __( 'Artist', 'bonestheme' ), /* This is the individual type */
+			'all_items' => __( 'All Artist', 'bonestheme' ), /* the all items menu item */
+			'add_new' => __( 'Add New', 'bonestheme' ), /* The add new menu item */
+			'add_new_item' => __( 'Add New Artist', 'bonestheme' ), /* Add New Display Title */
+			'edit' => __( 'Edit', 'bonestheme' ), /* Edit Dialog */
+			'edit_item' => __( 'Edit Artist', 'bonestheme' ), /* Edit Display Title */
+			'new_item' => __( 'New Artist', 'bonestheme' ), /* New Display Title */
+			'view_item' => __( 'View Artist', 'bonestheme' ), /* View Display Title */
+			'search_items' => __( 'Search Artist', 'bonestheme' ), /* Search Custom Type Title */
+			'not_found' =>  __( 'Nothing found in the Database.', 'bonestheme' ), /* This displays if there are no entries yet */
+			'not_found_in_trash' => __( 'Nothing found in Trash', 'bonestheme' ), /* This displays if there is nothing in the trash */
+			'parent_item_colon' => ''
+			), /* end of arrays */
+			'description' => __( 'Artist', 'bonestheme' ), /* Custom Type Description */
+			'public' => true,
+			'publicly_queryable' => true,
+			'exclude_from_search' => false,
+			'show_ui' => true,
+			'query_var' => true,
+			'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */
+			'menu_icon' => 'dashicons-id-alt', /* the icon for the custom post type menu */
+			'rewrite'	=> array( 'slug' => 'artist', 'with_front' => false ), /* you can specify its url slug */
+			'has_archive' => 'artist', /* you can rename the slug here */
+			'capability_type' => 'post',
+			'hierarchical' => false,
+			/* the next one is important, it tells what's enabled in the post editor */
+			'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'sticky')
+		) /* end of options */
+	); /* end of register post type */
+
+	/* this adds your post categories to your custom post type */
+	register_taxonomy_for_object_type( 'artist_category', 'artist' );
+	/* this adds your post tags to your custom post type */
+	register_taxonomy_for_object_type( 'post_tag', 'artist' );
+
+}
+
+	// adding the function to the Wordpress init
+	add_action( 'init', 'custom_post_artist');
+
+
 	/*
 	for more information on taxonomies, go here:
 	http://codex.wordpress.org/Function_Reference/register_taxonomy
@@ -187,6 +235,33 @@ function custom_post_discography() {
 			        'add_or_remove_items' => __( 'Add or remove ディスコグラフィーカテゴリ', 'discography-category' ),
 			        'choose_from_most_used' => __( 'Choose from the most used ディスコグラフィーカテゴリ', 'discography-category' ),
 			        'menu_name' => __( 'ディスコグラフィーカテゴリ', 'discography-category' ),
+			),
+			'show_admin_column' => true,
+			'show_ui' => true,
+			'query_var' => true,
+		)
+	);
+
+
+	register_taxonomy( 'artist_category',
+		array('artist'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
+		array('hierarchical' => true,    /* if this is false, it acts like tags */
+			'labels' => array(
+			       'name' => __( 'アーティストカテゴリ', 'artist-category' ),
+			        'singular_name' => __( 'アーティストカテゴリ', 'artist-category' ),
+			        'search_items' => __( 'Search アーティストカテゴリ', 'artist-category' ),
+			        'popular_items' => __( 'Popular アーティストカテゴリ', 'artist-category' ),
+			        'all_items' => __( 'All アーティストカテゴリ', 'artist-category' ),
+			        'parent_item' => __( 'Parent アーティストカテゴリ', 'artist-category' ),
+			        'parent_item_colon' => __( 'Parent アーティストカテゴリ:', 'artist-category' ),
+			        'edit_item' => __( 'Edit アーティストカテゴリ', 'artist-category' ),
+			        'update_item' => __( 'Update アーティストカテゴリ', 'artist-category' ),
+			        'add_new_item' => __( 'Add New アーティストカテゴリ', 'artist-category' ),
+			        'new_item_name' => __( 'New アーティストカテゴリ', 'artist-category' ),
+			        'separate_items_with_commas' => __( 'Separate アーティストカテゴリ with commas', 'artist-category' ),
+			        'add_or_remove_items' => __( 'Add or remove アーティストカテゴリ', 'artist-category' ),
+			        'choose_from_most_used' => __( 'Choose from the most used アーティストカテゴリ', 'artist-category' ),
+			        'menu_name' => __( 'アーティストカテゴリ', 'artist-category' ),
 			),
 			'show_admin_column' => true,
 			'show_ui' => true,

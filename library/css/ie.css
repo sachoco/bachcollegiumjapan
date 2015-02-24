@@ -385,6 +385,11 @@ UPCOMING CONCERTS
     .upcoming footer .specials .category-filter .title h3 {
       font-size: 1.7em; }
 
+.artists > article:nth-of-type(3n) section {
+  border-right: none !important; }
+.artists > article:nth-of-type(4n) section {
+  border-right: 1px solid #010101; }
+
 /*********************
 HEADER STYLES
 *********************/
@@ -573,6 +578,11 @@ EVENT CALENDAR
 *********************/
 .eventCalendar-wrap .arrow {
   width: 37%; }
+
+.artists > article:nth-of-type(4n) section {
+  border-right: none !important; }
+.artists > article:nth-of-type(6n) section {
+  border-right: 1px solid #010101; }
 
 body.en section#intro .short-profile {
   font-size: 19px; }

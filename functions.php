@@ -385,4 +385,195 @@ function translate_date_format($format) {
 return $format;
 }
 add_filter('option_date_format', 'translate_date_format');
+
+
+
+
+add_action( 'wp_ajax_get_content', 'get_content_callback');
+add_action( 'wp_ajax_nopriv_get_content', 'get_content_callback');
+function get_content_callback(){
+  global $post;
+  if(isset($_REQUEST[id])) $id = $_REQUEST[id];
+  $post = get_post($id);
+
+  echo '<div class="item content" data-id="'.$id.'"><div class="wrap">';
+  echo '<a href="#" class="close"><svg x="0px" y="0px" width="35px" height="35px" viewBox="0 0 35 35" ><line fill="none" stroke="#FFFFFF" x1="33.562" y1="0.746" x2="0.562" y2="33.746"/><line fill="none" stroke="#FFFFFF" x1="33.562" y1="33.746" x2="0.562" y2="0.746"/></svg></a>';
+  echo '<div class="inner"><h2>'.$post->post_title.'</h2><div class="leadimage">'.get_the_post_thumbnail( $id, array( 400 ) ).'</div><div class="text">'.$post->post_content.'</div></div></div>';
+?> 
+      <div class="related-concerts">
+        <h3>関連公演情報</h3>
+        <div class="upcoming">
+                <div class="overview-holder-carousel inactive" >
+                <?php
+                    $args = array(
+                      'post_type' => 'schedule',
+                      'post_status' => 'publish',
+                      'meta_key' => 'schedule-date',
+                      'orderby' => 'meta_value_num',
+                      'order'   => 'ASC',
+                      'posts_per_page' => -1,
+                      'meta_query' => array(
+                                        array(
+                                            'key' => 'schedule-date',
+                                            'value' => date("Ymd"),
+                                            'type' => 'NUMERIC',
+                                            'compare' => '>'
+                                        )
+                                    )
+                    );
+
+                    $the_query = new WP_Query( $args );
+                    $col_count = 1;
+                    $dates = [];
+                    if ( $the_query->have_posts() ) :
+                        while ( $the_query->have_posts() ) : $the_query->the_post();
+                        $unixtimestamp = strtotime(get_field('schedule-date'));
+                        $month = date_i18n("n", $unixtimestamp);
+                        $day = date_i18n("d", $unixtimestamp);
+                        $dayofweek = date_i18n("D", $unixtimestamp);
+                         array_push($dates, $unixtimestamp*1000);
+
+                         $categories = wp_get_object_terms($post->ID, 'category');
+                        $cats = [];
+
+                         if($categories){
+                            foreach($categories as $category){
+                                array_push($cats, $category->slug);
+                            }
+                         }
+                         // $categories = implode(" ", $categories);
+                         if(!empty($cats)) $cats = implode(" ", $cats);
+
+                         // var_dump($cats);
+
+                ?>
+
+                    <div class="overview <?php echo($cats ? $cats: ""); ?>" data-month="<?php echo $month;?>">
+                    
+                    <article>
+                        <header>
+
+                            <div class="date_time">
+                                <div><span class="bigger"><?php echo $month; ?>.</span><span class="bigger"><?php echo $day; ?></span>（<?php echo $dayofweek; ?>）<span class="bigger2"><?php the_field('time', $post->ID); ?></span> </div>
+
+                            </div>
+
+                            <div class="location"><span class="country"><?php the_field('location', $post->ID); ?></span><span class="country">（<?php the_field('country', $post->ID); ?>）</span></div>
+                        </header>
+                        <section>
+                            <div class="thumb">
+                                <?php
+                                    $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "bcj-thumb-300" );
+                                    // add more attributes if you need
+                                    if($thumbnail_src){
+                                        printf( '<img src="http://placehold.it/300x170&text=+" data-lazy="%s"/>', esc_url( $thumbnail_src[0] ) );
+
+                                    }else{
+                                        printf( '<img src="http://placehold.it/300x170&text=+" data-lazy="%s"/>', get_bloginfo(template_directory).'/library/images/nothumb.jpg' );
+                                    }
+                                ?>
+                                <?php //the_post_thumbnail( "bcj-thumb-300"); ?>
+                            </div>
+                            <div class="title">
+                                <h1 class="h2 entry-title"><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
+                            </div>
+                            <a href="<?php the_permalink(); ?>">
+                            <div class="description">
+                                <div class="detail"><?php the_excerpt(); ?></div>
+                                <div class="overlay"></div>
+                                <!-- <div class="readmore"><a href="<?php the_permalink(); ?>">詳細はこちら</a></div> -->
+                            </div>
+                            </a>
+                            <div class="buy-ticket-container">
+
+                                <div class="ticket-info">
+                                     <?php
+                                        $contact = get_field('contact_info');
+                                        if($contact){ echo $contact; }else{ 
+                                            echo '<span class="small">'.__("Bach Collegium Japan Ticket Center","bonestheme").' </span><br>'; 
+                                            echo '<span class="number">℡ ';
+                                            if(ICL_LANGUAGE_CODE=="en"){
+                                                echo '+81-3-5301-0950';    
+                                            }else{
+                                                echo '03-5301-0950'; 
+                                            }
+                                            echo '</span>';
+
+                                        }
+                                     ?>
+                                </div>
+                                <div class="ticket-btn">
+                                    <span class="buy-ticket "><span class="buy-text"><?php _e("Buy Ticket","bonestheme"); ?></span></span>
+                                    <span class="playguide">
+                                    <?php
+                                        $pia = get_field('ticket_pia');
+                                        $eplus = get_field('e+');
+                                        // if($pia||$eplus) :
+                                    ?>
+                                    <?php
+                                        if($pia){
+                                           echo '<span><a target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>'; 
+                                       }
+                                        if($eplus){
+                                           echo '<span><a target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>'; 
+                                       }                                       
+                                    ?>
+                                    <?php
+                                        // else:
+
+                                        // echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
+
+                                        // endif;
+                                    ?>
+                                    </span>
+                                </div>
+                            </div>
+                        </section>
+                    </article>
+                    </div>
+
+
+                    <?php
+                            endwhile;
+                        endif;
+                        wp_reset_postdata();
+                    ?>
+                     
+                </div>  
+              </div> 
+    
+      </div>
+      <div class="footer">
+              <a href="#" class="go-top">
+                   <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40px" height="40px" class="bcj-btn-white">
+                      <circle fill="none" stroke="#FFFFFF" cx="20" cy="20" r="19.5"/>
+                      <polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="11,24 20,12 29,24"/>
+                  </svg>
+                  <span>TO THE TOP</span>
+              </a>
+      </div> 
+<?php
+  echo "</div>";
+}
+
+
+
+add_action( 'pre_get_posts', 'be_change_discography_posts_per_page' );
+/**
+ * Change Posts Per Page for Discography Archive
+ * 
+ *
+ */
+function be_change_discography_posts_per_page( $query ) {
+  
+  if( $query->is_main_query() && !is_admin() && is_post_type_archive( 'discography' ) ) {
+    $query->set( 'posts_per_page', '-1' );
+  }
+
+}
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>

@@ -125,6 +125,20 @@ UPCOMING CONCERTS
 
 }
 
+.artists {
+	>article {
+		&:nth-of-type(3n) {
+			section{
+				border-right: none !important;
+			}
+		}
+		&:nth-of-type(4n) {
+			section{
+				border-right: 1px solid $border-color;
+			}
+		}
+	}
+}
 /*********************
 HEADER STYLES
 *********************/
