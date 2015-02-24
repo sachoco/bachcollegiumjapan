@@ -249,7 +249,7 @@ EVENT CALENDAR
     }
     &:nth-of-type(6n) {
       section{
-        border-right: 1px solid $border-color;
+        border-right: 1px solid $border-color !important;
       }
     }
   }

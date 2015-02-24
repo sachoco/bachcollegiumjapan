@@ -582,7 +582,7 @@ EVENT CALENDAR
 .artists > article:nth-of-type(4n) section {
   border-right: none !important; }
 .artists > article:nth-of-type(6n) section {
-  border-right: 1px solid #010101; }
+  border-right: 1px solid #010101 !important; }
 
 body.en section#intro .short-profile {
   font-size: 19px; }
