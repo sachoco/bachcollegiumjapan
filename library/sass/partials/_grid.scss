@@ -76,7 +76,10 @@ them however you see fit.
     @include grid-col;
     width: 75%;
   }
-
+  .m-1of6 {
+    @include grid-col;
+    width: 16.6666666667%;
+  }
 } // end mobile styles
 
 
@@ -133,7 +136,10 @@ them however you see fit.
     @include grid-col;
     width: 80%;
   }
-
+  .t-1of6 {
+    @include grid-col;
+    width: 16.6666666667%;
+  }
 } // end tablet
 
 /* Landscape to small desktop */

@@ -220,21 +220,21 @@ function custom_post_artist() {
 		array('discography'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
 		array('hierarchical' => true,    /* if this is false, it acts like tags */
 			'labels' => array(
-			       'name' => __( 'ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'singular_name' => __( 'ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'search_items' => __( 'Search ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'popular_items' => __( 'Popular ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'all_items' => __( 'All ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'parent_item' => __( 'Parent ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'parent_item_colon' => __( 'Parent ディスコグラフィーカテゴリ:', 'discography-category' ),
-			        'edit_item' => __( 'Edit ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'update_item' => __( 'Update ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'add_new_item' => __( 'Add New ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'new_item_name' => __( 'New ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'separate_items_with_commas' => __( 'Separate ディスコグラフィーカテゴリ with commas', 'discography-category' ),
-			        'add_or_remove_items' => __( 'Add or remove ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'choose_from_most_used' => __( 'Choose from the most used ディスコグラフィーカテゴリ', 'discography-category' ),
-			        'menu_name' => __( 'ディスコグラフィーカテゴリ', 'discography-category' ),
+			       'name' => __( 'ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'singular_name' => __( 'ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'search_items' => __( 'Search ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'popular_items' => __( 'Popular ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'all_items' => __( 'All ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'parent_item' => __( 'Parent ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'parent_item_colon' => __( 'Parent ディスコグラフィーカテゴリ:', 'bonestheme' ),
+			        'edit_item' => __( 'Edit ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'update_item' => __( 'Update ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'add_new_item' => __( 'Add New ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'new_item_name' => __( 'New ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'separate_items_with_commas' => __( 'Separate ディスコグラフィーカテゴリ with commas', 'bonestheme' ),
+			        'add_or_remove_items' => __( 'Add or remove ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'choose_from_most_used' => __( 'Choose from the most used ディスコグラフィーカテゴリ', 'bonestheme' ),
+			        'menu_name' => __( 'ディスコグラフィーカテゴリ', 'bonestheme' ),
 			),
 			'show_admin_column' => true,
 			'show_ui' => true,
@@ -247,21 +247,21 @@ function custom_post_artist() {
 		array('artist'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
 		array('hierarchical' => true,    /* if this is false, it acts like tags */
 			'labels' => array(
-			       'name' => __( 'アーティストカテゴリ', 'artist-category' ),
-			        'singular_name' => __( 'アーティストカテゴリ', 'artist-category' ),
-			        'search_items' => __( 'Search アーティストカテゴリ', 'artist-category' ),
-			        'popular_items' => __( 'Popular アーティストカテゴリ', 'artist-category' ),
-			        'all_items' => __( 'All アーティストカテゴリ', 'artist-category' ),
-			        'parent_item' => __( 'Parent アーティストカテゴリ', 'artist-category' ),
-			        'parent_item_colon' => __( 'Parent アーティストカテゴリ:', 'artist-category' ),
-			        'edit_item' => __( 'Edit アーティストカテゴリ', 'artist-category' ),
-			        'update_item' => __( 'Update アーティストカテゴリ', 'artist-category' ),
-			        'add_new_item' => __( 'Add New アーティストカテゴリ', 'artist-category' ),
-			        'new_item_name' => __( 'New アーティストカテゴリ', 'artist-category' ),
-			        'separate_items_with_commas' => __( 'Separate アーティストカテゴリ with commas', 'artist-category' ),
-			        'add_or_remove_items' => __( 'Add or remove アーティストカテゴリ', 'artist-category' ),
-			        'choose_from_most_used' => __( 'Choose from the most used アーティストカテゴリ', 'artist-category' ),
-			        'menu_name' => __( 'アーティストカテゴリ', 'artist-category' ),
+			       'name' => __( 'アーティストカテゴリ', 'bonestheme' ),
+			        'singular_name' => __( 'アーティストカテゴリ', 'bonestheme' ),
+			        'search_items' => __( 'Search アーティストカテゴリ', 'bonestheme' ),
+			        'popular_items' => __( 'Popular アーティストカテゴリ', 'bonestheme' ),
+			        'all_items' => __( 'All アーティストカテゴリ', 'bonestheme' ),
+			        'parent_item' => __( 'Parent アーティストカテゴリ', 'bonestheme' ),
+			        'parent_item_colon' => __( 'Parent アーティストカテゴリ:', 'bonestheme' ),
+			        'edit_item' => __( 'Edit アーティストカテゴリ', 'bonestheme' ),
+			        'update_item' => __( 'Update アーティストカテゴリ', 'bonestheme' ),
+			        'add_new_item' => __( 'Add New アーティストカテゴリ', 'bonestheme' ),
+			        'new_item_name' => __( 'New アーティストカテゴリ', 'bonestheme' ),
+			        'separate_items_with_commas' => __( 'Separate アーティストカテゴリ with commas', 'bonestheme' ),
+			        'add_or_remove_items' => __( 'Add or remove アーティストカテゴリ', 'bonestheme' ),
+			        'choose_from_most_used' => __( 'Choose from the most used アーティストカテゴリ', 'bonestheme' ),
+			        'menu_name' => __( 'アーティストカテゴリ', 'bonestheme' ),
 			),
 			'show_admin_column' => true,
 			'show_ui' => true,
@@ -269,6 +269,57 @@ function custom_post_artist() {
 		)
 	);
 
+	register_taxonomy( 'location',
+		array('schedule'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
+		array('hierarchical' => true,    /* if this is false, it acts like tags */
+			'labels' => array(
+			       'name' => __( 'ロケーション', 'bonestheme' ),
+			        'singular_name' => __( 'ロケーション', 'bonestheme' ),
+			        'search_items' => __( 'Search ロケーション', 'bonestheme' ),
+			        'popular_items' => __( 'Popular ロケーション', 'bonestheme' ),
+			        'all_items' => __( 'All ロケーション', 'bonestheme' ),
+			        'parent_item' => __( 'Parent ロケーション', 'bonestheme' ),
+			        'parent_item_colon' => __( 'Parent ロケーション:', 'bonestheme' ),
+			        'edit_item' => __( 'Edit ロケーション', 'bonestheme' ),
+			        'update_item' => __( 'Update ロケーション', 'bonestheme' ),
+			        'add_new_item' => __( 'Add New ロケーション', 'bonestheme' ),
+			        'new_item_name' => __( 'New ロケーション', 'bonestheme' ),
+			        'separate_items_with_commas' => __( 'Separate ロケーション with commas', 'bonestheme' ),
+			        'add_or_remove_items' => __( 'Add or remove ロケーション', 'bonestheme' ),
+			        'choose_from_most_used' => __( 'Choose from the most used ロケーション', 'bonestheme' ),
+			        'menu_name' => __( 'ロケーション', 'bonestheme' ),
+			),
+			'show_admin_column' => true,
+			'show_ui' => true,
+			'query_var' => true,
+		)
+	);
+
+	register_taxonomy( 'repertoire',
+		array('schedule'), /* if you change the name of register_post_type( 'custom_type', then you have to change this */
+		array('hierarchical' => false,    /* if this is false, it acts like tags */
+			'labels' => array(
+			       'name' => __( '公演内容', 'bonestheme' ),
+			        'singular_name' => __( '公演内容', 'bonestheme' ),
+			        'search_items' => __( 'Search 公演内容', 'bonestheme' ),
+			        'popular_items' => __( 'Popular 公演内容', 'bonestheme' ),
+			        'all_items' => __( 'All 公演内容', 'bonestheme' ),
+			        'parent_item' => __( 'Parent 公演内容', 'bonestheme' ),
+			        'parent_item_colon' => __( 'Parent 公演内容:', 'bonestheme' ),
+			        'edit_item' => __( 'Edit 公演内容', 'bonestheme' ),
+			        'update_item' => __( 'Update 公演内容', 'bonestheme' ),
+			        'add_new_item' => __( 'Add New 公演内容', 'bonestheme' ),
+			        'new_item_name' => __( 'New 公演内容', 'bonestheme' ),
+			        'separate_items_with_commas' => __( 'Separate 公演内容 with commas', 'bonestheme' ),
+			        'add_or_remove_items' => __( 'Add or remove 公演内容', 'bonestheme' ),
+			        'choose_from_most_used' => __( 'Choose from the most used 公演内容', 'bonestheme' ),
+			        'menu_name' => __( '公演内容', 'bonestheme' ),
+			),
+			'show_admin_column' => true,
+			'show_ui' => true,
+			'query_var' => true,
+		)
+	);
 	/*
 		looking for custom meta boxes?
 		check out this fantastic tool:

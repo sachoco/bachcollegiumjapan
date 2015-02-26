@@ -12,11 +12,49 @@ Template Name: Concerts
 		<div class="title">
 			<h1>Concerts</h1>
 		</div>
+		<div class="filter">
+			<span class="label">フィルター</span>
+			<ul class="option">
+				<li class="subscription">
+					<span class="label">定期演奏会</span>
+					<span class="arrow"><svg width="20px" height="14px" ><polyline fill="none" stroke="#000" stroke-miterlimit="10" points="15,2 8,10 1,2 "/></svg></span>
+					<span class="dismiss"><svg x="0px" y="0px" width="15px" height="15px"><line fill="none" stroke="#000" x1="14" y1="1" x2="1" y2="14"/><line fill="none" stroke="#000" x1="14" y1="14" x2="1" y2="1"/></svg></span>
+
+					<ul class="choices">
+						<li data-tax="category" data-id="118">東京定期演奏会</li>
+						<li data-tax="category" data-id="9">神戸定期演奏会</li>
+					</ul>
+				</li>
+				<li class="location">
+					<span class="label">場所</span>
+					<span class="arrow"><svg width="20px" height="14px" ><polyline fill="none" stroke="#000" stroke-miterlimit="10" points="15,2 8,10 1,2 "/></svg></span>
+					<span class="dismiss"><svg x="0px" y="0px" width="15px" height="15px"><line fill="none" stroke="#000" x1="14" y1="1" x2="1" y2="14"/><line fill="none" stroke="#000" x1="14" y1="14" x2="1" y2="1"/></svg></span>
+					<ul class="choices">
+						<li data-tax="location" data-id="170,167">東京オペラシティー</li>
+						<li data-tax="location" data-id="168">兵庫県立芸術文化センター</li>
+						<li data-tax="location" data-id="169">所沢市民文化センター</li>
+					</ul>
+				</li>
+				<li class="repertoire">
+					<span class="label">公演内容</span>
+					<span class="arrow"><svg width="20px" height="14px" ><polyline fill="none" stroke="#000" stroke-miterlimit="10" points="15,2 8,10 1,2 "/></svg></span>
+					<span class="dismiss"><svg x="0px" y="0px" width="15px" height="15px"><line fill="none" stroke="#000" x1="14" y1="1" x2="1" y2="14"/><line fill="none" stroke="#000" x1="14" y1="14" x2="1" y2="1"/></svg></span>
+					<ul class="choices">
+						<li data-tax="repertoire" data-id="175">音楽の捧げ物</li>
+						<li data-tax="repertoire" data-id="174">マタイ受難曲</li>
+						<li data-tax="repertoire" data-id="173">教会カンタータ</li>
+						<li data-tax="repertoire" data-id="171">世俗カンタータ</li>
+						<li data-tax="repertoire" data-id="172">W.A.モーツァルト:ミサ曲</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="clear"></div>
+		</div>
 	</header>
 	</article>
 
 	<?php endwhile; ?>
-		<div class="concerts">
+		<div class="concerts" id="concerts">
 			<?php 
                 $args = array(
                       'post_type' => 'schedule',
@@ -66,13 +104,13 @@ Template Name: Concerts
                     <article>
                         <header>
 
-                            <div class="date_time d-1of6">
+                            <div class="date_time m-1of6 t-1of6 d-1of6">
                                 <div><span class="bigger"><?php echo $month; ?>.</span><span class="bigger"><?php echo $day; ?></span></div>
                             </div>
-							<div class="title  d-2of3">
+							<div class="title m-2of3 t-2of3 d-2of3">
                                 <h1 class="h2 entry-title"><?php the_title(); ?></h1>
                             </div>
-                            <div class="thumb d-1of6 last-col">
+                            <div class="thumb m-1of6 t-1of6 d-1of6 last-col">
                                 <?php
                                     $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "bcj-thumb-300" );
                                     // add more attributes if you need
@@ -87,11 +125,11 @@ Template Name: Concerts
 							
                         </header>
                         <section>
-                        	<div class="date_time d-1of6">
+                        	<div class="date_time m-1of6 t-1of6 d-1of6">
                                 <div>（<?php echo $dayofweek; ?>）<span class="bigger2"><?php the_field('time', $post->ID); ?></span> </div>
                             </div>
-                            <div class="location d-1of2"><span class="country"><?php the_field('location', $post->ID); ?></span><span class="country">（<?php the_field('country', $post->ID); ?>）</span></div>
-                            <div class="d-1of3 last-col">
+                            <div class="location m-1of2 t-1of2 d-1of2"><span class="country"><?php the_field('location', $post->ID); ?></span><span class="country">（<?php the_field('country', $post->ID); ?>）</span></div>
+                            <div class="m-1of3 t-1of3 d-1of3 last-col">
                             <div class="buy-ticket-container">
 
                                 <!-- <div class="ticket-info">
