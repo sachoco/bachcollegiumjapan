@@ -285,7 +285,7 @@ adjustFooterPos();
             $this.addClass("active");
             adjustFooterPos();
             var p = $this.offset().top;
-            $('html,body').animate({ scrollTop: p }, 800, 'easeInOutCubic');
+            $('html,body').animate({ scrollTop: p }, 200, 'easeInOutCubic');
 
             $('.overview-holder-carousel').slick({
               slidesToShow: 4,
@@ -429,7 +429,7 @@ var currentConcertItemID = null;
             $this.addClass("active");
             adjustFooterPos();
             var p = $this.offset().top;
-            $('html,body').animate({ scrollTop: p }, 800, 'easeInOutCubic');
+            $('html,body').animate({ scrollTop: p }, 200, 'easeInOutCubic');
 
             $('.overview-holder-carousel').slick({
               slidesToShow: 4,
@@ -511,9 +511,9 @@ var currentConcertItemID = null;
     });
 
     $(".page-template-template-concerts .filter .option >li .choices >li").on("click", function(){
-      $(".filter .option >li.subscription .label").html("定期演奏会").parent().removeClass("active");
-      $(".filter .option >li.location .label").html("場所").parent().removeClass("active");
-      $(".filter .option >li.repertoire .label").html("公演内容").parent().removeClass("active");
+      $(".filter .option >li.subscription .label").html(translated_text.subscription_concert).parent().removeClass("active");
+      $(".filter .option >li.location .label").html(translated_text.location).parent().removeClass("active");
+      $(".filter .option >li.repertoire .label").html(translated_text.repertoire).parent().removeClass("active");
       $(this).parent().parent().find(".label").html($(this).html()).parent().addClass("active");
 
       var $loading = $("<div class='loading' />").append("<div class='throbber throbber_medium'/>");
@@ -557,9 +557,9 @@ var currentConcertItemID = null;
     
     $(".page-template-template-concerts .filter .option .dismiss").on("click", function(event){
       event.stopPropagation();
-      $(".filter .option >li.subscription .label").html("定期演奏会").parent().removeClass("active");
-      $(".filter .option >li.location .label").html("場所").parent().removeClass("active");
-      $(".filter .option >li.repertoire .label").html("公演内容").parent().removeClass("active");
+      $(".filter .option >li.subscription .label").html(translated_text.subscription_concert).parent().removeClass("active");
+      $(".filter .option >li.location .label").html(translated_text.location).parent().removeClass("active");
+      $(".filter .option >li.repertoire .label").html(translated_text.repertoire).parent().removeClass("active");
 
       var $loading = $("<div class='loading' />").append("<div class='throbber throbber_medium'/>");
       var $content = $("#concerts");
@@ -694,7 +694,7 @@ var currentConcertItemID = null;
       var $contentWrap = $(".discography-wrapper");
       currentItemID = null;
       if(!$(this).parent().hasClass("category")){
-        $(".filter .option >li.composer .label").html("作曲家").parent().removeClass("active");
+        $(".filter .option >li.composer .label").html(translated_text.composer).parent().removeClass("active");
         $(".filter .option >li.category").remove();
 
         /** Ajax Call */

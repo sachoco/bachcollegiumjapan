@@ -7,10 +7,10 @@
 					<h1>Discography</h1>
 				</div>
 				<div class="filter">
-					<span class="label">フィルター</span>
+					<span class="label"><?php _e("Filter","bonestheme"); ?></span>
 					<ul class="option">
 						<li class="composer">
-							<span class="label">作曲家</span>
+							<span class="label"><?php _e("Composer","bonestheme"); ?></span>
 							<span class="arrow"><svg width="20px" height="14px" ><polyline fill="none" stroke="#000" stroke-miterlimit="10" points="15,2 8,10 1,2 "/></svg></span>
 							<span class="dismiss"><svg x="0px" y="0px" width="15px" height="15px"><line fill="none" stroke="#000" x1="14" y1="1" x2="1" y2="14"/><line fill="none" stroke="#000" x1="14" y1="14" x2="1" y2="1"/></svg></span>
 

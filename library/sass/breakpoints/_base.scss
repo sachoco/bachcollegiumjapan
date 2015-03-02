@@ -2284,11 +2284,9 @@ body.page-template-template-profile{
 **/
 body.page-template-page-guest-artist {
 	header .title{
-		margin-top: 50px;
 		h1 {
 			text-transform: uppercase;
 			letter-spacing: 4px;
-			font-size: 3.4em;
 			position: relative;
 			color: $gray;
 			&:before {
@@ -2477,11 +2475,9 @@ body.page-template-page-guest-artist {
 **/
 body.post-type-archive-discography {
 	header .title{
-		margin-top: 50px;
 		h1 {
 			text-transform: uppercase;
 			letter-spacing: 4px;
-			font-size: 3.4em;
 			position: relative;
 			color: $gray;
 			&:before {
@@ -2663,11 +2659,9 @@ body.post-type-archive-discography {
 **/
 body.page-template-template-concerts {
 	.article-header .title{
-		margin-top: 50px;
 		h1 {
 			text-transform: uppercase;
 			letter-spacing: 4px;
-			font-size: 3.4em;
 			position: relative;
 			color: $gray;
 			&:before {
@@ -2784,9 +2778,13 @@ body.page-template-template-concerts {
 			header {
 				display: table;
 				>div {
+					position: relative;
 					display: table-cell;
 					float: none !important;
 					vertical-align: middle;
+					&.thumb {
+						display: none;
+					}
 				}
 			}
 			section {
@@ -2795,9 +2793,14 @@ body.page-template-template-concerts {
 				line-height: 150%;
 
 				>div {
+					position: relative;
 					display: table-cell;
 					float: none !important;
 					vertical-align: middle;
+					&.ticket {
+						height: 30px;
+						display: none;
+					}
 				}
 			}
 			
@@ -2919,29 +2922,37 @@ body.page-template-template-concerts {
 	border-bottom: 1px solid $border-color;
 	padding: 10px 0;
 	>.label {
-		width: 16.66%;
+		width: 100%;
 		float: left;
+		text-align: center;
 	}
 	.option {
 		float: left;
 		margin: 0;
-		width: 83.33%;
+		width: 100%;
 		>li {
 			cursor: pointer;
 			position: relative;
 			display: inline-block;
-			width: 33%;
+			width: 32.8%;
 			// padding: 2px 5px 0;
 			text-align: left;
+			&:nth-child(2) .choices {
+				left: calc(-100% - 3px);
+			}
+			&:nth-child(3) .choices {
+				left: calc(-200% - 6px);
+			}
+
 			&:hover {
 				background: $light-gray;
 			}
 			.label {
 				display: block;
 				border: 1px solid $border-color;
-				padding: 0 13px 0 10px;
-				height: 30px;
-
+				padding: 3px 20px 0 5px;
+				height: 25px;
+				white-space: nowrap;
 			}
 			&.active {
 				.label {
@@ -2976,15 +2987,16 @@ body.page-template-template-concerts {
 			}
 			.choices {
 				display: none;
-				width: 100%;
+				width: calc(100vw - 8px);
 				list-style: none;
 				position: absolute;
 				z-index: 1;
-				top: 30px;
+				top: 25px;
 				margin: 0;
 				left: 0;
 				background: $light-gray;
 				text-align: left;
+				font-size: 1.6em;
 				>li {
 					cursor: pointer;
 					height: 30px;
@@ -3552,7 +3564,9 @@ svg:not(:root) {
 	overflow: visible;
 }
 
-
+.only-mobile {
+	display: none;
+}
 
 
 body.en {

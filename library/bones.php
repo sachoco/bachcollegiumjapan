@@ -156,6 +156,15 @@ function bones_scripts_and_styles() {
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
 
+		// Localize the script with new data
+		$translation_array = array(
+			'composer' => __( 'Composer', 'bonestheme' ),
+			'subsctiption_concert' => __( 'Subscription Concert', 'bonestheme' ),
+			'location' => __( 'Location', 'bonestheme' ),
+			'repertoire' => __( 'Repertoire', 'bonestheme' ),
+		);
+		wp_localize_script( 'bones-js', 'translated_text', $translation_array );
+
 		wp_localize_script( 'bones-js', 'ajax_object', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
 
 

@@ -23,7 +23,7 @@ Template Name: Profile Gurst Artist
 				<div class="artists">
 				<!-- <div class="artists js-packery" data-packery-options='{ "itemSelector": ".item", "gutter": 0, "stamp": ".stamp" }' > -->
 					<?php 
-						$args = array( 'posts_per_page' => -1, 'post_type'=> 'artist' );
+						$args = array( 'posts_per_page' => -1, 'post_type'=> 'artist', 'suppress_filters'=>0 );
 						$artists = get_posts($args); 
 	
 						foreach($artists as $post):

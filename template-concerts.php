@@ -13,39 +13,118 @@ Template Name: Concerts
 			<h1>Concerts</h1>
 		</div>
 		<div class="filter">
-			<span class="label">フィルター</span>
+			<span class="label"><?php _e("Filter","bonestheme"); ?></span>
 			<ul class="option">
 				<li class="subscription">
-					<span class="label">定期演奏会</span>
+					<span class="label"><?php _e("Subscription Concert","bonestheme"); ?></span>
 					<span class="arrow"><svg width="20px" height="14px" ><polyline fill="none" stroke="#000" stroke-miterlimit="10" points="15,2 8,10 1,2 "/></svg></span>
 					<span class="dismiss"><svg x="0px" y="0px" width="15px" height="15px"><line fill="none" stroke="#000" x1="14" y1="1" x2="1" y2="14"/><line fill="none" stroke="#000" x1="14" y1="14" x2="1" y2="1"/></svg></span>
 
-					<ul class="choices">
-						<li data-tax="category" data-id="118">東京定期演奏会</li>
-						<li data-tax="category" data-id="9">神戸定期演奏会</li>
-					</ul>
+          <ul class="choices">
+            <?php
+              if(ICL_LANGUAGE_CODE=="en"){
+                $parent = 123;
+              }else{
+                $parent = 8;
+              }
+              $args = array(
+                  'orderby'           => 'name', 
+                  'order'             => 'ASC',
+                  'hide_empty'        => true, 
+                  'exclude'           => array(), 
+                  'exclude_tree'      => array(), 
+                  'include'           => array(),
+                  'number'            => '', 
+                  'fields'            => 'all', 
+                  'slug'              => '',
+                  'parent'            => $parent,
+                  'hierarchical'      => true, 
+                  'child_of'          => 0, 
+                  'get'               => '', 
+                  'name__like'        => '',
+                  'description__like' => '',
+                  'pad_counts'        => false, 
+                  'offset'            => '', 
+                  'search'            => '', 
+                  'cache_domain'      => 'core'
+              ); 
+              $taxonomy = "category";
+              $terms = get_terms($taxonomy, $args);
+              foreach($terms as $term){
+                echo '<li data-tax="'.$taxonomy.'" data-id="'.$term->term_id.'">'.$term->name.'</li>';
+              }
+            ?>
+          </ul>
 				</li>
 				<li class="location">
-					<span class="label">場所</span>
+					<span class="label"><?php _e("Location","bonestheme"); ?></span>
 					<span class="arrow"><svg width="20px" height="14px" ><polyline fill="none" stroke="#000" stroke-miterlimit="10" points="15,2 8,10 1,2 "/></svg></span>
 					<span class="dismiss"><svg x="0px" y="0px" width="15px" height="15px"><line fill="none" stroke="#000" x1="14" y1="1" x2="1" y2="14"/><line fill="none" stroke="#000" x1="14" y1="14" x2="1" y2="1"/></svg></span>
-					<ul class="choices">
-						<li data-tax="location" data-id="170,167">東京オペラシティー</li>
-						<li data-tax="location" data-id="168">兵庫県立芸術文化センター</li>
-						<li data-tax="location" data-id="169">所沢市民文化センター</li>
-					</ul>
+          <ul class="choices">
+            <?php
+              $args = array(
+                  'orderby'           => 'name', 
+                  'order'             => 'ASC',
+                  'hide_empty'        => true, 
+                  'exclude'           => array(), 
+                  'exclude_tree'      => array(), 
+                  'include'           => array(),
+                  'number'            => '', 
+                  'fields'            => 'all', 
+                  'slug'              => '',
+                  'parent'            => 0,
+                  'hierarchical'      => true, 
+                  'child_of'          => 0, 
+                  'get'               => '', 
+                  'name__like'        => '',
+                  'description__like' => '',
+                  'pad_counts'        => false, 
+                  'offset'            => '', 
+                  'search'            => '', 
+                  'cache_domain'      => 'core'
+              ); 
+              $taxonomy = "location";
+              $terms = get_terms($taxonomy, $args);
+              foreach($terms as $term){
+                echo '<li data-tax="'.$taxonomy.'" data-id="'.$term->term_id.'">'.$term->name.'</li>';
+              }
+            ?>
+          </ul>
 				</li>
 				<li class="repertoire">
-					<span class="label">公演内容</span>
+					<span class="label"><?php _e("Repertoire","bonestheme"); ?></span>
 					<span class="arrow"><svg width="20px" height="14px" ><polyline fill="none" stroke="#000" stroke-miterlimit="10" points="15,2 8,10 1,2 "/></svg></span>
 					<span class="dismiss"><svg x="0px" y="0px" width="15px" height="15px"><line fill="none" stroke="#000" x1="14" y1="1" x2="1" y2="14"/><line fill="none" stroke="#000" x1="14" y1="14" x2="1" y2="1"/></svg></span>
-					<ul class="choices">
-						<li data-tax="repertoire" data-id="175">音楽の捧げ物</li>
-						<li data-tax="repertoire" data-id="174">マタイ受難曲</li>
-						<li data-tax="repertoire" data-id="173">教会カンタータ</li>
-						<li data-tax="repertoire" data-id="171">世俗カンタータ</li>
-						<li data-tax="repertoire" data-id="172">W.A.モーツァルト:ミサ曲</li>
-					</ul>
+          <ul class="choices">
+            <?php
+              $args = array(
+                  'orderby'           => 'name', 
+                  'order'             => 'ASC',
+                  'hide_empty'        => true, 
+                  'exclude'           => array(), 
+                  'exclude_tree'      => array(), 
+                  'include'           => array(),
+                  'number'            => '', 
+                  'fields'            => 'all', 
+                  'slug'              => '',
+                  'parent'            => 0,
+                  'hierarchical'      => true, 
+                  'child_of'          => 0, 
+                  'get'               => '', 
+                  'name__like'        => '',
+                  'description__like' => '',
+                  'pad_counts'        => false, 
+                  'offset'            => '', 
+                  'search'            => '', 
+                  'cache_domain'      => 'core'
+              ); 
+              $taxonomy = "repertoire";
+              $terms = get_terms($taxonomy, $args);
+              foreach($terms as $term){
+                echo '<li data-tax="'.$taxonomy.'" data-id="'.$term->term_id.'">'.$term->name.'</li>';
+              }
+            ?>
+          </ul>
 				</li>
 			</ul>
 			<div class="clear"></div>
@@ -128,8 +207,8 @@ Template Name: Concerts
                         	<div class="date_time m-1of6 t-1of6 d-1of6">
                                 <div>（<?php echo $dayofweek; ?>）<span class="bigger2"><?php the_field('time', $post->ID); ?></span> </div>
                             </div>
-                            <div class="location m-1of2 t-1of2 d-1of2"><span class="country"><?php the_field('location', $post->ID); ?></span><span class="country">（<?php the_field('country', $post->ID); ?>）</span></div>
-                            <div class="m-1of3 t-1of3 d-1of3 last-col">
+                            <div class="location m-2of3 t-1of2 d-1of2"><span class="country"><?php the_field('location', $post->ID); ?></span><span class="country">（<?php the_field('country', $post->ID); ?>）</span></div>
+                            <div class="ticket m-1of3 t-1of3 d-1of3 last-col">
                             <div class="buy-ticket-container">
 
                                 <!-- <div class="ticket-info">
@@ -180,6 +259,56 @@ Template Name: Concerts
                                 </div>
                             </div>
                         </section>
+                        <footer class="only-mobile">
+                        	<div class="buy-ticket-container">
+
+                                <!-- <div class="ticket-info">
+                                     <?php
+                                        $contact = get_field('contact_info');
+                                        if($contact){ echo $contact; }else{ 
+                                            echo '<span class="small">'.__("Bach Collegium Japan Ticket Center","bonestheme").' </span><br>'; 
+                                            echo '<span class="number">℡ ';
+                                            if(ICL_LANGUAGE_CODE=="en"){
+                                                echo '+81-3-5301-0950';    
+                                            }else{
+                                                echo '03-5301-0950'; 
+                                            }
+                                            echo '</span>';
+
+                                        }
+                                     ?>
+                                </div> -->
+                                <div class="ticket-btn">
+                                    <span class="buy-ticket "><span class="buy-text"><?php _e("Buy Ticket","bonestheme"); ?></span></span>
+                                    <span class="playguide">
+                                    <?php
+                                        $pia = get_field('ticket_pia');
+                                        $eplus = get_field('e+');
+                                        // if($pia||$eplus) :
+                                    ?>
+                                    <?php
+                                        if($pia){
+                                           echo '<span><a target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>'; 
+                                       }
+                                        if($eplus){
+                                           echo '<span><a target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>'; 
+                                       }                                       
+                                    ?>
+                                    <?php
+                                        // else:
+
+                                        // echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
+
+                                        // endif;
+                                    ?>
+                                    </span>
+                                </div>
+                            </div>
+                        </footer>
                     </article>
                     </div>
 			<?php

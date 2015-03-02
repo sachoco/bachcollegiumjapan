@@ -35,3 +35,9 @@ section#about {
     opacity: 0; }
   .buy-ticket-container .playguide {
     opacity: 1; }
+
+#concerts .buy-ticket-container {
+  position: relative; }
+
+.only-mobile {
+  display: block; }

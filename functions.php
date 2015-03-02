@@ -399,12 +399,14 @@ function get_content_callback(){
   echo '<div class="item content" data-id="'.$id.'"><div class="wrap">';
   echo '<a href="#" class="close"><svg x="0px" y="0px" width="35px" height="35px" viewBox="0 0 35 35" ><line fill="none" stroke="#FFFFFF" x1="33.562" y1="0.746" x2="0.562" y2="33.746"/><line fill="none" stroke="#FFFFFF" x1="33.562" y1="33.746" x2="0.562" y2="0.746"/></svg></a>';
   echo '<div class="inner"><h2>'.$post->post_title.'</h2><div class="leadimage">'.get_the_post_thumbnail( $id, array( 400 ) ).'</div><div class="text">'.$post->post_content.'</div></div></div>';
+  if(get_post_type($id)=="schedule"):
 ?> 
       <div class="related-concerts">
         <h3>関連公演情報</h3>
         <div class="upcoming">
                 <div class="overview-holder-carousel inactive" >
                 <?php
+
                     $args = array(
                       'post_type' => 'schedule',
                       'post_status' => 'publish',
@@ -422,6 +424,46 @@ function get_content_callback(){
                                     )
                     );
 
+                  if(get_post_type($id)=="schedule"){
+
+                    $category = get_the_terms( $id, 'category' );
+                    $a_category = array();
+                    foreach ($category as $term) {
+                      array_push($a_category, $term->term_id);
+                    }
+
+                    $location = get_the_terms( $id, 'location' );
+                    $a_location = array();
+                    foreach ($location as $term) {
+                      array_push($a_location, $term->term_id);
+                    }
+
+                    $repertoire = get_the_terms( $id, 'repertoire' );
+                    $a_repertoire = array();
+                    foreach ($repertoire as $term) {
+                      array_push($a_repertoire, $term->term_id);
+                    }
+
+                    $args['tax_query'] = array(
+                      'relation'  => 'OR',
+                      array(
+                        'taxonomy' => 'category',
+                        'field'    => 'id',
+                        'terms'    => $a_category
+                        ),
+                      array(
+                        'taxonomy' => 'location',
+                        'field'    => 'id',
+                        'terms'    => $a_location
+                        ),
+                      array(
+                        'taxonomy' => 'repertoire',
+                        'field'    => 'id',
+                        'terms'    => $a_repertoire
+                        ),
+
+                      );
+                  }
                     $the_query = new WP_Query( $args );
                     $col_count = 1;
                     $dates = [];
@@ -557,6 +599,7 @@ function get_content_callback(){
               </a>
       </div> 
 <?php
+endif;
   echo "</div>";
 }
 
@@ -650,8 +693,8 @@ function get_concerts_callback(){
                           <div class="date_time m-1of6 t-1of6 d-1of6">
                                 <div>（<?php echo $dayofweek; ?>）<span class="bigger2"><?php the_field('time', $post->ID); ?></span> </div>
                             </div>
-                            <div class="location m-1of2 t-1of2 d-1of2"><span class="country"><?php the_field('location', $post->ID); ?></span><span class="country">（<?php the_field('country', $post->ID); ?>）</span></div>
-                            <div class="m-1of3 t-1of3 d-1of3 last-col">
+                            <div class="location m-2of3 t-1of2 d-1of2"><span class="country"><?php the_field('location', $post->ID); ?></span><span class="country">（<?php the_field('country', $post->ID); ?>）</span></div>
+                            <div class="ticket m-1of3 t-1of3 d-1of3 last-col">
                             <div class="buy-ticket-container">
 
                                 <!-- <div class="ticket-info">
@@ -702,6 +745,56 @@ function get_concerts_callback(){
                                 </div>
                             </div>
                         </section>
+                        <footer class="only-mobile">
+                          <div class="buy-ticket-container">
+
+                                <!-- <div class="ticket-info">
+                                     <?php
+                                        $contact = get_field('contact_info');
+                                        if($contact){ echo $contact; }else{ 
+                                            echo '<span class="small">'.__("Bach Collegium Japan Ticket Center","bonestheme").' </span><br>'; 
+                                            echo '<span class="number">℡ ';
+                                            if(ICL_LANGUAGE_CODE=="en"){
+                                                echo '+81-3-5301-0950';    
+                                            }else{
+                                                echo '03-5301-0950'; 
+                                            }
+                                            echo '</span>';
+
+                                        }
+                                     ?>
+                                </div> -->
+                                <div class="ticket-btn">
+                                    <span class="buy-ticket "><span class="buy-text"><?php _e("Buy Ticket","bonestheme"); ?></span></span>
+                                    <span class="playguide">
+                                    <?php
+                                        $pia = get_field('ticket_pia');
+                                        $eplus = get_field('e+');
+                                        // if($pia||$eplus) :
+                                    ?>
+                                    <?php
+                                        if($pia){
+                                           echo '<span><a target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>'; 
+                                       }
+                                        if($eplus){
+                                           echo '<span><a target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>'; 
+                                       }else{
+                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>'; 
+                                       }                                       
+                                    ?>
+                                    <?php
+                                        // else:
+
+                                        // echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
+
+                                        // endif;
+                                    ?>
+                                    </span>
+                                </div>
+                            </div>
+                        </footer>
                     </article>
                     </div>
   <?php
