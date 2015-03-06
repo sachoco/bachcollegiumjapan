@@ -153,12 +153,15 @@ Template Name: Concerts
                     );
 				$the_query = new WP_Query( $args );
 				$dates = [];
+        $cur_month;
 				if ( $the_query->have_posts() ) :
                         while ( $the_query->have_posts() ) : $the_query->the_post();
 			
                         $unixtimestamp = strtotime(get_field('schedule-date'));
-
+                        $year = date_i18n("Y", $unixtimestamp);
                         $month = date_i18n("n", $unixtimestamp);
+
+                        $month_title = date("F", $unixtimestamp);//date_i18n("F", $unixtimestamp);
                         $day = date_i18n("d", $unixtimestamp);
                         $dayofweek = date_i18n("D", $unixtimestamp);
                          array_push($dates, $unixtimestamp*1000);
@@ -175,6 +178,12 @@ Template Name: Concerts
                          if(!empty($cats)) $cats = implode(" ", $cats);
 
                          // var_dump($cats);
+                  if($cur_month != $month_title){
+
+                    $cur_month = $month_title;
+
+                    echo '<div class="month-header"><h3>'.$year.'.'.$cur_month.'</h3></div>';
+                  }
 
                 ?>
 

@@ -197,7 +197,7 @@ adjustFooterPos();
       var listItems = $( ".thumb.item" );
       if(id!=currentItemID){
 
-        if(currentItemID){
+        if(currentItemID&&$(".item.content").length){
 
           $(".item.content").slideUp("fast",function(){
             $(this).remove();
@@ -371,13 +371,12 @@ adjustFooterPos();
 **/
 var currentConcertItemID = null;
   var listConcertItems = $( ".overview.item" );
-
     $(document).on("click",".overview.item",function(){
       var $this = $(this);
       var id = $this.data("id");
       if(id!=currentConcertItemID){
 
-        if(currentConcertItemID){
+        if(currentConcertItemID&&$(".item.content").length){
 
           $(".item.content").slideUp("fast",function(){
             $(this).remove();
@@ -390,7 +389,7 @@ var currentConcertItemID = null;
 
         listConcertItems.removeClass("active");
         
-        currentConcertItemID = id
+        currentConcertItemID = id;
         
 
       }
@@ -582,6 +581,7 @@ var currentConcertItemID = null;
           $loading.fadeOut("fast",function(){
             $loading.detach();
           });
+          currentConcertItemID = null;
           var $ajax_response = $( data );
           $content.html( $ajax_response );
                      
@@ -716,6 +716,7 @@ var currentConcertItemID = null;
             $loading.fadeOut("fast",function(){
               $loading.detach();
             });
+            currentItemID = null;
             var $ajax_response = $( data );
             $content.html( $ajax_response );
                        
@@ -752,6 +753,7 @@ var currentConcertItemID = null;
             $loading.fadeOut("fast",function(){
               $loading.detach();
             });
+            currentItemID = null;
             var $ajax_response = $( data );
             $content.html( $ajax_response );
                        

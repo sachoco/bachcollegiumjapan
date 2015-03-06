@@ -2563,7 +2563,7 @@ body.post-type-archive-discography {
 			position: relative;
 			width: 100vw;
 			margin-left: 50% !important;
-			transform: translateX(-50%);
+			@include transform(translateX(-50%));
 			// padding: 20px 0;
 			background: rgba($black, 0.5);
 			color: $white;
@@ -2689,6 +2689,15 @@ body.page-template-template-concerts {
 	.concerts {
 		position: relative;
 		@include transition(all, .2s);
+		>.month-header {
+			text-align: center;
+			text-transform: uppercase;
+			border-bottom: 1px solid $border-color;	
+			h3 {
+				font-size: 1.5em;
+				font-weight: normal;
+			}
+		}
 		>.overview {
 			position: relative;
 			border-bottom: 1px solid $border-color;
@@ -2857,8 +2866,12 @@ body.page-template-template-concerts {
 					position: absolute;
 					right: 0;
 				}
+				.text {
+					text-align: left;
+				}
 			}
 			.related-concerts {
+				display: none;
 				width: 100%;
 				position: relative;
 				background: $dark-gray;

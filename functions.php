@@ -395,10 +395,14 @@ function get_content_callback(){
   global $post;
   if(isset($_REQUEST[id])) $id = $_REQUEST[id];
   $post = get_post($id);
+  setup_postdata( $post ); 
 
   echo '<div class="item content" data-id="'.$id.'"><div class="wrap">';
   echo '<a href="#" class="close"><svg x="0px" y="0px" width="35px" height="35px" viewBox="0 0 35 35" ><line fill="none" stroke="#FFFFFF" x1="33.562" y1="0.746" x2="0.562" y2="33.746"/><line fill="none" stroke="#FFFFFF" x1="33.562" y1="33.746" x2="0.562" y2="0.746"/></svg></a>';
-  echo '<div class="inner"><h2>'.$post->post_title.'</h2><div class="leadimage">'.get_the_post_thumbnail( $id, array( 400 ) ).'</div><div class="text">'.$post->post_content.'</div></div></div>';
+  echo '<div class="inner"><h2>'.$post->post_title.'</h2><div class="leadimage">'.get_the_post_thumbnail( $id, array( 400 ) ).'</div><div class="text">';
+  the_content();
+
+  echo '</div></div></div>';
   if(get_post_type($id)=="schedule"):
 ?> 
       <div class="related-concerts">
@@ -641,10 +645,14 @@ function get_concerts_callback(){
   $the_query = new WP_Query( $args );
 // var_dump($the_query);
   $dates = [];
+  $cur_month;
+
   if ( $the_query->have_posts() ) :
       while ( $the_query->have_posts() ) : $the_query->the_post();
       $unixtimestamp = strtotime(get_field('schedule-date'));
+      $year = date_i18n("Y", $unixtimestamp);
       $month = date_i18n("n", $unixtimestamp);
+      $month_title = date("F", $unixtimestamp);//date_i18n("F", $unixtimestamp);
       $day = date_i18n("d", $unixtimestamp);
       $dayofweek = date_i18n("D", $unixtimestamp);
        array_push($dates, $unixtimestamp*1000);
@@ -660,8 +668,12 @@ function get_concerts_callback(){
        // $categories = implode(" ", $categories);
        if(!empty($cats)) $cats = implode(" ", $cats);
 
-       // var_dump($cats);
+        if($cur_month != $month_title){
 
+          $cur_month = $month_title;
+
+          echo '<div class="month-header"><h3>'.$year.'.'.$cur_month.'</h3></div>';
+        }
 ?>
 
                     <div class="overview item <?php echo($cats ? $cats: ""); ?>" data-month="<?php echo $month;?>" data-id="<?php the_ID(); ?>">
