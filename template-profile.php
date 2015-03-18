@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: Profile
+*/
+?>
 <?php get_header(); ?>
 			<div class="content">
             <div class="wrap">
@@ -11,6 +16,11 @@
 						<div class="title">
 						<?php if(get_the_ID()==8): ?>
 							<h1>Bach Collegium Japan</h1>
+						<?php elseif(get_the_ID()==2675): ?>
+							<!-- <h1>Masaaki Suzuki</h1> -->
+							<h1><?php the_title( ); ?></h1>
+						<?php elseif(get_the_ID()==3442): ?>
+							<h1>Guest Artist</h1>
 						<?php else: ?>
 							<h1><?php the_title( ); ?></h1>
 						<?php endif; ?>

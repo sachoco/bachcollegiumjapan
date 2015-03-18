@@ -156,6 +156,17 @@ function bones_scripts_and_styles() {
 		wp_enqueue_style( 'bones-stylesheet' );
 		wp_enqueue_style( 'bones-ie-only' );
 
+		// Localize the script with new data
+		$translation_array = array(
+			'composer' => __( 'Composer', 'bonestheme' ),
+			'subsctiption_concert' => __( 'Subscription Concert', 'bonestheme' ),
+			'location' => __( 'Location', 'bonestheme' ),
+			'repertoire' => __( 'Repertoire', 'bonestheme' ),
+		);
+		wp_localize_script( 'bones-js', 'translated_text', $translation_array );
+
+		wp_localize_script( 'bones-js', 'ajax_object', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ) ) );
+
 
 		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
@@ -226,6 +237,7 @@ function bones_theme_support() {
 	register_nav_menus(
 		array(
 			'main-nav' => __( 'The Main Menu', 'bonestheme' ),   // main nav in header
+			'top-nav' => __( 'The Top Menu', 'bonestheme' ),   // main nav in header
 			'footer-links' => __( 'Footer Links', 'bonestheme' ) // secondary nav in footer
 		)
 	);

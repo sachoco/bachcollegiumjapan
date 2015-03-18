@@ -385,6 +385,40 @@ UPCOMING CONCERTS
     .upcoming footer .specials .category-filter .title h3 {
       font-size: 1.7em; }
 
+.artists > article:nth-of-type(3n) section {
+  border-right: none !important; }
+.artists > article:nth-of-type(4n) section {
+  border-right: 1px solid #010101; }
+
+body.page-template-template-concerts .article-header .title, body.post-type-archive-discography .article-header .title, body.page-template-page-guest-artist .article-header .title {
+  margin-top: 50px; }
+  body.page-template-template-concerts .article-header .title h1, body.post-type-archive-discography .article-header .title h1, body.page-template-page-guest-artist .article-header .title h1 {
+    font-size: 3.4em; }
+
+body.page-template-template-concerts .concerts > .overview article header > div.thumb {
+  display: table-cell; }
+body.page-template-template-concerts .concerts > .overview article section > div.ticket {
+  display: table-cell; }
+
+.filter > .label {
+  width: 16.66%;
+  text-align: left; }
+.filter .option {
+  width: 83.33%; }
+  .filter .option > li {
+    width: 33%; }
+    .filter .option > li:nth-child(2) .choices {
+      left: 0; }
+    .filter .option > li:nth-child(3) .choices {
+      left: 0; }
+    .filter .option > li .label {
+      padding: 0 20px 0 10px;
+      height: 30px; }
+    .filter .option > li .choices {
+      width: 100%;
+      top: 30px;
+      font-size: 1em; }
+
 /*********************
 HEADER STYLES
 *********************/
@@ -573,6 +607,11 @@ EVENT CALENDAR
 *********************/
 .eventCalendar-wrap .arrow {
   width: 37%; }
+
+.artists > article:nth-of-type(4n) section {
+  border-right: none !important; }
+.artists > article:nth-of-type(6n) section {
+  border-right: 1px solid #010101 !important; }
 
 body.en section#intro .short-profile {
   font-size: 19px; }

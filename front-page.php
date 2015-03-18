@@ -214,7 +214,6 @@ function filter_where( $where = '' ) {
                                 <div class="ticket-info">
                                      <?php
                                         $contact = get_field('contact_info');
-                                        if($contact){ echo $contact; }else{ echo '<span class="small">'.__("Bach Collegium Japan Ticket Center","bonestheme").' </span><br><span class="number">℡ 03-5301-0950</span>'; }
                                         if($contact){ echo $contact; }else{ 
                                             echo '<span class="small">'.__("Bach Collegium Japan Ticket Center","bonestheme").' </span><br>'; 
                                             echo '<span class="number">℡ ';
@@ -224,9 +223,9 @@ function filter_where( $where = '' ) {
                                                 echo '03-5301-0950'; 
                                             }
                                             echo '</span>';
+
                                         }
                                      ?>
-
                                 </div>
                                 <div class="ticket-btn">
                                     <span class="buy-ticket "><span class="buy-text"><?php _e("Buy Ticket","bonestheme"); ?></span></span>

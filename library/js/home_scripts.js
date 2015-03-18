@@ -124,12 +124,12 @@ $('.slick-slides').slick({
                 var headhesive = new Headhesive('nav.main-nav', options);
 
                 //スクロール　アバウト
-                $(".menu-about").on('click', function () {
+                $("#intro .menu-about").on('click', function () {
                     goAbout();
                 });
 
                 //スクロール　コンサート
-                $(".menu-concerts").on('click', function () {
+                $("#intro .menu-concerts").on('click', function () {
                     goConcerts();
                 });
 

@@ -96,14 +96,14 @@ Our desire is to enable as many people as possible to share with us the joy of t
                         <?php wp_nav_menu(array(
                             'container' => false,                           // remove nav container
                             'container_class' => 'menu cf',                 // class of container (should you choose to use it)
-                            'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+                            'menu' => __( 'The Top Menu', 'bonestheme' ),  // nav name
                             'menu_class' => 'nav',               // adding custom nav class
-                            'theme_location' => 'main-nav',                 // where it's located in the theme
+                            'theme_location' => 'top-nav',                 // where it's located in the theme
                             'before' => '',                                 // before the menu
                             'after' => '',                                  // after the menu
                             'link_before' => '',                            // before each link
                             'link_after' => '',                             // after each link
-                            'depth' => 0,                                   // limit the depth of the nav
+                            'depth' => 1,                                   // limit the depth of the nav
                             'fallback_cb' => ''                             // fallback function (if there is one)
                         )); ?>
                         </nav>  
@@ -113,11 +113,11 @@ Our desire is to enable as many people as possible to share with us the joy of t
             </div>
         </section>
         <!-- Intro END -->
-<?php elseif(is_single()): ?>
+<?php elseif(is_page()): ?>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
         <!-- Background START -->
 <!--         <div id="background">
+            <div id="page-background" ><div class="overlay"></div></div>
             <div id="page-background" style="background-image:url(<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' ); echo $image[0]; ?>);" ><div class="overlay"></div></div>
         </div> -->
         <!-- Background END -->
@@ -126,6 +126,7 @@ Our desire is to enable as many people as possible to share with us the joy of t
         <!-- Main START -->
         <section id="main" class="snap" role="main">
 <?php //if( is_home() || is_front_page() ): ?>
+        <header>
             <div class="wrap">
                 <header class="header" role="banner">
                     <a href="<?php echo home_url(); ?>#main" rel="nofollow" class="svg">
@@ -154,3 +155,4 @@ Our desire is to enable as many people as possible to share with us the joy of t
             )); ?>
             <?php do_action('icl_language_selector'); ?>
             </nav>
+       </header> 

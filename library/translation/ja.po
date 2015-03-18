@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wp theme bones\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-02-02 11:56+0100\n"
+"POT-Creation-Date: 2015-03-02 05:23+0100\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Satoshi Shiraishi <sachoco@gmail.com>\n"
 "Language-Team: fulgor <frag.fulgor@gmail.com>\n"
@@ -18,7 +18,42 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Poedit-SearchPath-0: ../..\n"
 
-#: ../../footer.php:16 ../../page-test.php:402 ../../library/bones.php:229
+#: ../../archive-discography.php:10 ../../template-concerts.php:16
+msgid "Filter"
+msgstr "フィルター"
+
+#: ../../archive-discography.php:13 ../../library/bones.php:161
+msgid "Composer"
+msgstr "作曲家"
+
+#: ../../archive-discography.php:94 ../../index-0922.php:36 ../../index.php:64
+#: ../../page-guest-artist.php:52 ../../template-concerts.php:249
+#: ../../template-full.php:33 ../../template-profile.php:74
+#: ../../not_in_use/archive-custom_type.php:58 ../../not_in_use/archive.php:79
+#: ../../not_in_use/page-custom.php:80 ../../not_in_use/page.php:41
+#: ../../not_in_use/single-custom_type.php:80 ../../not_in_use/single.php:34
+#: ../../not_in_use/taxonomy-custom_cat.php:57
+msgid "Oops, Post Not Found!"
+msgstr "投稿が見つかりません"
+
+#: ../../archive-discography.php:97 ../../index-0922.php:39 ../../index.php:67
+#: ../../page-guest-artist.php:55 ../../template-concerts.php:252
+#: ../../template-full.php:36 ../../template-profile.php:77
+#: ../../not_in_use/archive-custom_type.php:61 ../../not_in_use/archive.php:82
+#: ../../not_in_use/page-custom.php:83 ../../not_in_use/page.php:44
+#: ../../not_in_use/single-custom_type.php:83 ../../not_in_use/single.php:37
+#: ../../not_in_use/taxonomy-custom_cat.php:60
+msgid "Uh Oh. Something is missing. Try double checking things."
+msgstr ""
+
+#: ../../archive-discography.php:100 ../../index-0922.php:42
+#: ../../index.php:70 ../../page-guest-artist.php:58
+#: ../../template-concerts.php:255 ../../template-full.php:39
+#: ../../template-profile.php:80 ../../not_in_use/page.php:47
+msgid "This is the error message in the index.php template."
+msgstr ""
+
+#: ../../footer.php:16 ../../page-test.php:402 ../../library/bones.php:238
 msgid "Footer Links"
 msgstr "フッターのリンク"
 
@@ -67,45 +102,59 @@ msgstr ""
 msgid "Concerts"
 msgstr "公演情報"
 
-#: ../../front-page.php:217
+#: ../../front-page.php:218 ../../functions.php:535 ../../functions.php:704
+#: ../../functions.php:755 ../../template-concerts.php:139
+#: ../../template-concerts.php:190
 msgid "Bach Collegium Japan Ticket Center"
 msgstr "バッハ・コレギウム・ジャパン チケットセンター"
 
-#: ../../front-page.php:221 ../../index.php:18
+#: ../../front-page.php:231 ../../functions.php:548 ../../functions.php:717
+#: ../../functions.php:768 ../../index.php:23 ../../template-concerts.php:152
+#: ../../template-concerts.php:203 ../../template-profile.php:33
 msgid "Buy Ticket"
 msgstr "チケット購入"
 
-#: ../../front-page.php:230 ../../front-page.php:232 ../../index.php:27
-#: ../../index.php:29
+#: ../../front-page.php:240 ../../front-page.php:242 ../../functions.php:557
+#: ../../functions.php:559 ../../functions.php:726 ../../functions.php:728
+#: ../../functions.php:777 ../../functions.php:779 ../../index.php:32
+#: ../../index.php:34 ../../template-concerts.php:161
+#: ../../template-concerts.php:163 ../../template-concerts.php:212
+#: ../../template-concerts.php:214 ../../template-profile.php:42
+#: ../../template-profile.php:44
 msgid "Ticket Pia"
 msgstr "チケットぴあ"
 
-#: ../../front-page.php:235 ../../front-page.php:237 ../../index.php:32
-#: ../../index.php:34
+#: ../../front-page.php:245 ../../front-page.php:247 ../../functions.php:562
+#: ../../functions.php:564 ../../functions.php:731 ../../functions.php:733
+#: ../../functions.php:782 ../../functions.php:784 ../../index.php:37
+#: ../../index.php:39 ../../template-concerts.php:166
+#: ../../template-concerts.php:168 ../../template-concerts.php:217
+#: ../../template-concerts.php:219 ../../template-profile.php:47
+#: ../../template-profile.php:49
 msgid "e+"
 msgstr "イープラス"
 
-#: ../../front-page.php:289
+#: ../../front-page.php:299
 msgid "Subscription Concert<br>in Tokyo"
 msgstr "東京定期演奏会"
 
-#: ../../front-page.php:293
+#: ../../front-page.php:303
 msgid "Subscription Concert<br>in Kobe"
 msgstr "神戸定期演奏会"
 
-#: ../../front-page.php:318
+#: ../../front-page.php:334
 msgid "Latest News"
 msgstr "お知らせ"
 
-#: ../../front-page.php:392
+#: ../../front-page.php:408
 msgid "Bach Collegium Japan and Masaaki Suzuki"
 msgstr "バッハ・コレギウム・ジャパンと鈴木雅明"
 
-#: ../../front-page.php:530
+#: ../../front-page.php:546
 msgid "Introduction to the BCJ Friends and Society"
 msgstr "フレンズ＆ソサエティのご案内"
 
-#: ../../front-page.php:539
+#: ../../front-page.php:555
 msgid "Read more about BCJ Friends & Society"
 msgstr "BCJフレンズ＆ソサエティ詳細はこちら"
 
@@ -181,35 +230,71 @@ msgstr ""
 msgid "Date"
 msgstr ""
 
-#: ../../header.php:99 ../../header.php:145 ../../page-test.php:30
-#: ../../page-test.php:59 ../../library/bones.php:228
-msgid "The Main Menu"
+#: ../../header.php:99 ../../library/bones.php:237
+#, fuzzy
+msgid "The Top Menu"
 msgstr "メインメニュー"
 
-#: ../../index-0922.php:36 ../../index.php:59 ../../template-full.php:33
-#: ../../not_in_use/archive-custom_type.php:58 ../../not_in_use/archive.php:79
-#: ../../not_in_use/page-custom.php:80 ../../not_in_use/page.php:41
-#: ../../not_in_use/single-custom_type.php:80 ../../not_in_use/single.php:34
-#: ../../not_in_use/taxonomy-custom_cat.php:57
-msgid "Oops, Post Not Found!"
-msgstr "投稿が見つかりません"
-
-#: ../../index-0922.php:39 ../../index.php:62 ../../template-full.php:36
-#: ../../not_in_use/archive-custom_type.php:61 ../../not_in_use/archive.php:82
-#: ../../not_in_use/page-custom.php:83 ../../not_in_use/page.php:44
-#: ../../not_in_use/single-custom_type.php:83 ../../not_in_use/single.php:37
-#: ../../not_in_use/taxonomy-custom_cat.php:60
-msgid "Uh Oh. Something is missing. Try double checking things."
-msgstr ""
-
-#: ../../index-0922.php:42 ../../index.php:65 ../../template-full.php:39
-#: ../../not_in_use/page.php:47
-msgid "This is the error message in the index.php template."
-msgstr ""
+#: ../../header.php:146 ../../page-test.php:30 ../../page-test.php:59
+#: ../../library/bones.php:236
+msgid "The Main Menu"
+msgstr "メインメニュー"
 
 #: ../../page-test.php:127
 msgid "公演情報"
 msgstr ""
+
+#: ../../template-concerts.php:19
+msgid "Subscription Concert"
+msgstr "定期演奏会"
+
+#: ../../template-concerts.php:24
+msgid "Subscription Concert in Tokyo"
+msgstr "東京定期演奏会"
+
+#: ../../template-concerts.php:25
+msgid "Subscription Concert in Kobe"
+msgstr "神戸定期演奏会"
+
+#: ../../template-concerts.php:29
+msgid "Location"
+msgstr "場所"
+
+#: ../../template-concerts.php:33
+msgid "Tokyo Opera City"
+msgstr "東京オペラシティ"
+
+#: ../../template-concerts.php:34
+msgid "Hyogo Performing Arts Center"
+msgstr "兵庫県立芸術文化センター"
+
+#: ../../template-concerts.php:35
+msgid "Tokorozawa Civic Cultural Centre Cube Hall"
+msgstr "所沢市民文化センター"
+
+#: ../../template-concerts.php:39
+msgid "Repertoire"
+msgstr "公演内容"
+
+#: ../../template-concerts.php:43
+msgid "Musikalisches Opfer"
+msgstr "音楽の捧げ物"
+
+#: ../../template-concerts.php:44
+msgid "Matthäus Passion"
+msgstr "マタイ受難曲"
+
+#: ../../template-concerts.php:45
+msgid "Church cantata"
+msgstr "教会カンタータ"
+
+#: ../../template-concerts.php:46
+msgid "Secular cantata"
+msgstr "世俗カンタータ"
+
+#: ../../template-concerts.php:47
+msgid "W.A.Mozart Missa"
+msgstr "W.A.モーツァルト:ミサ曲"
 
 #: ../../library/admin.php:78
 msgid "j F Y @ g:i a"
@@ -234,15 +319,15 @@ msgstr ""
 msgid "Page %s"
 msgstr ""
 
-#: ../../library/bones.php:259
+#: ../../library/bones.php:268
 msgid "No Related Posts Yet!"
 msgstr "関連する記事はありません。"
 
-#: ../../library/bones.php:304
+#: ../../library/bones.php:313
 msgid "Read "
 msgstr ""
 
-#: ../../library/bones.php:304 ../../not_in_use/search.php:25
+#: ../../library/bones.php:313 ../../not_in_use/search.php:25
 msgid "Read more &raquo;"
 msgstr "もっと読む &raquo;"
 
@@ -256,6 +341,7 @@ msgid "All Schedule"
 msgstr "スケジュール一覧"
 
 #: ../../library/custom-post-type.php:34 ../../library/custom-post-type.php:81
+#: ../../library/custom-post-type.php:129
 msgid "Add New"
 msgstr "新規追加"
 
@@ -264,6 +350,7 @@ msgid "Add New Schedule"
 msgstr "スケジュールの新規追加"
 
 #: ../../library/custom-post-type.php:36 ../../library/custom-post-type.php:83
+#: ../../library/custom-post-type.php:131
 msgid "Edit"
 msgstr "編集"
 
@@ -284,10 +371,12 @@ msgid "Search Schedule"
 msgstr "スケジュールを検索…"
 
 #: ../../library/custom-post-type.php:41 ../../library/custom-post-type.php:88
+#: ../../library/custom-post-type.php:136
 msgid "Nothing found in the Database."
 msgstr "投稿が見つかりませんでした。"
 
 #: ../../library/custom-post-type.php:42 ../../library/custom-post-type.php:89
+#: ../../library/custom-post-type.php:137
 msgid "Nothing found in Trash"
 msgstr "ゴミ箱は空です。"
 
@@ -320,147 +409,341 @@ msgstr "ディスコグラフィを表示"
 msgid "Search Discography"
 msgstr "ディスコグラフィを検索"
 
+#: ../../library/custom-post-type.php:126
+#: ../../library/custom-post-type.php:127
+#: ../../library/custom-post-type.php:140
+msgid "Artist"
+msgstr ""
+
+#: ../../library/custom-post-type.php:128
+msgid "All Artist"
+msgstr ""
+
 #: ../../library/custom-post-type.php:130
+#, fuzzy
+msgid "Add New Artist"
+msgstr "新規追加"
+
+#: ../../library/custom-post-type.php:132
+msgid "Edit Artist"
+msgstr ""
+
+#: ../../library/custom-post-type.php:133
+msgid "New Artist"
+msgstr ""
+
+#: ../../library/custom-post-type.php:134
+msgid "View Artist"
+msgstr ""
+
+#: ../../library/custom-post-type.php:135
+#, fuzzy
+msgid "Search Artist"
+msgstr "検索"
+
+#: ../../library/custom-post-type.php:178
 #, fuzzy
 msgid "Page Categories"
 msgstr "カスタムカテゴリ"
 
-#: ../../library/custom-post-type.php:131
+#: ../../library/custom-post-type.php:179
 #, fuzzy
 msgid "Page Category"
 msgstr "親のカスタムカテゴリー"
 
-#: ../../library/custom-post-type.php:132
+#: ../../library/custom-post-type.php:180
 #, fuzzy
 msgid "Search Page Categories"
 msgstr "カスタムカテゴリーを検索"
 
-#: ../../library/custom-post-type.php:133
+#: ../../library/custom-post-type.php:181
 #, fuzzy
 msgid "All Page Categories"
 msgstr "カスタムカテゴリ一覧"
 
-#: ../../library/custom-post-type.php:134
+#: ../../library/custom-post-type.php:182
 #, fuzzy
 msgid "Parent Page Category"
 msgstr "親のカスタムカテゴリー"
 
-#: ../../library/custom-post-type.php:135
+#: ../../library/custom-post-type.php:183
 #, fuzzy
 msgid "Parent Page Category:"
 msgstr "親のカスタムカテゴリー:"
 
-#: ../../library/custom-post-type.php:136
+#: ../../library/custom-post-type.php:184
 #, fuzzy
 msgid "Edit Page Category"
 msgstr "カスタムカテゴリーを編集"
 
-#: ../../library/custom-post-type.php:137
+#: ../../library/custom-post-type.php:185
 #, fuzzy
 msgid "Update Page Category"
 msgstr "カスタムカテゴリーを更新"
 
-#: ../../library/custom-post-type.php:138
+#: ../../library/custom-post-type.php:186
 #, fuzzy
 msgid "Add New Page Category"
 msgstr "新規カスタムカテゴリーを追加"
 
-#: ../../library/custom-post-type.php:139
+#: ../../library/custom-post-type.php:187
 msgid "New Page Category Name"
 msgstr ""
 
-#: ../../library/custom-post-type.php:153
+#: ../../library/custom-post-type.php:201
 msgid "Custom Tags"
 msgstr "カスタムタグ"
 
-#: ../../library/custom-post-type.php:154
+#: ../../library/custom-post-type.php:202
 msgid "Custom Tag"
 msgstr "カスタムタグ"
 
-#: ../../library/custom-post-type.php:155
+#: ../../library/custom-post-type.php:203
 msgid "Search Custom Tags"
 msgstr "カスタムタグを検索"
 
-#: ../../library/custom-post-type.php:156
+#: ../../library/custom-post-type.php:204
 msgid "All Custom Tags"
 msgstr "カスタムタグ一覧"
 
-#: ../../library/custom-post-type.php:157
+#: ../../library/custom-post-type.php:205
 msgid "Parent Custom Tag"
 msgstr "親のカスタムタグ"
 
-#: ../../library/custom-post-type.php:158
+#: ../../library/custom-post-type.php:206
 msgid "Parent Custom Tag:"
 msgstr "親のカスタムタグ:"
 
-#: ../../library/custom-post-type.php:159
+#: ../../library/custom-post-type.php:207
 msgid "Edit Custom Tag"
 msgstr "カスタムタグを編集"
 
-#: ../../library/custom-post-type.php:160
+#: ../../library/custom-post-type.php:208
 msgid "Update Custom Tag"
 msgstr "カスタムタグを更新"
 
-#: ../../library/custom-post-type.php:161
+#: ../../library/custom-post-type.php:209
 msgid "Add New Custom Tag"
 msgstr "新規カスタムタグを追加"
 
-#: ../../library/custom-post-type.php:162
+#: ../../library/custom-post-type.php:210
 msgid "New Custom Tag Name"
 msgstr ""
 
-#: ../../library/custom-post-type.php:175
-#: ../../library/custom-post-type.php:176
-#: ../../library/custom-post-type.php:189
+#: ../../library/custom-post-type.php:223
+#: ../../library/custom-post-type.php:224
+#: ../../library/custom-post-type.php:237
 msgid "ディスコグラフィーカテゴリ"
 msgstr ""
 
-#: ../../library/custom-post-type.php:177
+#: ../../library/custom-post-type.php:225
 msgid "Search ディスコグラフィーカテゴリ"
 msgstr ""
 
-#: ../../library/custom-post-type.php:178
+#: ../../library/custom-post-type.php:226
 msgid "Popular ディスコグラフィーカテゴリ"
 msgstr ""
 
-#: ../../library/custom-post-type.php:179
+#: ../../library/custom-post-type.php:227
 msgid "All ディスコグラフィーカテゴリ"
 msgstr ""
 
-#: ../../library/custom-post-type.php:180
+#: ../../library/custom-post-type.php:228
 msgid "Parent ディスコグラフィーカテゴリ"
 msgstr ""
 
-#: ../../library/custom-post-type.php:181
+#: ../../library/custom-post-type.php:229
 msgid "Parent ディスコグラフィーカテゴリ:"
 msgstr ""
 
-#: ../../library/custom-post-type.php:182
+#: ../../library/custom-post-type.php:230
 msgid "Edit ディスコグラフィーカテゴリ"
 msgstr ""
 
-#: ../../library/custom-post-type.php:183
+#: ../../library/custom-post-type.php:231
 msgid "Update ディスコグラフィーカテゴリ"
 msgstr ""
 
-#: ../../library/custom-post-type.php:184
+#: ../../library/custom-post-type.php:232
 msgid "Add New ディスコグラフィーカテゴリ"
 msgstr ""
 
-#: ../../library/custom-post-type.php:185
+#: ../../library/custom-post-type.php:233
 msgid "New ディスコグラフィーカテゴリ"
 msgstr ""
 
-#: ../../library/custom-post-type.php:186
+#: ../../library/custom-post-type.php:234
 msgid "Separate ディスコグラフィーカテゴリ with commas"
 msgstr ""
 
-#: ../../library/custom-post-type.php:187
+#: ../../library/custom-post-type.php:235
 msgid "Add or remove ディスコグラフィーカテゴリ"
 msgstr ""
 
-#: ../../library/custom-post-type.php:188
+#: ../../library/custom-post-type.php:236
 msgid "Choose from the most used ディスコグラフィーカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:250
+#: ../../library/custom-post-type.php:251
+#: ../../library/custom-post-type.php:264
+msgid "アーティストカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:252
+msgid "Search アーティストカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:253
+msgid "Popular アーティストカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:254
+msgid "All アーティストカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:255
+msgid "Parent アーティストカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:256
+msgid "Parent アーティストカテゴリ:"
+msgstr ""
+
+#: ../../library/custom-post-type.php:257
+msgid "Edit アーティストカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:258
+msgid "Update アーティストカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:259
+msgid "Add New アーティストカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:260
+msgid "New アーティストカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:261
+msgid "Separate アーティストカテゴリ with commas"
+msgstr ""
+
+#: ../../library/custom-post-type.php:262
+msgid "Add or remove アーティストカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:263
+msgid "Choose from the most used アーティストカテゴリ"
+msgstr ""
+
+#: ../../library/custom-post-type.php:276
+#: ../../library/custom-post-type.php:277
+#: ../../library/custom-post-type.php:290
+msgid "ロケーション"
+msgstr ""
+
+#: ../../library/custom-post-type.php:278
+msgid "Search ロケーション"
+msgstr ""
+
+#: ../../library/custom-post-type.php:279
+msgid "Popular ロケーション"
+msgstr ""
+
+#: ../../library/custom-post-type.php:280
+msgid "All ロケーション"
+msgstr ""
+
+#: ../../library/custom-post-type.php:281
+msgid "Parent ロケーション"
+msgstr ""
+
+#: ../../library/custom-post-type.php:282
+msgid "Parent ロケーション:"
+msgstr ""
+
+#: ../../library/custom-post-type.php:283
+msgid "Edit ロケーション"
+msgstr ""
+
+#: ../../library/custom-post-type.php:284
+msgid "Update ロケーション"
+msgstr ""
+
+#: ../../library/custom-post-type.php:285
+msgid "Add New ロケーション"
+msgstr ""
+
+#: ../../library/custom-post-type.php:286
+msgid "New ロケーション"
+msgstr ""
+
+#: ../../library/custom-post-type.php:287
+msgid "Separate ロケーション with commas"
+msgstr ""
+
+#: ../../library/custom-post-type.php:288
+msgid "Add or remove ロケーション"
+msgstr ""
+
+#: ../../library/custom-post-type.php:289
+msgid "Choose from the most used ロケーション"
+msgstr ""
+
+#: ../../library/custom-post-type.php:302
+#: ../../library/custom-post-type.php:303
+#: ../../library/custom-post-type.php:316
+msgid "公演内容"
+msgstr ""
+
+#: ../../library/custom-post-type.php:304
+msgid "Search 公演内容"
+msgstr ""
+
+#: ../../library/custom-post-type.php:305
+msgid "Popular 公演内容"
+msgstr ""
+
+#: ../../library/custom-post-type.php:306
+msgid "All 公演内容"
+msgstr ""
+
+#: ../../library/custom-post-type.php:307
+msgid "Parent 公演内容"
+msgstr ""
+
+#: ../../library/custom-post-type.php:308
+msgid "Parent 公演内容:"
+msgstr ""
+
+#: ../../library/custom-post-type.php:309
+msgid "Edit 公演内容"
+msgstr ""
+
+#: ../../library/custom-post-type.php:310
+msgid "Update 公演内容"
+msgstr ""
+
+#: ../../library/custom-post-type.php:311
+msgid "Add New 公演内容"
+msgstr ""
+
+#: ../../library/custom-post-type.php:312
+msgid "New 公演内容"
+msgstr ""
+
+#: ../../library/custom-post-type.php:313
+msgid "Separate 公演内容 with commas"
+msgstr ""
+
+#: ../../library/custom-post-type.php:314
+msgid "Add or remove 公演内容"
+msgstr ""
+
+#: ../../library/custom-post-type.php:315
+msgid "Choose from the most used 公演内容"
 msgstr ""
 
 #: ../../library/custom-widget.php:11
@@ -692,9 +975,6 @@ msgstr "もっと読む &raquo;"
 msgid "This is the error message in the taxonomy-custom_cat.php template."
 msgstr ""
 
-#~ msgid "Tokyo Subscription Concert"
-#~ msgstr "東京定期演奏会"
-
 #~ msgid "Custom Category"
 #~ msgstr "カスタムカテゴリ"
 
@@ -757,9 +1037,6 @@ msgstr ""
 
 #~ msgid "You can use these tags"
 #~ msgstr "これらのタグを使うことができます"
-
-#~ msgid "Search"
-#~ msgstr "検索"
 
 #~ msgid "Please activate some Widgets."
 #~ msgstr "いくつかのウィジェットを有効にしてください。"
