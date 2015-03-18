@@ -321,7 +321,7 @@ FEATURE SLIDER
 		position: absolute;
 		z-index: 9999;
 		top: 50%;
-		transform: translate3d(0,-50%,0);
+		@include transform(translate3d(0,-50%,0));
 		cursor: pointer;
 		opacity: 0;
 		@include transition-property(opacity);
@@ -2389,7 +2389,8 @@ body.page-template-page-guest-artist {
 			position: relative;
 			width: 100vw;
 			margin-left: 50% !important;
-			transform: translateX(-50%);
+			@include transform(translateX(-50%));
+
 			// padding: 20px 0;
 			background: rgba($black, 0.5);
 			color: $white;
@@ -2844,7 +2845,8 @@ body.page-template-template-concerts {
 			position: relative;
 			width: 100vw;
 			margin-left: 50% !important;
-			transform: translateX(-50%);
+			@include transform(translateX(-50%));
+
 			// padding: 20px 0;
 			background: rgba($black, 0.5);
 			color: $white;
@@ -2983,7 +2985,8 @@ body.page-template-template-concerts {
 					display: block;
 				}
 				.arrow svg{
-					transform: scaleY(-1);
+					@include transform(scaleY(-1));
+
 				}
 			}
 			.arrow {
