@@ -115,8 +115,9 @@ jQuery(document).ready(function($) {
   loadGravatars();
 
 function adjustFooterPos(){
-  console.log($("section#main").height()+" : "+$("#page-footer").height());
-  if(($("body.single").length||$("body.page").length)&&$("section#main").height()+$("#page-footer").height()<$(window).height()){
+  // console.log("wHeight: " + $(window).height());
+  // console.log($("section#main").height()+" : "+$("#page-footer").height());
+  if(($("body.single").length||$("body.page").length||$("body.archive").length)&&$("section#main").height()+$("#page-footer").height()<$(window).height()){
     $("#page-footer").addClass("fixed");
   }else if($("#page-footer").hasClass("fixed")){
     $("#page-footer").removeClass("fixed");
@@ -257,6 +258,13 @@ adjustFooterPos();
       var id = $this.data("id");
       var $loading = $("<div class='loading' />").append("<div class='throbber throbber_medium'/>");
 
+      var action = "get_content";
+
+      if($this.hasClass('gallery-video')){
+        action = "get_content_video";
+      }else if($this.hasClass('gallery-image')){
+        action = "get_content_image";
+      }
       /** Ajax Call */
       $.ajax({
  
@@ -264,7 +272,7 @@ adjustFooterPos();
         timeout: 8000,
         url: ajax_object.ajaxurl,
         type: "POST",
-        data: ({ action:'get_content', id:id }),
+        data: ({ action: action, id:id }),
  
         beforeSend: function() {          
           // $( '#ajax-response' ).html( 'Loading' );
@@ -286,6 +294,8 @@ adjustFooterPos();
             adjustFooterPos();
             var p = $this.offset().top;
             $('html,body').animate({ scrollTop: p }, 200, 'easeInOutCubic');
+
+            if($('.overview-holder-carousel')){
 
             $('.overview-holder-carousel').slick({
               slidesToShow: 4,
@@ -329,6 +339,24 @@ adjustFooterPos();
                   ],
                   onInit: function(){ overviewCarouselReady = true; $(".overview-holder-carousel").removeClass("inactive"); }
             });
+            }
+            if('.slick-slides'){
+              $('.slick-slides').slick({
+                autoplay: false,
+                autoplaySpeed: 7000,
+                arrows: true,
+                dots: true,
+                infinite: true,
+                pauseOnHover: true,
+                centerMode: true,
+                adaptiveHeight: true,
+                centerPadding: '1px',
+                speed: 1000,
+                prevArrow: '<button type="button" class="slick-prev"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" class="bcj-btn-white"><g><circle stroke="#FFFFFF" fill="none" cx="20" cy="20" r="19.5"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="24,29 12,20 24,11"/></g></svg></button>',
+                nextArrow: '<button type="button" class="slick-next"><svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" class="bcj-btn-white"><g><circle stroke="#FFFFFF" fill="none" cx="20" cy="20" r="19.5"/><polyline fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="16,11.062 28,20.062 16,29.062"/></g></svg></button>',
+              });
+            }
+
 
           });
                                 

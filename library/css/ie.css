@@ -390,9 +390,14 @@ UPCOMING CONCERTS
 .artists > article:nth-of-type(4n) section {
   border-right: 1px solid #010101; }
 
-body.page-template-template-concerts .article-header .title, body.post-type-archive-discography .article-header .title, body.page-template-page-guest-artist .article-header .title {
+#gallery.items > article:nth-of-type(3n) section {
+  border-right: none !important; }
+#gallery.items > article:nth-of-type(4n) section {
+  border-right: 1px solid #010101 !important; }
+
+body.page-template-template-concerts .article-header .title, body.post-type-archive-discography .article-header .title, body.post-type-archive-gallery .article-header .title, body.page-template-page-guest-artist .article-header .title {
   margin-top: 50px; }
-  body.page-template-template-concerts .article-header .title h1, body.post-type-archive-discography .article-header .title h1, body.page-template-page-guest-artist .article-header .title h1 {
+  body.page-template-template-concerts .article-header .title h1, body.post-type-archive-discography .article-header .title h1, body.post-type-archive-gallery .article-header .title h1, body.page-template-page-guest-artist .article-header .title h1 {
     font-size: 3.4em; }
 
 body.page-template-template-concerts .concerts > .overview article header > div.thumb {

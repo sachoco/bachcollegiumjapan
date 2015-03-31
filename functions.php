@@ -889,6 +889,75 @@ function get_category_callback(){
   wp_send_json($terms);
 
 }
+
+
+add_action( 'wp_ajax_get_content_video', 'get_content_video_callback');
+add_action( 'wp_ajax_nopriv_get_content_video', 'get_content_video_callback');
+function get_content_video_callback(){
+  global $post;
+  if(isset($_REQUEST[id])) $id = $_REQUEST[id];
+  $post = get_post($id);
+  setup_postdata( $post ); 
+
+  echo '<div class="item content" data-id="'.$id.'">';
+  // echo '<a href="#" class="close"><svg x="0px" y="0px" width="35px" height="35px" viewBox="0 0 35 35" ><line fill="none" stroke="#FFFFFF" x1="33.562" y1="0.746" x2="0.562" y2="33.746"/><line fill="none" stroke="#FFFFFF" x1="33.562" y1="33.746" x2="0.562" y2="0.746"/></svg></a>';
+?>
+<div class="embed-container">
+  <?php the_field('gallery-video'); ?>
+</div>
+<style>
+  .embed-container { 
+    position: relative; 
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+  } 
+
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+</style>
+ <?php
+  echo "</div>";
+}
+
+add_action( 'wp_ajax_get_content_image', 'get_content_image_callback');
+add_action( 'wp_ajax_nopriv_get_content_image', 'get_content_image_callback');
+function get_content_image_callback(){
+  global $post;
+  if(isset($_REQUEST[id])) $id = $_REQUEST[id];
+  $post = get_post($id);
+  setup_postdata( $post ); 
+
+  echo '<div class="item content slick-slides" data-id="'.$id.'">';
+  // echo '<div class="wrap">';
+  // echo '<a href="#" class="close"><svg x="0px" y="0px" width="35px" height="35px" viewBox="0 0 35 35" ><line fill="none" stroke="#FFFFFF" x1="33.562" y1="0.746" x2="0.562" y2="33.746"/><line fill="none" stroke="#FFFFFF" x1="33.562" y1="33.746" x2="0.562" y2="0.746"/></svg></a>';
+  // echo '<div class="inner">';
+
+  $images = get_field('gallery-images');
+  foreach($images as $image):
+?>
+    <div class="slide-item">
+      <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+    </div>
+
+<?php
+  endforeach;
+  // echo '</div>';
+  // echo '</div>';
+  echo "</div>";
+}
+
+
+
 add_action( 'pre_get_posts', 'be_change_discography_posts_per_page' );
 /**
  * Change Posts Per Page for Discography Archive
@@ -902,5 +971,7 @@ function be_change_discography_posts_per_page( $query ) {
   }
 
 }
+
+
 
 /* DON'T DELETE THIS CLOSING TAG */ ?>
