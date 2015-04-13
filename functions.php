@@ -946,7 +946,10 @@ function get_content_image_callback(){
   foreach($images as $image):
 ?>
     <div class="slide-item">
-      <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+      <div class="image">
+        <img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>" />
+        <div class="caption"><?php echo $image['caption']; ?></div>
+      </div>
     </div>
 
 <?php

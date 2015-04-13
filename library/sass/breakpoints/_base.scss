@@ -2805,6 +2805,18 @@ body.post-type-archive-gallery {
 				// height: auto;
 				// max-height: 600px;
 			}
+			.slide-item .image {
+				// max-width: 1024px;
+				margin-left: 50%;
+				position: relative;
+				float: left;
+				@include transform(translateX(-50%));
+			}
+			.slide-item .caption {
+				position: absolute;
+				right: 10px;
+				bottom: 0px;
+			}
 			.related-concerts {
 				width: 100%;
 				position: relative;
