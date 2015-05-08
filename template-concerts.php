@@ -145,7 +145,7 @@ Template Name: Concerts
                       'meta_query' => array(
                                         array(
                                             'key' => 'schedule-date',
-                                            'value' => date("Ymd"),
+                                            'value' => date("Ymd", strtotime("-1 days")),
                                             'type' => 'NUMERIC',
                                             'compare' => '>'
                                         )
