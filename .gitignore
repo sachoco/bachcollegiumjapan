@@ -54,7 +54,7 @@ temp/
 
 .svn
 
-*.codekit
+## *.codekit
 *.scssc
 .sass-cache/
 not_in_use/

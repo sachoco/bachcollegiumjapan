@@ -28,7 +28,14 @@
                     </nav> -->
             <div id="footer-logo" class="h1"><a href="<?php echo home_url(); ?>" rel="nofollow"><img src="<?php echo get_template_directory_uri(); ?>/library/images/logo.png" /></a></div>
 
-            <div class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</div>
+            <div class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.
+              <br>
+              <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+              Unauthorized copying and replication of the contents of this site, images are strictly prohibited.
+              <?php else: ?>
+              <span class="small">当サイトの画像、動画等の無断転載・無断使用を禁止します</span>
+              <?php endif; ?>
+            </div>
 
           </div>
 
