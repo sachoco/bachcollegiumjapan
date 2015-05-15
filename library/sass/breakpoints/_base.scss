@@ -2801,16 +2801,17 @@ body.post-type-archive-gallery {
 			}
 			.slide-item img {
 				margin: auto;
-				// width: 100%;
+				width: 100%;
 				// height: auto;
 				// max-height: 600px;
 			}
 			.slide-item .image {
-				// max-width: 1024px;
+				max-width: 1024px;
 				margin-left: 50%;
 				position: relative;
 				float: left;
 				@include transform(translateX(-50%));
+				width: 100%;
 			}
 			.slide-item .caption {
 				position: absolute;
