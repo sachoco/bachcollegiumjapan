@@ -159,6 +159,7 @@ function bones_scripts_and_styles() {
 		// Localize the script with new data
 		$translation_array = array(
 			'composer' => __( 'Composer', 'bonestheme' ),
+			'category' => __( 'Category', 'bonestheme' ),
 			'subsctiption_concert' => __( 'Subscription Concert', 'bonestheme' ),
 			'location' => __( 'Location', 'bonestheme' ),
 			'repertoire' => __( 'Repertoire', 'bonestheme' ),
