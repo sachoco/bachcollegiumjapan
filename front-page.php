@@ -5,7 +5,7 @@
                     <div class="slick-slides">
                     <!-- Slide item 1 -->
                         <div class="slide-item">
-                            <a href="<?php echo get_permalink(get_page_by_path('2015subscription')->ID); ?>">
+                            <a href="<?php $icl_object_id = icl_object_id(2868, 'post', true); echo get_permalink($icl_object_id); ?>">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/teiki.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
                                 <div class="inner-content">
@@ -46,7 +46,7 @@
 
                     <!-- Slide item 3 -->
                         <div class="slide-item">
-                            <a href="<?php echo get_home_url().'/suntry' ?>">
+                            <a href="<?php $icl_object_id = icl_object_id(2889, 'post', true); echo get_permalink($icl_object_id); ?>">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/suntory.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content">
                                 <div class="inner-content">
@@ -62,7 +62,7 @@
 
                     <!-- Slide item 4 -->
                         <div class="slide-item">
-                            <a href="<?php echo get_home_url().'/bcj_echo' ?>">
+                            <a href="<?php $icl_object_id = icl_object_id(181, 'post', true); echo get_permalink($icl_object_id); ?>">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/echo.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
                                 <div class="inner-content"><div><?php _e("Echo Klassik Prize","bonestheme"); ?></div>
@@ -83,7 +83,7 @@
 
                     <!-- Slide item 5 -->
                         <div class="slide-item">
-                            <a href="<?php echo get_permalink(get_page_by_path('friends_society')->ID); ?>">
+                            <a href="<?php $icl_object_id = icl_object_id(2882, 'post', true); echo get_permalink($icl_object_id); ?>">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/support.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
                                 <div class="inner-content">

@@ -30,14 +30,7 @@ nav.main-nav--clone {
     li a:after {
         color: $white !important;
     }
-    li.menu-gallery {
-         color: darken($white, 70%) !important;
-         cursor: default;
-         a {
-             color: darken($white, 70%) !important;
-             cursor: default;               
-         }
-    }
+
     ul.sub-menu {
         background-color: rgba($black,.8);
         background-image: none;

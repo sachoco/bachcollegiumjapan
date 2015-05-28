@@ -4,6 +4,7 @@ Template Name: Full Width Layout
 */
 ?>
 <?php get_header(); ?>
+			<div class="content">
             <div class="wrap">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -41,6 +42,13 @@ Template Name: Full Width Layout
 				</article>
 
 			<?php endif; ?>			
+			</div>
+	        <!-- Background START -->
+	        <div id="background">
+	            <div id="page-background" ><div class="overlay"></div></div>
+	        </div>
+	        <!-- Background END -->
+
 			</div>
         </section>
         <!-- Main END -->

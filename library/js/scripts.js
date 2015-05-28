@@ -126,6 +126,7 @@ function adjustFooterPos(){
 adjustFooterPos();
 
     $(window).resize(function(){
+
         adjustFooterPos();
         updateDetailPosition();
     });
@@ -164,10 +165,15 @@ adjustFooterPos();
 
 
 
-    $(document).on("click", '.mobile-button', function(){
-        // console.log($(this));
+    $(document).on("click", ".mobile-button", function(e){
+        e.preventDefault();
         $( this ).siblings(".nav").slideToggle();
+        return false;
     });
+    // $(".mobile-button").on("click", function(){
+    //     alert("test");
+        
+    // });
 
     $(document).on("click", "li.menu-about > a", function(event){
 
