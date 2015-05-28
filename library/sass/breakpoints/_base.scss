@@ -1709,6 +1709,8 @@ nav.main-nav {
 	.mobile-button {
 		text-transform: uppercase;
 		font-size: 1.5em;
+		text-decoration: none;
+		cursor: pointer;
 	}
 	>ul {
 		display: none;
@@ -3814,15 +3816,44 @@ svg:not(:root) {
 
 
 body.en {
+	.nav li a {
+		margin: 0.7em 0.75em 0.5em;
+	}
+	.nav li ul.sub-menu li a, .nav li ul.children li a {
+		margin-top: 0.2em;
+	}
+	font-size: 16px;
+	line-height: 1.5em;
+	h1, h2 {
+		line-height: 1.2em;
+	}
+	.bigger {
+		font-size: 2.7em;
+	}
+	.news-item {
+		line-height: 1.2em;
+	}
+	nav li a:before {
+		display: none !important;
+	}
+	header.article-header h1:before {
+		display: none !important;
+	}
 	section#intro {
 		.short-profile {
 			font-weight: normal;
 			line-height: 1.5em;
 		}
+		nav .nav li a {
+			margin-bottom: 1.2em;
+		}
 	} 
 	section#support, section#contact {
 		font-size: 18px;
 		line-height: 1.5em;
+	}
+	.article-header .title h1 {
+		font-size: 3em !important;
 	}
 	h3, .h3 {
 		font-size: 1.7em;
@@ -3833,6 +3864,15 @@ body.en {
 	.upcoming div.overview .buy-ticket-container .ticket-info .small {
 		font-size: 1em;
 	}
+	.upcoming div.overview header .location {
+		line-height: 1.3em;
+	}
+	.upcoming div.overview .description {
+		line-height: 1.2em;
+	}
+	.upcoming footer .specials .category-filter .title h3 {
+		margin-top: 15px;
+	}
 	section#about {
 		font-size: 18px;
 		p {
@@ -3842,4 +3882,30 @@ body.en {
 	.news-item header .title {
 		height: 4em;
 	}
+	&.post-type-archive-gallery {
+		.items>article {
+			font-size: 16px;
+			section {
+				line-height: 120% !important;
+			}
+		}
+	} 
+	.filter .option>li {
+		line-height: 2;
+		width: 32.8% !important;
+	}
+	&.page-template-template-concerts {
+		.concerts {
+			.title h1 {
+				font-size: 1.6em !important;
+			}
+			>.month-header h3 {
+				font-size: 1.3em;
+				margin: 1.3em 0;
+			}
+			>.overview article {
+				font-size: 14px;
+			}
+		}
+	} 
 } 

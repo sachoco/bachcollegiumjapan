@@ -126,6 +126,7 @@ function adjustFooterPos(){
 adjustFooterPos();
 
     $(window).resize(function(){
+
         adjustFooterPos();
         updateDetailPosition();
     });
@@ -164,10 +165,15 @@ adjustFooterPos();
 
 
 
-    $(document).on("click", '.mobile-button', function(){
-        // console.log($(this));
+    $(document).on("click", ".mobile-button", function(e){
+        e.preventDefault();
         $( this ).siblings(".nav").slideToggle();
+        return false;
     });
+    // $(".mobile-button").on("click", function(){
+    //     alert("test");
+        
+    // });
 
     $(document).on("click", "li.menu-about > a", function(event){
 
@@ -692,7 +698,7 @@ var currentConcertItemID = null;
                 items.push( "<li data-id='" + val.term_id + "' data-tax='discography_category'>" + val.name + "</li>" );
               });
              
-             var $subcategory = $("<li/>", {"class": "category", html: '<span class="label">カテゴリー</span><span class="arrow"><svg width="20px" height="14px" ><polyline fill="none" stroke="#000" stroke-miterlimit="10" points="15,2 8,10 1,2 "/></svg></span><span class="dismiss"><svg x="0px" y="0px" width="15px" height="15px"><line fill="none" stroke="#000" x1="14" y1="1" x2="1" y2="14"/><line fill="none" stroke="#000" x1="14" y1="14" x2="1" y2="1"/></svg></span>'});
+             var $subcategory = $("<li/>", {"class": "category", html: '<span class="label">'+translated_text.category+'</span><span class="arrow"><svg width="20px" height="14px" ><polyline fill="none" stroke="#000" stroke-miterlimit="10" points="15,2 8,10 1,2 "/></svg></span><span class="dismiss"><svg x="0px" y="0px" width="15px" height="15px"><line fill="none" stroke="#000" x1="14" y1="1" x2="1" y2="14"/><line fill="none" stroke="#000" x1="14" y1="14" x2="1" y2="1"/></svg></span>'});
               $( "<ul/>", {
                 "class": "choices",
                 html: items.join( "" )
@@ -760,7 +766,7 @@ var currentConcertItemID = null;
 
         });
       }else{
-        $(".filter .option >li.category .label").html("カテゴリー").parent().removeClass("active");
+        $(".filter .option >li.category .label").html(translated_text.category).parent().removeClass("active");
         var tax = "discography_category";
         var id = $(".filter .option >li.composer").data("id");
         $.ajax({
