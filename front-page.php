@@ -3,6 +3,25 @@
 
                 <div class="wrap">
                     <div class="slick-slides">
+                        <div class="slide-item">
+                            <a href="http://chofumusicfestival.com/cmf2015/" target="_blank">
+                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/cmf2015.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
+<!--                             <div class="slide-content overlay">
+                                <div class="inner-content">
+                                    <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+
+                                    <h1 ><?php _e("Subscription concerts in 2015<br>have been announced","bonestheme"); ?></h1>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+
+                                    <h1><?php _e("Call for new subscribers","bonestheme"); ?></h1>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <div><?php _e("Read more","bonestheme"); ?></div>
+                                </div>
+                            </div> -->
+                            </a>
+                            <div class="slide-overlay"></div>
+                        </div>
                     <!-- Slide item 1 -->
                         <div class="slide-item">
                             <a href="<?php $icl_object_id = icl_object_id(2868, 'post', true); echo get_permalink($icl_object_id); ?>">
