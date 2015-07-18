@@ -3,6 +3,13 @@
 
                 <div class="wrap">
                     <div class="slick-slides">
+                     <!-- Slide item 2 -->
+                        <div class="slide-item">
+                            <a href="<?php $icl_object_id = icl_object_id(4037, 'post', true); echo get_permalink($icl_object_id); ?>">
+                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/heiwanoinori.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
+                            </a>
+                            <div class="slide-overlay"></div>
+                        </div>
                     <!-- Slide item 1 -->
                         <div class="slide-item">
                             <a href="<?php $icl_object_id = icl_object_id(2868, 'post', true); echo get_permalink($icl_object_id); ?>">
