@@ -12,6 +12,37 @@
                         </div> -->
                     <!-- Slide item 1 -->
                         <div class="slide-item">
+                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/erdmann.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
+                            <div class="slide-content overlay">
+                                <div class="inner-content">
+                                    <div>J. S. バッハ：農民カンタータ</div>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h1 >ソプラノ界の女王<br>モイツァ・エルトマン<br>BCJ初登場</h1>
+                                    <!-- <div class="subtitle">BCJ初登場</div> -->
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h1 style="line-height:100%;display:block;">
+                                        9.19
+                                        <div class="small">(SAT) 15時（神戸）</div>
+                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3885, 'post', true); echo get_permalink($icl_object_id); ?>">神戸公演詳細はこちら</a></div>
+                                    </h1>
+                                    <h1 style="line-height:100%;display:block;">
+                                        9.20
+                                        <div class="small">(SUN) 15時（名古屋）</div>
+                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3891, 'post', true); echo get_permalink($icl_object_id); ?>">名古屋公演詳細はこちら</a></div>
+                                    </h1>
+                                    <h1 style="line-height:100%;display:block;">
+                                        9.26
+                                        <div class="small">(SAT) 15時（東京）</div>
+                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(2952, 'post', true); echo get_permalink($icl_object_id); ?>">東京公演詳細はこちら</a></div>
+                                    </h1>
+                                </div>
+                            </div>
+                            <div class="slide-overlay"></div>
+                        </div>
+
+                     <!-- Slide item 2 -->
+
+                        <div class="slide-item">
                             <a href="<?php $icl_object_id = icl_object_id(2868, 'post', true); echo get_permalink($icl_object_id); ?>">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/teiki.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
@@ -30,27 +61,6 @@
                             </a>
                             <div class="slide-overlay"></div>
                         </div>
-
-                     <!-- Slide item 2 -->
-<!--                         <div class="slide-item">
-                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/next-concert.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
-                            <div class="slide-content overlay">
-                                <div class="inner-content">
-                                    <div>次回BCJ定期公演</div>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 >H.シュッツの世界</h1>
-                                    <div class="subtitle">主に感謝せよ、その慈しみはとこしえに 〜ダビデ詩編（抄）〜</div>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 >11.22（神戸）<div class="small">（土）15時</div></h1>
-                                    <div><a href="<?php echo get_home_url().'/schedule/h-シュッツの世界' ?>">神戸公演詳細はこちら</a></div>
-                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1>11.24（東京）<div class="small">（月・休）15時</div></h1>
-                                    <div><a href="<?php echo get_home_url().'/schedule/h-シュッツの世界-2' ?>">東京公演詳細はこちら</a></div>
-                                </div>
-                            </div>
-                            <div class="slide-overlay"></div>
-                        </div> -->
-
                     <!-- Slide item 3 -->
 <!--                         <div class="slide-item">
                             <a href="<?php $icl_object_id = icl_object_id(2889, 'post', true); echo get_permalink($icl_object_id); ?>">

@@ -284,6 +284,17 @@ FEATURE SLIDER
 					font-size: 0.6em;
 					line-height: 100%;
 				}
+				.small2 {
+					font-size: 0.7em;
+					line-height: 100%;
+				}
+				.readmore {
+					font-size: 0.5em;
+					line-height: 100%;
+					a {
+						text-decoration: underline;
+					}
+				}
 
 			}
 			h2 {
@@ -298,6 +309,7 @@ FEATURE SLIDER
 			a {
 				color: $white;
 			}
+
 		}
 		.slide-overlay {
 			position: absolute;
