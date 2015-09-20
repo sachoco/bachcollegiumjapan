@@ -15,6 +15,27 @@
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/erdmann.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
                                 <div class="inner-content">
+                                <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+                                    <div>J. S. Bach: Secular cantata</div>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h1 >The queen of soprano<br>Mojca Erdmann<br>joins BCJ</h1>
+                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+                                    <h1 style="line-height:100%;display:block;">
+                                        9.19
+                                        <div class="small">(SAT) 15:00（Kobe）</div>
+                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3885, 'schedule', true); echo get_permalink($icl_object_id); ?>">Read more</a></div>
+                                    </h1>
+                                    <h1 style="line-height:100%;display:block;">
+                                        9.20
+                                        <div class="small">(SUN) 15:00（Nagoya）</div>
+                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3891, 'schedule', true); echo get_permalink($icl_object_id); ?>">Read more</a></div>
+                                    </h1>
+                                    <h1 style="line-height:100%;display:block;">
+                                        9.26
+                                        <div class="small">(SAT) 15:00（Tokyo）</div>
+                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(2952, 'schedule', true); echo get_permalink($icl_object_id); ?>">Read more</a></div>
+                                    </h1>
+                                <?php else: ?>
                                     <div>J. S. バッハ：農民カンタータ</div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <h1 >ソプラノ界の女王<br>モイツァ・エルトマン<br>BCJ初登場</h1>
@@ -23,18 +44,20 @@
                                     <h1 style="line-height:100%;display:block;">
                                         9.19
                                         <div class="small">(SAT) 15時（神戸）</div>
-                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3885, 'post', true); echo get_permalink($icl_object_id); ?>">神戸公演詳細はこちら</a></div>
+                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3885, 'schedule', true); echo get_permalink($icl_object_id); ?>">神戸公演詳細はこちら</a></div>
                                     </h1>
                                     <h1 style="line-height:100%;display:block;">
                                         9.20
                                         <div class="small">(SUN) 15時（名古屋）</div>
-                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3891, 'post', true); echo get_permalink($icl_object_id); ?>">名古屋公演詳細はこちら</a></div>
+                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3891, 'schedule', true); echo get_permalink($icl_object_id); ?>">名古屋公演詳細はこちら</a></div>
                                     </h1>
                                     <h1 style="line-height:100%;display:block;">
                                         9.26
                                         <div class="small">(SAT) 15時（東京）</div>
-                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(2952, 'post', true); echo get_permalink($icl_object_id); ?>">東京公演詳細はこちら</a></div>
-                                    </h1>
+                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(2952, 'schedule', true); echo get_permalink($icl_object_id); ?>">東京公演詳細はこちら</a></div>
+                                    </h1>                                
+                                <?php endif; ?>
+
                                 </div>
                             </div>
                             <div class="slide-overlay"></div>
