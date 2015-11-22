@@ -604,7 +604,7 @@ Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and ch
                         <?php endif; ?> 
                         <br><br><br>
                     </div>
-                    <a href="<?php echo get_permalink(get_page_by_path('friends_society')->ID); ?>"><span class="bcj-btn invert"><?php _e( 'Read more about BCJ Friends & Society', 'bonestheme' ); ?></span></a>
+                    <a href="<?php $icl_object_id = icl_object_id(2882, 'page', true); echo get_permalink($icl_object_id); ?>"><span class="bcj-btn invert"><?php _e( 'Read more about BCJ Friends & Society', 'bonestheme' ); ?></span></a>
                 </div>
                 <div class="h_iframe">
                     <img class="ratio" src="http://placehold.it/16x9"/>
