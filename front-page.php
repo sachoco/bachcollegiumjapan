@@ -136,12 +136,11 @@
                             <div class="slide-content overlay">
                                 <div class="inner-content">
                                 <?php if(ICL_LANGUAGE_CODE=="en"): ?>
-                                    <div><?php _e("Echo Klassik Prize","bonestheme"); ?></div>
+                                    <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 ><?php _e("Completion of recordings<br>of all the church cantatas","bonestheme"); ?></h1>
+                                    <h1 >BCJ Europe Tour 2016</h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-
-                                    <div><?php _e("BIS Records receives the Editorial Achievement of the Year prize","bonestheme"); ?></div>
+                                    <div><?php _e("Read more","bonestheme"); ?></div>
                                 <?php else: ?>
                                     <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
