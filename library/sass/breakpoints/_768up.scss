@@ -252,6 +252,74 @@ body.page-template-template-concerts {
 		
 	}
 }
+
+
+/**
+*
+* Friends
+*
+**/
+
+
+body.page-template-template-friends{
+	
+
+	.table {
+		display: table;
+		width: 700px;
+		margin: auto;
+		border-collapse: collapse;
+		// border: 1px solid;
+	}
+	.table-cell {
+		width: 50%;
+		display: table-cell;
+		border-left: 1px solid;
+		border-right: 1px solid;
+		padding: 15px;
+	}
+	.align-left {
+		// text-align: left;
+		font-size: 85%;
+	}
+	
+}
+
+/**
+*
+* Society
+*
+**/
+
+
+body.page-template-template-society{
+	
+
+	.membership {
+		width: 1100px;
+		margin: auto;
+		text-align: center;
+		clear: both;
+		font-size: 85%;
+		>div {
+			float: left;
+			width: 33%;
+			text-align: left;
+			padding: 15px;
+			h3 {
+				font-size: 1.8em;
+				line-height: 1.3em;
+				margin: 0;
+			}
+			ul {
+				margin: 0;
+			}
+		}
+	}
+
+	
+}
+
 /*********************
 HEADER STYLES
 *********************/

@@ -174,12 +174,37 @@ adjustFooterPos();
     //     alert("test");
         
     // });
+    var $activesub = null;
+    function toggleSub($elm){
+      if($activesub){
+          $activesub.parent().toggleClass("show-sub").find(".sub-menu").slideToggle();
+        if(!$activesub.is($elm)){
+          $activesub = $elm;
+          $activesub.parent().toggleClass("show-sub").find(".sub-menu").slideToggle();
+        }else if($activesub.is($elm)){
+          $activesub = null;
+        }
+      }else{
+        $activesub = $elm;
+        $activesub.parent().toggleClass("show-sub").find(".sub-menu").slideToggle();        
+      }
+    }
 
     $(document).on("click", "li.menu-about > a", function(event){
+      event.preventDefault();
+      toggleSub($(this));
+
+      // $(this).parent().toggleClass("show-sub").find(".sub-menu").slideToggle();
+      // $(this).find(".sub-menu").toggleClass("show-sub");
+      // $("#main >header").toggleClass("show-sub");
+    });
+    $(document).on("click", "li.menu-friends_society > a", function(event){
 
       event.preventDefault();
+      toggleSub($(this));
 
-      $(this).parent().toggleClass("show-sub").find(".sub-menu").slideToggle();
+
+      // $(this).parent().toggleClass("show-sub").find(".sub-menu").slideToggle();
       // $(this).find(".sub-menu").toggleClass("show-sub");
       // $("#main >header").toggleClass("show-sub");
     });

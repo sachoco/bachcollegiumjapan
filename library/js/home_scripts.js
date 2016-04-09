@@ -134,9 +134,13 @@ $('.slick-slides').slick({
                 });
 
                 //スクロール　サポート
-                $(".menu-friends_society").on('click', function () {
+                // $(".menu-friends_society").on('click', function () {
+                //     goFriendsSociety();
+                // });
+                $("#intro .menu-friends_society").on('click', function () {
                     goFriendsSociety();
                 });
+
 
             }
 });

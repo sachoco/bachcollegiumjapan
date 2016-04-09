@@ -115,6 +115,15 @@ a.svg {
   display: inline-block;
 }
 
+.inline-block {
+	display: inline-block;
+}
+.border-left {
+	border-left: 1px solid;
+}
+.border-right {
+	border-right: 1px solid;
+}
 /********************
 WORDPRESS BODY CLASSES
 style a page via class
@@ -2232,11 +2241,12 @@ body.page-template-template-profile{
 				cursor: default;	
 				color: lighten($link-color, 50%);
 			}
+		   	ul.sub-menu {
+				display: block;
+			}
 		}
 
-	   	ul.sub-menu {
-			display: block;
-		}
+
 	}
 
 	.content {
@@ -2335,11 +2345,12 @@ body.page-template-page-guest-artist {
 				cursor: default;	
 				color: lighten($link-color, 50%);
 			}
+		   	ul.sub-menu {
+				display: block;
+			}
 		}
 
-	   	ul.sub-menu {
-			display: block;
-		}
+
 	}
 	.article-header {
 		text-align: center;	
@@ -2481,6 +2492,7 @@ body.page-template-page-guest-artist {
 				top: 250px;
 
 			}
+
 
 		}
 	}
@@ -3323,6 +3335,255 @@ body.page-template-template-concerts {
 	width: 30px;
 	height: 30px;
 }
+
+
+/**
+*
+* Friends
+*
+**/
+
+
+body.page-template-template-friends{
+	
+	h1 {
+		&:before {
+			content: "BCJフレンズについて";
+		}
+	}
+	#background {
+		#page-background {
+			background-image: url(../images/himawari_masaaki.jpg);
+			background-position: center -80px;
+			.overlay {
+				background-color: rgba(255,255,255,0.8);
+			}
+		}
+
+
+	}
+	
+
+	.nav li {
+		&.menu-friends_society {
+			>a {
+				pointer-events: none;
+				cursor: default;	
+				color: lighten($link-color, 50%);
+			}
+			ul.sub-menu {
+				display: block;
+				z-index: 998;
+			}
+		}
+
+
+	}
+
+	.content {
+		.title{
+			margin-top: 50px;
+			h1 {
+				text-transform: uppercase;
+				letter-spacing: 4px;
+				font-size: 3.4em;
+				position: relative;
+				&:before {
+					position: absolute;
+					bottom: -3em;
+					font-size: 0.3em;
+					letter-spacing: 0px;
+					text-align: center;
+					width: 100%;
+					left: 0;
+				}
+			}
+		}
+		background-size: cover;
+		position: relative;
+		text-align: center;
+
+		.wrap {
+			z-index: 10;
+		}
+
+	}
+
+	#main {
+		background: none;
+		// padding-bottom: 0;
+		> header {
+			margin-bottom: 37px;
+			background-color: $background-color;
+			background: url(../images/bcj_bg_darker.jpg) top center ;
+		}
+	}
+
+	.membership {
+		width: 300px;
+	}
+	.table {
+		margin: auto;
+		border-collapse: collapse;
+		// border: 1px solid;
+	}
+
+	.table-cell {
+		// width: 50%;
+		// display: table-cell;
+		// border-left: 1px solid;
+		// border-right: 1px solid;
+		padding: 15px;
+	}
+	.align-left {
+		text-align: left;
+		// font-size: 85%;
+	}
+	.price {
+		float: right;
+	}
+	.center {
+		text-align: center;
+		margin-top: 15px;
+	}
+	.border-box {
+		padding: 0 15px;
+		border: 1px solid;
+	}
+	hr {
+		color: $border-color;
+		background-color: $border-color;
+	    height: 1px;
+	    border: none;				
+	}
+}
+
+/**
+*
+* Society
+*
+**/
+
+
+body.page-template-template-society{
+	color: $white;
+	h1 {
+		&:before {
+			content: "BCJソサエティについて";
+		}
+	}
+	#background {
+		#page-background {
+			background-image: url(../images/christmas_carol_medley.jpg);
+			background-position: center 0px;
+			.overlay {
+				background-color: rgba(0,0,0,0.7);
+			}
+		}
+
+
+	}
+	
+
+	.nav li {
+		&.menu-friends_society {
+			>a {
+				pointer-events: none;
+				cursor: default;	
+				color: lighten($link-color, 50%);
+			}
+			ul.sub-menu {
+				display: block;
+				z-index: 998;
+			}
+		}
+
+
+	}
+
+	.content {
+		.title{
+			margin-top: 50px;
+			h1 {
+				text-transform: uppercase;
+				letter-spacing: 4px;
+				font-size: 3.4em;
+				position: relative;
+				&:before {
+					position: absolute;
+					bottom: -3em;
+					font-size: 0.3em;
+					letter-spacing: 0px;
+					text-align: center;
+					width: 100%;
+					left: 0;
+				}
+			}
+		}
+		svg {
+			display: block;
+			margin: 15px auto;
+		}
+		.entry-content-page hr {
+			color: $white;
+			background-color: $white;
+		}
+		background-size: cover;
+		position: relative;
+		text-align: center;
+		color: $white;
+
+		.wrap {
+			z-index: 10;
+		}
+
+	}
+
+	#main {
+		background: none;
+		// padding-bottom: 0;
+		> header {
+			margin-bottom: 37px;
+			background-color: $background-color;
+			background: url(../images/bcj_bg_darker.jpg) top center ;
+		}
+	}
+
+	.membership {
+		margin: auto;
+		text-align: center;
+		clear: both;
+		>div {
+			text-align: left;
+			padding: 15px;
+			h3 {
+				font-size: 1.8em;
+				line-height: 1.3em;
+				margin: 0;
+			}
+			ul {
+				margin: 0;
+			}
+		}
+	}
+
+	.center {
+		text-align: center;
+		margin-top: 15px;
+	}
+	.border-box {
+		padding: 0 15px;
+		border: 1px solid;
+	}
+	hr {
+		color: $white;
+		background-color: $white;
+	    height: 1px;
+	    border: none;	
+	    clear: both;			
+	}
+}
+
 // Animation
 
 @keyframes rotate {
