@@ -51,6 +51,69 @@ Template Name: Friends
 	        </div>
 	        <!-- Background END -->
 				<hr>
+
+            <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+				<div class="table">
+					<div class="table-cell">
+						Benefits
+						<hr>
+						<div class="align-left">
+							<ul>
+								<li>●　Listing in BCJ program books</li>
+								<li>●　Admission to special pre-concert talk</li>
+								<li>●　Admission to special working rehearsal</li>
+								<li>●　Advance ordering priviledges for BCJ concerts and events</li>
+								<li>●　Back stage tour</li>
+							</ul>
+							<hr>
+							※Priority of the above benefits given in order of membership level, beginning with Oratorio.<br>
+							※Pre-concert talk, Working rehearsal, and Back stage tour basically take place before a BCJ subscription concert 1-2 times a year.
+						</div>
+					</div>
+				
+					<div class="table-cell">
+						Membership Levels
+						<hr>
+						<div class="align-left">
+						Choral<span class="price">¥5,000</span>
+						<hr>
+						Motet<span class="price">¥10,000</span>
+						<hr>
+						Cantata<span class="price">¥20,000</span>
+						<hr>
+						Oratorio<span class="price">¥50,000</span>
+						<hr>
+						Society Member（more detail）<span class="price">¥80,000〜</span>
+						<hr>
+						</div>
+					</div>
+				</div>
+
+				<hr>
+				<div class="wrap">
+					<div class="entry-content-page">
+						<div class="center">申し込み方法</div>
+						<p>
+							後支援金は下記の郵便口座にお振込み頂きますようお願い申し上げます。<br>
+							※通信欄には必ず、お名前・ご住所・お電話番号をご記入ください。<br>
+							<div class="border-box">
+							<ul>
+								<li>口座番号：0017-2-33885</li>
+								<li>加入者名：有限会社バッハ・コレギウム・ジャパン</li>
+							</ul>
+							</div>
+							<br>
+							If you live in outside Japan, please make a check payable to "Bach Collegium Japan" and send it to the BCJ office address in Japan below.
+							<br><br>
+							BACH COLLEGIUM JAPAN Office<br>
+							5-29-7 Sendagaya, Suite 402, Shibuya Tokyo 151-0051 Japan<br>
+							Tel: +81(0) 3-3226-5333 Fax: +81(0) 3-5362-5445<br>
+							E-mail: friends@bach.co.jp
+						</p>	
+					</div>
+				</div>
+            <?php else: ?>
+
 				<div class="table">
 					<div class="table-cell">
 						特典
@@ -103,7 +166,9 @@ Template Name: Friends
 						</p>	
 					</div>
 				</div>
+            <?php endif; ?>
 			</div>
+
         </section>
         <!-- Main END -->
 

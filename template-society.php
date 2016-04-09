@@ -74,6 +74,190 @@ Template Name: Society
 	            <div id="page-background" ><div class="overlay"></div></div>
 	        </div>
 	        <!-- Background END -->
+            <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+
+						Membership Levels & Benefits
+						<hr>
+						<div class="membership">
+							<div>
+								<h3>PRINZIPAL</h3>
+								¥8,000	
+							</div>
+							<div>
+								もっとも基礎的な8フィートの長さを持つパイプです。すべてを支える根源であり、歌うような音を奏でます。
+							</div>	
+							<div>
+								<ul>
+									<li>●　One complimentary ticket to BCJ regular performances with complimentary program book</li>
+									<li>●　Discount on BCJ hosted concert ticket prices</li>
+									<li>●　Annual Society reception</li>
+									<li>●　Photography with BCJ artists at BCJ events</li>
+									<li>●　Access to the Society member only gathering lounge</li>
+									<li>●　The Society member only concierge line</li>
+								</ul>	
+							</div>	
+						</div>
+						<hr>
+						<div class="membership">
+							<div>
+								<h3>OKTAV</h3>
+								¥160,000	
+							</div>
+							<div>
+								プリンツィパルの倍の高さ、つまり実音のオクターヴ上の音を持つパイプです。しっかりとしたフーガのテーマに用います。
+							</div>	
+							<div>
+								<ul>
+									<li>●　All the benegits listed at the Prinzipal level</li>
+									<li>●　Organ pre-talk event</li>
+								</ul>	
+							</div>	
+						</div>
+						<hr>
+						<div class="membership">
+							<div>
+								<h3>SESQUIALTERA</h3>
+								¥240,000	
+							</div>
+							<div>
+								本来は、「2対3」という比率を示す言葉です。オクターヴと一緒にやや鼻にかかった独特の響きを奏でます。
+							</div>	
+							<div>
+								<ul>
+									<li>●　All the benefits listed at the Oktav level</li>
+									<li>●　Admission to master class by BCJ members</li>
+								</ul>	
+							</div>	
+						</div>
+						<hr>
+						<div class="membership">
+							<div>
+								<h3>SUPEROKTAV</h3>
+								¥320,000	
+							</div>
+							<div>
+								プリンツィパルの4倍、実音の2オクターヴ上の音を奏でます。華やかに、しかし軽やかに飛翔するパイプです。
+							</div>	
+							<div>
+								<ul>
+									<li>●　All the benefits listed at the Sesquialtera level</li>
+									<li>●　Invitation to dinner night with BCJ Music Director Masaaki Suzuki</li>
+								</ul>	
+							</div>	
+						</div>
+						<hr>
+						<div class="membership">
+							<div>
+								<h3>SIFFLÖTE</h3>
+								¥640,000	
+							</div>
+							<div>
+								プリンツィパルの8倍、実音の3オクターヴ上の音を奏でます。細いけれど突き抜ける強さを持っています。
+							</div>	
+							<div>
+								<ul>
+									<li>●　All the benefits listed at the Superoktav level</li>
+									<li>●　Access to post-concert private champagne toast</li>
+									<li>●　Complimentary BCJ not-for-sale special CD</li>
+								</ul>	
+							</div>	
+						</div>
+						<hr>
+						<div class="membership">
+							<div>
+								<h3>MIXTUR</h3>
+								¥1,280,000	
+							</div>
+							<div>
+								実音の約4オクターヴ以上の高い倍音をまとめて出せる総合ストップです。「トッカータとフーガニ短調」冒頭には不可欠です。
+							</div>	
+							<div>
+								<ul>
+									<li>●　All the benefits listed at the Sifflöte level</li>
+									<li>●　Invitation to dinner night with a guest artist</li>
+									<li>●　Complimentary rare-poster from BCJ global tour</li>
+								</ul>	
+							</div>	
+						</div>
+						<hr>
+						<div class="membership">
+							<div>
+								<h3>SCHARF</h3>
+								¥2,560,000	
+							</div>
+							<div>
+								さらに高い倍音をまとめて、より輝かしい響きを奏でます。
+							</div>	
+							<div>
+								<ul>
+									<li>●　All the benefits listed at the Mixtur level</li>
+									<li>●　The opportunity to name a BCJ concert with a customized benefits package</li>
+									<li>●　Invitation to private dinner with Masaaki Suzuki or special guest artist</li>
+									<li>●　Privilege to travel a BCJ global tour with BCJ musicians</li>
+								</ul>	
+							</div>	
+						</div>
+						<hr>
+						<div class="membership">
+							<div>
+								<h3>ZIMBEL</h3>
+								¥5,120,000	
+							</div>
+							<div>
+								最も高いランクの倍音を含み、ピラミッドの頂点に冠を添える役を果たします。
+							</div>	
+							<div>
+								<ul>
+									<li>●　All the benefits listed at the Scharf level</li>
+									<li>●　The opportunity to name a BCJ concert or recording project with a customized benefits package</li>
+								</ul>	
+							</div>	
+						</div>
+						<hr>
+						<div class="membership">
+							<div>
+								<h3>PLENUM</h3>
+								¥10,240,000万円	
+							</div>
+							<div>
+								これは、もはや単なるストップの名称ではありません。本来は「すべて」を意味することばで、重低音から最高音まで、すべての倍音を含んで完成されたオルガンの響きを表します。
+							</div>	
+							<div>
+								<ul>
+									<li>●　An unforgettable, personalized, all-access BCJ experience</li>
+								</ul>	
+							</div>	
+						</div>
+					</div>
+				
+				</div>
+
+				<hr>
+				<div class="wrap">
+					<div class="entry-content-page">
+						<div class="center">申し込み方法</div>
+						<p>
+							後支援金は下記の郵便口座にお振込み頂きますようお願い申し上げます。<br>
+							※通信欄には必ず、お名前・ご住所・お電話番号をご記入ください。<br>
+							<div class="border-box">
+							<ul>
+								<li>口座番号：0017-2-33885</li>
+								<li>加入者名：有限会社バッハ・コレギウム・ジャパン</li>
+							</ul>
+							</div>
+							<br>
+							If you live in outside Japan, please make a check payable to "Bach Collegium Japan" and send it to the BCJ office address in Japan below.
+							<br><br>
+							BACH COLLEGIUM JAPAN Office<br>
+							5-29-7 Sendagaya, Suite 402, Shibuya Tokyo 151-0051 Japan<br>
+							Tel: +81(0) 3-3226-5333 Fax: +81(0) 3-5362-5445<br>
+							E-mail: friends@bach.co.jp
+						</p>	
+					</div>
+				</div>
+
+            <?php else: ?>
+
 						メンバーシップレベルの特典
 						<hr>
 						<div class="membership">
@@ -178,7 +362,7 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　すべのシフレットレベル特典 </li>
-									<li>●　ゲストアーティストを囲むディナーへご招待</li>
+									<li>●　ゲストアーティストを囲むディナーへご招待</li>
 									<li>●　BCJ海外ツアーより希少価値ポスター贈呈</li>
 								</ul>	
 							</div>	
@@ -256,6 +440,9 @@ Template Name: Society
 						</p>	
 					</div>
 				</div>
+
+            <?php endif; ?>
+
 			</div>
         </section>
         <!-- Main END -->
