@@ -138,17 +138,33 @@ Template Name: Concerts
                 $args = array(
                       'post_type' => 'schedule',
                       'post_status' => 'publish',
-                      'meta_key' => 'schedule-date',
-                      'orderby' => 'meta_value_num',
-                      'order'   => 'ASC',
+                      // 'meta_key' => 'schedule-date',
+                      // 'orderby' => 'meta_value_num',
+                      // 'order'   => 'ASC',
+                      'orderby' => array(
+                        'schedule-date' => 'ASC',
+                        'time'    => 'ASC',
+                      ),
                       'posts_per_page' => -1,
                       'meta_query' => array(
-                                        array(
-                                            'key' => 'schedule-date',
-                                            'value' => date("Ymd", strtotime("-1 days")),
-                                            'type' => 'NUMERIC',
-                                            'compare' => '>'
-                                        )
+                                        // array(
+                                        //     'key' => 'schedule-date',
+                                        //     'value' => date("Ymd", strtotime("-1 days")),
+                                        //     'type' => 'NUMERIC',
+                                        //     'compare' => '>'
+                                        // )
+                                        'schedule-date' => array(
+                                          'key' => 'schedule-date',
+                                          'value' => date("Ymd", strtotime("-1 days")),
+                                          'type' => 'NUMERIC',
+                                          'compare' => '>'
+                                        ),
+                                        'time' => array(
+                                          'key' => 'time',
+                                          'value' => '',
+                                          'compare' => 'LIKE'
+                                        ),
+
                                     )
                     );
 				$the_query = new WP_Query( $args );
@@ -156,7 +172,7 @@ Template Name: Concerts
         $cur_month;
 				if ( $the_query->have_posts() ) :
                         while ( $the_query->have_posts() ) : $the_query->the_post();
-			
+
                         $unixtimestamp = strtotime(get_field('schedule-date'));
                         $year = date_i18n("Y", $unixtimestamp);
                         $month = date_i18n("n", $unixtimestamp);
