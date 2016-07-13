@@ -191,20 +191,36 @@
 
                 <div class="overview-holder-carousel inactive" >
                 <?php
-                    $args = array(
+                $args = array(
                       'post_type' => 'schedule',
                       'post_status' => 'publish',
-                      'meta_key' => 'schedule-date',
-                      'orderby' => 'meta_value_num',
-                      'order'   => 'ASC',
+                      // 'meta_key' => 'schedule-date',
+                      // 'orderby' => 'meta_value_num',
+                      // 'order'   => 'ASC',
+                      'orderby' => array(
+                        'schedule-date' => 'ASC',
+                        'time'    => 'ASC',
+                      ),
                       'posts_per_page' => -1,
                       'meta_query' => array(
-                                        array(
-                                            'key' => 'schedule-date',
-                                            'value' => date("Ymd", strtotime("-1 days")),
-                                            'type' => 'NUMERIC',
-                                            'compare' => '>'
-                                        )
+                                        // array(
+                                        //     'key' => 'schedule-date',
+                                        //     'value' => date("Ymd", strtotime("-1 days")),
+                                        //     'type' => 'NUMERIC',
+                                        //     'compare' => '>'
+                                        // )
+                                        'schedule-date' => array(
+                                          'key' => 'schedule-date',
+                                          'value' => date("Ymd", strtotime("-1 days")),
+                                          'type' => 'NUMERIC',
+                                          'compare' => '>'
+                                        ),
+                                        'time' => array(
+                                          'key' => 'time',
+                                          'value' => '',
+                                          'compare' => 'LIKE'
+                                        ),
+
                                     )
                     );
                     /*
