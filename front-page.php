@@ -83,7 +83,7 @@
                                     <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <h1 ><?php _e("2016-2017シーズン 定期演奏会<br>公演ラインナップ 決定","bonestheme"); ?></h1>
+                                    <h1 ><?php _e("2017-2018シーズン 定期演奏会<br>公演ラインナップ 決定","bonestheme"); ?></h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
                                     <!-- <div><?php _e("継続会員受付中","bonestheme"); ?></div> -->
@@ -179,8 +179,8 @@
 
                     <!-- Slide item 6 -->
 
-                        <div class="slide-item">
-                            <!-- <a href="https://www.youtube.com/watch?v=D-mLys_KjLY" target="_blank"> -->
+<!--                         <div class="slide-item">
+                            <a href="https://www.youtube.com/watch?v=D-mLys_KjLY" target="_blank">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/kamishibai.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
                             <div class="slide-content overlay">
                                 <div class="inner-content">
@@ -190,7 +190,7 @@
                                     <h1>Picture story-show</h1>
                                     <h1>《Der Streit zwischen Phoebus und Pan》</h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <!-- <div>視聴は<a href="https://www.youtube.com/watch?v=D-mLys_KjLY" target="_blank">こちら</a></div> -->
+                                    <div>視聴は<a href="https://www.youtube.com/watch?v=D-mLys_KjLY" target="_blank">こちら</a></div>
                                     <?php else: ?>
                                     <div>９月定期演奏会</div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
@@ -201,9 +201,9 @@
                                     <?php endif; ?>
                                 </div>
                             </div>
-                            <!-- </a> -->
+                            </a>
                             <div class="slide-overlay"></div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
