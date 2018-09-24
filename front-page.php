@@ -65,29 +65,29 @@
                      <!-- Slide item 2 -->
 
                         <div class="slide-item">
-                            <a href="<?php $icl_object_id = icl_object_id(6015, 'page', true); echo get_permalink($icl_object_id); ?>">
-                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/subscription2018-4.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 0 0; background-repeat: no-repeat;"></div>
+                            <a href="<?php $icl_object_id = icl_object_id(6544, 'page', true); echo get_permalink($icl_object_id); ?>">
+                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/subscription2019-3.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 0 0; background-repeat: no-repeat;"></div>
                             <div class="slide-content right">
                                 <div class="inner-content">
                                 <?php if(ICL_LANGUAGE_CODE=="en"): ?>
                                     <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <h1 ><?php _e("Season 2018-2019<br>Subscription Concerts","bonestheme"); ?></h1>
+                                    <h1 ><?php _e("Season 2019-2020<br>Subscription Concerts","bonestheme"); ?></h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <div><?php _e("New subscriptions can be purchased from Oct. 28 Sat.","bonestheme"); ?></div>
+                                    <div><?php _e("New subscriptions can be purchased from Nov. 3 Sat.","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <div><?php _e("Read more","bonestheme"); ?></div>
                                 <?php else: ?>
                                     <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <h1 ><?php _e("2018-2019シーズン 定期演奏会<br>公演ラインナップ 決定","bonestheme"); ?></h1>
+                                    <h1 ><?php _e("2019-2020シーズン 定期演奏会<br>公演ラインナップ 決定","bonestheme"); ?></h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
                                     <!-- <div><?php _e("継続会員受付中","bonestheme"); ?></div> -->
-                                    <div><?php _e("新規定期会員募集 2017年10月28日（土）より","bonestheme"); ?></div>
+                                    <div><?php _e("新規定期会員募集 2018年11月3日より","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <div><?php _e("Read more","bonestheme"); ?></div>
                                 <?php endif; ?>
