@@ -65,11 +65,11 @@
                      <!-- Slide item 2 -->
 
                         <div class="slide-item">
-                            <a href="<?php $icl_object_id = icl_object_id(6544, 'page', true); echo get_permalink($icl_object_id); ?>">
+                            <!-- <a href="<?php $icl_object_id = icl_object_id(6544, 'page', true); echo get_permalink($icl_object_id); ?>"> -->
                             <?php if(ICL_LANGUAGE_CODE=="en"): ?>
                               <a href="http://bachcollegiumjapan.org/en/2020-2021_news_e/">
                             <?php else: ?>
-                              <a href="http://bachcollegiumjapan.org/20-21_tokyo_news/">                              
+                              <a href="http://bachcollegiumjapan.org/20-21_tokyo_news/">
                             <?php endif; ?>
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/subscription2020-2.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 0 0; background-repeat: no-repeat;"></div>
                             <div class="slide-content right">
