@@ -54,7 +54,7 @@
                                         9.26
                                         <div class="small">(SAT) 15時（東京）</div>
                                         <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(2952, 'schedule', true); echo get_permalink($icl_object_id); ?>">東京公演詳細はこちら</a></div>
-                                    </h1>                                
+                                    </h1>
                                 <?php endif; ?>
 
                                 </div>
@@ -66,28 +66,33 @@
 
                         <div class="slide-item">
                             <a href="<?php $icl_object_id = icl_object_id(6544, 'page', true); echo get_permalink($icl_object_id); ?>">
-                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/subscription2019-3.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 0 0; background-repeat: no-repeat;"></div>
+                            <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+                              <a href="http://bachcollegiumjapan.org/en/2020-2021_news_e/">
+                            <?php else: ?>
+                              <a href="http://bachcollegiumjapan.org/20-21_tokyo_news/">                              
+                            <?php endif; ?>
+                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/subscription2020-2.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 0 0; background-repeat: no-repeat;"></div>
                             <div class="slide-content right">
                                 <div class="inner-content">
                                 <?php if(ICL_LANGUAGE_CODE=="en"): ?>
                                     <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <h1 ><?php _e("Season 2019-2020<br>Subscription Concerts","bonestheme"); ?></h1>
+                                    <h1 ><?php _e("Season 2020-2021<br>Subscription Concerts","bonestheme"); ?></h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <div><?php _e("New subscriptions can be purchased from Nov. 3 Sat.","bonestheme"); ?></div>
+                                    <div><?php _e("New subscription can be purchased from Nov 15, 2020","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <div><?php _e("Read more","bonestheme"); ?></div>
+                                    <div><?php _e("Read More","bonestheme"); ?></div>
                                 <?php else: ?>
                                     <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <h1 ><?php _e("2019-2020シーズン 定期演奏会<br>公演ラインナップ 決定","bonestheme"); ?></h1>
+                                    <h1 ><?php _e("2020-2021シーズン 定期演奏会<br>公演ラインナップ決定","bonestheme"); ?></h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
                                     <!-- <div><?php _e("継続会員受付中","bonestheme"); ?></div> -->
-                                    <div><?php _e("新規定期会員募集 2018年11月3日より","bonestheme"); ?></div>
+                                    <div><?php _e("新規定期会員募集 2019年11月15日（金）10時より","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <div><?php _e("Read more","bonestheme"); ?></div>
                                 <?php endif; ?>
@@ -169,8 +174,8 @@
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <h1 >SUPPORT BCJ<br>BCJソサエティ・フレンズ<br>会員募集中</h1>
                                     <?php endif; ?>
-                                    
-                                    
+
+
                                 </div>
                             </div>
                             </a>
@@ -291,7 +296,7 @@ function filter_where( $where = '' ) {
                 ?>
 
                     <div class="overview <?php echo($cats ? $cats: ""); ?>" data-month="<?php echo $month;?>">
-                    
+
                     <article>
                         <header>
 
@@ -331,13 +336,13 @@ function filter_where( $where = '' ) {
                                 <div class="ticket-info">
                                      <?php
                                         $contact = get_field('contact_info');
-                                        if($contact){ echo $contact; }else{ 
-                                            echo '<span class="small">'.__("Bach Collegium Japan Ticket Center","bonestheme").' </span><br>'; 
+                                        if($contact){ echo $contact; }else{
+                                            echo '<span class="small">'.__("Bach Collegium Japan Ticket Center","bonestheme").' </span><br>';
                                             echo '<span class="number">℡ ';
                                             if(ICL_LANGUAGE_CODE=="en"){
-                                                echo '+81-3-5301-0950';    
+                                                echo '+81-3-5301-0950';
                                             }else{
-                                                echo '03-5301-0950'; 
+                                                echo '03-5301-0950';
                                             }
                                             echo '</span>';
 
@@ -354,15 +359,15 @@ function filter_where( $where = '' ) {
                                     ?>
                                     <?php
                                         if($pia){
-                                           echo '<span><a target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>'; 
+                                           echo '<span><a target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>';
                                        }else{
-                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>'; 
+                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>';
                                        }
                                         if($eplus){
-                                           echo '<span><a target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>'; 
+                                           echo '<span><a target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>';
                                        }else{
-                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>'; 
-                                       }                                       
+                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>';
+                                       }
                                     ?>
                                     <?php
                                         // else:
@@ -431,13 +436,13 @@ function filter_where( $where = '' ) {
                     Bach Collegium Japan Ticket Center<br>
                     <?php else: ?>
                     ＜チケットに関するお問い合わせ＞<br>
-                    バッハ・コレギウム・ジャパン チケットセンター<br> 
+                    バッハ・コレギウム・ジャパン チケットセンター<br>
                     <?php endif; ?>
                      <?php
                         if(ICL_LANGUAGE_CODE=="en"){
-                            echo '℡ +81-3-5301-0950';    
+                            echo '℡ +81-3-5301-0950';
                         }else{
-                            echo '℡ 03-5301-0950'; 
+                            echo '℡ 03-5301-0950';
                         }
                      ?>
 
@@ -542,7 +547,7 @@ function filter_where( $where = '' ) {
 
                     <p class="third">
                     Bach Collegium Japan and Masaaki Suzuki were awarded the 45th Suntory Music Prize in 2014. This was also the year when they performed for the first time as far afield as New Zealand and Mexico. The activities of the ensemble are thus increasingly overstepping national borders to win the ensemble a high degree of international recognition.
-                    </p>                    
+                    </p>
                     <?php else: ?>
                     <p class="first">
                     バッハ・コレギウム・ジャパン（BCJ）は世界的なバッハ演奏家、オルガン・チェンバロ奏者、指揮者、また音楽研究者としてもその才能を高く評価されている鈴木雅明がオリジナル楽器のスペシャリストを擁し、1990年に結成したオーケストラと合唱団です。
@@ -555,7 +560,7 @@ function filter_where( $where = '' ) {
                     <p class="third">
                     2014年にはバッハ・コレギウム・ジャパンと鈴木雅明に対して第45回サントリー音楽賞受賞、初のニュージーランド、メキシコ公演を果たすなど、その活動は国境の枠を越え、ますます注目されています。
                     </p>
-                    <?php endif; ?> 
+                    <?php endif; ?>
 
                     <div class="clear"></div>
                 </div>
@@ -602,9 +607,9 @@ function filter_where( $where = '' ) {
                     <div class="clear"></div>
                     <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('bcj')->ID); ?>">BCJプロフィール詳細はこちら<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_bcj_profile.jpg" /></a></div>
                     <div style="display:inline-block;padding: 2%;width:46%; max-width:300px"><a href="<?php echo get_permalink(get_page_by_path('masaaki_suzuki')->ID); ?>">鈴木雅明プロフィール詳細はこちら<br><img style="width:100%" src="<?php echo bloginfo('template_directory' ); ?>/library/images/banner_masaaki_profile.jpg" /></a></div>
-                    <div class="clear"></div> 
-                    <?php endif; ?> 
-                    
+                    <div class="clear"></div>
+                    <?php endif; ?>
+
                 </div>
 
                 <div id="about_bcj_5" class="wrap-padding">
@@ -613,7 +618,7 @@ function filter_where( $where = '' ) {
                     <h2 style="margin-bottom: 50px">バッハ・コレギウム・ジャパン ディスコグラフィ</h2>
                     <?php endif; ?>
                     <div class="cd-holder-carousel">
-                    <?php 
+                    <?php
                         $args = array(
                           'post_type' => 'discography',
                           'post_status' => 'publish',
@@ -621,7 +626,7 @@ function filter_where( $where = '' ) {
                           'force_no_custom_order' => TRUE,
                           // 'order'     => 'ASC',
                           'posts_per_page' => -1
-                        ); 
+                        );
                         $the_query = new WP_Query( $args );
                         if ( $the_query->have_posts() ) :
                             while ( $the_query->have_posts() ) : $the_query->the_post();
@@ -632,7 +637,7 @@ function filter_where( $where = '' ) {
                         wp_reset_postdata();
 
                     ?>
-                        
+
                     </div>
 
 
@@ -666,12 +671,12 @@ function filter_where( $where = '' ) {
 Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and chorus active in Japan but with a worldwide reach. Since its foundation in 1990, it has given around a thousand concerts in 71 cities in 15 countries and has issued more than 80 CDs on the BIS label, and has thus shared the wonders of the music of J.S. Bach with more than a million people all over the world. We aim to continue conveying this precious legacy to more and more people and especially to the young people with whom the future lies. The music of J.S. Bach is composed in a language shared by the whole of mankind. We would look forward to your support and patronage in enabling us to continue our performance, recording and educational activities centring on the music of Bach throughout Europe, America and Asia.
                         <?php else: ?>
                         バッハ・コレギウム・ジャパン（BCJ）は、日本から世界へと発信する有数のバロック・オーケストラおよび合唱団として、広く知られています。1990年に活動を開始して以来、15カ国、71都市で約1,000ものコンサートを行い、また80タイトル以上のCD録音（BISレーベル)を通して、世界の100万人以上の聴衆と共に、J.S.バッハの音楽のすばらしさを共有してきました。今後も、ますます多くの人々に、次世代を担う若い人々に、この宝を、伝えていきたいと願っています。J.S.バッハの音楽は、世界共通の言葉です。ヨーロッパ、アメリカ、さらにアジアの国々、至るところで、バッハを中心とする音楽の演奏・録音・教育活動を続けていくため、どうぞ、皆様のご支援をお願いいたします。
-                        <?php endif; ?> 
+                        <?php endif; ?>
                         <br><br><br>
                     </div>
-                    <a href="<?php 
+                    <a href="<?php
                         $page = get_page_by_path("bcj-friends");
-                        $icl_object_id = icl_object_id($page->ID, 'page', true); echo get_permalink($icl_object_id); 
+                        $icl_object_id = icl_object_id($page->ID, 'page', true); echo get_permalink($icl_object_id);
 
                     ?>"><span class="bcj-btn invert"><?php _e( 'Read more about BCJ Friends & Society', 'bonestheme' ); ?></span></a>
                 </div>
@@ -720,7 +725,7 @@ Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and ch
             $.fullwidthAudioPlayer.pause();
         }
       }
- 
+
     </script>
                 </div>
             </div>
@@ -748,7 +753,7 @@ Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and ch
                     <?php echo do_shortcode('[contact-form-7 id="3307" title="BCJ Contact (EN)"]'); ?>
                     <?php else: ?>
                     <?php echo do_shortcode('[contact-form-7 id="2888" title="BCJ Contact"]'); ?>
-                    <?php endif; ?> 
+                    <?php endif; ?>
                 </div>
                 <div style="text-align:center;margin-bottom: 100px">
                     <a href="#" class="go-top invert">
@@ -765,6 +770,6 @@ Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and ch
             <!-- <div class="overlay"></div> -->
         </section>
         <!-- Support END -->
-        
+
 
 <?php get_footer(); ?>
