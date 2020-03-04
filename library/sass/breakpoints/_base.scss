@@ -717,7 +717,9 @@ section#intro {
 					}
 				}
 				&.wpml-ls-current-language {
-					color: $gray;
+					a, a:visited {
+						color: $gray;
+					}
 				}
 			}
 		}
