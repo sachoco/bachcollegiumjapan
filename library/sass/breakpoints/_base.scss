@@ -29,7 +29,7 @@ body {
 	 -webkit-font-smoothing: antialiased;
 	 -moz-osx-font-smoothing: grayscale;
 	 font-smooth: always;
-	 
+
 	 position: relative;
 }
 
@@ -179,7 +179,7 @@ LAYOUT & GRID STYLES
 	background: url(../images/bcj_bg_darker.jpg) top center ;
 	padding-bottom: 4em;
 	>header {
-		@include transition(all, .2s);	
+		@include transition(all, .2s);
 		&.show-sub {
 			margin-bottom: 30px;
 		}
@@ -505,7 +505,7 @@ section#intro {
 				text-decoration: none;
 			}
 
-			
+
 		}
 		.navigation {
 			height: 25%;
@@ -560,16 +560,16 @@ section#intro {
 		// margin-top: 2vh;
 		line-height: 150%;
 		@include scale(0.5);
-		
+
 		circle {
 			fill: rgba(255,255,255,0);
 			// @include opacity(0);
-			@include transition(fill, .2s);			
+			@include transition(fill, .2s);
 		}
 		&:hover {
 			circle {
 				fill: rgba(255,255,255,0.5);
-				// @include opacity(0.5);					
+				// @include opacity(0.5);
 			}
 		}
 		span {
@@ -637,9 +637,9 @@ section#intro {
 				z-index: 0;
 				display: block;
 				color: $gray;
-				// @include transition(all .5s ease-in-out);	
-				z-index: 9;	
-				letter-spacing: 0px;	
+				// @include transition(all .5s ease-in-out);
+				z-index: 9;
+				letter-spacing: 0px;
 			}
 
 			// li.menu-gallery > a:after {
@@ -690,7 +690,7 @@ section#intro {
 			// 	 cursor: default;
 			// 	 a {
 			// 		 color: darken($white, 70%);
-			// 		 cursor: default;			 	
+			// 		 cursor: default;
 			// 	 }
 			// }
 		}
@@ -712,9 +712,12 @@ section#intro {
 					font-size: 1em;
 					color: $white;
 					display: inline-block;
-					&.lang_sel_sel {						
+					&.lang_sel_sel {
 						color: $gray;
 					}
+				}
+				&.wpml-ls-current-language {
+					color: $gray;
 				}
 			}
 		}
@@ -881,7 +884,7 @@ UPCOMING CONCERTS
 				// margin-bottom: 10px;
 				height: 80px;
 				overflow: hidden;
-				-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, 
+				-webkit-mask-image: -webkit-gradient(linear, left top, left bottom,
 			    color-stop(0.00,  rgba(0,0,0,1)),
 			    color-stop(0.35,  rgba(0,0,0,1)),
 			    color-stop(0.50,  rgba(0,0,0,1)),
@@ -894,10 +897,10 @@ UPCOMING CONCERTS
 					text-overflow: ellipsis;
 					width: 100%;
 					overflow: hidden;
-					
-					
+
+
 				}
-				
+
 
 			}
 			.readmore {
@@ -941,7 +944,7 @@ UPCOMING CONCERTS
 			.description {
 				.buy-ticket {
 					color: $color-bcj;
-					border-color: $color-bcj;				
+					border-color: $color-bcj;
 				}
 				.playguide {
 					color: $color-bcj;
@@ -951,7 +954,7 @@ UPCOMING CONCERTS
 							color: $color-bcj;
 						}
 					}
-				}				
+				}
 			}
 		}
 		&.kobe, &.kobe-en {
@@ -961,7 +964,7 @@ UPCOMING CONCERTS
 			.description {
 				.buy-ticket {
 					color: $color-purple;
-					border-color: $color-purple;				
+					border-color: $color-purple;
 				}
 				.playguide {
 					color: $color-purple;
@@ -981,7 +984,7 @@ UPCOMING CONCERTS
 			.descrition {
 				.buy-ticket {
 					color: $color-yellow;
-					border-color: $color-yellow;				
+					border-color: $color-yellow;
 				}
 				.playguide {
 					color: $color-yellow;
@@ -1018,16 +1021,16 @@ UPCOMING CONCERTS
 				@include transition(opacity, 0.5s);
 				&.off {
 					opacity: 0.2;
-				}	
+				}
 				&.tokyo {
 					border-color: $color-bcj;
-				}	
+				}
 				&.kobe {
 					border-color: $color-purple;
 				}
 				&.christmas {
 					border-color: $color-yellow;
-				}											
+				}
 				img {
 					width: 100%;
 					height: auto;
@@ -1043,7 +1046,7 @@ UPCOMING CONCERTS
 						font-size: 1.2em;
 						// font-weight: bold;
 					}
-				}			
+				}
 			}
 
 		}
@@ -1778,7 +1781,7 @@ nav.main-nav {
 			display: block;
 			color: $black;
 			// opacity: 0;
-			// @include transition(all .5s ease-in-out);			
+			// @include transition(all .5s ease-in-out);
 		}
 		li.menu-about > a:before {
 			content: "BCJについて";
@@ -1807,7 +1810,7 @@ nav.main-nav {
 		// 	 cursor: default;
 		// 	 a {
 		// 		 color: lighten($link-color, 70%);
-		// 		 cursor: default;			 	
+		// 		 cursor: default;
 		// 	 }
 		// }
 	}
@@ -1820,6 +1823,7 @@ nav.main-nav {
 		padding: 0;
 		top: 0px;
 		right: 5px;
+		border: none;
 		ul {
 			li {
 				float: none;
@@ -1829,9 +1833,13 @@ nav.main-nav {
 					margin: 0.5em 0.2em;
 					font-family: $serif;
 					text-transform: uppercase;
+					border: none;
 					&.lang_sel_sel {
 						display: none;
 					}
+				}
+				&.wpml-ls-current-language {
+					display: none;
 				}
 			}
 		}
@@ -1859,7 +1867,7 @@ nav.main-nav.inverse{
     //      cursor: default;
     //      a {
     //          color: darken($white, 70%) !important;
-    //          cursor: default;               
+    //          cursor: default;
     //      }
     // }
 }
@@ -2239,7 +2247,7 @@ body.page-template-template-profile{
 		&.menu-about {
 			>a {
 				pointer-events: none;
-				cursor: default;	
+				cursor: default;
 				color: lighten($link-color, 50%);
 			}
 		   	ul.sub-menu {
@@ -2281,8 +2289,8 @@ body.page-template-template-profile{
 		// 	height: 100%;
 		// 	background-color: rgba(0,0,0,0.5);
 		// 	top: 0;
-		// 	z-index: 0;	
-		// 	left: 0;		
+		// 	z-index: 0;
+		// 	left: 0;
 		// }
 		.wrap {
 			z-index: 10;
@@ -2301,7 +2309,7 @@ body.page-template-template-profile{
 	}
 
 
-	
+
 }
 
 
@@ -2343,7 +2351,7 @@ body.page-template-page-guest-artist {
 		&.menu-about {
 			>a {
 				pointer-events: none;
-				cursor: default;	
+				cursor: default;
 				color: lighten($link-color, 50%);
 			}
 		   	ul.sub-menu {
@@ -2354,9 +2362,9 @@ body.page-template-page-guest-artist {
 
 	}
 	.article-header {
-		text-align: center;	
-		border-bottom: 1px solid $border-color;	
-		padding-bottom:	30px;	
+		text-align: center;
+		border-bottom: 1px solid $border-color;
+		padding-bottom:	30px;
 	}
 	.hentry {
 		padding-bottom: 0;
@@ -2373,11 +2381,11 @@ body.page-template-page-guest-artist {
 			padding: 10px 0;
 			section {
 				height: 220px;
-				padding: 0 10px;	
+				padding: 0 10px;
 				border-left: 1px solid $border-color;
 				line-height: 150%;
 			}
-			
+
 			// border-right: 1px solid $border-color;
 			// margin: 10px 0;
 			img {
@@ -2390,7 +2398,7 @@ body.page-template-page-guest-artist {
 					border-right: 1px solid $border-color;
 				}
 			}
-			
+
 			&.active {
 				background: rgba($white, 0.5);
 			}
@@ -2409,7 +2417,7 @@ body.page-template-page-guest-artist {
 			background: rgba($white, 0.5);
 			z-index: 9999;
 			// display: none;
-		}		
+		}
 		.content {
 			clear: both;
 			overflow: hidden;
@@ -2424,7 +2432,7 @@ body.page-template-page-guest-artist {
 			background: rgba($black, 0.5);
 			color: $white;
 			text-align: center;
-			// @include transition(all, .2s);	
+			// @include transition(all, .2s);
 			.leadimage img {
 				display: block;
 				margin: 20px auto;
@@ -2524,11 +2532,11 @@ body.post-type-archive-discography {
 			}
 		}
 	}
-	
+
 	.article-header {
-		text-align: center;	
-		border-bottom: 1px solid $border-color;	
-		padding-bottom:	30px;	
+		text-align: center;
+		border-bottom: 1px solid $border-color;
+		padding-bottom:	30px;
 	}
 	.hentry {
 		padding-bottom: 0;
@@ -2546,7 +2554,7 @@ body.post-type-archive-discography {
 			background: rgba($white, 0.5);
 			z-index: 9999;
 			// display: none;
-		}	
+		}
 	}
 	.artists {
 		@include transition(all, .2s);
@@ -2560,11 +2568,11 @@ body.post-type-archive-discography {
 			padding: 10px 0;
 			section {
 				height: 220px;
-				padding: 0 10px;	
+				padding: 0 10px;
 				border-left: 1px solid $border-color;
 				line-height: 150%;
 			}
-			
+
 			// border-right: 1px solid $border-color;
 			// margin: 10px 0;
 			img {
@@ -2577,7 +2585,7 @@ body.post-type-archive-discography {
 					border-right: 1px solid $border-color;
 				}
 			}
-			
+
 			&.active {
 				background: rgba($white, 0.5);
 			}
@@ -2585,7 +2593,7 @@ body.post-type-archive-discography {
 				background: rgba($white, 0.5);
 			}
 		}
-	
+
 		.content {
 			clear: both;
 			overflow: hidden;
@@ -2599,7 +2607,7 @@ body.post-type-archive-discography {
 			background: rgba($black, 0.5);
 			color: $white;
 			text-align: center;
-			// @include transition(all, .2s);	
+			// @include transition(all, .2s);
 			.leadimage img {
 				display: block;
 				margin: 20px auto;
@@ -2708,11 +2716,11 @@ body.post-type-archive-gallery {
 			}
 		}
 	}
-	
+
 	.article-header {
-		text-align: center;	
-		border-bottom: 1px solid $border-color;	
-		padding-bottom:	30px;	
+		text-align: center;
+		border-bottom: 1px solid $border-color;
+		padding-bottom:	30px;
 	}
 	.hentry {
 		padding-bottom: 0;
@@ -2730,7 +2738,7 @@ body.post-type-archive-gallery {
 			background: rgba($white, 0.5);
 			z-index: 9999;
 			// display: none;
-		}	
+		}
 	}
 	.items {
 		@include transition(all, .2s);
@@ -2744,11 +2752,11 @@ body.post-type-archive-gallery {
 			padding: 10px 0;
 			section {
 				height: 190px;
-				padding: 0 10px;	
+				padding: 0 10px;
 				border-left: 1px solid $border-color;
 				line-height: 150%;
 			}
-			
+
 			// border-right: 1px solid $border-color;
 			// margin: 10px 0;
 			img {
@@ -2761,7 +2769,7 @@ body.post-type-archive-gallery {
 					border-right: 1px solid $border-color;
 				}
 			}
-			
+
 			&.active {
 				background: rgba($white, 0.5);
 			}
@@ -2789,9 +2797,9 @@ body.post-type-archive-gallery {
 				height: 20px;
 			}
 
-			
+
 		}
-	
+
 		.content {
 			clear: both;
 			overflow: hidden;
@@ -2805,7 +2813,7 @@ body.post-type-archive-gallery {
 			background: rgba($black, 0.5);
 			color: $white;
 			text-align: center;
-			// @include transition(all, .2s);	
+			// @include transition(all, .2s);
 			.leadimage img {
 				display: block;
 				margin: 20px auto;
@@ -2938,9 +2946,9 @@ body.page-template-template-concerts {
 	}
 
 	.article-header {
-		text-align: center;	
-		border-bottom: 1px solid $border-color;	
-		padding-bottom:	30px;	
+		text-align: center;
+		border-bottom: 1px solid $border-color;
+		padding-bottom:	30px;
 	}
 	.hentry {
 		padding-bottom: 0;
@@ -2951,7 +2959,7 @@ body.page-template-template-concerts {
 		>.month-header {
 			text-align: center;
 			text-transform: uppercase;
-			border-bottom: 1px solid $border-color;	
+			border-bottom: 1px solid $border-color;
 			h3 {
 				font-size: 1.5em;
 				font-weight: normal;
@@ -2972,7 +2980,7 @@ body.page-template-template-concerts {
 				.description {
 					.buy-ticket {
 						color: $color-bcj;
-						border-color: $color-bcj;				
+						border-color: $color-bcj;
 					}
 					.playguide {
 						color: $color-bcj;
@@ -2982,7 +2990,7 @@ body.page-template-template-concerts {
 								color: $color-bcj;
 							}
 						}
-					}				
+					}
 				}
 			}
 			&.kobe, &.kobe-en {
@@ -2992,7 +3000,7 @@ body.page-template-template-concerts {
 				.description {
 					.buy-ticket {
 						color: $color-purple;
-						border-color: $color-purple;				
+						border-color: $color-purple;
 					}
 					.playguide {
 						color: $color-purple;
@@ -3012,7 +3020,7 @@ body.page-template-template-concerts {
 				.descrition {
 					.buy-ticket {
 						color: $color-yellow;
-						border-color: $color-yellow;				
+						border-color: $color-yellow;
 					}
 					.playguide {
 						color: $color-yellow;
@@ -3031,7 +3039,7 @@ body.page-template-template-concerts {
 			}
 			&:hover {
 				background: rgba($white, 0.5);
-			}			
+			}
 		}
 		>.overview article {
 			max-width: 820px;
@@ -3071,7 +3079,7 @@ body.page-template-template-concerts {
 					}
 				}
 			}
-			
+
 			// border-right: 1px solid $border-color;
 			// margin: 10px 0;
 			img {
@@ -3080,7 +3088,7 @@ body.page-template-template-concerts {
 			}
 
 
-			
+
 
 		}
 		.loading {
@@ -3094,7 +3102,7 @@ body.page-template-template-concerts {
 			background: rgba($white, 0.5);
 			z-index: 9999;
 			// display: none;
-		}		
+		}
 		.content {
 			clear: both;
 			overflow: hidden;
@@ -3109,7 +3117,7 @@ body.page-template-template-concerts {
 			background: rgba($black, 0.5);
 			color: $white;
 			text-align: center;
-			// @include transition(all, .2s);	
+			// @include transition(all, .2s);
 			.leadimage img {
 				display: block;
 				margin: 20px auto;
@@ -3290,7 +3298,7 @@ body.page-template-template-concerts {
 
 			}
 		}
-		
+
 	}
 }
 .throbber {
@@ -3346,7 +3354,7 @@ body.page-template-template-concerts {
 
 
 body.page-template-template-friends{
-	
+
 	h1 {
 		&:before {
 			content: "BCJフレンズについて";
@@ -3363,13 +3371,13 @@ body.page-template-template-friends{
 
 
 	}
-	
+
 
 	.nav li {
 		&.menu-friends_society {
 			>a {
 				pointer-events: none;
-				cursor: default;	
+				cursor: default;
 				color: lighten($link-color, 50%);
 			}
 			ul.sub-menu {
@@ -3455,7 +3463,7 @@ body.page-template-template-friends{
 		color: $border-color;
 		background-color: $border-color;
 	    height: 1px;
-	    border: none;				
+	    border: none;
 	}
 }
 
@@ -3484,13 +3492,13 @@ body.page-template-template-society{
 
 
 	}
-	
+
 
 	.nav li {
 		&.menu-friends_society {
 			>a {
 				pointer-events: none;
-				cursor: default;	
+				cursor: default;
 				color: lighten($link-color, 50%);
 			}
 			ul.sub-menu {
@@ -3580,8 +3588,8 @@ body.page-template-template-society{
 		color: $white;
 		background-color: $white;
 	    height: 1px;
-	    border: none;	
-	    clear: both;			
+	    border: none;
+	    clear: both;
 	}
 }
 
@@ -4002,7 +4010,7 @@ FOOTER STYLES
 	clear: both;
 	border-top: 1px solid $border-color;
 	text-align: center;
-	
+
 	// background-color: #26292C;
 	background-color: rgba(1,1,1,0.8);
 	color: white;
@@ -4070,7 +4078,7 @@ FOOTER STYLES
 	text-align: center;
 }
 .entry-content-page {
-	hr { 
+	hr {
 		color: $black;
 		background-color: $black;
 		height: 1px;
@@ -4080,7 +4088,7 @@ FOOTER STYLES
 .single-schedule {
 	h1 {
 		margin-bottom: 0;
-	}	
+	}
 }
 
 svg:not(:root) {
@@ -4141,7 +4149,7 @@ body.en {
 		nav .nav li a {
 			margin-bottom: 1.2em;
 		}
-	} 
+	}
 	section#support, section#contact {
 		font-size: 18px;
 		line-height: 1.5em;
@@ -4183,7 +4191,7 @@ body.en {
 				line-height: 120% !important;
 			}
 		}
-	} 
+	}
 	.filter .option>li {
 		line-height: 2;
 		width: 32.8% !important;
@@ -4201,5 +4209,5 @@ body.en {
 				font-size: 14px;
 			}
 		}
-	} 
-} 
+	}
+}

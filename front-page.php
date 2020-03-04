@@ -65,7 +65,7 @@
                      <!-- Slide item 2 -->
 
                         <div class="slide-item">
-                            <!-- <a href="<?php $icl_object_id = icl_object_id(6544, 'page', true); echo get_permalink($icl_object_id); ?>"> -->
+                            <!-- <a href="<?php //$icl_object_id = icl_object_id(6544, 'page', true); echo get_permalink($icl_object_id); ?>"> -->
                             <?php if(ICL_LANGUAGE_CODE=="en"): ?>
                               <a href="http://bachcollegiumjapan.org/en/2020-2021_news_e/">
                             <?php else: ?>
