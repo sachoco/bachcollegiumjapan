@@ -352,6 +352,9 @@ body.en section#intro .roles {
   font-size: 40px; }
 body.en section#intro .short-profile {
   font-size: 16px; }
+body.en .upcoming footer .specials .category-filter .title h3 {
+  margin-top: 15px;
+  font-size: 1.7em; }
 
 /******************************************************************
 Site Name:

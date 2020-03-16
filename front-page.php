@@ -355,6 +355,8 @@ function filter_where( $where = '' ) {
                                     <?php
                                         $pia = get_field('ticket_pia');
                                         $eplus = get_field('e+');
+                                        $lowticket = get_field('ローチケ');
+                                        $votre = get_field('ヴォートルweb');
                                         // if($pia||$eplus) :
                                     ?>
                                     <?php
@@ -368,6 +370,16 @@ function filter_where( $where = '' ) {
                                        }else{
                                            echo '<span class="disabled">'.__("e+","bonestheme").'</span>';
                                        }
+                                       if($lowticket){
+                                          echo '<span><a target="_blank" href="'. $lowticket .'"">'.__("Lawson Ticket","bonestheme").'</a></span>';
+                                      }else{
+                                          echo '<span class="disabled">'.__("Lawson Ticket","bonestheme").'</span>';
+                                      }
+                                      if($votre){
+                                         echo '<span><a target="_blank" href="'. $votre .'"">'.__("Votre","bonestheme").'</a></span>';
+                                     }else{
+                                         echo '<span class="disabled">'.__("Votre","bonestheme").'</span>';
+                                     }
                                     ?>
                                     <?php
                                         // else:

@@ -183,6 +183,7 @@ LAYOUT & GRID STYLES
 		&.show-sub {
 			margin-bottom: 30px;
 		}
+
 	}
 }
 .wrap {
@@ -721,6 +722,9 @@ section#intro {
 						color: $gray;
 					}
 				}
+				&.icl-ja {
+					font-size: 16px;
+				}
 			}
 		}
 	}
@@ -890,7 +894,7 @@ UPCOMING CONCERTS
 			    color-stop(0.00,  rgba(0,0,0,1)),
 			    color-stop(0.35,  rgba(0,0,0,1)),
 			    color-stop(0.50,  rgba(0,0,0,1)),
-			    color-stop(0.70,  rgba(0,0,0,1)),
+			    color-stop(0.70,  rgba(0,0,0,0)),
 			    color-stop(1.00,  rgba(0,0,0,0)));
 				p {
 
@@ -1832,7 +1836,7 @@ nav.main-nav {
 				a, a:visited {
 					background: none;
 					font-size: 1.5em;
-					margin: 0.5em 0.2em;
+					margin: 0 0.2em;//0.5em 0.2em;
 					font-family: $serif;
 					text-transform: uppercase;
 					border: none;
@@ -1843,6 +1847,11 @@ nav.main-nav {
 				&.wpml-ls-current-language {
 					display: none;
 				}
+
+				&.icl-ja {
+					font-size: 10px;
+				}
+
 			}
 		}
 	}
@@ -2308,6 +2317,7 @@ body.page-template-template-profile{
 			background-color: $background-color;
 			background: url(../images/bcj_bg_darker.jpg) top center ;
 		}
+
 	}
 
 
@@ -4109,13 +4119,13 @@ body.en {
 	.nav li ul.sub-menu li a, .nav li ul.children li a {
 		margin-top: 0.2em;
 	}
-	font-size: 16px;
+	font-size: 15px;//16px;
 	line-height: 1.5em;
 	h1, h2 {
-		line-height: 1.2em;
+		line-height: 1em;//1.2em;
 	}
 	.bigger {
-		font-size: 2.7em;
+		font-size: 2em;
 	}
 	.news-item {
 		line-height: 1.2em;
@@ -4172,10 +4182,12 @@ body.en {
 		line-height: 1.3em;
 	}
 	.upcoming div.overview .description {
-		line-height: 1.2em;
+		line-height: 1em;//1.2em;
 	}
 	.upcoming footer .specials .category-filter .title h3 {
-		margin-top: 15px;
+		// margin-top: 15px;
+		margin-top: 7px;
+    font-size: 0.8em;
 	}
 	section#about {
 		font-size: 18px;
@@ -4211,5 +4223,22 @@ body.en {
 				font-size: 14px;
 			}
 		}
+	}
+	.buy-ticket {
+		padding: 12px 0 12px;
+
+	}
+	.buy-ticket-container .playguide span {
+		padding: 2px 0;
+	}
+	// .upcoming div.overview .description .detail p {
+	// 	margin: 0;
+	// }
+	// .no-touch .upcoming div.overview .description .detail p {
+	// 	margin: 1em;
+	// }
+	.upcoming div.overview .buy-ticket-container .ticket-info {
+		font-size: 10px;
+		line-height: 1em;
 	}
 }
