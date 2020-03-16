@@ -4224,13 +4224,7 @@ body.en {
 			}
 		}
 	}
-	.buy-ticket {
-		padding: 12px 0 12px;
 
-	}
-	.buy-ticket-container .playguide span {
-		padding: 2px 0;
-	}
 	// .upcoming div.overview .description .detail p {
 	// 	margin: 0;
 	// }
@@ -4240,5 +4234,15 @@ body.en {
 	.upcoming div.overview .buy-ticket-container .ticket-info {
 		font-size: 10px;
 		line-height: 1em;
+	}
+}
+
+.touch body.en {
+	.buy-ticket-container .playguide span {
+		padding: 2px 0;
+	}
+	.buy-ticket {
+		padding: 12px 0 12px;
+
 	}
 }
