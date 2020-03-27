@@ -20,7 +20,7 @@ Template Name: Friends
 					</header>
 					<section class="entry-content-page">
 						<?php the_content(); ?>
-						
+
 					</section>
 				</article>
 
@@ -43,7 +43,7 @@ Template Name: Friends
 					</footer>
 				</article>
 
-			<?php endif; ?>			
+			<?php endif; ?>
 			</div>
 	        <!-- Background START -->
 	        <div id="background">
@@ -70,7 +70,7 @@ Template Name: Friends
 							※Pre-concert talk, Working rehearsal, and Back stage tour basically take place before a BCJ subscription concert 1-2 times a year.
 						</div>
 					</div>
-				
+
 					<div class="table-cell">
 						Membership Levels
 						<hr>
@@ -98,7 +98,7 @@ Template Name: Friends
 							※通信欄には必ず、お名前・ご住所・お電話番号をご記入ください。<br>
 							<div class="border-box">
 							<ul>
-								<li>口座番号：0017-2-33885</li>
+								<li>口座番号：00170-2-33885</li>
 								<li>加入者名：有限会社バッハ・コレギウム・ジャパン</li>
 							</ul>
 							</div>
@@ -109,7 +109,7 @@ Template Name: Friends
 							5-29-7 Sendagaya, Suite 402, Shibuya Tokyo 151-0051 Japan<br>
 							Tel: +81(0) 3-3226-5333 Fax: +81(0) 3-5362-5445<br>
 							E-mail: friends@bach.co.jp
-						</p>	
+						</p>
 					</div>
 				</div>
             <?php else: ?>
@@ -131,7 +131,7 @@ Template Name: Friends
 							※プレステージコンサートトーク、リハーサル公開、バックステージツアーは、年１〜２回BCJ主催のコンサートにて開催いたします。
 						</div>
 					</div>
-				
+
 					<div class="table-cell">
 						メンバーシップ
 						<hr>
@@ -159,11 +159,11 @@ Template Name: Friends
 							※通信欄には必ず、お名前・ご住所・お電話番号をご記入ください。<br>
 							<div class="border-box">
 							<ul>
-								<li>口座番号：0017-2-33885</li>
+								<li>口座番号：00170-2-33885</li>
 								<li>加入者名：有限会社バッハ・コレギウム・ジャパン</li>
 							</ul>
 							</div>
-						</p>	
+						</p>
 					</div>
 				</div>
             <?php endif; ?>
