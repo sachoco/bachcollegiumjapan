@@ -237,7 +237,7 @@ Template Name: Society
 					<div class="entry-content-page">
 						<div class="center">申し込み方法</div>
 						<p>
-							後支援金は下記の郵便口座にお振込み頂きますようお願い申し上げます。<br>
+							ご支援金は下記の郵便口座にお振込み頂きますようお願い申し上げます。<br>
 							※通信欄には必ず、お名前・ご住所・お電話番号をご記入ください。<br>
 							<div class="border-box">
 							<ul>
@@ -428,7 +428,7 @@ Template Name: Society
 					<div class="entry-content-page">
 						<div class="center">申し込み方法</div>
 						<p>
-							後支援金は下記の郵便口座にお振込み頂きますようお願い申し上げます。<br>
+							ご支援金は下記の郵便口座にお振込み頂きますようお願い申し上げます。<br>
 							※通信欄には必ず、お名前・ご住所・お電話番号をご記入ください。<br>
 							<div class="border-box">
 								<ul>
