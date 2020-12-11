@@ -3,163 +3,49 @@
 
                 <div class="wrap">
                     <div class="slick-slides">
-                     <!-- Slide item 2 -->
-                        <!-- <div class="slide-item">
-                            <a href="<?php $icl_object_id = icl_object_id(4037, 'post', true); echo get_permalink($icl_object_id); ?>">
-                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/heiwanoinori.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
-                            </a>
-                            <div class="slide-overlay"></div>
-                        </div> -->
-                    <!-- Slide item 1 -->
-<!--                         <div class="slide-item">
-                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/erdmann.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
-                            <div class="slide-content overlay">
-                                <div class="inner-content">
-                                <?php if(ICL_LANGUAGE_CODE=="en"): ?>
-                                    <div>J. S. Bach: Secular cantata</div>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 >The queen of soprano<br>Mojca Erdmann<br>joins BCJ</h1>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 style="line-height:100%;display:block;">
-                                        9.19
-                                        <div class="small">(SAT) 15:00（Kobe）</div>
-                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3885, 'schedule', true); echo get_permalink($icl_object_id); ?>">Read more</a></div>
-                                    </h1>
-                                    <h1 style="line-height:100%;display:block;">
-                                        9.20
-                                        <div class="small">(SUN) 15:00（Nagoya）</div>
-                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3891, 'schedule', true); echo get_permalink($icl_object_id); ?>">Read more</a></div>
-                                    </h1>
-                                    <h1 style="line-height:100%;display:block;">
-                                        9.26
-                                        <div class="small">(SAT) 15:00（Tokyo）</div>
-                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(2952, 'schedule', true); echo get_permalink($icl_object_id); ?>">Read more</a></div>
-                                    </h1>
-                                <?php else: ?>
-                                    <div>J. S. バッハ：農民カンタータ</div>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 >ソプラノ界の女王<br>モイツァ・エルトマン<br>BCJ初登場</h1>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 style="line-height:100%;display:block;">
-                                        9.19
-                                        <div class="small">(SAT) 15時（神戸）</div>
-                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3885, 'schedule', true); echo get_permalink($icl_object_id); ?>">神戸公演詳細はこちら</a></div>
-                                    </h1>
-                                    <h1 style="line-height:100%;display:block;">
-                                        9.20
-                                        <div class="small">(SUN) 15時（名古屋）</div>
-                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(3891, 'schedule', true); echo get_permalink($icl_object_id); ?>">名古屋公演詳細はこちら</a></div>
-                                    </h1>
-                                    <h1 style="line-height:100%;display:block;">
-                                        9.26
-                                        <div class="small">(SAT) 15時（東京）</div>
-                                        <div class="readmore">＞<a href="<?php $icl_object_id = icl_object_id(2952, 'schedule', true); echo get_permalink($icl_object_id); ?>">東京公演詳細はこちら</a></div>
-                                    </h1>
-                                <?php endif; ?>
 
-                                </div>
-                            </div>
-                            <div class="slide-overlay"></div>
-                        </div> -->
-
-                     <!-- Slide item 2 -->
-
+                     <!-- Slide item 1 -->
                         <div class="slide-item">
-                            <!-- <a href="<?php //$icl_object_id = icl_object_id(6544, 'page', true); echo get_permalink($icl_object_id); ?>"> -->
                             <?php if(ICL_LANGUAGE_CODE=="en"): ?>
-                              <a href="http://bachcollegiumjapan.org/en/2020-2021_news_e/">
+                              <!-- <a href="http://bachcollegiumjapan.org/en/2020-2021_news_e/"> -->
                             <?php else: ?>
-                              <a href="http://bachcollegiumjapan.org/20-21_tokyo_news/">
+                              <a href="http://bachcollegiumjapan.org/2021subscription/">
                             <?php endif; ?>
-                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/subscription2020-2.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 0 0; background-repeat: no-repeat;"></div>
-                            <div class="slide-content right">
+                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/subscription2021-highres.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 100%; background-repeat: no-repeat;"></div>
+                            <div class="slide-content left" style="padding:20px 70px;width:500px">
                                 <div class="inner-content">
                                 <?php if(ICL_LANGUAGE_CODE=="en"): ?>
                                     <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <h1 ><?php _e("Season 2020-2021<br>Subscription Concerts","bonestheme"); ?></h1>
+                                    <h1 ><?php _e("Season 2021-2022<br>Subscription Concerts","bonestheme"); ?></h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <div><?php _e("New subscription can be purchased from Nov 15, 2020","bonestheme"); ?></div>
+                                    // <div><?php _e("New subscription can be purchased from Jan 15, 2021","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <div><?php _e("Read More","bonestheme"); ?></div>
                                 <?php else: ?>
                                     <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <h1 ><?php _e("2020-2021シーズン 定期演奏会<br>公演ラインナップ決定","bonestheme"); ?></h1>
+                                    <h1 ><?php _e("2021-2022シーズン 定期演奏会<br>公演ラインナップ決定","bonestheme"); ?></h1>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <!-- <div><?php _e("継続会員受付中","bonestheme"); ?></div> -->
-                                    <div><?php _e("新規定期会員募集 2019年11月15日（金）10時より","bonestheme"); ?></div>
+                                    <div><?php _e("新規定期会員募集 2021年1月15日（金）10時より","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <div><?php _e("Read more","bonestheme"); ?></div>
                                 <?php endif; ?>
                                 </div>
                             </div>
+                            <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+                              <!-- <a href="http://bachcollegiumjapan.org/en/2020-2021_news_e/"> -->
+                            <?php else: ?>
                             </a>
+                            <?php endif; ?>
                             <div class="slide-overlay"></div>
                         </div>
-                    <!-- Slide item 3 -->
-<!--                         <div class="slide-item">
-                            <a href="<?php $icl_object_id = icl_object_id(2889, 'post', true); echo get_permalink($icl_object_id); ?>">
-                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/suntory.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
-                            <div class="slide-content">
-                                <div class="inner-content">
-                                    <div><?php _e("News","bonestheme"); ?></div>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h2><?php _e("Masaaki Suzuki & Bach Collegium Japan","bonestheme"); ?></h2>
-                                    <h1><?php _e("awarded the 45th Suntory Music Prize","bonestheme"); ?></h1>
-                                </div>
-                            </div>
-                            </a>
-                            <div class="slide-overlay"></div>
-                        </div> -->
 
-                    <!-- Slide item 4 -->
-<!--                         <div class="slide-item">
-                            <a href="<?php $icl_object_id = icl_object_id(181, 'post', true); echo get_permalink($icl_object_id); ?>">
-                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/echo.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
-                            <div class="slide-content overlay">
-                                <div class="inner-content"><div><?php _e("Echo Klassik Prize","bonestheme"); ?></div>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 ><?php _e("Completion of recordings<br>of all the church cantatas","bonestheme"); ?></h1>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-
-                                    <div><?php _e("BIS Records receives the Editorial Achievement of the Year prize","bonestheme"); ?></div>
-                                </div>
-                            </div>
-                            </a>
-                            <div class="slide-overlay"></div>
-                        </div> -->
-
-
-<!--                         <div class="slide-item">
-                            <a href="<?php $icl_object_id = icl_object_id(4929, 'post', true); echo get_permalink($icl_object_id); ?>">
-                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/europe2016.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
-                            <div class="slide-content overlay">
-                                <div class="inner-content">
-                                <?php if(ICL_LANGUAGE_CODE=="en"): ?>
-                                    <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 >BCJ Europe Tour 2016</h1>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <div><?php _e("Read more","bonestheme"); ?></div>
-                                <?php else: ?>
-                                    <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1 >BCJ ヨーロッパ・ツアー 2016</h1>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <div><?php _e("Read more","bonestheme"); ?></div>
-                                <?php endif; ?>
-                                </div>
-                            </div>
-                            </a>
-                            <div class="slide-overlay"></div>
-                        </div> -->
-
-                    <!-- Slide item 5 -->
+                    <!-- Slide item 2 -->
                         <div class="slide-item">
                             <a href="<?php $icl_object_id = icl_object_id(2882, 'post', true); echo get_permalink($icl_object_id); ?>">
                             <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/support.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
@@ -182,33 +68,6 @@
                             <div class="slide-overlay"></div>
                         </div>
 
-                    <!-- Slide item 6 -->
-
-<!--                         <div class="slide-item">
-                            <a href="https://www.youtube.com/watch?v=D-mLys_KjLY" target="_blank">
-                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/kamishibai.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 50% 50%; background-repeat: no-repeat;"></div>
-                            <div class="slide-content overlay">
-                                <div class="inner-content">
-                                    <?php if(ICL_LANGUAGE_CODE=="en"): ?>
-                                    <div>Subscription Concert in September</div>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <h1>Picture story-show</h1>
-                                    <h1>《Der Streit zwischen Phoebus und Pan》</h1>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <div>視聴は<a href="https://www.youtube.com/watch?v=D-mLys_KjLY" target="_blank">こちら</a></div>
-                                    <?php else: ?>
-                                    <div>９月定期演奏会</div>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <div>紙芝居<br>３分でわかる！</div>
-                                    <h1>《パンとフェーブスの歌合戦》</h1>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
-                                    <div>視聴は<a href="https://www.youtube.com/watch?v=D-mLys_KjLY" target="_blank">こちら</a></div>
-                                    <?php endif; ?>
-                                </div>
-                            </div>
-                            </a>
-                            <div class="slide-overlay"></div>
-                        </div> -->
                     </div>
                 </div>
 
