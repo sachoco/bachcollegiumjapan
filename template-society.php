@@ -76,7 +76,8 @@ Template Name: Society
 	        <!-- Background END -->
             <?php if(ICL_LANGUAGE_CODE=="en"): ?>
 
-						Membership Levels & Benefits
+						Membership Levels & Benefits<br>
+						<span class="small">※特典のうち、飲食に関するものや、アーティストや他のお客様との接触がございます項目は、感染症予防対策上、安全に実施可能となりました場合に、ご案内申し上げます。</span>
 						<hr>
 						<div class="membership">
 							<div>
@@ -90,10 +91,9 @@ Template Name: Society
 								<ul>
 									<li>●　One complimentary ticket to BCJ regular performances with complimentary program book</li>
 									<li>●　Discount on BCJ hosted concert ticket prices</li>
-									<li>●　Annual Society reception</li>
+									<li>●　Information of Annual Society reception</li>
 									<li>●　Photography with BCJ artists at BCJ events</li>
 									<li>●　Access to the Society member only gathering lounge</li>
-									<li>●　The Society member only concierge line</li>
 								</ul>
 							</div>
 						</div>
@@ -109,7 +109,8 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　All the benegits listed at the Prinzipal level</li>
-									<li>●　Organ pre-talk event</li>
+									<li>●　Annual Society reception</li>
+									<li>●　Drink voucher</li>
 								</ul>
 							</div>
 						</div>
@@ -125,7 +126,7 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　All the benefits listed at the Oktav level</li>
-									<li>●　Admission to master class by BCJ members</li>
+									<li>●　Organ pre-talk event</li>
 								</ul>
 							</div>
 						</div>
@@ -141,7 +142,7 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　All the benefits listed at the Sesquialtera level</li>
-									<li>●　Invitation to dinner night with BCJ Music Director Masaaki Suzuki</li>
+									<li>●　Access to post-concert private champagne toast</li>
 								</ul>
 							</div>
 						</div>
@@ -149,7 +150,7 @@ Template Name: Society
 						<div class="membership">
 							<div>
 								<h3>SIFFLÖTE</h3>
-								¥640,000
+								¥500,000
 							</div>
 							<div>
 								プリンツィパルの8倍、実音の3オクターヴ上の音を奏でます。細いけれど突き抜ける強さを持っています。
@@ -157,7 +158,7 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　All the benefits listed at the Superoktav level</li>
-									<li>●　Access to post-concert private champagne toast</li>
+									<li>●　Invitation to lunch with Masaaki Suzuki or Masato Suzuki</li>
 									<li>●　Complimentary BCJ not-for-sale special CD</li>
 								</ul>
 							</div>
@@ -166,7 +167,7 @@ Template Name: Society
 						<div class="membership">
 							<div>
 								<h3>MIXTUR</h3>
-								¥1,280,000
+								¥1,000,000
 							</div>
 							<div>
 								実音の約4オクターヴ以上の高い倍音をまとめて出せる総合ストップです。「トッカータとフーガニ短調」冒頭には不可欠です。
@@ -174,8 +175,8 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　All the benefits listed at the Sifflöte level</li>
-									<li>●　Invitation to dinner night with a guest artist</li>
-									<li>●　Complimentary rare-poster from BCJ global tour</li>
+									<li>●　The Society member only concierge line</li>
+									<li>●　Private lesson by Soloist or a BCJ member.</li>
 								</ul>
 							</div>
 						</div>
@@ -183,7 +184,7 @@ Template Name: Society
 						<div class="membership">
 							<div>
 								<h3>SCHARF</h3>
-								¥2,560,000
+								¥2,000,000
 							</div>
 							<div>
 								さらに高い倍音をまとめて、より輝かしい響きを奏でます。
@@ -191,9 +192,7 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　All the benefits listed at the Mixtur level</li>
-									<li>●　The opportunity to name a BCJ concert with a customized benefits package</li>
-									<li>●　Invitation to private dinner with Masaaki Suzuki or special guest artist</li>
-									<li>●　Privilege to travel a BCJ global tour with BCJ musicians</li>
+									<li>●　Invitation to private dinner with Masaaki Suzuki, Masato Suzuki or special guest artist</li>
 								</ul>
 							</div>
 						</div>
@@ -201,7 +200,7 @@ Template Name: Society
 						<div class="membership">
 							<div>
 								<h3>ZIMBEL</h3>
-								¥5,120,000
+								¥5,000,000
 							</div>
 							<div>
 								最も高いランクの倍音を含み、ピラミッドの頂点に冠を添える役を果たします。
@@ -209,7 +208,7 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　All the benefits listed at the Scharf level</li>
-									<li>●　The opportunity to name a BCJ concert or recording project with a customized benefits package</li>
+									<li>●　The opportunity to name a BCJ concert with a customized benefits package</li>
 								</ul>
 							</div>
 						</div>
@@ -217,13 +216,14 @@ Template Name: Society
 						<div class="membership">
 							<div>
 								<h3>PLENUM</h3>
-								¥10,240,000万円
+								¥10,000,000万円
 							</div>
 							<div>
 								これは、もはや単なるストップの名称ではありません。本来は「すべて」を意味することばで、重低音から最高音まで、すべての倍音を含んで完成されたオルガンの響きを表します。
 							</div>
 							<div>
 								<ul>
+									<li>●　All the benefits listed at the Zimbel level</li>
 									<li>●　An unforgettable, personalized, all-access BCJ experience</li>
 								</ul>
 							</div>
@@ -238,7 +238,7 @@ Template Name: Society
 						<div class="center">申し込み方法</div>
 						<p>
 							ご支援金は下記の郵便口座にお振込み頂きますようお願い申し上げます。<br>
-							※通信欄には必ず、お名前・ご住所・お電話番号をご記入ください。<br>
+							※通信欄には必ず、『お名前・ご住所・お電話番号・ご希望のメンバーシップレベル・定期演奏会プログラムへのご芳名掲載の可否』をご記入ください。<br>
 							<div class="border-box">
 							<ul>
 								<li>口座番号：00170-2-33885</li>
@@ -258,7 +258,8 @@ Template Name: Society
 
             <?php else: ?>
 
-						メンバーシップレベルの特典
+						メンバーシップレベルの特典<br>
+						<span class="small">※特典のうち、飲食に関するものや、アーティストや他のお客様との接触がございます項目は、感染症予防対策上、安全に実施可能となりました場合に、ご案内申し上げます。</span>
 						<hr>
 						<div class="membership">
 							<div>
@@ -273,10 +274,9 @@ Template Name: Society
 								<ul>
 									<li>●　BCJ定期演奏会に1名様ご招待及びプログラム贈呈</li>
 									<li>●　BCJ主催公演チケットご優待</li>
-									<li>●　ソサエティメンバー特別レセプションご招待</li>
+									<li>●　ソサエティメンバー特別レセプションご案内</li>
 									<li>●　レセプションなどにおいてアーティストと写真撮影</li>
 									<li>●　開場前優先入場＆ソサエティラウンジご利用</li>
-									<li>●　ソサエティメンバー専用コンシェルジュ・ライン</li>
 								</ul>
 							</div>
 						</div>
@@ -293,7 +293,8 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　すべてのプリンツィパルレベル特典</li>
-									<li>●　オルガンプレトークご招待</li>
+									<li>●　ソサエティメンバー特別レセプションご招待</li>
+									<li>●　ドリンク券プレゼント</li>
 								</ul>
 							</div>
 						</div>
@@ -310,7 +311,7 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　すべてのオクターヴレベル特典</li>
-									<li>●　BCJメンバーによるマスタークラスの受講または聴講</li>
+									<li>●　オルガンプレトークご招待</li>
 								</ul>
 							</div>
 						</div>
@@ -326,8 +327,8 @@ Template Name: Society
 							</div>
 							<div>
 								<ul>
-									<li>●　すべのセスキアルテラレベル特典 </li>
-									<li>●　BCJ音楽監督鈴木雅明を囲むディナーへご招待</li>
+									<li>●　すべてのセスキアルテラレベル特典 </li>
+									<li>●　終演後プライベートシャンパントーストへご招待</li>
 								</ul>
 							</div>
 						</div>
@@ -336,15 +337,15 @@ Template Name: Society
 							<div>
 								<h3>SIFFLÖTE</h3>
 								シフレット<br>
-								64万円
+								50万円
 							</div>
 							<div>
 								プリンツィパルの8倍、実音の3オクターヴ上の音を奏でます。細いけれど突き抜ける強さを持っています。
 							</div>
 							<div>
 								<ul>
-									<li>●　すべのズーパーオクターヴレベル特典 </li>
-									<li>●　終演後プライベートシャンパントーストへご招待</li>
+									<li>●　すべてのズーパーオクターヴレベル特典 </li>
+									<li>●　鈴木雅明または鈴木優人を囲むランチへご招待</li>
 									<li>●　BCJ特別CD(非売品)贈呈</li>
 								</ul>
 							</div>
@@ -354,16 +355,16 @@ Template Name: Society
 							<div>
 								<h3>MIXTUR</h3>
 								ミクストゥール<br>
-								128万円
+								100万円
 							</div>
 							<div>
 								実音の約4オクターヴ以上の高い倍音をまとめて出せる総合ストップです。「トッカータとフーガニ短調」冒頭には不可欠です。
 							</div>
 							<div>
 								<ul>
-									<li>●　すべのシフレットレベル特典 </li>
-									<li>●　ゲストアーティストを囲むディナーへご招待</li>
-									<li>●　BCJ海外ツアーより希少価値ポスター贈呈</li>
+									<li>●　すべてのシフレットレベル特典 </li>
+									<li>●　ソサエティメンバー専用コンシェルジュ・ライン</li>
+									<li>●　ソリストあるいはBCJメンバーによる個人レッスンの手配</li>
 								</ul>
 							</div>
 						</div>
@@ -372,7 +373,7 @@ Template Name: Society
 							<div>
 								<h3>SCHARF</h3>
 								シャルフ<br>
-								256万円
+								200万円
 							</div>
 							<div>
 								さらに高い倍音をまとめて、より輝かしい響きを奏でます。
@@ -380,9 +381,7 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　すべてのミクストゥールレベル特典</li>
-									<li>●　お好きなBCJ主催演奏会に冠でお名前を頂戴</li>
-									<li>●　鈴木雅明または特別ゲストアーティストとのプライベートディナー</li>
-									<li>●　BCJ海外ツアーご同行権利</li>
+									<li>●　鈴木雅明あるいは鈴木優人、または特別ゲストアーティストとのプライベートディナー</li>
 								</ul>
 							</div>
 						</div>
@@ -391,7 +390,7 @@ Template Name: Society
 							<div>
 								<h3>ZIMBEL</h3>
 								ツィンベル<br>
-								512万円
+								500万円
 							</div>
 							<div>
 								最も高いランクの倍音を含み、ピラミッドの頂点に冠を添える役を果たします。
@@ -399,7 +398,7 @@ Template Name: Society
 							<div>
 								<ul>
 									<li>●　すべてのシャルフレベル特典</li>
-									<li>●　お好きなBCJ主催演奏会またはBCJレコーディングプロジェクトに冠でお名前を頂戴</li>
+									<li>●　お好きなBCJ主催演奏会のタイトルにお名前を頂戴</li>
 								</ul>
 							</div>
 						</div>
@@ -408,13 +407,14 @@ Template Name: Society
 							<div>
 								<h3>PLENUM</h3>
 								プレーヌム<br>
-								1,024万円
+								1,000万円
 							</div>
 							<div>
 								これは、もはや単なるストップの名称ではありません。本来は「すべて」を意味することばで、重低音から最高音まで、すべての倍音を含んで完成されたオルガンの響きを表します。
 							</div>
 							<div>
 								<ul>
+									<li>●　すべてのツィンベルレベル特典</li>
 									<li>●　ご希望の特典をオーダーメイド</li>
 								</ul>
 							</div>
@@ -429,7 +429,7 @@ Template Name: Society
 						<div class="center">申し込み方法</div>
 						<p>
 							ご支援金は下記の郵便口座にお振込み頂きますようお願い申し上げます。<br>
-							※通信欄には必ず、お名前・ご住所・お電話番号をご記入ください。<br>
+							※通信欄には必ず、『お名前・ご住所・お電話番号・ご希望のメンバーシップレベル・定期演奏会プログラムへのご芳名掲載の可否』をご記入ください。<br>
 							<div class="border-box">
 								<ul>
 									<li>口座番号：00170-2-33885</li>
