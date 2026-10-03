@@ -21,32 +21,55 @@
 						<?php if(get_post_type( get_the_ID() )=="schedule"): ?>
                         <div class="buy-ticket-container">
                             <span class="buy-ticket "><span class="buy-text"><?php _e("Buy Ticket","bonestheme"); ?></span></span>
-                            <span class="playguide">
-                            <?php
-                                $pia = get_field('ticket_pia');
-                                $eplus = get_field('e+');
-                                // if($pia||$eplus) :
-                            ?>
+                                    <span class="playguide">                                    
+                                    <?php
+                                        $pia = get_field('ticket_pia');
+                                        $eplus = get_field('e+');
+                                        $teket = get_field('teket');	                                        
+                                        if(ICL_LANGUAGE_CODE=="en"){
+	                                        $lowticket = get_field('lowson_ticket');
+	                                        $votre = get_field('Votre');	                                        
+                                        }else{
+	                                        $lowticket = get_field('ローチケ');
+	                                        $votre = get_field('ヴォートルweb');		                                        
+                                        }
+                                        // if($pia||$eplus) :
+                                    ?>
                                     <?php
                                         if($pia){
-                                           echo '<span><a target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>'; 
+                                           echo '<span style="padding:0;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>';
                                        }else{
-                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>'; 
+                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>';
                                        }
                                         if($eplus){
-                                           echo '<span><a target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>'; 
+                                           echo '<span style="padding:0;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>';
                                        }else{
-                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>'; 
-                                       }                                       
+                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>';
+                                       }
+                                       if($lowticket){
+                                          echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $lowticket .'"">'.__("Lawson Ticket","bonestheme").'</a></span>';
+                                      }else{
+                                          echo '<span style="width:30.66%;" class="disabled">'.__("Lawson Ticket","bonestheme").'</span>';
+                                      }
+                                      if($votre){
+                                         echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $votre .'"">'.__("Votre","bonestheme").'</a></span>';
+                                     }else{
+                                         echo '<span style="width:30.66%;" class="disabled">'.__("Votre","bonestheme").'</span>';
+                                     }
+                                     if($teket){
+                                         echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $teket .'"">'.__("teket","bonestheme").'</a></span>';
+                                     }else{
+                                         echo '<span style="width:30.66%;" class="disabled">'.__("teket","bonestheme").'</span>';
+                                     }
                                     ?>
-                            <?php
-                                // else:
+                                    <?php
+                                        // else:
 
-                                // echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
+                                        // echo 'バッハ・コレギウム・ジャパン チケットセンター <br>℡ 03-5301-0950';
 
-                                // endif;
-                            ?>
-                            </span>
+                                        // endif;
+                                    ?>
+                                    </span>
                         </div>	
 					</section>
                         <?php endif; ?>					

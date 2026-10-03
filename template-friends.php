@@ -68,7 +68,6 @@ Template Name: Friends
 							<hr>
 							※Priority of the above benefits given in order of membership level, beginning with Oratorio.<br>
 							※Pre-concert talk, Working rehearsal, and Back stage tour basically take place before a BCJ subscription concert 1-2 times a year.<br>
-							※特典のうち、飲食に関するものや、アーティストや他のお客様との接触がございます項目は、感染症予防対策上、安全に実施可能となりました場合に、ご案内申し上げます。
 						</div>
 					</div>
 
@@ -84,7 +83,7 @@ Template Name: Friends
 						<hr>
 						Oratorio<span class="price">¥40,000~</span>
 						<hr>
-						Society Member（<a href="/bcj-society" target="_self">more detail</a>）<span class="price">¥80,000〜</span>
+						Society Member（<a href="/bcj-society" target="_self">more detail</a>）<span class="price">¥120,000〜</span>
 						<hr>
 						</div>
 					</div>
@@ -95,6 +94,20 @@ Template Name: Friends
 					<div class="entry-content-page">
 						<div class="center">申し込み方法</div>
 						<p>
+							こちらのフォームから、必要事項をご入力ください。<br>
+							<a href="https://forms.gle/2ycbsuQixjJLHig46" target="_blank" style="color: white">https://forms.gle/2ycbsuQixjJLHig46</a><br><br>
+							
+							※郵便口座の場合は、通信欄に『お名前・ご住所・お電話番号・ご希望のメンバーシップレベル・定期演奏会プログラムへのご芳名掲載の可否』をご記入いただくことでも構いません。
+							<br><br>
+							ご支援金は下記の銀行口座、または郵便口座にお振り込みいただきますようお願い申し上げます。<br>
+							<div class="border-box">
+								<ul>
+									<li>三井住友銀行　新宿西口支店　普通　2796216 <br>(有)バッハ・コレギウム・ジャパン　ﾕ)ﾊﾞﾂﾊｺﾚｷﾞｳﾑｼﾞﾔﾊﾟﾝ</li>
+									<li><br>郵便振替口座<br>口座番号：00170-2-33885</li>
+									<li>加入者名：有限会社バッハ・コレギウム・ジャパン</li>
+								</ul>
+							</div>
+<!--
 							ご支援金は下記の郵便口座にお振込み頂きますようお願い申し上げます。<br>
 							※通信欄には必ず、『お名前・ご住所・お電話番号・ご希望のメンバーシップクラス・定期演奏会プログラムへのご芳名掲載の可否』をご記入ください。<br>
 							<div class="border-box">
@@ -110,6 +123,7 @@ Template Name: Friends
 							5-29-7 Sendagaya, Suite 402, Shibuya Tokyo 151-0051 Japan<br>
 							Tel: +81(0) 3-3226-5333 Fax: +81(0) 3-5362-5445<br>
 							E-mail: friends@bach.co.jp
+-->
 						</p>
 					</div>
 				</div>
@@ -130,7 +144,6 @@ Template Name: Friends
 							<hr>
 							※上記メンバーシップ特典は、オラトリオレベル会員様から優先手配させていただきます。<br>
 							※プレステージコンサートトーク、リハーサル公開、バックステージツアーは、年１〜２回BCJ主催のコンサートにて開催いたします。<br>
-							※特典のうち、飲食に関するものや、アーティストや他のお客様との接触がございます項目は、感染症予防対策上、安全に実施可能となりました場合に、ご案内申し上げます。
 						</div>
 					</div>
 
@@ -146,7 +159,7 @@ Template Name: Friends
 						<hr>
 						オラトリオ<span class="price">40,000円〜</span>
 						<hr>
-						ソサエティメンバー（詳細は<a href="/bcj-society" target="_self">こちら</a>）<span class="price">80,000円〜</span>
+						ソサエティメンバー（詳細は<a href="/bcj-society" target="_self">こちら</a>）<span class="price">120,000円〜</span>
 						<hr>
 						</div>
 					</div>
@@ -157,6 +170,20 @@ Template Name: Friends
 					<div class="entry-content-page">
 						<div class="center">申し込み方法</div>
 						<p>
+							こちらのフォームから、必要事項をご入力ください。<br>
+							<a href="https://forms.gle/2ycbsuQixjJLHig46" target="_blank" >https://forms.gle/2ycbsuQixjJLHig46</a><br><br>
+							
+							※郵便口座の場合は、通信欄に『お名前・ご住所・お電話番号・ご希望のメンバーシップレベル・定期演奏会プログラムへのご芳名掲載の可否』をご記入いただくことでも構いません。
+							<br><br>
+							ご支援金は下記の銀行口座、または郵便口座にお振り込みいただきますようお願い申し上げます。<br>
+							<div class="border-box">
+								<ul>
+									<li>三井住友銀行　新宿西口支店　普通　2796216 <br>(有)バッハ・コレギウム・ジャパン　ﾕ)ﾊﾞﾂﾊｺﾚｷﾞｳﾑｼﾞﾔﾊﾟﾝ</li>
+									<li><br>郵便振替口座<br>口座番号：00170-2-33885</li>
+									<li>加入者名：有限会社バッハ・コレギウム・ジャパン</li>
+								</ul>
+							</div>
+<!--
 							ご支援金は下記の郵便口座にお振込み頂きますようお願い申し上げます。<br>
 							※通信欄には必ず、『お名前・ご住所・お電話番号・ご希望のメンバーシップクラス・定期演奏会プログラムへのご芳名掲載の可否』をご記入ください。<br>
 							<div class="border-box">
@@ -165,6 +192,7 @@ Template Name: Friends
 								<li>加入者名：有限会社バッハ・コレギウム・ジャパン</li>
 							</ul>
 							</div>
+-->
 						</p>
 					</div>
 				</div>

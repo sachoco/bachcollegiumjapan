@@ -5,43 +5,59 @@
                     <div class="slick-slides">
 
                      <!-- Slide item 1 -->
-                        <div class="slide-item">
+                        <div class="slide-item subscription">
                             <?php if(ICL_LANGUAGE_CODE=="en"): ?>
-                              <!-- <a href="http://bachcollegiumjapan.org/en/2020-2021_news_e/"> -->
+                                <a href="https://bachcollegiumjapan.org/en/26-27-subscription-en/">
                             <?php else: ?>
-                              <a href="http://bachcollegiumjapan.org/2021subscription/">
+                                <a href="https://bachcollegiumjapan.org/26-27-subscription/">
                             <?php endif; ?>
-                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/subscription2021-highres.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 100%; background-repeat: no-repeat;"></div>
-                            <div class="slide-content left" style="padding:20px 70px;width:500px">
+                            <div class="slide-bg" style="width: 100%; height: 100%; opacity: 1; visibility: inherit; background-image: url(<?php echo bloginfo('template_directory' ); ?>/library/images/slideshow/subscription2026.jpg); background-color: rgba(0, 0, 0, 0); background-size: cover; background-position: 100%; background-repeat: no-repeat;"></div>
+<!--                             <div class="slide-content left" style="padding:20px 70px;width:500px"> -->
+                            <div class="slide-content left" >
                                 <div class="inner-content">
                                 <?php if(ICL_LANGUAGE_CODE=="en"): ?>
                                     <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <h1 ><?php _e("Season 2021-2022<br>Subscription Concerts","bonestheme"); ?></h1>
+                                    <h1 ><?php _e("Season 2026-2027<br>Subscription Concerts","bonestheme"); ?></h1>
+<!--
+                                    <h1 >
+	                                    <div >Season 2024-2025</div>
+	                                    <div >Subscription Concerts</div>
+	                                    <div class="small">The Path to Beethoven</div>
+	                                    <div >&</div>
+	                                    <div >The 300th Anniversary Project of Choral Cantatas</div>
+                                    </h1>
+-->
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    // <div><?php _e("New subscription can be purchased from Jan 15, 2021","bonestheme"); ?></div>
-                                    <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
+<!--                                     <div><?php _e("New subscription can be purchased from Dec 1, 2022","bonestheme"); ?></div> -->
+<!--                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" /> -->
                                     <div><?php _e("Read More","bonestheme"); ?></div>
                                 <?php else: ?>
                                     <div><?php _e("Bach Collegium Japan","bonestheme"); ?></div>
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <h1 ><?php _e("2021-2022シーズン 定期演奏会<br>公演ラインナップ決定","bonestheme"); ?></h1>
+<!--                                     <h1 ><?php _e("2023-2024シーズン 定期演奏会<br>公演ラインナップ決定","bonestheme"); ?></h1> -->
+<!--                                     <h1><?php _e("2025-2026シーズン<br>定期演奏会<br><span class='small'>ベートーヴェンへの道</span><br>＆<br>コラールカンタータ300年プロジェクト","bonestheme"); ?></h1> -->
+                                    <h1 >
+	                                    <div >2026-2027シーズン</div>
+	                                    <div >定期演奏会</div>
+                                    </h1>
+
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
 
-                                    <div><?php _e("新規定期会員募集 2021年1月15日（金）10時より","bonestheme"); ?></div>
+<!--                                     <div><?php _e("新規定期会員募集 2022年12月1日（木）10時より","bonestheme"); ?></div> -->
+                                    <h3><?php _e("公演ラインナップ発表！　詳細はこちら","bonestheme"); ?></h3>
+<!--
                                     <img class="divider" style="display: block;margin:auto;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAERJREFUeNpiYEAD////V2DABoAS64H4PzaJgP8IUAASY4RKvAdSAmjqLzBBGROB+AOa5AdkYx2QjE3AZu9+qBVgABBgAL2WNvKVGTq0AAAAAElFTkSuQmCC" />
                                     <div><?php _e("Read more","bonestheme"); ?></div>
+-->
                                 <?php endif; ?>
                                 </div>
                             </div>
-                            <?php if(ICL_LANGUAGE_CODE=="en"): ?>
-                              <!-- <a href="http://bachcollegiumjapan.org/en/2020-2021_news_e/"> -->
-                            <?php else: ?>
+
                             </a>
-                            <?php endif; ?>
                             <div class="slide-overlay"></div>
                         </div>
 
@@ -172,10 +188,10 @@ function filter_where( $where = '' ) {
                                     $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "bcj-thumb-300" );
                                     // add more attributes if you need
                                     if($thumbnail_src){
-                                        printf( '<img src="http://placehold.it/300x170&text=+" data-lazy="%s"/>', esc_url( $thumbnail_src[0] ) );
+                                        printf( '<img src="https://via.placeholder.com/300x170&text=+" data-lazy="%s"/>', esc_url( $thumbnail_src[0] ) );
 
                                     }else{
-                                        printf( '<img src="http://placehold.it/300x170&text=+" data-lazy="%s"/>', get_bloginfo('template_directory').'/library/images/nothumb.jpg' );
+                                        printf( '<img src="https://via.placeholder.com/300x170&text=+" data-lazy="%s"/>', get_bloginfo('template_directory').'/library/images/nothumb.jpg' );
                                     }
                                 ?>
                                 <?php //the_post_thumbnail( "bcj-thumb-300"); ?>
@@ -210,34 +226,45 @@ function filter_where( $where = '' ) {
                                 </div>
                                 <div class="ticket-btn">
                                     <span class="buy-ticket "><span class="buy-text"><?php _e("Buy Ticket","bonestheme"); ?></span></span>
-                                    <span class="playguide">
+                                    <span class="playguide">                                    
                                     <?php
                                         $pia = get_field('ticket_pia');
                                         $eplus = get_field('e+');
-                                        $lowticket = get_field('ローチケ');
-                                        $votre = get_field('ヴォートルweb');
+                                        $teket = get_field('teket');	                                        
+                                        if(ICL_LANGUAGE_CODE=="en"){
+	                                        $lowticket = get_field('lowson_ticket');
+	                                        $votre = get_field('Votre');	                                        
+                                        }else{
+	                                        $lowticket = get_field('ローチケ');
+	                                        $votre = get_field('ヴォートルweb');		                                        
+                                        }
                                         // if($pia||$eplus) :
                                     ?>
                                     <?php
                                         if($pia){
-                                           echo '<span><a target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>';
+                                           echo '<span style="padding:0;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>';
                                        }else{
                                            echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>';
                                        }
                                         if($eplus){
-                                           echo '<span><a target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>';
+                                           echo '<span style="padding:0;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>';
                                        }else{
                                            echo '<span class="disabled">'.__("e+","bonestheme").'</span>';
                                        }
                                        if($lowticket){
-                                          echo '<span><a target="_blank" href="'. $lowticket .'"">'.__("Lawson Ticket","bonestheme").'</a></span>';
+                                          echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $lowticket .'"">'.__("Lawson Ticket","bonestheme").'</a></span>';
                                       }else{
-                                          echo '<span class="disabled">'.__("Lawson Ticket","bonestheme").'</span>';
+                                          echo '<span style="width:30.66%;" class="disabled">'.__("Lawson Ticket","bonestheme").'</span>';
                                       }
                                       if($votre){
-                                         echo '<span><a target="_blank" href="'. $votre .'"">'.__("Votre","bonestheme").'</a></span>';
+                                         echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $votre .'"">'.__("Votre","bonestheme").'</a></span>';
                                      }else{
-                                         echo '<span class="disabled">'.__("Votre","bonestheme").'</span>';
+                                         echo '<span style="width:30.66%;" class="disabled">'.__("Votre","bonestheme").'</span>';
+                                     }
+                                     if($teket){
+                                         echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $teket .'"">'.__("teket","bonestheme").'</a></span>';
+                                     }else{
+                                         echo '<span style="width:30.66%;" class="disabled">'.__("teket","bonestheme").'</span>';
                                      }
                                     ?>
                                     <?php
@@ -348,13 +375,14 @@ function filter_where( $where = '' ) {
                     );
                     $the_query = new WP_Query( $args );
                     $col_count = 1;
+//                     var_dump($the_query);
                     if ( $the_query->have_posts() ) :
                         while ( $the_query->have_posts() ) : $the_query->the_post();
                         $dateformatstring = "D d F, Y";
                 ?>
                         <article class="news-item m-all t-1of2 d-1of4" data-link="<?php the_permalink(); ?>">
                             <header>
-                            <span class="category">
+                            <!-- <span class="category">
                                 <?php
                                     $cats = get_the_category( );
                                     $i = 0;
@@ -364,7 +392,7 @@ function filter_where( $where = '' ) {
                                     }
 
                                 ?>
-                            </span>
+                            </span> -->
                             <div class="title">
                                 <?php the_title( );?>
                             </div>
@@ -401,7 +429,9 @@ function filter_where( $where = '' ) {
                 <div id="about_bcj_1"><h2><?php _e("Bach Collegium Japan and Masaaki Suzuki","bonestheme"); ?></h2></div>
                 <div id="about_bcj_2" >
                         <div class="h_iframe">
-                            <img class="ratio" src="http://placehold.it/16x9"/>
+                            <!-- <img class="ratio" src="https://via.placeholder.com/16x9"/> -->
+                            <img class="ratio" src="https://placehold.co/1600x900/transparent/transparent"/>
+                            
                         <script src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
                         <iframe id="vimeo_player" src="//player.vimeo.com/video/61724704?api=1&amp;player_id=vimeo_player&amp;title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                         </div>
@@ -552,8 +582,8 @@ Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and ch
                     ?>"><span class="bcj-btn invert"><?php _e( 'Read more about BCJ Friends & Society', 'bonestheme' ); ?></span></a>
                 </div>
                 <div class="h_iframe">
-                    <img class="ratio" src="http://placehold.it/16x9"/>
-                    <script src="http://www.youtube.com/player_api"></script>
+                    <img class="ratio" src="https://via.placeholder.com/16x9"/>
+                    <script src="https://www.youtube.com/player_api"></script>
                 <!-- <iframe id="ytplayer" width="853" height="480" src="//www.youtube.com/embed/J5bGxCWf0yM?version=3&enablejsapi=1&playerapiid=ytplayer" frameborder="0" allowfullscreen></iframe> -->
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"></div>
@@ -625,6 +655,15 @@ Bach Collegium Japan (BCJ) is widely known as a leading Baroque orchestra and ch
                     <?php else: ?>
                     <?php echo do_shortcode('[contact-form-7 id="2888" title="BCJ Contact"]'); ?>
                     <?php endif; ?>
+                </div>
+                <div style=" text-align: center;max-width:400px;margin:auto;padding:1em">
+	                <a href="<?php $icl_object_id = icl_object_id(8879, 'page', true); echo get_permalink($icl_object_id); ?>">
+		                <?php if(ICL_LANGUAGE_CODE=="en"): ?>
+		                	Privacy Policy
+		                <?php else: ?>
+		                	プライバシーポリシー
+		                <?php endif; ?>
+		            </a>
                 </div>
                 <div style="text-align:center;margin-bottom: 100px">
                     <a href="#" class="go-top invert">

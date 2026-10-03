@@ -193,7 +193,7 @@ function my_theme_add_scripts() {
  wp_enqueue_script( 'google-map-init', get_template_directory_uri() . '/library/js/google-maps.js', array('google-map', 'jquery'), '0.1', true );
 }
  
-add_action( 'wp_enqueue_scripts', 'my_theme_add_scripts' );
+// add_action( 'wp_enqueue_scripts', 'my_theme_add_scripts' );
  
 function my_acf_google_map_api( $api ){
  
@@ -332,7 +332,9 @@ function bones_filter_ptags_on_images($content){
 function bones_excerpt_more($more) {
 	global $post;
 	// edit here if you like
-	return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read ', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
+	return '...';
+// 	return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read ', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
+
 }
 
 

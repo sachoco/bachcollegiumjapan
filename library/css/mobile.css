@@ -41,3 +41,6 @@ section#about {
 
 .only-mobile {
   display: block; }
+
+.single-schedule .buy-ticket-container {
+  position: relative; }

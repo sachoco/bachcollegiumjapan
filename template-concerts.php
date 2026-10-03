@@ -169,7 +169,7 @@ Template Name: Concerts
                     );
 				$the_query = new WP_Query( $args );
 				$dates = [];
-        $cur_month;
+				$cur_month = "";
 				if ( $the_query->have_posts() ) :
                         while ( $the_query->have_posts() ) : $the_query->the_post();
 
@@ -222,7 +222,7 @@ Template Name: Concerts
                                         printf( '<img src="%s"/>', esc_url( $thumbnail_src[0] ) );
 
                                     }else{
-                                        printf( '<img src="%s"/>', get_bloginfo(template_directory).'/library/images/nothumb.jpg' );
+                                        printf( '<img src="%s"/>', get_bloginfo('template_directory').'/library/images/nothumb.jpg' );
                                     }
                                 ?>
                             </div>
@@ -254,23 +254,46 @@ Template Name: Concerts
                                 </div> -->
                                 <div class="ticket-btn">
                                     <span class="buy-ticket "><span class="buy-text"><?php _e("Buy Ticket","bonestheme"); ?></span></span>
-                                    <span class="playguide">
+                                    <span class="playguide">                                    
                                     <?php
                                         $pia = get_field('ticket_pia');
                                         $eplus = get_field('e+');
+                                        $teket = get_field('teket');	                                        
+                                        if(ICL_LANGUAGE_CODE=="en"){
+	                                        $lowticket = get_field('lowson_ticket');
+	                                        $votre = get_field('Votre');	                                        
+                                        }else{
+	                                        $lowticket = get_field('ローチケ');
+	                                        $votre = get_field('ヴォートルweb');		                                        
+                                        }
                                         // if($pia||$eplus) :
                                     ?>
                                     <?php
                                         if($pia){
-                                           echo '<span><a target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>'; 
+                                           echo '<span style="padding:0;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>';
                                        }else{
-                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>'; 
+                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>';
                                        }
                                         if($eplus){
-                                           echo '<span><a target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>'; 
+                                           echo '<span style="padding:0;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>';
                                        }else{
-                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>'; 
-                                       }                                       
+                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>';
+                                       }
+                                       if($lowticket){
+                                          echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $lowticket .'"">'.__("Lawson Ticket","bonestheme").'</a></span>';
+                                      }else{
+                                          echo '<span style="width:30.66%;" class="disabled">'.__("Lawson Ticket","bonestheme").'</span>';
+                                      }
+                                      if($votre){
+                                         echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $votre .'"">'.__("Votre","bonestheme").'</a></span>';
+                                     }else{
+                                         echo '<span style="width:30.66%;" class="disabled">'.__("Votre","bonestheme").'</span>';
+                                     }
+                                     if($teket){
+                                         echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $teket .'"">'.__("teket","bonestheme").'</a></span>';
+                                     }else{
+                                         echo '<span style="width:30.66%;" class="disabled">'.__("teket","bonestheme").'</span>';
+                                     }
                                     ?>
                                     <?php
                                         // else:
@@ -305,23 +328,46 @@ Template Name: Concerts
                                 </div> -->
                                 <div class="ticket-btn">
                                     <span class="buy-ticket "><span class="buy-text"><?php _e("Buy Ticket","bonestheme"); ?></span></span>
-                                    <span class="playguide">
+                                    <span class="playguide">                                    
                                     <?php
                                         $pia = get_field('ticket_pia');
                                         $eplus = get_field('e+');
+                                        $teket = get_field('teket');	                                        
+                                        if(ICL_LANGUAGE_CODE=="en"){
+	                                        $lowticket = get_field('lowson_ticket');
+	                                        $votre = get_field('Votre');	                                        
+                                        }else{
+	                                        $lowticket = get_field('ローチケ');
+	                                        $votre = get_field('ヴォートルweb');		                                        
+                                        }
                                         // if($pia||$eplus) :
                                     ?>
                                     <?php
                                         if($pia){
-                                           echo '<span><a target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>'; 
+                                           echo '<span style="padding:0;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $pia .'"">'.__("Ticket Pia","bonestheme").'</a></span>';
                                        }else{
-                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>'; 
+                                           echo '<span class="disabled">'.__("Ticket Pia","bonestheme").'</span>';
                                        }
                                         if($eplus){
-                                           echo '<span><a target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>'; 
+                                           echo '<span style="padding:0;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $eplus .'"">'.__("e+","bonestheme").'</a></span>';
                                        }else{
-                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>'; 
-                                       }                                       
+                                           echo '<span class="disabled">'.__("e+","bonestheme").'</span>';
+                                       }
+                                       if($lowticket){
+                                          echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $lowticket .'"">'.__("Lawson Ticket","bonestheme").'</a></span>';
+                                      }else{
+                                          echo '<span style="width:30.66%;" class="disabled">'.__("Lawson Ticket","bonestheme").'</span>';
+                                      }
+                                      if($votre){
+                                         echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $votre .'"">'.__("Votre","bonestheme").'</a></span>';
+                                     }else{
+                                         echo '<span style="width:30.66%;" class="disabled">'.__("Votre","bonestheme").'</span>';
+                                     }
+                                     if($teket){
+                                         echo '<span style="padding:0; width:30.66%;"><a style="display:block; padding:0.8em 0 0.4em" target="_blank" href="'. $teket .'"">'.__("teket","bonestheme").'</a></span>';
+                                     }else{
+                                         echo '<span style="width:30.66%;" class="disabled">'.__("teket","bonestheme").'</span>';
+                                     }
                                     ?>
                                     <?php
                                         // else:
