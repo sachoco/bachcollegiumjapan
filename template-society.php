@@ -314,10 +314,11 @@ Template Name: Society
 				<hr>
 				<div class="wrap">
 					<div class="entry-content-page">
-						<div class="center">申し込み方法</div>
+						<div class="center">How to apply and pay</div>
 						<p>
-							ご支援金は下記の銀行口座、または郵便口座にお名前を明記して、お振込み頂きますようお願い申し上げます。<br>
-							※通信欄には必ず、『お名前・ご住所・お電話番号・ご希望のメンバーシップレベル・定期演奏会プログラムへのご芳名掲載の可否』をご記入ください。<br>
+							Please complete the <a href="https://forms.gle/2ycbsuQixjJLHig46" target="_blank" rel="noopener" style="color: white">membership application form (in Japanese)</a>.<br><br>
+							Credit card payment is available. After you submit your application, the BCJ Ticket Center will contact you with payment instructions. Please let us know at that time if you would like to pay by credit card.<br><br>
+							If you prefer a bank or postal transfer, please use the account details below and include your name. For postal transfers, also include your address, telephone number, membership level, and whether you wish your name to appear in subscription concert programmes.<br>
 							<div class="border-box">
 								<ul>
 									<li>三井住友銀行　新宿西口支店　普通　2796216 <br>(有)バッハ・コレギウム・ジャパン　ﾕ)ﾊﾞﾂﾊｺﾚｷﾞｳﾑｼﾞﾔﾊﾟﾝ</li>
@@ -557,7 +558,8 @@ Template Name: Society
 							
 							※郵便口座の場合は、通信欄に『お名前・ご住所・お電話番号・ご希望のメンバーシップレベル・定期演奏会プログラムへのご芳名掲載の可否』をご記入いただくことでも構いません。
 							<br><br>
-							ご支援金は下記の銀行口座、または郵便口座にお振り込みいただきますようお願い申し上げます。<br>
+							クレジットカードもご利用いただけます。お申し込み後、BCJチケットセンターからのお支払い案内の際に、カード決済をご希望の旨をお伝えください。<br><br>
+							銀行振込・郵便振替をご希望の場合は、下記口座をご利用ください。<br>
 							<div class="border-box">
 								<ul>
 									<li>三井住友銀行　新宿西口支店　普通　2796216 <br>(有)バッハ・コレギウム・ジャパン　ﾕ)ﾊﾞﾂﾊｺﾚｷﾞｳﾑｼﾞﾔﾊﾟﾝ</li>
